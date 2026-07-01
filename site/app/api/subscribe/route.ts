@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
     const { data, error } = await resend.emails.send({
       // Use your verified domain once set up in Resend dashboard.
       // For testing you can use 'onboarding@resend.dev'
-      from: 'Nephelis Crew Signals <signals@nephelisindustries.com>',
+      from: 'Nephelis Crew Signals <onboarding@resend.dev>',
       to: ['ehren@nephelisindustries.com'],
       replyTo: email,
       subject: `New Crew Signal Subscription: ${email}`,

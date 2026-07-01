@@ -19,8 +19,9 @@ export default function SignupForm() {
         body: JSON.stringify({ email }),
       });
 
+      const result = await res.json();
       if (!res.ok) {
-        throw new Error('Failed to subscribe');
+        throw new Error(result.error || 'Failed to subscribe');
       }
 
       setStatus('success');

@@ -16,7 +16,7 @@ export async function POST(request: NextRequest) {
     const { data, error } = await resend.emails.send({
       // Use your verified domain once set up in Resend dashboard.
       // For testing you can use 'onboarding@resend.dev'
-      from: 'Nephelis Reserves <reserves@nephelisindustries.com>',
+      from: 'Nephelis Reserves <onboarding@resend.dev>',
       to: ['ehren@nephelisindustries.com'],
       replyTo: email,
       subject: `New Reserve Request: ${tierLabel} from ${name}`,

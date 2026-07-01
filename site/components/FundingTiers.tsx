@@ -44,8 +44,9 @@ export default function FundingTiers() {
         }),
       });
 
+      const result = await res.json();
       if (!res.ok) {
-        throw new Error('Failed to send reservation request');
+        throw new Error(result.error || 'Failed to send reservation request');
       }
 
       setSubmitted(true);
@@ -55,7 +56,7 @@ export default function FundingTiers() {
       }, 2200);
     } catch (err) {
       console.error(err);
-      setError('Something went wrong. Please try emailing directly.');
+      setError(err.message || 'Something went wrong. Please try emailing directly.');
     } finally {
       setIsSubmitting(false);
     }

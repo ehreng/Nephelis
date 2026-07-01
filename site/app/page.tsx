@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import MissionPlanner from "@/components/MissionPlanner";
 import FundingTiers from "@/components/FundingTiers";
 import SignupForm from "@/components/SignupForm";
+import Countdown from "@/components/Countdown";
 import { getTimeline, getHeritage } from "@/lib/content";
 
 export default function NephelisHome() {
@@ -18,7 +19,14 @@ export default function NephelisHome() {
             <img src="/assets/visuals/Venus Visions.png" alt="Venus" className="w-full h-full object-cover rounded-full shadow-[0_0_100px_rgba(255,69,0,0.3)]" />
           </div>
           <div className="absolute top-[20%] right-[-10%] md:right-[5%] w-[60vw] md:w-[35vw] opacity-90 animate-float pointer-events-none z-10">
-            <img src="/assets/visuals/probe.jpg" alt="Cloudseeker Probe Render" className="w-full h-auto object-contain drop-shadow-2xl brightness-110" />
+            <video 
+              src="/assets/visuals/flyingprobe.mp4" 
+              autoPlay 
+              loop 
+              muted 
+              playsInline 
+              className="w-full h-auto object-contain drop-shadow-2xl brightness-110" 
+            />
           </div>
           <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent z-10"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-[#050505]/40 z-10"></div>
@@ -31,21 +39,18 @@ export default function NephelisHome() {
               <span className="text-venus font-mono text-xs uppercase tracking-widest">Launch Window: Q4 2027</span>
             </div>
 
-            {/* Deck-inspired stylized mark */}
-            <div className="flex items-center gap-3 mb-4">
-              <div className="h-11 w-11 md:h-14 md:w-14 bg-gradient-to-br from-venus via-orange-500 to-yellow-400 flex items-center justify-center text-black text-3xl md:text-4xl font-black tracking-[-1.5px] rounded-sm shadow-inner">E</div>
-              <div className="font-mono text-[10px] tracking-[4px] text-venus/70 -ml-1">AETHER</div>
-            </div>
-
             <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-white mb-6 uppercase leading-none drop-shadow-2xl">
               Earth's <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-venus via-orange-500 to-yellow-500 text-glow">Twin Sister</span>
             </h1>
 
             <p className="mt-4 max-w-xl text-xl text-gray-200 font-mono leading-relaxed drop-shadow-md">
-              Project AETHER is humanity's return to the clouds. <br />
-              A long-duration aerostat probe targeting the <span className="text-white font-bold">55km habitable zone</span> of Venus.
+              Project Aether is humanity's return to the clouds. A long-duration aerostat probe targeting the <span className="text-white font-bold">55km habitable zone</span> of Venus.
             </p>
+
+            <div className="mt-4 max-w-xl text-sm uppercase tracking-widest text-venus/90 font-mono">
+              WE’RE NOT NASA. WE’RE NEPHELIS INDUSTRIES: DREAMERS AND BUILDERS BETTING $500,000 ON A CROWD-FUNDED PROBE TO VENUS. LET'S EXTEND HUMAN AND AI CONSCIOUSNESS BEYOND EARTH NOW.
+            </div>
 
             <div className="mt-10 flex gap-4">
               <a href="#mission" className="px-8 py-4 bg-white text-black font-bold font-mono uppercase tracking-wider hover:bg-gray-200 transition-colors">
@@ -59,7 +64,7 @@ export default function NephelisHome() {
         </div>
 
         <div className="absolute bottom-10 right-10 hidden md:block font-mono text-xs text-gray-400 text-right z-20">
-          <p>T-MINUS: 00:00:00:00</p>
+          <p>T-MINUS: <Countdown targetDate="2027-12-15" /></p>
           <p>TARGET: 0.72 AU</p>
           <p>STATUS: SYSTEMS NOMINAL</p>
         </div>
@@ -78,6 +83,22 @@ export default function NephelisHome() {
               <p>
                 <strong className="text-white">Project AETHER</strong> deploys a super-pressure fluoropolymer balloon designed to ride the super-rotating winds of Venus, circling the planet every 4 days while streaming high-bandwidth telemetry via a 3U CubeSat relay.
               </p>
+              <p>
+                We are designing and building Cloudseeker: a long-duration aerostat probe. The program includes balloon envelope fabrication and testing, payload integration (spectrometers, cameras, meteorology, life-detection sensors), communications relay via CubeSat, and launch on a rideshare or dedicated small vehicle in the 2027 window. 
+              </p>
+              <p>
+                Mission steps: (1) Final design &amp; ground testing 2026, (2) Integration &amp; environmental qualification, (3) Launch to Venus transfer, (4) Atmospheric entry and balloon inflation at target altitude, (5) 30-90 days of floating operations with daily data downlink, (6) Analysis and public data release. This is the first dedicated private mission focused on the habitable cloud layer.
+              </p>
+              <p>
+                Venus offers abundant solar power, CO₂ for fuel, and nitrogen for breathable air. We need $500,000+ in crowdfunding for build, testing, and launch. Our budget is lean compared to Rocket Lab's Venus Life Finder (&lt;$10M), but laser-focused on practical habitation validation.
+              </p>
+              <p>
+                Volunteers welcome: engineers, scientists, AI experts, fabricators—email to join.<br />
+                Be part of humanity’s backup plan. Venus ensures life thrives across the solar system.
+              </p>
+              <p>
+                With hypothetical VenusExpress service using next-gen propulsion (nuclear electric or VASIMR), travel time could shrink to 30–45 days versus today’s 3–6 months.
+              </p>
 
               <div className="grid grid-cols-2 gap-4 mt-8">
                 <div className="p-4 border border-white/10 bg-white/5">
@@ -94,9 +115,9 @@ export default function NephelisHome() {
 
           <div className="glass-panel p-6 rounded-sm hud-border relative">
             <div className="absolute top-4 right-4 text-xs font-mono text-venus animate-pulse">LIVE TELEMETRY SIM</div>
-            <div className="aspect-video relative flex items-center justify-center bg-black/80 rounded overflow-hidden">
-              <img src="/assets/visuals/probe.jpg" alt="AETHER Probe" className="max-h-full object-contain" />
-              <div className="absolute bottom-2 left-2 text-xs font-mono text-tech bg-black/50 px-2">AETHER PROBE @ 55km</div>
+            <div className="relative flex items-center justify-center bg-black/80 rounded overflow-hidden" style={{minHeight: '380px'}}>
+              <img src="/assets/visuals/NephelisIndustries.jpg" alt="Nephelis Industries" className="max-h-[380px] w-auto object-contain" />
+              <div className="absolute bottom-2 left-2 text-xs font-mono text-tech bg-black/50 px-2">PROBE @ 55km</div>
             </div>
           </div>
         </div>
@@ -110,7 +131,7 @@ export default function NephelisHome() {
           <div className="mb-12">
             <h2 className="text-venus font-mono text-sm uppercase tracking-widest mb-2">02 // Mission Control</h2>
             <h3 className="text-4xl font-bold text-white">Astrodynamics &amp; Trajectory</h3>
-            <p className="text-gray-400 mt-2 font-mono text-sm">Interactive Mission Planner. Assumptions: Isp=320s, Hohmann Transfer.</p>
+            <p className="text-gray-400 mt-2 font-mono text-sm">Interactive Mission Planner. Assumptions: Launch ~Q4 2027, Isp=320s, Hohmann Transfer. Progress drives distance and arrival estimates.</p>
           </div>
 
           <MissionPlanner />
@@ -236,17 +257,76 @@ export default function NephelisHome() {
               </div>
             </div>
           </div>
+
+          {/* Why Venus vs Mars - merged content */}
+          <div className="mt-12">
+            <h4 className="text-2xl font-bold mb-4">Why Venus vs Mars</h4>
+            <p className="text-gray-400 mb-6">
+              Venus complements Mars. At 50-55 km it offers near-Earth gravity (0.9g), pressure, and solar flux—superior for long-term human and AI thriving.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 text-sm mb-6">
+              <div>
+                <div className="font-mono text-xs text-venus mb-1">KEY ADVANTAGES</div>
+                <ul className="list-disc pl-5 space-y-1 text-gray-400">
+                  <li>Faster travel (future 30-45 days)</li>
+                  <li>Abundant atmospheric resources</li>
+                  <li>Better solar energy potential despite clouds</li>
+                </ul>
+              </div>
+              <div>
+                <div className="font-mono text-xs text-venus mb-1">ATMOSPHERE &amp; RESOURCES</div>
+                <p className="text-gray-400">96.5% CO₂ (fuel/plastics), 3.5% N₂ (air), SO₂ &amp; H₂SO₄ (chemical feedstocks). Solar: 1.91× Earth’s at top of atmosphere — massive potential for floating solar arrays and AI data centers. Chemical Feedstocks enable in-situ manufacturing far easier than Mars thin atmosphere.</p>
+              </div>
+            </div>
+            <p className="text-sm text-gray-400">
+              Challenges (acid mitigation via altitude/materials) are solvable. Venus floating cities + Mars surface ops = true multi-planetary redundancy.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* 04 // MISSION ARCHIVE - full data-driven heritage table */}
+      {/* Technology Section */}
+      <section className="py-24 bg-void border-b border-white/10">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="uppercase tracking-[3px] text-xs text-venus/70 mb-2">TECHNOLOGY</div>
+          <h3 className="text-3xl font-bold text-white mb-6">Cloudseeker Technology</h3>
+          <p className="text-gray-400 mb-8 max-w-prose">
+            Cloudseeker uses miniaturized, robust tech built for Venus extremes—paving the way for future life-sustaining outposts.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6 text-sm">
+            <div className="glass-panel p-6 border-l-2 border-l-venus">
+              <h4 className="font-mono text-venus mb-2">Acid-Resistant Aerostat</h4>
+              <p className="text-gray-400">Multi-layered fluoropolymer balloon resists sulfuric acid; maintains stable float in the habitable zone—foundation for human/AI habitats.</p>
+            </div>
+            <div className="glass-panel p-6 border-l-2 border-l-venus">
+              <h4 className="font-mono text-venus mb-2">Integrated Sensor Suite</h4>
+              <p className="text-gray-400">Compact 1kg pod with 4K imagery, mass spectrometer, nephelometer, and bio-sensors (targeting ammonia/phosphine) to detect resources and potential life signs.</p>
+            </div>
+            <div className="glass-panel p-6 border-l-2 border-l-venus">
+              <h4 className="font-mono text-venus mb-2">3U CubeSat Relay</h4>
+              <p className="text-gray-400">Venus orbit relay for high-bandwidth data transmission—critical for future colony communications.</p>
+            </div>
+            <div className="glass-panel p-6 border-l-2 border-l-venus">
+              <h4 className="font-mono text-venus mb-2">AI-Optimized Navigation</h4>
+              <p className="text-gray-400">xAI models enable autonomous operations in Venus’s dynamic atmosphere—key for human-AI symbiosis off-Earth.</p>
+            </div>
+          </div>
+
+          <p className="mt-8 text-sm text-gray-400">
+            We need hardware donations, software contributions, and testing facilities. Coders, fabricators, and testers—join the build.
+          </p>
+        </div>
+      </section>
+
+      {/* 05 // MISSION ARCHIVE - full data-driven heritage table */}
       <section id="heritage" className="py-24 bg-void border-b border-white/10">
         <div className="max-w-5xl mx-auto px-4">
           <div className="mb-12 flex items-end justify-between">
             <div>
-              <h2 className="text-venus font-mono text-sm uppercase tracking-widest mb-2">04 // Mission Archive</h2>
+              <h2 className="text-venus font-mono text-sm uppercase tracking-widest mb-2">05 // Mission Archive</h2>
               <h3 className="text-4xl font-bold text-white">Standing on Giants</h3>
-              <p className="mt-2 text-gray-400">Comprehensive log of humanity's attempts to reach Venus.</p>
+              <p className="mt-2 text-gray-400">While government and private efforts advance Venus science, Project AETHER fills the unique niche of low-cost habitation validation. Comprehensive log of humanity's attempts to reach Venus.</p>
             </div>
           </div>
 
@@ -287,82 +367,46 @@ export default function NephelisHome() {
         </div>
       </section>
 
-      {/* 05 // VISUALIZATION - with real videos + schematics */}
-      <section id="gallery" className="py-24 bg-void border-b border-white/10">
+      {/* Simulations & Visuals (slim, no separate gallery needed) */}
+      <section id="simulations" className="py-24 bg-void border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-venus font-mono text-sm uppercase tracking-widest mb-3">05 // Visualization</h2>
-          <div className="flex items-baseline justify-between mb-6">
-            <h3 className="text-3xl font-bold text-white">Mission imagery &amp; simulations</h3>
-            <Link href="/visuals" className="text-sm text-venus flex items-center gap-1">Full gallery <ArrowRight size={14} /></Link>
-          </div>
+          <h2 className="text-venus font-mono text-sm uppercase tracking-widest mb-3">05 // Simulations</h2>
+          <h3 className="text-3xl font-bold text-white mb-6">Venus Visions</h3>
+        </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {/* Radar / main */}
-            <div className="md:col-span-2 relative overflow-hidden border border-white/10 bg-black rounded-sm aspect-video group">
-              <img src="/assets/visuals/Venus Atmosphere Profile (80 km to Surface) Temperature, Pressure, and Cloud Layer Highlight.png" alt="Venus atmosphere profile" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition" />
-              <div className="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black/90">
-                <div className="text-white font-bold">Global Radar Map + Atmosphere Profile</div>
-                <div className="text-xs font-mono text-gray-400">Magellan + atmospheric data synthesis</div>
+        {/* Full width video - full page width */}
+        <div className="glass-panel border border-white/10 overflow-hidden">
+          <video
+            className="w-full aspect-video object-cover bg-black"
+            controls
+            muted
+            loop
+            playsInline
+            autoPlay
+          >
+            <source src="/assets/visuals/flyingprobe.mp4" type="video/mp4" />
+          </video>
+          <div className="max-w-7xl mx-auto px-4">
+            <div className="p-4 border-t border-white/10 flex items-center justify-between bg-black/60">
+              <div>
+                <div className="font-mono text-sm text-white">Venus Visions</div>
+                <div className="text-xs text-gray-500">Flying probe simulation</div>
               </div>
-            </div>
-
-            {/* Side visuals */}
-            <div className="space-y-4">
-              <div className="relative overflow-hidden border border-white/10 bg-black rounded-sm aspect-[16/9] group">
-                <img src="/assets/visuals/nephelis_probe_satellite_combo.png" alt="Schematic" className="absolute inset-0 w-full h-full object-cover opacity-90" />
-                <div className="absolute bottom-3 left-3">
-                  <div className="text-xs font-mono text-white/80">Schematic: Cloudseeker</div>
-                </div>
-              </div>
-              <div className="relative overflow-hidden border border-white/10 bg-black rounded-sm aspect-[16/9] group">
-                <img src="/assets/visuals/probe3.png" alt="Probe close" className="absolute inset-0 w-full h-full object-cover" />
-                <div className="absolute bottom-3 left-3">
-                  <div className="text-xs font-mono text-white/80">Entry vector concept</div>
-                </div>
-              </div>
+              <div className="text-xs font-mono text-venus">NEPHELIS.SYS.V2</div>
             </div>
           </div>
+        </div>
 
-          {/* Videos from assets */}
-          <div className="mt-6 grid md:grid-cols-2 gap-4">
-            <div className="glass-panel border border-white/10 overflow-hidden">
-              <video
-                className="w-full aspect-video object-cover bg-black"
-                controls
-                muted
-                loop
-                playsInline
-                autoPlay
-              >
-                <source src="/assets/visuals/probe.mp4" type="video/mp4" />
-                <source src="/assets/visuals/Venus_Exploration_CGI_Video.mp4" type="video/mp4" />
-              </video>
-              <div className="p-4 border-t border-white/10 flex items-center justify-between bg-black/60">
-                <div>
-                  <div className="font-mono text-sm text-white">Mission Preview</div>
-                  <div className="text-xs text-gray-500">Rendered Simulation of Venus Capture Phase</div>
-                </div>
-                <div className="text-xs font-mono text-venus">NEPHELIS.SYS.V2</div>
-              </div>
-            </div>
-
-            <div className="glass-panel border border-white/10 overflow-hidden">
-              <video
-                className="w-full aspect-video object-cover bg-black"
-                controls
-                muted
-                loop
-                playsInline
-              >
-                <source src="/assets/visuals/Venus_Move_and_Video_Creation.mp4" type="video/mp4" />
-              </video>
-              <div className="p-4 border-t border-white/10 flex items-center justify-between bg-black/60">
-                <div>
-                  <div className="font-mono text-sm">Atmospheric Flight Visualization</div>
-                  <div className="text-xs text-gray-500">Super-rotating winds • 4-day cycle</div>
-                </div>
-                <div className="text-[10px] text-venus font-mono">● LIVE FEED // SIM</div>
-              </div>
+        {/* Separate box below for visions.png */}
+        <div className="max-w-7xl mx-auto px-4 mt-6">
+          <div className="glass-panel border border-white/10 overflow-hidden">
+            <img
+              src="/assets/visuals/visions.png"
+              alt="Visions of future missions and life on Venus"
+              className="w-full h-auto object-contain bg-black"
+            />
+            <div className="p-4 border-t border-white/10 bg-black/60">
+              <div className="font-mono text-sm text-white">Future missions and life on Venus</div>
             </div>
           </div>
         </div>

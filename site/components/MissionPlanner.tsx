@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
 export default function MissionPlanner() {
   const [offset, setOffset] = useState(0);
-  const [progress, setProgress] = useState(35);
+  const [progress, setProgress] = useState(0);  // start pre-launch / early transfer
   const [wetMass, setWetMass] = useState(500);
   const [dryMass, setDryMass] = useState(280);
 
@@ -15,15 +15,15 @@ export default function MissionPlanner() {
     ? Math.round(isp * g0 * Math.log(wetMass / dryMass))
     : 1830;
 
-  // Fake live telemetry based on controls
+  // Fake live telemetry based on controls. Launch target: Q4 2027
   const earthDist = Math.max(0, Math.round(12000000 * (1 - progress / 100) + (offset * 12000)));
   const venusDist = Math.round(41000000 * (1 - progress / 100) + Math.abs(offset) * 80000);
-  const arrivalMonth = offset > 10 ? 'JAN 2028' : offset < -10 ? 'OCT 2027' : 'DEC 2027';
+  const arrivalMonth = offset > 15 ? 'FEB 2028' : offset < -15 ? 'SEP 2027' : 'DEC 2027';
   const progressLabel = `${progress}%`;
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
-  // Simple orbit canvas sim (inspired by original)
+  // Proper Sun-centered solar system + Hohmann transfer trajectory
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -32,63 +32,92 @@ export default function MissionPlanner() {
 
     const w = canvas.width = 640;
     const h = canvas.height = 340;
-    let frame = 0;
+    const cx = w * 0.5;
+    const cy = h * 0.5;
 
     const draw = () => {
-      ctx.fillStyle = '#0a0a0a';
+      ctx.fillStyle = '#050505';
       ctx.fillRect(0, 0, w, h);
 
-      // Sun
+      const t = Math.max(0, Math.min(1, progress / 100));
+
+      // Sun at center
       ctx.fillStyle = '#f4a261';
       ctx.beginPath();
-      ctx.arc(w * 0.22, h * 0.5, 9, 0, Math.PI * 2);
+      ctx.arc(cx, cy, 11, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.fillStyle = '#fff7d6';
+      ctx.beginPath();
+      ctx.arc(cx, cy, 5, 0, Math.PI * 2);
       ctx.fill();
 
-      // Earth orbit
+      // Orbit radii
+      const earthR = 105;
+      const venusR = 62;
+
+      // Draw orbits
       ctx.strokeStyle = '#334155';
       ctx.lineWidth = 1;
       ctx.beginPath();
-      ctx.ellipse(w * 0.42, h * 0.5, 78, 52, 0, 0, Math.PI * 2);
+      ctx.arc(cx, cy, earthR, 0, Math.PI * 2);
       ctx.stroke();
-
-      // Venus orbit (inner)
       ctx.beginPath();
-      ctx.ellipse(w * 0.42, h * 0.5, 46, 31, 0, 0, Math.PI * 2);
+      ctx.arc(cx, cy, venusR, 0, Math.PI * 2);
       ctx.stroke();
 
-      // Transfer trajectory hint
+      // Planet positions (simple circular motion; progress advances probe)
+      const earthAngle = -0.6; // fixed-ish for demo
+      const venusAngle = 2.1;
+      const ex = cx + Math.cos(earthAngle) * earthR;
+      const ey = cy + Math.sin(earthAngle) * earthR * 0.65;
+      const vx = cx + Math.cos(venusAngle) * venusR;
+      const vy = cy + Math.sin(venusAngle) * venusR * 0.65;
+
+      // Draw transfer path (approximate Hohmann arc from Earth to Venus)
       ctx.strokeStyle = '#FF4500';
-      ctx.setLineDash([3, 4]);
+      ctx.setLineDash([2, 3]);
       ctx.beginPath();
-      ctx.moveTo(w * 0.42 + 78, h * 0.5);
-      ctx.quadraticCurveTo(w * 0.62, h * 0.28, w * 0.42 + 46, h * 0.5 - 2);
+      ctx.moveTo(ex, ey);
+      // Simple bezier/arc approximation for transfer
+      const midX = cx + 22;
+      const midY = cy - 38;
+      ctx.quadraticCurveTo(midX, midY, vx, vy);
       ctx.stroke();
       ctx.setLineDash([]);
 
-      // Progress position on transfer
-      const t = Math.max(0, Math.min(1, progress / 100));
-      const tx = w * 0.42 + 78 * (1 - t) + 46 * t;
-      const ty = h * 0.5 - 18 * Math.sin(t * Math.PI);
+      // Planet dots
+      ctx.fillStyle = '#3b82f6';
+      ctx.beginPath();
+      ctx.arc(ex, ey, 5, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.fillStyle = '#f59e0b';
+      ctx.beginPath();
+      ctx.arc(vx, vy, 4, 0, Math.PI * 2);
+      ctx.fill();
 
-      // Probe dot
+      // Probe position along transfer path
+      const tx = ex * (1 - t) + vx * t + (midX - (ex + vx) / 2) * Math.sin(t * Math.PI) * 0.6;
+      const ty = ey * (1 - t) + vy * t + (midY - (ey + vy) / 2) * Math.sin(t * Math.PI) * 0.6;
+
       ctx.fillStyle = '#00f0ff';
       ctx.beginPath();
-      ctx.arc(tx + offset * 0.6, ty, 3.5, 0, Math.PI * 2);
+      ctx.arc(tx + offset * 0.8, ty, 3.5, 0, Math.PI * 2);
       ctx.fill();
 
       // Labels
       ctx.fillStyle = '#64748b';
-      ctx.font = '10px monospace';
-      ctx.fillText('EARTH', w * 0.42 + 68, h * 0.5 + 18);
-      ctx.fillText('VENUS', w * 0.42 + 36, h * 0.5 - 22);
+      ctx.font = '9px monospace';
+      ctx.fillText('EARTH', ex + 8, ey + 12);
+      ctx.fillText('VENUS', vx + 8, vy + 3);
+      ctx.fillText('SUN', cx + 14, cy + 3);
 
-      // HUD overlay text
+      // HUD
       ctx.fillStyle = '#22c55e';
-      ctx.fillText(`SYS: ACTIVE`, 14, 20);
-      ctx.fillText(`TRK: HOHMANN`, 14, 34);
-      ctx.fillText(`V_INF: 2.7 km/s`, 14, 48);
+      ctx.fillText('SYS: ACTIVE', 12, 18);
+      ctx.fillText('TRK: HOHMANN', 12, 30);
+      ctx.fillText('V_INF: 2.7 km/s', 12, 42);
+      ctx.fillText(`LAUNCH: Q4 2027`, 12, 54);
 
-      frame++;
       requestAnimationFrame(draw);
     };
 

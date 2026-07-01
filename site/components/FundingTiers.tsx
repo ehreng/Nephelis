@@ -35,9 +35,9 @@ export default function FundingTiers() {
         {/* TIER 1 */}
         <div className="glass-panel p-8 tier-card text-left border border-white/10">
           <div className="text-venus font-mono text-sm mb-3 tracking-[1px]">TIER 1: THE LEGACY</div>
-          <h3 className="text-2xl font-bold text-white mb-2">Solar Panel Engraving</h3>
+          <h3 className="text-2xl font-bold text-white mb-2">Balloon Engraving</h3>
           <p className="text-gray-400 text-sm mb-6 leading-relaxed">
-            Laser-etch your name onto the photovoltaic array powering Cloudseeker.
+            Laser-etch your name onto the aerostat balloon of Cloudseeker.
           </p>
           <div className="flex items-end justify-between mb-1">
             <span className="text-3xl font-bold text-white tabular-nums">$100</span>
@@ -99,11 +99,11 @@ export default function FundingTiers() {
             <button onClick={closeModal} className="absolute top-4 right-4 text-gray-400 hover:text-white text-xl">×</button>
 
             <h3 className="text-2xl font-bold text-white mb-1">
-              {modalType === 'sponsor' ? 'Reserve Panel Space' : 'Request DNA Kit'}
+              {modalType === 'sponsor' ? 'Reserve Balloon Space' : 'Request DNA Kit'}
             </h3>
             <p className="text-gray-400 text-sm mb-6">
               {modalType === 'sponsor'
-                ? 'Join the others etching their name on the first private Venus mission.'
+                ? 'Join the others etching their name on the Cloudseeker aerostat balloon.'
                 : 'Secure your biological legacy in the Venusian clouds.'}
             </p>
 

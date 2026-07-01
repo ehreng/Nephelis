@@ -9,6 +9,7 @@ export default function UpdatesPage() {
     <div className="bg-void text-foreground min-h-screen">
       <div className="max-w-3xl mx-auto px-6 py-14">
         <Link href="/" className="text-xs font-mono uppercase tracking-widest text-venus hover:underline">← NEPHELIS INDUSTRIES</Link>
+        <div className="text-[10px] mt-1 text-foreground/50">Back to <a href="/#mission" className="underline hover:text-venus">Mission</a> · <a href="/#gallery" className="underline hover:text-venus">Visuals</a> · <a href="/#funding" className="underline hover:text-venus">Sponsor</a></div>
 
         <div className="mt-8 mb-10">
           <div className="font-mono text-xs tracking-[3px] text-venus/80 mb-2">MISSION LOGS</div>
@@ -20,9 +21,17 @@ export default function UpdatesPage() {
 
         <div className="space-y-12">
           <article className="border border-white/10 rounded-sm p-8 glass-panel prose prose-invert max-w-none prose-headings:font-semibold prose-headings:tracking-tight">
+            <div className="mb-4 not-prose">
+              <div className="font-mono text-xs text-venus/80">2026-06-01</div>
+              <h2 className="text-2xl font-semibold text-white tracking-tight">Mission update — June 2026</h2>
+            </div>
             <Update202606 />
           </article>
           <article className="border border-white/10 rounded-sm p-8 glass-panel prose prose-invert max-w-none prose-headings:font-semibold prose-headings:tracking-tight">
+            <div className="mb-4 not-prose">
+              <div className="font-mono text-xs text-venus/80">2026-07-01</div>
+              <h2 className="text-2xl font-semibold text-white tracking-tight">Competitor missions update — July 2026</h2>
+            </div>
             <Update202607 />
           </article>
         </div>

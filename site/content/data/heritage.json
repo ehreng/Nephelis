@@ -1,5 +1,5 @@
 [
-  { "year": "1961", "mission": "Venera 1 (USSR)", "note": "[LOST CONTACT]", "type": "FLYBY", "highlight": false, "link": null },
+  { "year": "1961", "mission": "Venera 1 (USSR)", "note": "[LOST CONTACT]", "type": "FLYBY", "highlight": false, "link": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1961-003A" },
   { "year": "1962", "mission": "Mariner 2 (USA)", "note": "", "type": "SUCCESSFUL FLYBY", "highlight": true, "link": "https://science.nasa.gov/mission/mariner-2/" },
   { "year": "1964-65", "mission": "Zond 1, Venera 2/3 (USSR)", "note": "", "type": "FAILED/IMPACT", "highlight": false, "link": null },
   { "year": "1967", "mission": "Venera 4 (USSR)", "note": "", "type": "ATMOSPHERIC PROBE", "highlight": false, "link": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1967-058A" },
@@ -14,7 +14,7 @@
   { "year": "1983", "mission": "Venera 15 & 16 (USSR)", "note": "", "type": "ORBITER/RADAR", "highlight": false, "link": null },
   { "year": "1985", "mission": "Vega 1 & 2 (USSR)", "note": "", "type": "BALLOON AEROSTAT", "highlight": true, "link": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1984-125A" },
   { "year": "1989", "mission": "Magellan (USA)", "note": "", "type": "RADAR MAPPING", "highlight": true, "link": "https://science.nasa.gov/mission/magellan/" },
-  { "year": "1990", "mission": "Galileo (USA)", "note": "", "type": "GRAVITY ASSIST", "highlight": false, "link": null },
+  { "year": "1990", "mission": "Galileo (USA)", "note": "", "type": "GRAVITY ASSIST", "highlight": false, "link": "https://science.nasa.gov/mission/galileo/" },
   { "year": "2005", "mission": "Venus Express (ESA)", "note": "", "type": "ATMOSPHERIC ORBITER", "highlight": false, "link": "https://www.esa.int/Science_Exploration/Space_Science/Venus_Express" },
   { "year": "2010", "mission": "Akatsuki (JAXA)", "note": "", "type": "CLIMATE ORBITER", "highlight": false, "link": "https://global.jaxa.jp/projects/sas/akatsuki/" },
   { "year": "2018+", "mission": "Parker Solar Probe, BepiColombo, Solar Orbiter", "note": "", "type": "GRAVITY ASSISTS", "highlight": false, "link": null }

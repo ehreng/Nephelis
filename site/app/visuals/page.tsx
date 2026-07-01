@@ -24,6 +24,7 @@ export default function VisualsPage() {
   return (
     <div className="max-w-6xl mx-auto px-6 py-16">
       <Link href="/" className="text-xs font-mono tracking-widest text-venus hover:underline">← NEPHELIS</Link>
+      <div className="text-[10px] mt-1 text-foreground/50">Back to <a href="/#mission" className="underline hover:text-venus">Mission</a> · <a href="/#simulations" className="underline hover:text-venus">Simulations</a> · <a href="/#funding" className="underline hover:text-venus">Sponsor</a></div>
       <h1 className="text-5xl font-semibold tracking-tighter mt-4 mb-2">Mission Visuals</h1>
       <p className="text-lg text-foreground/70 max-w-prose mb-8">
         Concept art and generated visuals for Project AETHER. Version-controlled and updatable via AI loops.
@@ -31,13 +32,13 @@ export default function VisualsPage() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
         {visuals.map((file) => (
-          <div key={file} className="relative aspect-video overflow-hidden rounded-xl border border-void-border bg-black">
+          <div key={file} className="relative overflow-hidden rounded-xl border border-void-border bg-black flex items-center justify-center" style={{minHeight: '210px'}}>
             <img
               src={`/assets/visuals/${file}`}
               alt={file}
-              className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
+              className="max-h-full max-w-full object-contain hover:scale-[1.02] transition-transform duration-300 p-2"
             />
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 p-3 text-xs font-mono text-white/70 truncate">
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 p-2 text-xs font-mono text-white/80 truncate">
               {file}
             </div>
           </div>

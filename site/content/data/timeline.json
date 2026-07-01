@@ -18,5 +18,10 @@
     "year": "2022+",
     "event": "Multiple concepts (NASA aerobot, ESA VEP) proposed for variable altitude balloons in 48-60km range",
     "status": "background"
+  },
+  {
+    "year": "2028+",
+    "event": "Larger aerostats → first habitats → self-sustaining outposts",
+    "status": "future"
   }
 ]

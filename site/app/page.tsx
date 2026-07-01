@@ -138,6 +138,26 @@ export default function NephelisHome() {
         </div>
       </section>
 
+      {/* Strategic Pillars */}
+      <section className="max-w-4xl mx-auto px-6 py-20 border-b border-void-border">
+        <div className="uppercase tracking-[3px] text-xs text-foreground/60 mb-3">PILLARS</div>
+        <h3 className="text-3xl tracking-tight font-semibold mb-8">How we build the future</h3>
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="p-6 border border-white/10 bg-void-panel">
+            <div className="text-venus font-bold mb-2">HABITATION</div>
+            <p className="text-sm">At 50km, humans can live in breathable air habitats (21% O2, 79% N2) which act as lifting gas in the dense CO2 atmosphere. No pressurized suits required inside the habitat.</p>
+          </div>
+          <div className="p-6 border border-white/10 bg-void-panel">
+            <div className="text-venus font-bold mb-2">INDUSTRY</div>
+            <p className="text-sm">The thick atmosphere provides shielding from radiation and access to abundant resources. A perfect base for manufacturing and launching deeper into the solar system.</p>
+          </div>
+          <div className="p-6 border border-white/10 bg-void-panel">
+            <div className="text-venus font-bold mb-2">SCIENCE</div>
+            <p className="text-sm">Unprecedented access to the cloud layer for studying chemistry, potential biosignatures, and atmospheric dynamics unlike anywhere else.</p>
+          </div>
+        </div>
+      </section>
+
       {/* Visuals teaser */}
       <section id="visuals" className="max-w-6xl mx-auto px-6 py-20 border-b border-void-border">
         <div className="flex justify-between items-baseline mb-8">

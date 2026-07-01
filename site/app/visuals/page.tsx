@@ -4,20 +4,11 @@ import Link from "next/link";
 import * as React from "react";
 
 const visuals = [
-  "nephelis.png",
-  "nephelis_probe_satellite_combo.png",
+  "logo.jpg",
   "NephelisIndustries.jpg",
-  "probe.jpg",
-  "probe3.png",
-  "probe4.png",
-  "parkvenus.png",
-  "peopleofvenus.png",
-  "vistavenus.png",
-  "venusselfie.png",
-  "sportsvenus.png",
-  "venusadminbuilding.png",
-  "venustable1.png",
-  "probecloseup1.png",
+  "visions.png",
+  "schematic.jpg",
+  "Venus Visions.png",
 ];
 
 export default function VisualsPage() {

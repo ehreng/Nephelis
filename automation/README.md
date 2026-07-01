@@ -35,5 +35,16 @@ This folder contains the tools and prompts to keep the Nephelis venture and webs
 - Site content stays fresh without manual updates.
 - Research feeds directly into website and decks.
 - Visuals and assets organized automatically.
+- Agent + human teams can generate next-step plans, todo lists, and implement features.
 
-Start a loop by asking Grok: "Run the Nephelis research update and propose changes to the site."
+## Generating Next Steps / Project Plans
+
+Ask an agent (Grok or similar):
+
+"Analyze the current site, repo structure, and open items. Produce a prioritized TODO list + 30-day plan. Output as markdown and propose updates to timeline.json or a new doc."
+
+Or run local helpers when available.
+
+The goal is a self-improving project where AI handles research, content generation, basic implementation planning, and humans provide direction + final review/merge.
+
+Start a loop: "Build the structure / todo list / next steps to ensure project success for Nephelis and update the site README + a new contribute section if needed."

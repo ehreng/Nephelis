@@ -81,7 +81,52 @@ Full workflow documented in automation/.
 To port more from old sites or generate new sections, just ask (we'll use plan/implement/review + subagents).
 ```
 
+## Contributing
+
+Volunteers and collaborators are welcome! See [CONTRIBUTING.md](./CONTRIBUTING.md).
+
+**Quick ways to help:**
+- Edit JSON data or add MDX updates (no code required)
+- Generate visuals using the prompts
+- Improve the site, planner, or add features
+- Help run research/automation loops
+
+The project is designed so both humans and AI agents can contribute effectively.
+
+## Agentic Automation & AI Collaboration
+
+This repo is built for continuous, automated evolution:
+
+- `automation/prompts/` – reusable instructions for research, visuals, planning
+- `automation/scripts/` – evolve.ts and helpers (run with `npx tsx`)
+- Living data in `site/content/data/` + MDX powers the site
+
+**Example workflows:**
+- "Research latest Venus cloud missions and update timeline + create MDX post"
+- "Generate a new visual brief and suggest new hero assets"
+- "Propose next 5 development tasks + implement one"
+
+Agents (and humans) can use plan/implement/review loops. Contributions via PRs are reviewed and merged.
+
+## Roadmap & Next Steps (Living)
+
+See `site/content/data/timeline.json` for milestones.
+
+Open tasks (volunteers + agents encouraged):
+- Match logo + hero styling even closer to current deck/live
+- Add real telemetry simulation chart (SVG or Canvas)
+- Improve funding flow (form backend or integration)
+- Expand visuals gallery + more videos
+- Public roadmap page driven by data
+- GitHub issue templates + project board
+- More content: science deep dives, partner logos, press
+- CI checks + automated visual regression if helpful
+
+Run automation or ask an agent: "Build a prioritized todo list for the next 30 days and update the site."
+
 ## Current Status
 
 - Personal brand remains at [82083.net](https://82083.net)
-- This is the dedicated professional site for the Nephelis venture (nephelisindustries.com)
+- Dedicated site: [nephelisindustries.com](https://nephelisindustries.com)
+- Deployed on Vercel, custom domain active
+- Content, styling, and core interactive elements ported from reference designs

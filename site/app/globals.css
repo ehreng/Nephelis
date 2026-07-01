@@ -109,18 +109,20 @@ input[type=range]::-webkit-slider-runnable-track {
   transform: translateY(0);
 }
 
-/* Logo Filtering for Dark Mode Compatibility */
+/* Logo - vibrant by default to match live site / deck */
 .logo-filter-invert {
   filter: invert(100%) grayscale(100%) brightness(1.5);
   transition: all 0.3s ease;
 }
-.logo-filter-standard {
-  filter: grayscale(100%) brightness(1.2);
-  transition: all 0.3s ease;
+
+.logo-container img {
+  transition: all 0.2s ease;
+  filter: none;
 }
 
 .logo-container:hover img {
-  filter: grayscale(0%) invert(0%) brightness(1);
+  filter: brightness(1.1) saturate(1.15);
+  transform: scale(1.02);
 }
 
 /* Existing */

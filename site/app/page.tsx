@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import MissionPlanner from "@/components/MissionPlanner";
 import FundingTiers from "@/components/FundingTiers";
+import SignupForm from "@/components/SignupForm";
 import { getTimeline, getHeritage } from "@/lib/content";
 
 export default function NephelisHome() {
@@ -28,6 +29,12 @@ export default function NephelisHome() {
             <div className="inline-flex items-center space-x-2 border border-venus/30 bg-venus/10 rounded-full px-4 py-1 mb-8 animate-pulse-slow backdrop-blur-md">
               <span className="w-2 h-2 rounded-full bg-venus"></span>
               <span className="text-venus font-mono text-xs uppercase tracking-widest">Launch Window: Q4 2027</span>
+            </div>
+
+            {/* Deck-inspired stylized mark */}
+            <div className="flex items-center gap-3 mb-4">
+              <div className="h-11 w-11 md:h-14 md:w-14 bg-gradient-to-br from-venus via-orange-500 to-yellow-400 flex items-center justify-center text-black text-3xl md:text-4xl font-black tracking-[-1.5px] rounded-sm shadow-inner">E</div>
+              <div className="font-mono text-[10px] tracking-[4px] text-venus/70 -ml-1">AETHER</div>
             </div>
 
             <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-white mb-6 uppercase leading-none drop-shadow-2xl">
@@ -378,6 +385,21 @@ export default function NephelisHome() {
         <p className="text-[10px] text-foreground/50 mt-4 font-mono">Live data from content/data/timeline.json — automatically updatable by agents.</p>
       </section>
 
+      {/* Contribute / Volunteer section (new for collaboration) */}
+      <section id="contribute" className="max-w-4xl mx-auto px-4 py-16 border-b border-white/10 text-center">
+        <div className="uppercase tracking-[3px] text-xs text-venus/70 mb-2">BUILD WITH US</div>
+        <h3 className="text-3xl font-semibold mb-3">Open project. Human + AI collaboration.</h3>
+        <p className="max-w-prose mx-auto text-foreground/70">
+          The entire stack (content, visuals, code, research, automation) lives here. Volunteers can edit data/MDX, contribute designs, or help run agent loops.
+        </p>
+        <div className="mt-6 flex flex-wrap justify-center gap-4">
+          <a href="https://github.com/ehreng/nephelis" target="_blank" className="px-6 py-2 border border-white/30 font-mono text-sm uppercase tracking-wider hover:border-venus hover:text-venus">View on GitHub</a>
+          <Link href="/updates" className="px-6 py-2 border border-white/30 font-mono text-sm uppercase tracking-wider hover:border-venus hover:text-venus">Read Updates</Link>
+          <a href="https://github.com/ehreng/nephelis/blob/main/CONTRIBUTING.md" target="_blank" className="px-6 py-2 bg-venus text-black font-mono text-sm uppercase tracking-wider">How to Contribute</a>
+        </div>
+        <p className="mt-4 text-xs text-foreground/50">Agents can propose changes, generate content, and keep the todo list fresh.</p>
+      </section>
+
       {/* FUNDING - Etch Your Name + tiers + initiate sequence form (full port) */}
       <section id="funding" className="py-20 relative">
         <div className="absolute inset-0 bg-venus/5 pointer-events-none"></div>
@@ -391,7 +413,15 @@ export default function NephelisHome() {
 
           <FundingTiers />
 
-          <div className="text-center mt-10 text-xs text-foreground/50 font-mono">
+          <div className="mt-12">
+            <div className="text-center mb-4">
+              <div className="uppercase tracking-widest text-xs text-venus/70">CREW SIGNALS</div>
+              <div className="text-lg">Stay in the loop. Receive mission updates.</div>
+            </div>
+            <SignupForm />
+          </div>
+
+          <div className="text-center mt-8 text-xs text-foreground/50 font-mono">
             Or email <a href="mailto:ehren@nephelisindustries.com" className="text-venus hover:underline">ehren@nephelisindustries.com</a> directly for partnership.
           </div>
         </div>

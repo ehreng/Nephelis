@@ -31,10 +31,10 @@ export default function RootLayout({
         <header className="fixed top-0 w-full z-50 border-b border-white/10 bg-black/80 backdrop-blur-md">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16">
-              {/* Logo */}
-              <Link href="/" className="flex-shrink-0 flex items-center gap-3 logo-container">
-                <img src="/assets/visuals/nephelis.png" alt="Nephelis Industries Logo" className="h-10 w-auto logo-filter-standard" />
-                <span className="font-bold tracking-wider text-white uppercase font-sans">Nephelis Industries</span>
+              {/* Logo - vibrant wordmark to match deck / live site */}
+              <Link href="/" className="flex-shrink-0 flex items-center gap-2.5 logo-container">
+                <img src="/assets/visuals/nephelis.png" alt="Nephelis Industries Logo" className="h-8 md:h-9 w-auto" />
+                <span className="font-mono text-xs tracking-[3px] text-white/90">NEPHELIS INDUSTRIES</span>
               </Link>
               
               {/* Desktop Menu */}
@@ -46,6 +46,7 @@ export default function RootLayout({
                   <a href="#heritage" className="hover:text-venus transition-colors">History</a>
                   <a href="#gallery" className="hover:text-venus transition-colors">Visuals</a>
                   <Link href="/updates" className="hover:text-venus transition-colors">Updates</Link>
+                  <a href="#contribute" className="hover:text-venus transition-colors">Contribute</a>
                   <a href="#funding" className="text-venus border border-venus/50 px-4 py-2 hover:bg-venus hover:text-black transition-all">Sponsor</a>
                 </div>
               </div>

@@ -197,6 +197,15 @@ export default function MissionPlanner() {
             <span className="text-white text-sm">{arrivalMonth}</span>
           </div>
         </div>
+
+        <button
+          onClick={() => {
+            alert(`Trajectory locked.\n\nOffset: ${offset} days\nProgress: ${progress}%\nΔv: ${deltaV} m/s\nArrival: ${arrivalMonth}\n\n(Saved to mission log in production.)`);
+          }}
+          className="mt-3 w-full text-xs font-mono uppercase tracking-widest border border-white/20 py-2 hover:bg-white/5 hover:border-venus/50 transition"
+        >
+          LOCK IN THIS TRAJECTORY (DEMO)
+        </button>
       </div>
     </div>
   );

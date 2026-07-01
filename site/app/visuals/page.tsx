@@ -7,7 +7,6 @@ const visuals = [
   "logo.jpg",
   "NephelisIndustries.jpg",
   "visions.png",
-  "schematic.jpg",
   "Venus Visions.png",
 ];
 

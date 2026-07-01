@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getUpdates } from "@/lib/content";
-import Update202606 from "./2026-06-mission-update.mdx";
+import Update202606 from "../../content/updates/2026-06-mission-update.mdx";
+import Update202607 from "../../content/updates/2026-07-competitor-missions.mdx";
 
 export default function UpdatesPage() {
   const updates = getUpdates();
@@ -18,6 +19,9 @@ export default function UpdatesPage() {
         {/* Render the sample MDX directly */}
         <article className="border border-void-border rounded-2xl p-8 prose prose-invert max-w-none">
           <Update202606 />
+        </article>
+        <article className="border border-void-border rounded-2xl p-8 prose prose-invert max-w-none">
+          <Update202607 />
         </article>
 
         {updates.map((update) => (

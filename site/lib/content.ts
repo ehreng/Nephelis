@@ -24,5 +24,11 @@ export function getUpdates() {
       date: '2026-06-01',
       excerpt: 'Initial design work for the AETHER probe is progressing on schedule.',
     },
+    {
+      slug: '2026-07-competitor-missions',
+      title: 'Competitor missions update — July 2026',
+      date: '2026-07-01',
+      excerpt: 'Recent developments in Venus cloud exploration from Rocket Lab, NASA and ESA.',
+    },
   ];
 }

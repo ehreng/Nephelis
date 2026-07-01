@@ -92,6 +92,50 @@ export default function NephelisHome() {
           <p>Venus is the only other planet with an Earth-analog environment. The cloud layer is the single most promising location for life detection and eventual human presence in our solar system.</p>
           <p>Success here de-risks floating cities and creates the scientific foundation for humanity becoming multi-planetary.</p>
         </div>
+
+        <div className="mt-10">
+          <h4 className="text-2xl font-bold mb-4">The Twin Paradox</h4>
+          <p className="text-gray-400">Venus isn't just a science target; it is the most logical industrial gateway to the inner solar system. Gravity is the key. Living on Mars (0.38g) causes significant bone density loss. Venus offers <span className="text-venus">0.904g</span>—nearly identical to Earth.</p>
+        </div>
+
+        <div className="mt-8 overflow-x-auto">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-white/5 text-gray-400 font-mono text-xs uppercase tracking-wider">
+                <th className="p-3 border-b border-white/10 text-left">Metric</th>
+                <th className="p-3 border-b border-white/10 text-venus bg-venus/5">Venus (55km)</th>
+                <th className="p-3 border-b border-white/10">Mars (Surface)</th>
+                <th className="p-3 border-b border-white/10">Earth</th>
+              </tr>
+            </thead>
+            <tbody className="font-mono text-gray-300 divide-y divide-white/10">
+              <tr>
+                <td className="p-3 font-bold">Pressure</td>
+                <td className="p-3 text-venus bg-venus/5">~0.6 - 1.0 bar</td>
+                <td className="p-3">0.006 bar</td>
+                <td className="p-3">1.0 bar</td>
+              </tr>
+              <tr>
+                <td className="p-3 font-bold">Temperature</td>
+                <td className="p-3 text-venus bg-venus/5">27 - 50 °C</td>
+                <td className="p-3">-63 °C</td>
+                <td className="p-3">15 °C</td>
+              </tr>
+              <tr>
+                <td className="p-3 font-bold">Gravity</td>
+                <td className="p-3 text-venus bg-venus/5">0.91 g</td>
+                <td className="p-3">0.38 g</td>
+                <td className="p-3">1.0 g</td>
+              </tr>
+              <tr>
+                <td className="p-3 font-bold">Radiation</td>
+                <td className="p-3 text-venus bg-venus/5">Atmospheric Shielding</td>
+                <td className="p-3">Unshielded</td>
+                <td className="p-3">Shielded</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       {/* Visuals teaser */}

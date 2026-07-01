@@ -23,10 +23,10 @@ const visuals = [
 export default function VisualsPage() {
   return (
     <div className="max-w-6xl mx-auto px-6 py-16">
-      <Link href="/" className="text-sm text-venus hover:underline">← Back to Nephelis</Link>
-      <h1 className="text-5xl font-semibold tracking-tighter mt-6 mb-4">Mission Visuals</h1>
-      <p className="text-lg text-foreground/70 max-w-prose mb-10">
-        Concept art and generated visuals for Project AETHER. These are version-controlled in the project and can be regenerated or updated via AI agent loops.
+      <Link href="/" className="text-xs font-mono tracking-widest text-venus hover:underline">← NEPHELIS</Link>
+      <h1 className="text-5xl font-semibold tracking-tighter mt-4 mb-2">Mission Visuals</h1>
+      <p className="text-lg text-foreground/70 max-w-prose mb-8">
+        Concept art and generated visuals for Project AETHER. Version-controlled and updatable via AI loops.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">

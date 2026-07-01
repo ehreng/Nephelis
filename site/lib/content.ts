@@ -1,10 +1,20 @@
 import timeline from '../content/data/timeline.json';
 import specs from '../content/data/specs.json';
+import heritage from '../content/data/heritage.json';
 
 export type TimelineItem = {
   year: string;
   event: string;
   status: string;
+};
+
+export type HeritageItem = {
+  year: string;
+  mission: string;
+  note?: string;
+  type: string;
+  highlight?: boolean;
+  link?: string | null;
 };
 
 export function getTimeline(): TimelineItem[] {
@@ -13,6 +23,10 @@ export function getTimeline(): TimelineItem[] {
 
 export function getSpecs() {
   return specs;
+}
+
+export function getHeritage(): HeritageItem[] {
+  return heritage as HeritageItem[];
 }
 
 // Placeholder for future MDX loaded updates

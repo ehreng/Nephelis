@@ -6,27 +6,31 @@ import Update202607 from "../../content/updates/2026-07-competitor-missions.mdx"
 
 export default function UpdatesPage() {
   return (
-    <div className="max-w-3xl mx-auto px-6 py-16">
-      <Link href="/" className="text-sm text-venus hover:underline">← Back to Nephelis</Link>
-      <h1 className="text-5xl font-semibold tracking-tighter mt-6 mb-8">Mission Updates</h1>
-      
-      <p className="text-lg text-foreground/70 mb-10">
-        The latest from Project AETHER. New updates are generated and proposed by our AI research and content agents.
-      </p>
+    <div className="bg-void text-foreground min-h-screen">
+      <div className="max-w-3xl mx-auto px-6 py-14">
+        <Link href="/" className="text-xs font-mono uppercase tracking-widest text-venus hover:underline">← NEPHELIS INDUSTRIES</Link>
 
-      <div className="space-y-12">
-        {/* Render the full MDX posts */}
-        <article className="border border-void-border rounded-2xl p-8 prose prose-invert max-w-none">
-          <Update202606 />
-        </article>
-        <article className="border border-void-border rounded-2xl p-8 prose prose-invert max-w-none">
-          <Update202607 />
-        </article>
+        <div className="mt-8 mb-10">
+          <div className="font-mono text-xs tracking-[3px] text-venus/80 mb-2">MISSION LOGS</div>
+          <h1 className="text-6xl font-semibold tracking-[-1.5px]">Mission Updates</h1>
+          <p className="mt-3 max-w-md text-lg text-foreground/70">
+            The latest from Project AETHER. New updates are generated and proposed by our AI research and content agents.
+          </p>
+        </div>
+
+        <div className="space-y-12">
+          <article className="border border-white/10 rounded-sm p-8 glass-panel prose prose-invert max-w-none prose-headings:font-semibold prose-headings:tracking-tight">
+            <Update202606 />
+          </article>
+          <article className="border border-white/10 rounded-sm p-8 glass-panel prose prose-invert max-w-none prose-headings:font-semibold prose-headings:tracking-tight">
+            <Update202607 />
+          </article>
+        </div>
+
+        <div className="mt-12 text-xs text-foreground/50 border-l border-venus pl-3">
+          MDX powered. Agents can drop new files into <code>content/updates/</code> and they appear here automatically.
+        </div>
       </div>
-
-      <p className="mt-10 text-sm text-foreground/60">
-        Full MDX support is enabled. Agents can create new .mdx files in content/updates/.
-      </p>
     </div>
   );
 }

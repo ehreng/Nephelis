@@ -1,0 +1,26 @@
+{
+  "probe": {
+    "type": "Super-pressure balloon",
+    "target_altitude_km": [50, 60],
+    "temperature_range_c": [0, 60],
+    "pressure_atm": 1,
+    "expected_duration_days": 30,
+    "instruments": [
+      "Atmospheric spectrometers",
+      "High-res cameras",
+      "Meteorological suite",
+      "Life detection experiments"
+    ]
+  },
+  "launch": {
+    "target_year": 2027,
+    "vehicle_options": ["Rideshare", "Dedicated small launcher"],
+    "transfer": "Direct to Venus"
+  },
+  "science_goals": [
+    "Characterize habitable cloud layer environment",
+    "Search for biosignatures",
+    "Validate floating platform technology",
+    "De-risk future human missions"
+  ]
+}

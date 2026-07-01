@@ -1,0 +1,12 @@
+# Ignore site build artifacts
+site/.next
+site/out
+site/node_modules
+
+# Keep generated assets but not huge binaries if you prefer
+# assets/visuals/*.mp4
+# assets/visuals/*.mov
+
+# OS / editor
+.DS_Store
+*.log

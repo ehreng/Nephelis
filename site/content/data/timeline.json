@@ -1,0 +1,22 @@
+[
+  {
+    "year": "2027",
+    "event": "Launch of AETHER probe (Nephelis)",
+    "status": "target"
+  },
+  {
+    "year": "2026",
+    "event": "Final design & integration. Competing private mission (Rocket Lab Venus Life Finder) also targeting 2026 launch window for cloud layer exploration.",
+    "status": "current"
+  },
+  {
+    "year": "2025",
+    "event": "Concept validation & partnership development",
+    "status": "complete"
+  },
+  {
+    "year": "2022+",
+    "event": "Multiple concepts (NASA aerobot, ESA VEP) proposed for variable altitude balloons in 48-60km range",
+    "status": "background"
+  }
+]

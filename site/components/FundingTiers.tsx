@@ -6,27 +6,59 @@ export default function FundingTiers() {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalType, setModalType] = useState<'sponsor' | 'dna'>('sponsor');
   const [form, setForm] = useState({ name: '', email: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState('');
 
   function openModal(type: 'sponsor' | 'dna') {
     setModalType(type);
     setForm({ name: '', email: '' });
+    setIsSubmitting(false);
     setSubmitted(false);
+    setError('');
     setModalOpen(true);
   }
 
   function closeModal() {
     setModalOpen(false);
+    // Reset after close animation
+    setTimeout(() => {
+      setSubmitted(false);
+      setError('');
+    }, 300);
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    // Demo only: "transmit" without backend
-    setSubmitted(true);
-    setTimeout(() => {
-      closeModal();
-      alert('Transmission received. Stand by for contact from the integration team.');
-    }, 420);
+    setIsSubmitting(true);
+    setError('');
+
+    try {
+      const res = await fetch('/api/reserve', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          type: modalType,
+        }),
+      });
+
+      if (!res.ok) {
+        throw new Error('Failed to send reservation request');
+      }
+
+      setSubmitted(true);
+      // Auto close after success
+      setTimeout(() => {
+        closeModal();
+      }, 2200);
+    } catch (err) {
+      console.error(err);
+      setError('Something went wrong. Please try emailing directly.');
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -131,14 +163,22 @@ export default function FundingTiers() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-venus hover:bg-white hover:text-black transition-colors text-black font-bold font-mono uppercase py-3.5 tracking-wider mt-2"
+                  disabled={isSubmitting}
+                  className="w-full bg-venus hover:bg-white hover:text-black transition-colors text-black font-bold font-mono uppercase py-3.5 tracking-wider mt-2 disabled:opacity-60"
                 >
-                  Transmit Data
+                  {isSubmitting ? 'Sending...' : 'Transmit Data'}
                 </button>
-                <p className="text-center text-[10px] text-gray-500 pt-1">This is a demo. Your info is not stored.</p>
+                {error && (
+                  <p className="text-center text-xs text-red-400">{error}</p>
+                )}
+                <p className="text-center text-[10px] text-gray-500 pt-1">
+                  Your details will be emailed directly to the team.
+                </p>
               </form>
             ) : (
-              <div className="py-6 text-center text-sm text-venus">Transmitting to payload integration...</div>
+              <div className="py-6 text-center text-sm text-venus">
+                Reservation received! We'll contact you shortly at {form.email}.
+              </div>
             )}
           </div>
         </div>

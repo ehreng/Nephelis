@@ -374,25 +374,27 @@ export default function NephelisHome() {
           <h3 className="text-3xl font-bold text-white mb-6">Venus Visions</h3>
         </div>
 
-        {/* Full width video - full page width */}
-        <div className="glass-panel border border-white/10 overflow-hidden">
-          <video
-            className="w-full aspect-video object-cover bg-black"
-            controls
-            muted
-            loop
-            playsInline
-            autoPlay
-          >
-            <source src="/assets/visuals/flyingprobe.mp4" type="video/mp4" />
-          </video>
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="p-4 border-t border-white/10 flex items-center justify-between bg-black/60">
-              <div>
-                <div className="font-mono text-sm text-white">Venus Visions</div>
-                <div className="text-xs text-gray-500">Flying probe simulation</div>
+        {/* Video - 70% width */}
+        <div className="mx-auto w-[70%]">
+          <div className="glass-panel border border-white/10 overflow-hidden">
+            <video
+              className="w-full aspect-video object-cover bg-black"
+              controls
+              muted
+              loop
+              playsInline
+              autoPlay
+            >
+              <source src="/assets/visuals/flyingprobe.mp4" type="video/mp4" />
+            </video>
+            <div className="max-w-7xl mx-auto px-4">
+              <div className="p-4 border-t border-white/10 flex items-center justify-between bg-black/60">
+                <div>
+                  <div className="font-mono text-sm text-white">Venus Visions</div>
+                  <div className="text-xs text-gray-500">Flying probe simulation</div>
+                </div>
+                <div className="text-xs font-mono text-venus">NEPHELIS.SYS.V2</div>
               </div>
-              <div className="text-xs font-mono text-venus">NEPHELIS.SYS.V2</div>
             </div>
           </div>
         </div>

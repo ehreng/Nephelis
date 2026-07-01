@@ -12,13 +12,25 @@ export default function SignupForm() {
 
     setStatus('loading');
 
-    // Demo: simulate API or just client-side success
-    // In real: integrate with Formspree, Resend, or Vercel form
-    setTimeout(() => {
+    try {
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+
+      if (!res.ok) {
+        throw new Error('Failed to subscribe');
+      }
+
       setStatus('success');
       setEmail('');
       setTimeout(() => setStatus('idle'), 2800);
-    }, 650);
+    } catch (err) {
+      console.error(err);
+      setStatus('error');
+      setTimeout(() => setStatus('idle'), 3000);
+    }
   }
 
   return (
@@ -42,6 +54,9 @@ export default function SignupForm() {
       </div>
       {status === 'success' && (
         <p className="mt-2 text-xs text-venus text-center">Thanks — you're on the list. Expect signals from the clouds.</p>
+      )}
+      {status === 'error' && (
+        <p className="mt-2 text-xs text-red-400 text-center">Something went wrong. Please try the direct email link below.</p>
       )}
       <p className="mt-2 text-[10px] text-center text-foreground/50">Low volume. No spam. Mission updates + crew calls.</p>
     </form>

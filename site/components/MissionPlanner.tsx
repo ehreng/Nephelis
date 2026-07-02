@@ -17,7 +17,7 @@ export default function MissionPlanner() {
     : 1830;
 
   // Fake live telemetry based on controls. Launch target: Q4 2027
-  const earthDist = Math.max(0, Math.round(12000000 * (1 - progress / 100) + (offset * 12000)));
+  const earthDist = Math.max(0, Math.round(12000000 * (progress / 100) + (offset * 12000)));
   const venusDist = Math.round(41000000 * (1 - progress / 100) + Math.abs(offset) * 80000);
 
   // Estimated arrival: nominal launch Dec 15 2027 + offset days + 146 day cruise

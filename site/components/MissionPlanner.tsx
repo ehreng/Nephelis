@@ -19,7 +19,15 @@ export default function MissionPlanner() {
   // Fake live telemetry based on controls. Launch target: Q4 2027
   const earthDist = Math.max(0, Math.round(12000000 * (1 - progress / 100) + (offset * 12000)));
   const venusDist = Math.round(41000000 * (1 - progress / 100) + Math.abs(offset) * 80000);
-  const arrivalMonth = offset > 15 ? 'FEB 2028' : offset < -15 ? 'SEP 2027' : 'DEC 2027';
+
+  // Estimated arrival: nominal launch Dec 15 2027 + offset days + 146 day cruise
+  const nominalLaunch = new Date('2027-12-15');
+  const launchDate = new Date(nominalLaunch.getTime());
+  launchDate.setDate(launchDate.getDate() + offset);
+  const arrivalDate = new Date(launchDate.getTime());
+  arrivalDate.setDate(arrivalDate.getDate() + 146);
+  const arrivalMonth = arrivalDate.toLocaleString('en-US', { month: 'short' }).toUpperCase() + ' ' + arrivalDate.getFullYear();
+
   const progressLabel = `${progress}%`;
 
   const canvasRef = useRef<HTMLCanvasElement>(null);

@@ -132,10 +132,116 @@ export default function NephelisHome() {
           <div className="mb-12">
             <h2 className="text-venus font-mono text-sm uppercase tracking-widest mb-2">02 // Mission Control</h2>
             <h3 className="text-4xl font-bold text-white">Astrodynamics &amp; Trajectory</h3>
-            <p className="text-gray-400 mt-2 font-mono text-sm">Interactive Mission Planner. Assumptions: Launch ~Q4 2027, Isp=320s, Hohmann Transfer. Progress drives distance and arrival estimates.</p>
+            <p className="text-gray-400 mt-2 font-mono text-sm">Interactive Mission Planner. Dec 2027 launch window. Planets move in real time; trajectory arc updates with launch date. Wet mass fixed, dry mass tunable.</p>
           </div>
 
           <MissionPlanner />
+
+          {/* Updated Optimistic Architecture Summary — after Mission Planner */}
+          <div className="mt-16 max-w-6xl">
+            <div className="mb-8">
+              <div className="font-mono text-venus text-xs uppercase tracking-[2px] mb-1">LAUNCH VEHICLE &amp; ARCHITECTURE</div>
+              <h3 className="text-3xl font-bold text-white">Updated Optimistic Architecture Summary (Late 2027 Baseline)</h3>
+              <p className="mt-2 text-gray-400 max-w-prose">
+                Cloudseeker targets a total wet mass of <span className="text-white font-medium">400 kg</span> — comfortable for Falcon 9 rideshare or, better, Starship secondary/dedicated small payload slot. 
+                Launch cost: <span className="text-venus font-semibold">~$32,000</span> (<span className="font-mono">$80/kg × 400 kg</span>). A massive de-risk for Nephelis and a powerful signal for investors and partners.
+              </p>
+            </div>
+
+            {/* Mass Budget */}
+            <div className="glass-panel p-6 mb-8 border-l-2 border-l-venus">
+              <div className="font-mono text-xs uppercase tracking-widest text-venus mb-4">High-Level Mass Split</div>
+              <div className="grid md:grid-cols-2 gap-x-10 gap-y-3 text-sm">
+                <div>
+                  <div className="flex justify-between py-1 border-b border-white/10">
+                    <span className="text-gray-400">Kick / Transfer Stage (wet)</span>
+                    <span className="font-mono text-white">330–380 kg</span>
+                  </div>
+                  <div className="pl-3 text-xs text-gray-500">Dry ~80–100 kg + propellant ~250–280 kg (Isp ~290 s storable hypergolic). Mass ratio ~2.4 for 2.5 km/s Δv.</div>
+                </div>
+
+                <div>
+                  <div className="flex justify-between py-1 border-b border-white/10">
+                    <span className="text-gray-400">Entry Probe + Stowed Balloon + Gondola/Sensors (dry)</span>
+                    <span className="font-mono text-white">120–150 kg</span>
+                  </div>
+                </div>
+
+                <div className="text-xs text-gray-500 pl-1 md:col-span-2 -mt-1 mb-2">
+                  • Heatshield / flat dinner-plate base (ablative, blunt body): ~60 kg<br />
+                  • Stowed fluoropolymer super-pressure balloon + inflation system: ~40 kg<br />
+                  • Gondola + integrated sensor suite (imagery, mass spec, nephelometer, bio-sensors): ~50 kg<br />
+                  • Avionics, power, structure, comms: ~30 kg
+                </div>
+
+                <div className="flex justify-between py-1 border-b border-white/10">
+                  <span className="text-gray-400">Margin / Contingency</span>
+                  <span className="font-mono text-white">Positive headroom</span>
+                </div>
+              </div>
+              <div className="mt-3 text-[10px] text-gray-500 font-mono">Total wet target: 400 kg. Room for thicker acid protection, extra helium, redundant systems, or slight balloon upsizing.</div>
+            </div>
+
+            {/* Balloon Sizing */}
+            <div className="mb-8">
+              <div className="font-mono text-xs uppercase tracking-widest text-venus mb-2">Balloon Sizing (Lighter Payload Advantage)</div>
+              <p className="text-sm text-gray-400">
+                For ~120 kg floating mass at 55 km (ρ_net lift ≈ 0.8 kg/m³), only <span className="text-white font-medium">~150 m³</span> volume is required → spherical diameter ~<span className="font-mono">6.6 m</span>. Extremely stowable, lower material mass, faster inflation, and easier packaging. Still delivers the full 30–90 day float with excellent margin.
+              </p>
+            </div>
+
+            {/* Trajectory & Ops */}
+            <div className="mb-8">
+              <div className="font-mono text-xs uppercase tracking-widest text-venus mb-3">Trajectory &amp; Operations</div>
+              <div className="grid md:grid-cols-2 gap-4 text-sm">
+                <div className="glass-panel p-5">
+                  <div className="text-white font-medium mb-1">Launch &amp; Transfer</div>
+                  <div className="text-gray-400">LEO insertion via Falcon 9 rideshare or Starship secondary. Onboard burn ~2.5 km/s (gravity assist benefit) for Venus transfer. ~146 day TOF.</div>
+                </div>
+                <div className="glass-panel p-5">
+                  <div className="text-white font-medium mb-1">Entry &amp; Deployment</div>
+                  <div className="text-gray-400">Direct entry at ~10.7 km/s. Flat base + parachute decelerates to balloon deployment at ~55 km. 3U CubeSat relay (or Starship-provided comms) for high-bandwidth data. AI-optimized autonomous navigation handles entry, inflation, and float.</div>
+                </div>
+              </div>
+              <p className="mt-3 text-xs text-gray-500 font-mono">Power/Comms/Thermal: Solar on balloon top + efficient systems. Radiation-hardened avionics. Site comms/day estimator and atmosphere model apply directly.</p>
+            </div>
+
+            {/* Cost Estimate */}
+            <div className="glass-panel p-6 border-l-2 border-l-tech mb-4">
+              <div className="font-mono text-xs uppercase tracking-widest text-tech mb-2">2027 Launch Cost Estimate (Optimistic Baseline)</div>
+              <p className="text-gray-400">
+                With aggressive rideshare / Starship secondary pricing at scale: <span className="text-venus font-semibold text-lg font-mono">$80/kg</span>.
+              </p>
+              <p className="mt-1 text-sm">Total for 400 kg stack: <span className="text-white font-semibold">~$32,000</span>. From multi-million dollar missions to low tens of thousands — dramatically improves ROI, sponsorship appeal, and iteration speed.</p>
+            </div>
+
+            {/* Why This Is a Game-Changer */}
+            <div className="glass-panel p-6 mb-4">
+              <div className="font-mono text-xs uppercase tracking-widest text-venus mb-3">Why This Is a Game-Changer</div>
+              <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 text-sm text-gray-400">
+                <div>
+                  <span className="text-white font-medium block">Cost</span>
+                  From multi-million to low tens of thousands → dramatically improves ROI, sponsorship appeal (panel/DNA tiers), and ability to iterate fast.
+                </div>
+                <div>
+                  <span className="text-white font-medium block">Mass Margin</span>
+                  Room to enhance science return or add ISRU demo elements (e.g., simple CO₂ processing test).
+                </div>
+                <div>
+                  <span className="text-white font-medium block">Risk Reduction</span>
+                  Lighter stack = gentler entry loads, easier balloon deployment, higher reliability.
+                </div>
+                <div>
+                  <span className="text-white font-medium block">Scalability</span>
+                  Proves the tech for Phase II larger aerostats and future human-scale floating habitats.
+                </div>
+              </div>
+            </div>
+
+            <div className="text-xs text-gray-500 font-mono">
+              End-to-end: Falcon 9 / Starship secondary → LEO → ~2.5 km/s onboard burn → 146-day cruise → hyperbolic entry (~10.7 km/s) → heat shield + parachute → balloon inflation at ~55 km → 30–90 days float with CubeSat relay.
+            </div>
+          </div>
         </div>
       </section>
 

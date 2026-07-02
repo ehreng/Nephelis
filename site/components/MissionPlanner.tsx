@@ -4,13 +4,14 @@ import React, { useState, useEffect, useRef } from 'react';
 
 export default function MissionPlanner() {
   const [offset, setOffset] = useState(0);
-  const [progress, setProgress] = useState(0);  // start pre-launch / early transfer
-  const [wetMass, setWetMass] = useState(500);
+  const [progress, setProgress] = useState(8);  // LEO 8%
+  const FIXED_WET_MASS = 400;
   const [dryMass, setDryMass] = useState(280);
 
   // Derived values (rocket equation + demo sim)
   const isp = 320;
   const g0 = 9.81;
+  const wetMass = FIXED_WET_MASS;
   const deltaV = (wetMass > dryMass && wetMass > 0)
     ? Math.round(isp * g0 * Math.log(wetMass / dryMass))
     : 1830;
@@ -51,11 +52,36 @@ export default function MissionPlanner() {
       ctx.arc(cx, cy, 5, 0, Math.PI * 2);
       ctx.fill();
 
-      // Orbit radii
+      // Orbital sim params
       const earthR = 105;
       const venusR = 62;
+      const BASE_EARTH = -0.9;
+      const BASE_VENUS = 1.65;
+      const OMEGA_E = 0.01721; // rad/day
+      const OMEGA_V = 0.02797;
+      const FLIGHT_DAYS = 140;
 
-      // Draw orbits
+      const tLaunch = offset;
+      const elapsedDays = t * FLIGHT_DAYS;
+      const tNow = tLaunch + elapsedDays;
+
+      // Current positions of planets (rotate with progress + offset)
+      const earthAngle = BASE_EARTH + tNow * OMEGA_E;
+      const venusAngle = BASE_VENUS + tNow * OMEGA_V;
+      const cex = cx + Math.cos(earthAngle) * earthR;
+      const cey = cy + Math.sin(earthAngle) * earthR * 0.62;
+      const cvx = cx + Math.cos(venusAngle) * venusR;
+      const cvy = cy + Math.sin(venusAngle) * venusR * 0.62;
+
+      // Fixed transfer endpoints for the chosen launch date (offset)
+      const earthDepAngle = BASE_EARTH + tLaunch * OMEGA_E;
+      const venusArrAngle = BASE_VENUS + (tLaunch + FLIGHT_DAYS) * OMEGA_V;
+      const ex = cx + Math.cos(earthDepAngle) * earthR;
+      const ey = cy + Math.sin(earthDepAngle) * earthR * 0.62;
+      const vx = cx + Math.cos(venusArrAngle) * venusR;
+      const vy = cy + Math.sin(venusArrAngle) * venusR * 0.62;
+
+      // Orbits
       ctx.strokeStyle = '#334155';
       ctx.lineWidth = 1;
       ctx.beginPath();
@@ -65,50 +91,53 @@ export default function MissionPlanner() {
       ctx.arc(cx, cy, venusR, 0, Math.PI * 2);
       ctx.stroke();
 
-      // Planet positions (simple circular motion; progress advances probe)
-      const earthAngle = -0.6; // fixed-ish for demo
-      const venusAngle = 2.1;
-      const ex = cx + Math.cos(earthAngle) * earthR;
-      const ey = cy + Math.sin(earthAngle) * earthR * 0.65;
-      const vx = cx + Math.cos(venusAngle) * venusR;
-      const vy = cy + Math.sin(venusAngle) * venusR * 0.65;
-
-      // Draw transfer path (approximate Hohmann arc from Earth to Venus)
+      // Transfer trajectory (sampled arc between launch Earth pos and arrival Venus pos)
+      // Uses realistic angle + radius interpolation for Dec 2027 window — does not cross Sun
       ctx.strokeStyle = '#FF4500';
       ctx.setLineDash([2, 3]);
+      ctx.lineWidth = 1.5;
       ctx.beginPath();
-      ctx.moveTo(ex, ey);
-      // Simple bezier/arc approximation for transfer
-      const midX = cx + 22;
-      const midY = cy - 38;
-      ctx.quadraticCurveTo(midX, midY, vx, vy);
+      const STEPS = 18;
+      for (let i = 0; i <= STEPS; i++) {
+        const s = i / STEPS;
+        const a = earthDepAngle + (venusArrAngle - earthDepAngle) * s;
+        let r = earthR + (venusR - earthR) * s;
+        r += Math.sin(s * Math.PI) * 9; // gentle inward curve
+        const px = cx + Math.cos(a) * r;
+        const py = cy + Math.sin(a) * r * 0.62;
+        if (i === 0) ctx.moveTo(px, py);
+        else ctx.lineTo(px, py);
+      }
       ctx.stroke();
       ctx.setLineDash([]);
+      ctx.lineWidth = 1;
 
-      // Planet dots
+      // Current planet positions (Earth blue, Venus orange) — move as progress + offset change
       ctx.fillStyle = '#3b82f6';
       ctx.beginPath();
-      ctx.arc(ex, ey, 5, 0, Math.PI * 2);
+      ctx.arc(cex, cey, 5, 0, Math.PI * 2);
       ctx.fill();
       ctx.fillStyle = '#f59e0b';
       ctx.beginPath();
-      ctx.arc(vx, vy, 4, 0, Math.PI * 2);
+      ctx.arc(cvx, cvy, 4, 0, Math.PI * 2);
       ctx.fill();
 
-      // Probe position along transfer path
-      const tx = ex * (1 - t) + vx * t + (midX - (ex + vx) / 2) * Math.sin(t * Math.PI) * 0.6;
-      const ty = ey * (1 - t) + vy * t + (midY - (ey + vy) / 2) * Math.sin(t * Math.PI) * 0.6;
+      // Probe on the transfer arc (cyan)
+      const pa = earthDepAngle + (venusArrAngle - earthDepAngle) * t;
+      let pr = earthR + (venusR - earthR) * t + Math.sin(t * Math.PI) * 9;
+      const tx = cx + Math.cos(pa) * pr;
+      const ty = cy + Math.sin(pa) * pr * 0.62;
 
       ctx.fillStyle = '#00f0ff';
       ctx.beginPath();
-      ctx.arc(tx + offset * 0.8, ty, 3.5, 0, Math.PI * 2);
+      ctx.arc(tx, ty, 3.5, 0, Math.PI * 2);
       ctx.fill();
 
-      // Labels
+      // Labels (on current planet locations)
       ctx.fillStyle = '#64748b';
       ctx.font = '9px monospace';
-      ctx.fillText('EARTH', ex + 8, ey + 12);
-      ctx.fillText('VENUS', vx + 8, vy + 3);
+      ctx.fillText('EARTH', cex + 8, cey + 12);
+      ctx.fillText('VENUS', cvx + 8, cvy + 3);
       ctx.fillText('SUN', cx + 14, cy + 3);
 
       // HUD
@@ -125,7 +154,8 @@ export default function MissionPlanner() {
   }, [progress, offset]);
 
   return (
-    <div className="grid lg:grid-cols-12 gap-8">
+    <>
+      <div className="grid lg:grid-cols-12 gap-8">
       {/* Controls */}
       <div className="lg:col-span-4 space-y-6">
         <div className="glass-panel p-6 border-l-2 border-l-venus">
@@ -164,7 +194,7 @@ export default function MissionPlanner() {
                 className="w-full planner-input"
               />
               <div className="flex justify-between mt-1 font-mono text-xs text-tech">
-                <span>LEO</span>
+                <span>LEO 8%</span>
                 <span className="text-white">{progressLabel}</span>
                 <span>Venus Capture</span>
               </div>
@@ -176,20 +206,15 @@ export default function MissionPlanner() {
           <h4 className="font-mono text-tech text-lg mb-4">Delta-V Budget</h4>
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <div className="stat-label mb-1">Wet Mass (kg)</div>
-              <input
-                type="number"
-                value={wetMass}
-                onChange={(e) => setWetMass(Math.max(100, parseInt(e.target.value) || 100))}
-                className="w-full bg-black border border-white/20 text-white font-mono text-sm p-2 focus:border-tech focus:outline-none"
-              />
+              <div className="stat-label mb-1">Wet Mass (kg) <span className="text-[8px] opacity-60">(FIXED)</span></div>
+              <div className="w-full bg-black border border-white/10 text-gray-400 font-mono text-sm p-2 tabular-nums">{wetMass}</div>
             </div>
             <div>
               <div className="stat-label mb-1">Dry Mass (kg)</div>
               <input
                 type="number"
                 value={dryMass}
-                onChange={(e) => setDryMass(Math.max(50, parseInt(e.target.value) || 50))}
+                onChange={(e) => setDryMass(Math.max(50, Math.min(wetMass - 10, parseInt(e.target.value) || 50)))}
                 className="w-full bg-black border border-white/20 text-white font-mono text-sm p-2 focus:border-tech focus:outline-none"
               />
             </div>
@@ -214,11 +239,11 @@ export default function MissionPlanner() {
 
         <div className="mt-4 grid grid-cols-3 gap-4 font-mono text-xs text-center text-gray-500">
           <div>
-            EARTH DISTANCE<br />
+            RANGE FROM EARTH<br />
             <span className="text-white text-sm tabular-nums">{earthDist.toLocaleString()} km</span>
           </div>
           <div>
-            VENUS DISTANCE<br />
+            RANGE TO VENUS<br />
             <span className="text-white text-sm tabular-nums">{(venusDist / 1000000).toFixed(0)}M km</span>
           </div>
           <div>
@@ -237,5 +262,34 @@ export default function MissionPlanner() {
         </button>
       </div>
     </div>
+
+    {/* Explanations below planner */}
+    <div className="mt-8 max-w-6xl text-sm text-gray-400 border-t border-white/10 pt-6">
+      <div className="font-mono uppercase tracking-[1.5px] text-venus/80 text-xs mb-3">MISSION PLANNER TERMS &amp; SIGNIFICANCE</div>
+
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-5 text-[13px]">
+        <div>
+          <span className="text-white font-medium block mb-1">Launch Offset (±30 days)</span>
+          Shifts the Dec 2027 launch date within the window. Earth and Venus are orbiting the Sun at different speeds, so this changes their relative angles at departure and at arrival. The red transfer arc and planet dots instantly update to show the shortest viable geometry for that specific date.
+        </div>
+        <div>
+          <span className="text-white font-medium block mb-1">Mission Progress (LEO 8% → Venus Capture)</span>
+          Drags the cyan probe along the computed transfer path. At the same time, both planets continue rotating around the Sun to their positions at the corresponding mission elapsed time (~140 days total). LEO 8% marks early departure / Earth escape.
+        </div>
+        <div>
+          <span className="text-white font-medium block mb-1">Wet Mass (fixed at 400 kg)</span>
+          Total mass at launch: probe structure + full propellant load + payload + systems. Fixed by our rideshare / Starship secondary allocation and overall architecture. Cannot be increased without changing the launch vehicle or mission class.
+        </div>
+        <div>
+          <span className="text-white font-medium block mb-1">Dry Mass (adjustable)</span>
+          Mass remaining once all propellant is expended (structure + instruments + avionics). You can reduce it by using lighter materials or flying less payload. Because Δv = Isp·g0·ln(wet/dry), even small drops in dry mass deliver large gains in available velocity change.
+        </div>
+      </div>
+
+      <div className="mt-4 text-xs text-gray-500">
+        The visualization uses a Sun-centered frame with proper orbital angular rates. The transfer is an approximated inward Hohmann-style arc timed for the 2027 window (does not intersect the Sun). Real operations add navigation, TCMs, and precise ephemeris.
+      </div>
+    </div>
+    </>
   );
 }

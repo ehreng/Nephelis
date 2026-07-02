@@ -93,8 +93,7 @@ export default function NephelisHome() {
                 Venus offers abundant solar power, CO₂ for fuel, and nitrogen for breathable air. We need $500,000+ in crowdfunding for build, testing, and launch. Our budget is lean compared to Rocket Lab's Venus Life Finder (&lt;$10M), but laser-focused on practical habitation validation.
               </p>
               <p>
-                Volunteers welcome: engineers, scientists, AI experts, fabricators—email to join.<br />
-                Be part of humanity’s backup plan. Venus ensures life thrives across the solar system.
+                Volunteers welcome: engineers, scientists, AI experts, fabricators—email to join. Be part of humanity’s backup plan. Venus ensures life thrives across the solar system.
               </p>
               <p>
                 With hypothetical VenusExpress service using next-gen propulsion (nuclear electric or VASIMR), travel time could shrink to 30–45 days versus today’s 3–6 months.
@@ -114,9 +113,11 @@ export default function NephelisHome() {
           </div>
 
           <div className="glass-panel p-6 rounded-sm hud-border relative">
-            <div className="absolute top-4 right-4 text-xs font-mono text-venus animate-pulse">LIVE TELEMETRY SIM</div>
-            <div className="relative flex items-center justify-center bg-black/80 rounded overflow-hidden" style={{minHeight: '380px'}}>
-              <img src="/assets/visuals/NephelisIndustries.jpg" alt="Nephelis Industries" className="max-h-[380px] w-auto object-contain" />
+            <div className="mb-3 flex justify-end">
+              <span className="text-xs font-mono text-venus animate-pulse">Live Prototype Schematic</span>
+            </div>
+            <div className="relative flex items-center justify-center bg-black/80 rounded overflow-hidden" style={{minHeight: '520px'}}>
+              <img src="/assets/visuals/NephelisIndustries.jpg" alt="Nephelis Industries" className="max-h-[520px] w-auto object-contain" />
               <div className="absolute bottom-2 left-2 text-xs font-mono text-tech bg-black/50 px-2">PROBE @ 55km</div>
             </div>
           </div>
@@ -325,7 +326,7 @@ export default function NephelisHome() {
           <div className="mb-12 flex items-end justify-between">
             <div>
               <h2 className="text-venus font-mono text-sm uppercase tracking-widest mb-2">05 // Mission Archive</h2>
-              <h3 className="text-4xl font-bold text-white">Standing on Giants</h3>
+              <h3 className="text-4xl font-bold text-white">Standing on the Shoulders of Giants</h3>
               <p className="mt-2 text-gray-400">While government and private efforts advance Venus science, Project AETHER fills the unique niche of low-cost habitation validation. Comprehensive log of humanity's attempts to reach Venus.</p>
             </div>
           </div>
@@ -362,8 +363,6 @@ export default function NephelisHome() {
               ))}
             </div>
           </div>
-
-          <p className="text-xs text-foreground/50 mt-3 font-mono">Data: content/data/heritage.json — extendable by agents.</p>
         </div>
       </section>
 
@@ -428,7 +427,6 @@ export default function NephelisHome() {
             </div>
           ))}
         </div>
-        <p className="text-[10px] text-foreground/50 mt-4 font-mono">Live data from content/data/timeline.json — automatically updatable by agents.</p>
       </section>
 
       {/* Contribute / Volunteer section (new for collaboration) */}

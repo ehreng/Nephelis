@@ -54,9 +54,10 @@ export default function FundingTiers() {
       setTimeout(() => {
         closeModal();
       }, 2200);
-    } catch (err) {
+    } catch (err: unknown) {
       console.error(err);
-      setError(err.message || 'Something went wrong. Please try emailing directly.');
+      const message = err instanceof Error ? err.message : 'Something went wrong. Please try emailing directly.';
+      setError(message);
     } finally {
       setIsSubmitting(false);
     }

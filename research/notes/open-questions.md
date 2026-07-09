@@ -4,10 +4,15 @@ Living list for humans + agents. Resolve → move to science notes or specs.
 
 ## Mission design
 
+Tracked also in `docs/conops-v0.9.md` §8 and `docs/requirements-baseline-v0.9.md` §16.
+
 - [ ] Final heatshield mass and geometry trade
 - [ ] Inflation gas budget vs. acid-protection mass
-- [ ] CubeSat relay vs. carrier-provided comms
+- [ ] CubeSat relay vs. carrier-provided comms vs DTE descope
 - [ ] Power budget at float (solar vs duty cycle) with numbers in mass-budget or new power.json
+- [ ] Parachute vs aero-only decelerator architecture
+- [ ] Entry sequence timing table from thermal/trajectory analysis
+- [ ] Daily science downlink volume (Mb/day) after link study
 
 ## Program
 

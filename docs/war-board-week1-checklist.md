@@ -6,8 +6,10 @@ Print or tick daily. Parent: `docs/30-day-war-board.md`.
 
 - [ ] **Stripe live** — live secret + live webhook + one real payment  
 - [ ] **Funding SOP** — doc: payment → auto-reply → engraving/DNA fulfillment  
-- [ ] **CONOPS outline** — bullets for all mission phases  
-- [ ] **Requirements skeleton** — table with TBDs OK  
+- [x] **CONOPS outline** — `docs/conops-v0.9.md` (review + comments)  
+- [x] **Requirements skeleton** — `docs/requirements-baseline-v0.9.md` (close TBDs over time)  
+- [x] **ICD skeleton** — `docs/system-icd-skeleton.md`  
+
 - [ ] **Partner targets named** — 3 labs + 3 materials vendors  
 - [ ] **First partner emails sent** — use `docs/partner-outreach-drafts.md`
 

@@ -28,9 +28,9 @@
 - [ ] **stripe-live** — Flip Stripe to live keys + live webhook; real $100 smoke test _(growth)_
 - [ ] **funding-campaign-v1** — Public crowdfund campaign narrative + tier fulfillment SOPs _(growth)_
 - [ ] **partner-p0-outreach** — Execute P0 partner outreach: sensor lab + fluoropolymer supplier _(partners)_
-- [ ] **conops-v1** — CONOPS v1: launch → cruise → entry → inflate → float → end-of-life _(mission)_
-- [ ] **system-architecture-icd** — System architecture + ICD draft (balloon, gondola, power, comms, GNC) _(hardware)_
-- [ ] **requirements-baseline** — Mission requirements baseline (science, mass, power, data, reliability) _(mission)_
+- [ ] **conops-v1** — CONOPS v1: launch → cruise → entry → inflate → float → end-of-life (v0.9 drafted in docs/) _(mission)_
+- [ ] **system-architecture-icd** — System architecture + ICD draft (skeleton in docs/system-icd-skeleton.md) _(hardware)_
+- [ ] **requirements-baseline** — Mission requirements baseline (v0.9 drafted in docs/requirements-baseline-v0.9.md) _(mission)_
 - [ ] **entry-corridor-study** — Entry corridor & peak heat-rate study for ~10.7 km/s Venus entry class _(hardware)_
 - [ ] **pdr-lite** — Preliminary design review (lite): freeze interfaces, mass/power books _(mission)_
 - [ ] **materials-coupon-campaign** — Fluoropolymer acid coupon campaign (soak, crease, seam samples) _(hardware)_
@@ -83,9 +83,9 @@
 - [P0] Public crowdfund campaign narrative + tier fulfillment SOPs — `planned`
 - [P0] Execute P0 partner outreach: sensor lab + fluoropolymer supplier — `planned`
 - [P1] Confirm 2–3 technical advisors (structures, entry, Venus science) with written scope — `planned`
-- [P0] CONOPS v1: launch → cruise → entry → inflate → float → end-of-life — `in_progress`
-- [P0] System architecture + ICD draft (balloon, gondola, power, comms, GNC) — `in_progress`
-- [P0] Mission requirements baseline (science, mass, power, data, reliability) — `planned`
+- [P0] CONOPS v1: launch → cruise → entry → inflate → float → end-of-life (v0.9 drafted in docs/) — `in_progress`
+- [P0] System architecture + ICD draft (skeleton in docs/system-icd-skeleton.md) — `in_progress`
+- [P0] Mission requirements baseline (v0.9 drafted in docs/requirements-baseline-v0.9.md) — `in_progress`
 - [P1] Refine transfer Δv / TOF with published ephemeris (not only Hohmann demo) — `planned`
 - [P0] Entry corridor & peak heat-rate study for ~10.7 km/s Venus entry class — `planned`
 - [P1] Science traceability matrix: goals → instruments → data products — `planned`
@@ -119,8 +119,8 @@ _Full register: `site/content/data/risks.json` (7 active)._
 
 ## Mission control checklist (open)
 
-- [ ] Mission requirements baseline signed — due 2026-Q3 (`planned`)
-- [ ] CONOPS v1 (launch → float → EOM) — due 2026-Q3 (`in_progress`)
+- [ ] Mission requirements baseline signed (v0.9 draft in docs/) — due 2026-Q3 (`in_progress`)
+- [ ] CONOPS v1 (v0.9 draft in docs/conops-v0.9.md) — due 2026-Q3 (`in_progress`)
 - [ ] PDR-lite: balloon + gondola ICD freeze — due 2026-Q4 (`planned`)
 - [ ] Acid / materials coupon campaign complete enough for fab decision — due 2026-Q4 (`planned`)
 - [ ] Sensor suite baselined with mass/power/data numbers — due 2026-Q4 (`planned`)
@@ -177,4 +177,4 @@ npx tsx automation/scripts/evolve.ts press
 ```
 
 ---
-Generated 2026-07-09T01:30:56.095Z · do not hand-edit structure; append notes below the line if needed.
+Generated 2026-07-09T01:34:04.576Z · do not hand-edit structure; append notes below the line if needed.

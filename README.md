@@ -95,7 +95,8 @@ Knowledge base: [`research/`](./research/) (see `research/INDEX.md` after `evolv
 - [ ] Deeper hardware test data + visuals  
 
 Roadmap: [site `/roadmap`](https://www.nephelisindustries.com/roadmap) · go-live: [`docs/go-live.md`](./docs/go-live.md)  
-**30-day war board:** [`docs/30-day-war-board.md`](./docs/30-day-war-board.md) · partner drafts: [`docs/partner-outreach-drafts.md`](./docs/partner-outreach-drafts.md)
+**30-day war board:** [`docs/30-day-war-board.md`](./docs/30-day-war-board.md) · partner drafts: [`docs/partner-outreach-drafts.md`](./docs/partner-outreach-drafts.md)  
+**Design package (v0.9):** [`docs/conops-v0.9.md`](./docs/conops-v0.9.md) · [`docs/requirements-baseline-v0.9.md`](./docs/requirements-baseline-v0.9.md) · [`docs/system-icd-skeleton.md`](./docs/system-icd-skeleton.md)
 
 ## Contributing
 

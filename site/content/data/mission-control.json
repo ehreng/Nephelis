@@ -7,14 +7,14 @@
   "checklist": [
     {
       "id": "mc-requirements",
-      "item": "Mission requirements baseline signed",
+      "item": "Mission requirements baseline signed (v0.9 draft in docs/)",
       "phase": "DESIGN",
-      "status": "planned",
+      "status": "in_progress",
       "due": "2026-Q3"
     },
     {
       "id": "mc-conops",
-      "item": "CONOPS v1 (launch → float → EOM)",
+      "item": "CONOPS v1 (v0.9 draft in docs/conops-v0.9.md)",
       "phase": "DESIGN",
       "status": "in_progress",
       "due": "2026-Q3"

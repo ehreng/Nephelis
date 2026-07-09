@@ -13,9 +13,9 @@ Source of truth for full list: `site/content/data/tasks.json` · public view: `/
 |---|---------|----------------|
 | 1 | Stripe **live** + one real payment | `stripe-live` |
 | 2 | Crowdfund SOP written (fulfillment for Tier 1/2) | `funding-campaign-v1` |
-| 3 | CONOPS v0.9 circulated internally | `conops-v1` |
-| 4 | System ICD skeleton (even incomplete) | `system-architecture-icd` |
-| 5 | Requirements baseline draft | `requirements-baseline` |
+| 3 | CONOPS v0.9 circulated internally | `conops-v1` → **drafted** `docs/conops-v0.9.md` |
+| 4 | System ICD skeleton (even incomplete) | `system-architecture-icd` → **drafted** `docs/system-icd-skeleton.md` |
+| 5 | Requirements baseline draft | `requirements-baseline` → **drafted** `docs/requirements-baseline-v0.9.md` |
 | 6 | ≥2 sensor labs + ≥2 materials vendors named & contacted | `partner-p0-outreach` |
 | 7 | Materials test plan written (coupons ready to order) | `materials-coupon-campaign` |
 | 8 | Weekly public pulse (1 post + optional MDX) | `social-post-cadence` |

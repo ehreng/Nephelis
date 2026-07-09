@@ -210,7 +210,7 @@
   },
   {
     "id": "conops-v1",
-    "title": "CONOPS v1: launch → cruise → entry → inflate → float → end-of-life",
+    "title": "CONOPS v1: launch → cruise → entry → inflate → float → end-of-life (v0.9 drafted in docs/)",
     "status": "in_progress",
     "priority": "P0",
     "area": "mission",
@@ -218,7 +218,7 @@
   },
   {
     "id": "system-architecture-icd",
-    "title": "System architecture + ICD draft (balloon, gondola, power, comms, GNC)",
+    "title": "System architecture + ICD draft (skeleton in docs/system-icd-skeleton.md)",
     "status": "in_progress",
     "priority": "P0",
     "area": "hardware",
@@ -226,8 +226,8 @@
   },
   {
     "id": "requirements-baseline",
-    "title": "Mission requirements baseline (science, mass, power, data, reliability)",
-    "status": "planned",
+    "title": "Mission requirements baseline (v0.9 drafted in docs/requirements-baseline-v0.9.md)",
+    "status": "in_progress",
     "priority": "P0",
     "area": "mission",
     "quarter": "2026-Q3"

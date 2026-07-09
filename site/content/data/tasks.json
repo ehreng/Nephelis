@@ -169,6 +169,14 @@
   },
 
   {
+    "id": "war-board-30d",
+    "title": "Execute 30-day war board (docs/30-day-war-board.md)",
+    "status": "in_progress",
+    "priority": "P0",
+    "area": "program",
+    "quarter": "2026-Q3"
+  },
+  {
     "id": "stripe-live",
     "title": "Flip Stripe to live keys + live webhook; real $100 smoke test",
     "status": "planned",

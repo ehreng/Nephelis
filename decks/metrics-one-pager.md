@@ -1,6 +1,6 @@
 # Nephelis Industries — Metrics One-Pager
 
-_Auto-generated from `site/content/data/*` · 2026-07-09T01:29:20.419Z_  
+_Auto-generated from `site/content/data/*` · 2026-07-09T01:30:55.550Z_  
 **Do not hand-edit** — run `npx tsx automation/scripts/sync-metrics.ts` after data changes.
 
 ## Mission snapshot
@@ -58,6 +58,7 @@ _Paid counts come from Stripe at runtime; baseline is static marketing/pre-sales
 
 ## Open tasks (P0/P1)
 
+- [P0] Execute 30-day war board (docs/30-day-war-board.md) — _in_progress_ (2026-Q3)
 - [P0] Flip Stripe to live keys + live webhook; real $100 smoke test — _planned_ (2026-Q3)
 - [P0] Public crowdfund campaign narrative + tier fulfillment SOPs — _planned_ (2026-Q3)
 - [P0] Execute P0 partner outreach: sensor lab + fluoropolymer supplier — _planned_ (2026-Q3)

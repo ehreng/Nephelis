@@ -94,7 +94,8 @@ Knowledge base: [`research/`](./research/) (see `research/INDEX.md` after `evolv
 - [ ] Stripe **live** mode  
 - [ ] Deeper hardware test data + visuals  
 
-Roadmap: [site `/roadmap`](https://www.nephelisindustries.com/roadmap) · go-live: [`docs/go-live.md`](./docs/go-live.md)
+Roadmap: [site `/roadmap`](https://www.nephelisindustries.com/roadmap) · go-live: [`docs/go-live.md`](./docs/go-live.md)  
+**30-day war board:** [`docs/30-day-war-board.md`](./docs/30-day-war-board.md) · partner drafts: [`docs/partner-outreach-drafts.md`](./docs/partner-outreach-drafts.md)
 
 ## Contributing
 

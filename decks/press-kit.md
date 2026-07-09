@@ -1,6 +1,6 @@
 # Nephelis Industries — Press & Partner Kit
 
-_Auto-generated 2026-07-09T01:24:17.533Z from mission data. Re-run: `npx tsx automation/scripts/press-kit.ts`_
+_Auto-generated 2026-07-09T01:30:55.007Z from mission data. Re-run: `npx tsx automation/scripts/press-kit.ts`_
 
 ## Boilerplate (short)
 
@@ -51,11 +51,16 @@ Crew signal list and volunteer intake: https://www.nephelisindustries.com/#contr
 
 ## Timeline (public)
 
-- **2027** (target): Launch of AETHER probe (Nephelis)
-- **2026** (current): Final design & integration. Competing private mission (Rocket Lab Venus Life Finder) also targeting 2026 launch window for cloud layer exploration.
-- **2025** (complete): Concept validation & partnership development
-- **2022+** (background): Multiple concepts (NASA aerobot, ESA VEP) proposed for variable altitude balloons in 48-60km range
-- **2028+** (future): Larger aerostats → first habitats → self-sustaining outposts
+- **2025** (complete): Concept validation, branding, and early partnership development for Project AETHER
+- **2026-Q3** (current): Requirements, CONOPS, system ICD, live crowdfund stack, P0 partner outreach (accelerated Phase A/B start)
+- **2026-Q4** (target): PDR-lite, materials & balloon prototype tests, sensor/comms baselining, facility access
+- **2027-Q1** (target): CDR-lite, flight hardware fab, payload integration, 50% funding milestone
+- **2027-Q2** (target): Environmental qual, system I&T, inflation sequence test, launch LOI / rideshare path
+- **2027-Q3** (target): Flight software freeze, ops rehearsals, ship prep, funding closeout
+- **2027-Q4** (target): Launch campaign + Venus transfer injection (target window ~2027-12-15)
+- **2028-H1** (future): Cruise → Venus entry → balloon float ops (30–90 days) + first public data release
+- **2028+** (future): Phase II: larger aerostats → habitation tech path (post-flight lessons)
+- **2022+** (background): Agency background: NASA aerobot / ESA concepts for 48–60 km variable balloons
 
 ## Suggested headlines (for partners / media)
 

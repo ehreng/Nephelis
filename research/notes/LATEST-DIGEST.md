@@ -22,8 +22,9 @@
 - **NAV/AI**: nominal
 - **FUNDING**: dev
 
-## P0 open work (50)
+## P0 open work (51)
 
+- [ ] **war-board-30d** — Execute 30-day war board (docs/30-day-war-board.md) _(program)_
 - [ ] **stripe-live** — Flip Stripe to live keys + live webhook; real $100 smoke test _(growth)_
 - [ ] **funding-campaign-v1** — Public crowdfund campaign narrative + tier fulfillment SOPs _(growth)_
 - [ ] **partner-p0-outreach** — Execute P0 partner outreach: sensor lab + fluoropolymer supplier _(partners)_
@@ -75,8 +76,9 @@
 - [ ] **float-ops-30d** — Float operations day 1–30: science collection + daily downlink _(mission)_
 - [ ] **data-release-1** — Public data release #1 + mission report _(science)_
 
-## All open tasks (76)
+## All open tasks (77)
 
+- [P0] Execute 30-day war board (docs/30-day-war-board.md) — `in_progress`
 - [P0] Flip Stripe to live keys + live webhook; real $100 smoke test — `planned`
 - [P0] Public crowdfund campaign narrative + tier fulfillment SOPs — `planned`
 - [P0] Execute P0 partner outreach: sensor lab + fluoropolymer supplier — `planned`
@@ -96,7 +98,6 @@
 - [P0] Build subscale super-pressure balloon prototype #1 (Earth ambient) — `planned`
 - [P0] Envelope leak / pressure-hold ground test protocol + first run — `planned`
 - [P0] Heatshield geometry/material trade (blunt body mass vs peak load) — `planned`
-- [P0] Balloon inflation system concept (gas budget, valves, sequence) — `planned`
 
 ## Risk radar (open / mitigating)
 
@@ -176,4 +177,4 @@ npx tsx automation/scripts/evolve.ts press
 ```
 
 ---
-Generated 2026-07-09T01:29:19.886Z · do not hand-edit structure; append notes below the line if needed.
+Generated 2026-07-09T01:30:56.095Z · do not hand-edit structure; append notes below the line if needed.

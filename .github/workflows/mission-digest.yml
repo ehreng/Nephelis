@@ -1,0 +1,55 @@
+name: Mission digest
+
+on:
+  schedule:
+    # Mondays 15:00 UTC (after research scaffold)
+    - cron: '0 15 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Set date
+        id: d
+        run: echo "date=$(date -u +%F)" >> "$GITHUB_OUTPUT"
+
+      - name: Generate mission digest + KB index + press kit
+        run: |
+          npx --yes tsx automation/scripts/mission-digest.ts
+          npx --yes tsx automation/scripts/kb-index.ts
+          npx --yes tsx automation/scripts/press-kit.ts
+          npx --yes tsx automation/scripts/sync-metrics.ts
+        env:
+          DIGEST_DATE: ${{ steps.d.outputs.date }}
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore(mission): weekly digest ${{ steps.d.outputs.date }}"
+          title: "Mission digest: ${{ steps.d.outputs.date }}"
+          body: |
+            ## Weekly mission digest
+
+            Auto-generated from `tasks`, `risks`, `partners`, `mission-control`, `telemetry`, and research notes.
+
+            ### Review checklist
+            - [ ] Read `research/notes/*-mission-digest.md`
+            - [ ] Update any stale P0 tasks / risks
+            - [ ] Advance one partner next_step if possible
+            - [ ] Merge after human skim (safe to merge if no factual edits needed)
+
+            Also refreshes: `research/INDEX.md`, `decks/press-kit.md`, `decks/metrics-one-pager.md`
+          branch: automation/digest-${{ steps.d.outputs.date }}
+          delete-branch: true
+          labels: mission, automation

@@ -7,10 +7,11 @@ We welcome contributions from engineers, scientists, designers, writers, and any
 ## Ways to Contribute
 
 ### 1. Content & Research (easiest for most volunteers)
-- Update `site/content/data/timeline.json` or `specs.json`
+- Update JSON in `site/content/data/` (`timeline`, `specs`, `tasks`, `risks`, `partners`, `mass-budget`, …)
 - Add new MDX updates in `site/content/updates/`
-- Improve research notes in `research/`
+- Improve research notes in `research/` (see `research/README.md` + `INDEX.md`)
 - Submit facts, sources, or competitor analysis
+- Agents: follow root `AGENTS.md`
 
 ### 2. Visuals & Design
 - Generate new concept art using the prompts in `automation/prompts/visual-brief.md`

@@ -127,7 +127,54 @@
     "area": "growth",
     "quarter": "2026-Q3"
   },
-
+  {
+    "id": "mission-data-model",
+    "title": "Mass budget, risks, partners, mission-control data + schemas",
+    "status": "done",
+    "priority": "P1",
+    "area": "ops",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "mission-digest-loop",
+    "title": "Weekly mission digest + health/link automation",
+    "status": "done",
+    "priority": "P1",
+    "area": "ops",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "agents-md-kb",
+    "title": "AGENTS.md + research KB index + automation docs",
+    "status": "done",
+    "priority": "P1",
+    "area": "ops",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "materials-coupon-campaign",
+    "title": "Start fluoropolymer acid coupon test campaign",
+    "status": "planned",
+    "priority": "P0",
+    "area": "hardware",
+    "quarter": "2026-Q4"
+  },
+  {
+    "id": "partner-p0-outreach",
+    "title": "Execute P0 partner next_steps (sensors + materials)",
+    "status": "planned",
+    "priority": "P0",
+    "area": "growth",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "digest-email",
+    "title": "Optional weekly digest email to TEAM_EMAIL",
+    "status": "planned",
+    "priority": "P2",
+    "area": "ops",
+    "quarter": "2026-Q3"
+  },
   {
     "id": "ground-test-2026",
     "title": "Balloon envelope ground tests",

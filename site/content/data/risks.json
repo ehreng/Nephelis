@@ -1,0 +1,75 @@
+{
+  "updated_at": "2026-07-09T00:00:00.000Z",
+  "risks": [
+    {
+      "id": "R-01",
+      "title": "Acid degradation of balloon envelope",
+      "category": "hardware",
+      "likelihood": "medium",
+      "impact": "high",
+      "status": "open",
+      "mitigation": "Multi-layer fluoropolymer; altitude selection; ground acid exposure tests",
+      "owner": "structures"
+    },
+    {
+      "id": "R-02",
+      "title": "Entry / inflation sequence failure",
+      "category": "mission",
+      "likelihood": "medium",
+      "impact": "critical",
+      "status": "open",
+      "mitigation": "Redundant inflation path; extensive drop / vacuum tests; VEGA lessons",
+      "owner": "avionics"
+    },
+    {
+      "id": "R-03",
+      "title": "Comms blackout / insufficient downlink",
+      "category": "comms",
+      "likelihood": "medium",
+      "impact": "high",
+      "status": "open",
+      "mitigation": "3U CubeSat relay architecture; store-and-forward; power budget margin",
+      "owner": "comms"
+    },
+    {
+      "id": "R-04",
+      "title": "Launch rideshare slip past 2027 window",
+      "category": "program",
+      "likelihood": "medium",
+      "impact": "high",
+      "status": "open",
+      "mitigation": "Multiple vehicle options; mass keeps rideshare-compatible; early LOI talks",
+      "owner": "ops"
+    },
+    {
+      "id": "R-05",
+      "title": "Crowdfund / partner capital shortfall",
+      "category": "growth",
+      "likelihood": "medium",
+      "impact": "high",
+      "status": "mitigating",
+      "mitigation": "Stripe tiers live; sponsor outreach; in-kind hardware path",
+      "owner": "growth"
+    },
+    {
+      "id": "R-06",
+      "title": "Planetary protection / DNA tier regulatory delay",
+      "category": "program",
+      "likelihood": "low",
+      "impact": "medium",
+      "status": "open",
+      "mitigation": "Early counsel; inert sealed capsule design; tier policy review",
+      "owner": "ops"
+    },
+    {
+      "id": "R-07",
+      "title": "Sensor mass growth eats float margin",
+      "category": "hardware",
+      "likelihood": "medium",
+      "impact": "medium",
+      "status": "open",
+      "mitigation": "Hard mass caps in mass-budget.json; descope ladder documented",
+      "owner": "science"
+    }
+  ]
+}

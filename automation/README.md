@@ -1,60 +1,86 @@
 # Nephelis Automation & AI Loops
 
-Tools, prompts, and scheduled workflows that keep Project AETHER’s site and research moving.
+Tools, prompts, and scheduled workflows that keep Project AETHER’s site, research, and mission ops moving.
+
+Agents: start at root [`AGENTS.md`](../AGENTS.md). Knowledge map: [`research/INDEX.md`](../research/INDEX.md).
 
 ## Loops
 
 | Loop | Trigger | Output |
 |------|---------|--------|
-| **Research** | Mondays (GH Action) or `evolve.ts research` | `research/notes/*-brief.md` + draft MDX → PR |
-| **Social** | Push to `site/content/updates/**` | `automation/social-drafts/latest.md` → PR |
-| **Metrics** | Push to `site/content/data/**` | `decks/metrics-one-pager.md` → PR |
-| **CI** | Every PR/push | schema validate + typecheck + lint + build |
+| **Research** | Mon 14:00 UTC / `evolve.ts research` | `research/notes/*-brief.md` + draft MDX → PR |
+| **Mission digest** | Mon 15:00 UTC / `evolve.ts digest` | digest + KB index + press + metrics → PR |
+| **Social** | Push to updates MDX / `evolve.ts social` | `automation/social-drafts/` → PR |
+| **Metrics** | Push to `content/data/**` / `evolve.ts metrics` | `decks/metrics-one-pager.md` |
+| **Health** | Daily 16:00 UTC / `evolve.ts health` | Prod endpoint probes (fail CI if down) |
+| **Links** | Sun / heritage PR / `evolve.ts links` | Validates `heritage.json` URLs |
+| **CI** | Every PR/push | schemas + typecheck + lint + build |
 | **Leads** | Site forms | Resend audience + team email + auto-reply |
-| **Payments** | Stripe Checkout + webhook | Paid tags + live allocation counts |
+| **Payments** | Stripe Checkout + webhook | Paid tags + live allocation |
 
 ## Local commands
 
 ```bash
 # From repo root
-npx tsx automation/scripts/evolve.ts research
-npx tsx automation/scripts/evolve.ts social
-npx tsx automation/scripts/evolve.ts metrics
+npx tsx automation/scripts/evolve.ts help
+npx tsx automation/scripts/evolve.ts digest
 npx tsx automation/scripts/evolve.ts full
+npx tsx automation/scripts/evolve.ts health   # uses www by default
+npx tsx automation/scripts/evolve.ts links
+npx tsx automation/scripts/evolve.ts kb
+npx tsx automation/scripts/evolve.ts press
 
-# Site quality gate
-cd site && pnpm validate:content && pnpm typecheck && pnpm lint && pnpm build
+cd site && pnpm validate:content && pnpm ci
 ```
+
+## Scripts
+
+| Script | Purpose |
+|--------|---------|
+| `evolve.ts` | CLI router for all modes |
+| `research-weekly.ts` | Research brief + draft MDX scaffold |
+| `mission-digest.ts` | MCC snapshot from tasks/risks/partners/telemetry |
+| `sync-metrics.ts` | Investor/metrics one-pager |
+| `press-kit.ts` | Press & partner boilerplate |
+| `social-draft.ts` | X / LinkedIn drafts from MDX |
+| `kb-index.ts` | `research/INDEX.md` |
+| `health-check.ts` | Production API/page probes |
+| `link-check.ts` | Heritage link reachability |
 
 ## Prompts
 
-- `prompts/research-update.md` — research agent instructions
-- `prompts/visual-brief.md` — consistent mission visuals
+| Prompt | Use when |
+|--------|----------|
+| `prompts/research-update.md` | Science / competitor scan |
+| `prompts/mission-ops.md` | Status updates across JSON |
+| `prompts/risk-review.md` | Risk register pass |
+| `prompts/partner-outreach.md` | Pipeline emails |
+| `prompts/visual-brief.md` | Image/video generation |
+
+## Mission data (site/content/data)
+
+| File | Meaning |
+|------|---------|
+| `specs.json` | Probe & science goals |
+| `mass-budget.json` | Wet mass breakdown |
+| `timeline.json` | Public milestones |
+| `tasks.json` | Workstreams → `/roadmap` |
+| `risks.json` | Risk register |
+| `partners.json` | Partner pipeline |
+| `mission-control.json` | MCC checklist / phase |
+| `telemetry.json` | Systems strip |
+| `funding.json` | Tiers & capacity |
+| `heritage.json` | Venus mission archive |
 
 ## Production env (Vercel)
 
-Copy `site/.env.example` into Vercel project settings. Minimum for live ops:
+See `site/.env.example` and `docs/go-live.md`.
 
-1. `RESEND_API_KEY` + verified domain sender (`RESEND_FROM_EMAIL`)
-2. `RESEND_AUDIENCE_ID` for list storage
-3. `STRIPE_SECRET_KEY` + webhook endpoint `https://<domain>/api/webhooks/stripe` → `STRIPE_WEBHOOK_SECRET`
-4. `NEXT_PUBLIC_SITE_URL`
-5. `OPS_TOKEN` for `/ops`
-
-Optional: `GITHUB_TOKEN` (volunteer → issue), `VOLUNTEER_WEBHOOK_URL`, Stripe Price IDs.
-
-## Stripe webhook
-
-```bash
-stripe listen --forward-to localhost:3000/api/webhooks/stripe
-```
-
-Events: `checkout.session.completed`
-
-Allocation API (`GET /api/allocation`) counts completed sessions with `metadata.tier` ∈ `legacy` | `dna`, plus `baseline_allocated` from `funding.json`.
+Minimum: `RESEND_*`, `STRIPE_*`, `NEXT_PUBLIC_SITE_URL`, `OPS_TOKEN`.
 
 ## Human gates (by design)
 
-- Research PRs are never auto-merged
-- Social drafts are never auto-posted
-- Agents propose; humans merge and post
+- Research claims: **never auto-merge without read**
+- Social: **never auto-post**
+- Payments / pricing: **human only**
+- Agents update data + open PRs; founders merge

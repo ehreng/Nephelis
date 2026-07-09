@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getTasks, getTimeline } from '@/lib/content';
+import { getMissionControl, getRisks, getTasks, getTimeline } from '@/lib/content';
 
 export const metadata: Metadata = {
   title: 'Roadmap',
   description:
-    'Public Project AETHER roadmap — milestones, workstreams, and open tasks for the Venus cloud-layer probe.',
+    'Public Project AETHER roadmap — milestones, workstreams, risks, and open tasks for the Venus cloud-layer probe.',
 };
 
 const statusStyle: Record<string, string> = {
@@ -24,6 +24,8 @@ const statusStyle: Record<string, string> = {
 export default function RoadmapPage() {
   const timeline = getTimeline();
   const tasks = getTasks();
+  const mc = getMissionControl();
+  const risks = getRisks().filter((r) => r.status === 'open' || r.status === 'mitigating');
 
   const byQuarter = tasks.reduce<Record<string, typeof tasks>>((acc, t) => {
     (acc[t.quarter] ||= []).push(t);
@@ -45,9 +47,11 @@ export default function RoadmapPage() {
           <div className="font-mono text-xs tracking-[3px] text-venus/80 mb-2">PUBLIC ROADMAP</div>
           <h1 className="text-5xl md:text-6xl font-semibold tracking-tight">Mission Path</h1>
           <p className="mt-3 max-w-xl text-lg text-foreground/70">
-            Driven by <code className="text-venus text-sm">timeline.json</code> and{' '}
-            <code className="text-venus text-sm">tasks.json</code>. Agents and humans update the data
-            — this page follows.
+            Driven by structured mission data. Agents and humans update JSON — this page follows.
+          </p>
+          <p className="mt-2 font-mono text-[10px] text-gray-500">
+            {mc.callsign} · {mc.phase} · target {mc.launch_target} · goal $
+            {mc.funding_goal_usd.toLocaleString()}
           </p>
         </div>
 
@@ -73,6 +77,33 @@ export default function RoadmapPage() {
               </div>
             ))}
           </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="font-mono text-xs uppercase tracking-widest text-gray-500 mb-6">
+            Risk register (open)
+          </h2>
+          <ul className="space-y-2">
+            {risks.map((r) => (
+              <li
+                key={r.id}
+                className="border border-white/10 px-4 py-3 bg-white/[0.02] text-sm flex flex-wrap gap-2 items-baseline"
+              >
+                <span className="font-mono text-venus text-xs w-12">{r.id}</span>
+                <span className="flex-1">{r.title}</span>
+                <span className="font-mono text-[10px] text-gray-500 uppercase">
+                  {r.impact}/{r.likelihood}
+                </span>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-3 text-xs text-gray-600">
+            Detail + mitigations in data · concept depth on{' '}
+            <Link href="/mission" className="text-venus hover:underline">
+              /mission
+            </Link>
+            .
+          </p>
         </section>
 
         <section>

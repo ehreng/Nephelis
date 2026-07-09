@@ -7,7 +7,9 @@
 - Webhook rejects unsigned requests; paid sessions increment `/api/allocation`
 - Resend subscribe + volunteer + auto-reply
 - CI on `main`
-- Automation workflows can open PRs (metrics / social)
+- Automation workflows can open PRs (metrics / social / digests)
+- SEO: sitemap.xml + robots.txt
+- Mission data model: mass budget, risks, partners, mission-control
 
 ## Your remaining checklist
 

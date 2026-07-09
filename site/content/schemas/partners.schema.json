@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Partners",
+  "type": "object",
+  "required": ["updated_at", "pipeline"],
+  "properties": {
+    "updated_at": { "type": "string" },
+    "pipeline": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "type", "status", "ask", "next_step", "priority"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "type": { "type": "string" },
+          "status": {
+            "type": "string",
+            "enum": ["research", "prospect", "active", "paused", "closed", "won"]
+          },
+          "ask": { "type": "string" },
+          "next_step": { "type": "string" },
+          "priority": { "type": "string", "enum": ["P0", "P1", "P2", "P3"] }
+        }
+      }
+    },
+    "advisors_public": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

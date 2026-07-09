@@ -1,0 +1,53 @@
+{
+  "updated_at": "2026-07-09T00:00:00.000Z",
+  "pipeline": [
+    {
+      "id": "p-sensor-lab",
+      "name": "Sensor lab / university partner (TBD)",
+      "type": "science",
+      "status": "prospect",
+      "ask": "Mass-spec or nephelometer in-kind or joint proposal",
+      "next_step": "Identify 2–3 groups with Venus cloud experience",
+      "priority": "P0"
+    },
+    {
+      "id": "p-materials",
+      "name": "Fluoropolymer / materials supplier",
+      "type": "hardware",
+      "status": "prospect",
+      "ask": "Envelope material samples + acid-test support",
+      "next_step": "RFQ for small-batch film samples",
+      "priority": "P0"
+    },
+    {
+      "id": "p-launch",
+      "name": "Rideshare / secondary payload broker",
+      "type": "launch",
+      "status": "research",
+      "ask": "2027 Venus-transfer compatible slot estimate",
+      "next_step": "Map 2027 windows vs vehicle options",
+      "priority": "P1"
+    },
+    {
+      "id": "p-sponsor-corp",
+      "name": "Corporate logo / mission sponsor",
+      "type": "sponsor",
+      "status": "prospect",
+      "ask": "Tiered sponsorship beyond individual DNA/engraving",
+      "next_step": "One-pager from press kit + warm intros",
+      "priority": "P1"
+    },
+    {
+      "id": "p-comms-cubesat",
+      "name": "CubeSat / comms partner",
+      "type": "comms",
+      "status": "research",
+      "ask": "3U relay bus or radios",
+      "next_step": "List of flight-heritage UHF/S-band options",
+      "priority": "P1"
+    }
+  ],
+  "advisors_public": [
+    "Veterans from SpaceX, NASA JPL, DARPA, ESA, Blue Origin (public claim — verify before press)"
+  ]
+}

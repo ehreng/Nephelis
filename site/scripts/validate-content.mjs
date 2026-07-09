@@ -20,6 +20,10 @@ const pairs = [
   ['tasks.json', 'tasks.schema.json'],
   ['telemetry.json', 'telemetry.schema.json'],
   ['funding.json', 'funding.schema.json'],
+  ['mass-budget.json', 'mass-budget.schema.json'],
+  ['risks.json', 'risks.schema.json'],
+  ['partners.json', 'partners.schema.json'],
+  ['mission-control.json', 'mission-control.schema.json'],
 ];
 
 const ajv = new Ajv({ allErrors: true, strict: false });

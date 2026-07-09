@@ -1,0 +1,54 @@
+{
+  "updated_at": "2026-07-09T00:00:00.000Z",
+  "wet_mass_kg": 400,
+  "target_float_altitude_km": 55,
+  "balloon_volume_m3": 150,
+  "balloon_diameter_m": 6.6,
+  "delta_v_m_s": 2500,
+  "isp_s": 290,
+  "elements": [
+    {
+      "id": "kick_stage",
+      "name": "Kick / transfer stage (wet)",
+      "mass_kg_min": 330,
+      "mass_kg_max": 380,
+      "notes": "Dry ~80–100 kg + propellant ~250–280 kg; storable hypergolic"
+    },
+    {
+      "id": "entry_probe",
+      "name": "Entry probe + balloon + gondola (dry stack)",
+      "mass_kg_min": 120,
+      "mass_kg_max": 150,
+      "notes": "Heatshield, stowed aerostat, sensors, avionics"
+    },
+    {
+      "id": "heatshield",
+      "name": "Heatshield / blunt-body base",
+      "mass_kg_min": 55,
+      "mass_kg_max": 65,
+      "notes": "Ablative dinner-plate class"
+    },
+    {
+      "id": "balloon",
+      "name": "Fluoropolymer balloon + inflation",
+      "mass_kg_min": 35,
+      "mass_kg_max": 45,
+      "notes": "Super-pressure envelope"
+    },
+    {
+      "id": "gondola",
+      "name": "Gondola + sensor suite",
+      "mass_kg_min": 45,
+      "mass_kg_max": 55,
+      "notes": "Imagery, mass spec, nephelometer, bio-sensors"
+    },
+    {
+      "id": "avionics",
+      "name": "Avionics, power, structure, comms",
+      "mass_kg_min": 25,
+      "mass_kg_max": 35,
+      "notes": "Includes CubeSat relay interface margin"
+    }
+  ],
+  "contingency": "Positive headroom vs 400 kg wet — acid protection, helium, redundancy"
+}

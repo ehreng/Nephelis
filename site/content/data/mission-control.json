@@ -1,0 +1,65 @@
+{
+  "updated_at": "2026-07-09T00:00:00.000Z",
+  "callsign": "NEPHELIS.MCC",
+  "phase": "DESIGN",
+  "launch_target": "2027-12-15",
+  "funding_goal_usd": 500000,
+  "checklist": [
+    {
+      "id": "mc-design-freeze",
+      "item": "Preliminary design freeze (balloon + gondola ICD)",
+      "phase": "DESIGN",
+      "status": "in_progress",
+      "due": "2026-Q4"
+    },
+    {
+      "id": "mc-materials-test",
+      "item": "Acid / materials coupon campaign started",
+      "phase": "DESIGN",
+      "status": "planned",
+      "due": "2026-Q4"
+    },
+    {
+      "id": "mc-sensor-baselined",
+      "item": "Sensor suite baselined with mass/power numbers",
+      "phase": "DESIGN",
+      "status": "planned",
+      "due": "2027-Q1"
+    },
+    {
+      "id": "mc-comms-arch",
+      "item": "Comms architecture review (CubeSat relay)",
+      "phase": "DESIGN",
+      "status": "planned",
+      "due": "2027-Q1"
+    },
+    {
+      "id": "mc-env-qual",
+      "item": "Environmental qualification plan signed",
+      "phase": "INTEGRATION",
+      "status": "planned",
+      "due": "2027-Q2"
+    },
+    {
+      "id": "mc-launch-loi",
+      "item": "Launch path LOI or rideshare reservation",
+      "phase": "INTEGRATION",
+      "status": "planned",
+      "due": "2027-Q2"
+    },
+    {
+      "id": "mc-funding-50",
+      "item": "50% of $500k goal committed",
+      "phase": "PROGRAM",
+      "status": "planned",
+      "due": "2027-Q1"
+    },
+    {
+      "id": "mc-crew-ops",
+      "item": "Ops playbook v1 (entry → float → downlink)",
+      "phase": "OPS",
+      "status": "planned",
+      "due": "2027-Q3"
+    }
+  ]
+}

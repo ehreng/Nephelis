@@ -4,6 +4,10 @@ import heritage from '../content/data/heritage.json';
 import tasks from '../content/data/tasks.json';
 import telemetry from '../content/data/telemetry.json';
 import funding from '../content/data/funding.json';
+import massBudget from '../content/data/mass-budget.json';
+import risks from '../content/data/risks.json';
+import partners from '../content/data/partners.json';
+import missionControl from '../content/data/mission-control.json';
 
 export type TimelineItem = {
   year: string;
@@ -44,6 +48,35 @@ export type Telemetry = {
   systems: TelemetrySystem[];
 };
 
+export type RiskItem = {
+  id: string;
+  title: string;
+  category: string;
+  likelihood: string;
+  impact: string;
+  status: string;
+  mitigation: string;
+  owner?: string;
+};
+
+export type PartnerItem = {
+  id: string;
+  name: string;
+  type: string;
+  status: string;
+  ask: string;
+  next_step: string;
+  priority: string;
+};
+
+export type MissionCheckItem = {
+  id: string;
+  item: string;
+  phase: string;
+  status: string;
+  due?: string;
+};
+
 export function getTimeline(): TimelineItem[] {
   return timeline as TimelineItem[];
 }
@@ -68,7 +101,29 @@ export function getFunding() {
   return funding;
 }
 
-// Placeholder for future MDX loaded updates
+export function getMassBudget() {
+  return massBudget;
+}
+
+export function getRisks(): RiskItem[] {
+  return (risks as { risks: RiskItem[] }).risks;
+}
+
+export function getPartners(): PartnerItem[] {
+  return (partners as { pipeline: PartnerItem[] }).pipeline;
+}
+
+export function getMissionControl() {
+  return missionControl as {
+    updated_at: string;
+    callsign: string;
+    phase: string;
+    launch_target: string;
+    funding_goal_usd: number;
+    checklist: MissionCheckItem[];
+  };
+}
+
 export function getUpdates() {
   return [
     {

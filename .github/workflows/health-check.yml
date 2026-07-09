@@ -1,0 +1,22 @@
+name: Production health check
+
+on:
+  schedule:
+    # Daily 16:00 UTC
+    - cron: '0 16 * * *'
+  workflow_dispatch:
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Probe production
+        run: npx --yes tsx automation/scripts/health-check.ts
+        env:
+          BASE_URL: https://www.nephelisindustries.com

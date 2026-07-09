@@ -1,145 +1,115 @@
 # Nephelis Industries
 
-**Project AETHER**: A super-pressure balloon probe targeting Venus's habitable cloud layer. Launching 2027.
+**Project AETHER**: A super-pressure balloon probe targeting Venus's habitable cloud layer. Launch window **Q4 2027**.
 
-This repository contains the evolving digital presence and operational tooling for Nephelis Industries.
+This repository is the **public site + mission ops toolchain** for Nephelis Industries — built so humans and AI agents can advance the mission through structured data, automation loops, and reviewable PRs.
+
+**Live:** [www.nephelisindustries.com](https://www.nephelisindustries.com)
 
 ## Structure
 
 ```
 nephelis/
-├── site/                  # The main website (Next.js)
-├── assets/                # Visuals, videos, 3D models
-├── research/              # Knowledge base (science, competitors, notes)
-├── automation/            # AI prompts, scripts, and agent definitions for continuous evolution
-├── decks/                 # Pitch materials (auto-updatable)
-└── docs/
+├── AGENTS.md              # Instructions for AI agents
+├── site/                  # Next.js website (Vercel root = site/)
+│   └── content/data/      # Source of truth (specs, risks, tasks, …)
+├── research/              # Knowledge base (science, competitors, digests)
+├── automation/            # Scripts, prompts, social drafts
+├── decks/                 # Generated metrics + press kit
+├── docs/                  # Runbooks (go-live, mission automation)
+└── assets/                # Visuals / media
 ```
 
-## Getting Started (Website)
+## Quick start
 
 ```bash
-cd site
-pnpm install
-pnpm dev
+cd site && pnpm install && pnpm dev
+# http://localhost:3000
 ```
 
 ## Philosophy
 
-- **Content as Data**: Structured data and MDX in `site/content/` and `research/` are the source of truth. Agents edit these → site evolves.
-- **Agentic Development**: Use AI loops (research → content → visuals → code → review → deploy) to keep the venture moving forward.
-- **Version Everything**: All assets, prompts, research, and code live here.
+- **Content as data** — agents edit JSON/MDX; the site renders it.
+- **Agentic ops** — research → digest → content → deploy, with human merge gates.
+- **Version everything** — prompts, risks, mass budget, and code live in git.
 
-See `automation/prompts/` for starting agent workflows and `site/README.md` for the website.
-
-## Implementation Status (July 2026)
-
-- [x] Directory structure created
-- [x] Next.js 15 site scaffolded with Nephelis branding
-- [x] Basic pages + data-driven timeline + specs
-- [x] Visuals gallery with real assets + interactive demo
-- [x] MDX support + sample updates (research loop demonstrated)
-- [x] Starter automation prompts + evolve script
-- [x] Content ported/enhanced from 82083 and ehreng.github.io
-- [x] Assets partially organized
-- [x] First agent research loop run (competitor missions update added)
-- [x] Deployed to Vercel under nephelisindustries.com
-- [x] CI (lint / typecheck / build / content schemas)
-- [x] Lead pipeline (Resend audience + auto-reply + tags)
-- [x] Stripe Checkout + webhook + live allocation API
-- [x] Weekly research scaffold Action → PR
-- [x] Social drafts + metrics one-pager sync Actions
-- [x] Living research knowledge base seed
-- [x] Public `/roadmap` + telemetry strip + volunteer form + `/ops`
-- [ ] Full asset sync + more visuals
-- [ ] Configure production secrets (Resend domain, Stripe webhook, OPS_TOKEN)
-
-## Local Development
+## Automation (high level)
 
 ```bash
-cd site
-pnpm install
-pnpm dev
+# From repo root
+npx tsx automation/scripts/evolve.ts full     # scaffold most loops
+npx tsx automation/scripts/evolve.ts digest   # weekly MCC digest
+npx tsx automation/scripts/evolve.ts health   # prod health check
 ```
 
-Open http://localhost:3000
+| Loop | What it does |
+|------|----------------|
+| Research (Mon) | Brief + draft MDX → PR |
+| Mission digest (Mon) | Tasks/risks/partners snapshot → PR |
+| Social | Drafts X/LinkedIn from MDX |
+| Metrics / press | One-pagers from JSON |
+| Health / links | Prod + heritage URL checks |
+| CI | Schema + typecheck + lint + build |
+| Stripe + Resend | Payments, allocation, leads |
 
-## Deploy to Vercel
+Details: [`automation/README.md`](./automation/README.md) · architecture: [`docs/mission-automation.md`](./docs/mission-automation.md) · agents: [`AGENTS.md`](./AGENTS.md)
 
-1. `cd site`
-2. `vercel` (or connect GitHub repo containing the nephelis folder)
-3. Set custom domain nephelisindustries.com in Vercel dashboard.
-4. For subpath or monorepo, configure root directory to `site` if the whole nephelis is the repo.
+## Mission data
 
-## Running AI Automation Loops
+Public numbers live in `site/content/data/`:
 
-Use this Grok environment or scripts:
+| File | Powers |
+|------|--------|
+| `specs.json` | Probe concept |
+| `mass-budget.json` | 400 kg-class stack |
+| `timeline.json` / `tasks.json` | `/roadmap` |
+| `risks.json` | Risk register |
+| `partners.json` | Partner pipeline |
+| `mission-control.json` | MCC checklist |
+| `telemetry.json` | Systems strip |
+| `funding.json` | Sponsor tiers |
+| `heritage.json` | Venus archive |
 
-```bash
-# In this chat: "Research latest Venus missions and update the site data + create new update post"
-# Then use subagent + implement to apply changes.
+Knowledge base: [`research/`](./research/) (see `research/INDEX.md` after `evolve.ts kb`).
 
-# Local script
-cd site
-npx tsx ../automation/scripts/evolve.ts research
-```
+## Site pages
 
-Full workflow documented in automation/.
+| Path | Role |
+|------|------|
+| `/` | Mission narrative + funding + volunteer |
+| `/mission` | Specs, mass budget, checklist, risks |
+| `/roadmap` | Milestones + tasks + risks |
+| `/updates` | MDX logs |
+| `/ops` | Private ops (token) |
 
-To port more from old sites or generate new sections, just ask (we'll use plan/implement/review + subagents).
-```
+## Status (July 2026)
+
+- [x] Next.js site on Vercel + custom domain  
+- [x] Stripe test checkout + live allocation  
+- [x] Resend leads / auto-reply / volunteer form  
+- [x] CI + content schemas  
+- [x] Research / digest / social / metrics automation  
+- [x] Health + link checks  
+- [x] Mass budget, risks, partners, mission-control data  
+- [ ] Stripe **live** mode  
+- [ ] Deeper hardware test data + visuals  
+
+Roadmap: [site `/roadmap`](https://www.nephelisindustries.com/roadmap) · go-live: [`docs/go-live.md`](./docs/go-live.md)
 
 ## Contributing
 
-Volunteers and collaborators are welcome! See [CONTRIBUTING.md](./CONTRIBUTING.md).
+See [`CONTRIBUTING.md`](./CONTRIBUTING.md). Easiest paths:
 
-**Quick ways to help:**
-- Edit JSON data or add MDX updates (no code required)
-- Generate visuals using the prompts
-- Improve the site, planner, or add features
-- Help run research/automation loops
-
-The project is designed so both humans and AI agents can contribute effectively.
-
-## Agentic Automation & AI Collaboration
-
-This repo is built for continuous, automated evolution:
-
-- `automation/prompts/` – reusable instructions for research, visuals, planning
-- `automation/scripts/` – evolve.ts and helpers (run with `npx tsx`)
-- Living data in `site/content/data/` + MDX powers the site
-
-**Example workflows:**
-- "Research latest Venus cloud missions and update timeline + create MDX post"
-- "Generate a new visual brief and suggest new hero assets"
-- "Propose next 5 development tasks + implement one"
-
-Agents (and humans) can use plan/implement/review loops. Contributions via PRs are reviewed and merged.
-
-## Roadmap & Next Steps (Living)
-
-See `site/content/data/timeline.json` for milestones.
-
-Open tasks (volunteers + agents encouraged):
-- Wire Vercel env vars from `site/.env.example` (Resend, Stripe, OPS_TOKEN)
-- Expand visuals gallery + more videos
-- Science deep dives, partner logos, press
-- Optional visual regression tests
-- Fill weekly research PRs as they open
-
-See public roadmap: `/roadmap` (driven by `site/content/data/tasks.json`).
+1. Edit JSON under `site/content/data/`  
+2. Add a research note under `research/`  
+3. Open a PR — agents welcome if changes are cited and validated  
 
 ```bash
-# Automation scaffolds
-npx tsx automation/scripts/evolve.ts full
-
-# Site CI gate
-cd site && pnpm ci
+cd site && pnpm validate:content && pnpm ci
 ```
 
-## Current Status
+## Contact
 
-- Personal brand remains at [82083.net](https://82083.net)
-- Dedicated site: [nephelisindustries.com](https://nephelisindustries.com)
-- Deployed on Vercel, custom domain active
-- Content, styling, and core interactive elements ported from reference designs
+- ehren@nephelisindustries.com  
+- [@NephelisCo](https://x.com/NephelisCo)  
+- Personal: [82083.net](https://82083.net)

@@ -40,6 +40,16 @@ const tasks = loadJson<Tasks>('site/content/data/tasks.json');
 const telemetry = loadJson<{ overall_status: string; mission_phase: string }>(
   'site/content/data/telemetry.json'
 );
+const mass = loadJson<{ wet_mass_kg: number; balloon_diameter_m: number; target_float_altitude_km: number }>(
+  'site/content/data/mass-budget.json'
+);
+const risks = loadJson<{ risks: { id: string; title: string; impact: string; status: string }[] }>(
+  'site/content/data/risks.json'
+);
+const mc = loadJson<{ phase: string; launch_target: string; funding_goal_usd: number }>(
+  'site/content/data/mission-control.json'
+);
+const openRisks = risks.risks.filter((r) => r.status === 'open' || r.status === 'mitigating');
 
 const generated = new Date().toISOString();
 
@@ -53,13 +63,17 @@ _Auto-generated from \`site/content/data/*\` · ${generated}_
 | Metric | Value |
 |--------|-------|
 | Program | Project AETHER / Cloudseeker |
+| MCC phase | ${mc.phase} · target ${mc.launch_target} |
 | Probe | ${specs.probe.type} |
-| Target altitude | ${specs.probe.target_altitude_km[0]}–${specs.probe.target_altitude_km[1]} km |
+| Target altitude | ${specs.probe.target_altitude_km[0]}–${specs.probe.target_altitude_km[1]} km (float ~${mass.target_float_altitude_km} km) |
+| Wet mass | ~${mass.wet_mass_kg} kg · balloon ~${mass.balloon_diameter_m} m |
 | Float duration (baseline) | ${specs.probe.expected_duration_days}+ days (ops goal 30–90) |
 | Launch target | ${specs.launch.target_year} |
 | Vehicles | ${specs.launch.vehicle_options.join(', ')} |
 | Transfer | ${specs.launch.transfer} |
+| Funding goal | $${mc.funding_goal_usd.toLocaleString()} |
 | Systems status | ${telemetry.overall_status} (${telemetry.mission_phase}) |
+| Open risks | ${openRisks.length} (see risks.json) |
 
 ## Science goals
 
@@ -91,6 +105,13 @@ ${timeline.map((t) => `- **${t.year}** (${t.status}): ${t.event}`).join('\n')}
 ${tasks
   .filter((t) => (t.priority === 'P0' || t.priority === 'P1') && t.status !== 'done')
   .map((t) => `- [${t.priority}] ${t.title} — _${t.status}_ (${t.quarter})`)
+  .join('\n')}
+
+## Top risks
+
+${openRisks
+  .filter((r) => r.impact === 'critical' || r.impact === 'high')
+  .map((r) => `- **${r.id}** (${r.impact}): ${r.title}`)
   .join('\n')}
 
 ## Pitch talking points

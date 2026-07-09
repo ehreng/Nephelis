@@ -90,11 +90,44 @@
   {
     "id": "prod-secrets",
     "title": "Configure Vercel secrets (Resend domain, Stripe webhook, OPS_TOKEN)",
-    "status": "planned",
+    "status": "done",
     "priority": "P0",
     "area": "ops",
     "quarter": "2026-Q3"
   },
+  {
+    "id": "stripe-live",
+    "title": "Flip Stripe from test mode to live keys + live webhook",
+    "status": "planned",
+    "priority": "P0",
+    "area": "growth",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "seo-share",
+    "title": "SEO: sitemap, robots, Open Graph / Twitter cards",
+    "status": "done",
+    "priority": "P1",
+    "area": "site",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "first-research-fill",
+    "title": "Fill first weekly research brief with real sources",
+    "status": "planned",
+    "priority": "P1",
+    "area": "content",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "social-post-cadence",
+    "title": "Post first social drafts from automation/social-drafts",
+    "status": "planned",
+    "priority": "P2",
+    "area": "growth",
+    "quarter": "2026-Q3"
+  },
+
   {
     "id": "ground-test-2026",
     "title": "Balloon envelope ground tests",

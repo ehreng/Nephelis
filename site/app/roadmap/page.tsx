@@ -1,5 +1,12 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getTasks, getTimeline } from '@/lib/content';
+
+export const metadata: Metadata = {
+  title: 'Roadmap',
+  description:
+    'Public Project AETHER roadmap — milestones, workstreams, and open tasks for the Venus cloud-layer probe.',
+};
 
 const statusStyle: Record<string, string> = {
   done: 'text-emerald-400 border-emerald-400/40',

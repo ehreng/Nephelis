@@ -3,11 +3,54 @@ import "./globals.css";
 import Link from "next/link";
 import MobileMenu from "@/components/MobileMenu";
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.nephelisindustries.com";
+
 export const metadata: Metadata = {
-  title: "Nephelis Industries | Project AETHER",
-  description: "A super-pressure balloon probe targeting Venus's habitable cloud layer. Launching 2027.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Nephelis Industries | Project AETHER",
+    template: "%s | Nephelis Industries",
+  },
+  description:
+    "Project AETHER: a crowd-funded super-pressure balloon probe for Venus's habitable cloud layer. Launch window Q4 2027. Sponsor a payload slot or join the crew.",
+  keywords: [
+    "Venus",
+    "aerostat",
+    "Project AETHER",
+    "Nephelis Industries",
+    "cloud layer",
+    "space crowdfunding",
+    "CubeSat",
+  ],
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    siteName: "Nephelis Industries",
+    title: "Nephelis Industries | Project AETHER",
+    description:
+      "Humanity's return to the clouds — private Venus cloud-layer probe, launch 2027.",
+    images: [
+      {
+        url: "/assets/visuals/Venus Visions.png",
+        width: 1200,
+        height: 630,
+        alt: "Project AETHER — Venus cloud visions",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@NephelisCo",
+    title: "Nephelis Industries | Project AETHER",
+    description: "Private Venus cloud-layer probe. Launch Q4 2027. Join the flight crew.",
+    images: ["/assets/visuals/Venus Visions.png"],
+  },
   icons: {
     icon: "/favicon.ico",
+  },
+  alternates: {
+    canonical: siteUrl,
   },
 };
 

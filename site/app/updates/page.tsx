@@ -4,6 +4,8 @@ import Link from "next/link";
 import Update202606 from "../../content/updates/2026-06-mission-update.mdx";
 import Update202607 from "../../content/updates/2026-07-competitor-missions.mdx";
 
+// Note: client component — page-level metadata is set in layout or a parent server wrapper if needed.
+
 export default function UpdatesPage() {
   return (
     <div className="bg-void text-foreground min-h-screen">

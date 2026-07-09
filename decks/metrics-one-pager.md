@@ -1,6 +1,6 @@
 # Nephelis Industries — Metrics One-Pager
 
-_Auto-generated from `site/content/data/*` · 2026-07-09T01:05:50.636Z_  
+_Auto-generated from `site/content/data/*` · 2026-07-09T01:08:02.095Z_  
 **Do not hand-edit** — run `npx tsx automation/scripts/sync-metrics.ts` after data changes.
 
 ## Mission snapshot
@@ -49,7 +49,8 @@ _Paid counts come from Stripe at runtime; baseline is static marketing/pre-sales
 
 ## Open tasks (P0/P1)
 
-- [P0] Configure Vercel secrets (Resend domain, Stripe webhook, OPS_TOKEN) — _planned_ (2026-Q3)
+- [P0] Flip Stripe from test mode to live keys + live webhook — _planned_ (2026-Q3)
+- [P1] Fill first weekly research brief with real sources — _planned_ (2026-Q3)
 - [P0] Balloon envelope ground tests — _planned_ (2026-Q4)
 - [P0] Sensor suite + gondola integration — _planned_ (2027-Q1)
 - [P0] Launch window readiness (Q4 2027) — _planned_ (2027-Q4)

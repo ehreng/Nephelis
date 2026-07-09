@@ -1,6 +1,6 @@
 # Nephelis Industries — Press & Partner Kit
 
-_Auto-generated 2026-07-09T01:19:28.048Z from mission data. Re-run: `npx tsx automation/scripts/press-kit.ts`_
+_Auto-generated 2026-07-09T01:24:17.533Z from mission data. Re-run: `npx tsx automation/scripts/press-kit.ts`_
 
 ## Boilerplate (short)
 

@@ -1,6 +1,6 @@
 # Nephelis Industries — Metrics One-Pager
 
-_Auto-generated from `site/content/data/*` · 2026-07-09T01:19:29.018Z_  
+_Auto-generated from `site/content/data/*` · 2026-07-09T01:24:16.930Z_  
 **Do not hand-edit** — run `npx tsx automation/scripts/sync-metrics.ts` after data changes.
 
 ## Mission snapshot

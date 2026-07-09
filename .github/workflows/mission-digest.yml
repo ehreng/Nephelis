@@ -24,9 +24,13 @@ jobs:
         id: d
         run: echo "date=$(date -u +%F)" >> "$GITHUB_OUTPUT"
 
-      - name: Generate mission digest + KB index + press kit
+      - name: Generate mission digest + side artifacts
         run: |
           npx --yes tsx automation/scripts/mission-digest.ts
+          npx --yes tsx automation/scripts/partner-stale.ts
+          npx --yes tsx automation/scripts/competitor-watch.ts
+          npx --yes tsx automation/scripts/social-from-digest.ts
+          npx --yes tsx automation/scripts/sync-telemetry.ts
           npx --yes tsx automation/scripts/kb-index.ts
           npx --yes tsx automation/scripts/press-kit.ts
           npx --yes tsx automation/scripts/sync-metrics.ts

@@ -17,15 +17,15 @@
     {
       "id": "entry_probe",
       "name": "Entry probe + balloon + gondola (dry stack)",
-      "mass_kg_min": 120,
-      "mass_kg_max": 150,
-      "notes": "Heatshield, stowed aerostat, sensors, avionics"
+      "mass_kg_min": 150,
+      "mass_kg_max": 200,
+      "notes": "Aggregate of heatshield + balloon + gondola + avionics (must bound detailed lines)"
     },
     {
       "id": "heatshield",
       "name": "Heatshield / blunt-body base",
-      "mass_kg_min": 55,
-      "mass_kg_max": 65,
+      "mass_kg_min": 50,
+      "mass_kg_max": 60,
       "notes": "Ablative dinner-plate class"
     },
     {
@@ -38,7 +38,7 @@
     {
       "id": "gondola",
       "name": "Gondola + sensor suite",
-      "mass_kg_min": 45,
+      "mass_kg_min": 40,
       "mass_kg_max": 55,
       "notes": "Imagery, mass spec, nephelometer, bio-sensors"
     },

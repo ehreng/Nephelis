@@ -1,0 +1,33 @@
+{
+  "updated_at": "2026-07-09T00:00:00.000Z",
+  "watches": [
+    {
+      "id": "rocket-lab-vlf",
+      "name": "Rocket Lab / Venus Life Finder class",
+      "keywords": ["Rocket Lab Venus", "Venus Life Finder", "Rocket Lab atmospheric probe"],
+      "notes_path": "research/competitors/rocket-lab-venus-life-finder.md",
+      "priority": "P0"
+    },
+    {
+      "id": "nasa-aerobot",
+      "name": "NASA Venus aerobot concepts",
+      "keywords": ["NASA Venus aerobot", "Venus balloon NASA", "HAVOC Venus"],
+      "notes_path": "research/competitors/government-aerobots.md",
+      "priority": "P1"
+    },
+    {
+      "id": "esa-venus",
+      "name": "ESA Venus missions / concepts",
+      "keywords": ["EnVision Venus", "ESA Venus balloon", "Venus Express follow-on"],
+      "notes_path": "research/competitors/government-aerobots.md",
+      "priority": "P1"
+    },
+    {
+      "id": "materials-balloon",
+      "name": "Super-pressure balloon / fluoropolymer",
+      "keywords": ["super pressure balloon Venus", "fluoropolymer balloon acid", "planetary aerobot"],
+      "notes_path": "research/science/materials-acid-resistance.md",
+      "priority": "P0"
+    }
+  ]
+}

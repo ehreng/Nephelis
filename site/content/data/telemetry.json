@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-08T00:00:00.000Z",
+  "updated_at": "2026-07-09T01:23:38.271Z",
   "mission_phase": "DESIGN",
   "overall_status": "SYSTEMS NOMINAL",
   "systems": [
@@ -13,8 +13,8 @@
     {
       "id": "comms",
       "label": "COMMS",
-      "status": "nominal",
-      "value": "LINK PLAN",
+      "status": "dev",
+      "value": "PLANNED",
       "detail": "CubeSat relay architecture baselined"
     },
     {
@@ -41,8 +41,8 @@
     {
       "id": "funding",
       "label": "FUNDING",
-      "status": "attention",
-      "value": "OPEN",
+      "status": "dev",
+      "value": "PLANNED",
       "detail": "Crowdfund + partner pipeline live"
     }
   ]

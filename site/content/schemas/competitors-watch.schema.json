@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CompetitorsWatch",
+  "type": "object",
+  "required": ["updated_at", "watches"],
+  "properties": {
+    "updated_at": { "type": "string" },
+    "watches": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "keywords", "notes_path", "priority"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "keywords": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+          "notes_path": { "type": "string" },
+          "priority": { "type": "string", "enum": ["P0", "P1", "P2", "P3"] }
+        }
+      }
+    }
+  }
+}

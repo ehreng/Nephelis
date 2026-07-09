@@ -18,20 +18,20 @@ Living list of automation we want around Project AETHER. Implemented items move 
 ## 🔜 Next automation goals
 
 ### Mission ops
-- [ ] Digest → optional email to TEAM_EMAIL via Resend (human-gated weekly)
-- [ ] Risk burn-down chart (SVG from risks.json) on `/mission`
-- [ ] Mass budget margin calculator (wet vs sum of maxes) in CI
-- [ ] Telemetry auto-bump when checklist items flip to `done`
+- [x] Digest → optional email to TEAM_EMAIL via Resend (`evolve.ts digest-email`, human-gated)
+- [x] Risk matrix chart (SVG from risks.json) on `/mission`
+- [x] Mass budget hygiene check in CI (`pnpm check:mass`)
+- [x] Telemetry auto-align from mission-control checklist (`evolve.ts telemetry`)
 
 ### Growth
-- [ ] Stripe live mode checklist automation (env drift detector)
-- [ ] Weekly social draft even without new MDX (from digest bullets)
-- [ ] Partner pipeline aging alerts (next_step stale > 14 days)
+- [x] Stripe mode / env drift detector (`evolve.ts env` + `/api/ops` stripe_mode)
+- [x] Weekly social draft from digest (`social-from-digest.ts`)
+- [x] Partner pipeline aging alerts (`partner-stale.ts`, Mon workflow)
 
 ### Knowledge
 - [ ] Research brief → auto-suggest heritage/timeline patches (agent PR body)
 - [ ] Open-questions resolver: closed Q → science note stub
-- [ ] Competitor RSS/watch list file + weekly diff
+- [x] Competitor watch list file + weekly checklist (`competitors-watch.json`)
 
 ### Engineering
 - [ ] Visual regression (Playwright) on hero + funding

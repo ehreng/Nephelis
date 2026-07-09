@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import RiskChart from '@/components/RiskChart';
 import { getMassBudget, getMissionControl, getRisks, getSpecs } from '@/lib/content';
 
 export const metadata: Metadata = {
@@ -94,12 +95,13 @@ export default function MissionPage() {
         </ul>
 
         <h3>Top open risks</h3>
+        <RiskChart />
         <ul>
           {risks.map((r) => (
             <li key={r.id}>
               <strong className="text-venus font-mono text-sm">{r.id}</strong> {r.title}{' '}
               <span className="text-gray-500 text-sm">
-                ({r.impact}/{r.likelihood})
+                ({r.impact}/{r.likelihood}) — {r.mitigation}
               </span>
             </li>
           ))}

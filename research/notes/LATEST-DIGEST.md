@@ -16,11 +16,11 @@
 ### Systems board
 
 - **POWER**: nominal
-- **COMMS**: nominal
+- **COMMS**: dev
 - **AEROSTAT**: dev
 - **AVIONICS**: dev
 - **NAV/AI**: nominal
-- **FUNDING**: attention
+- **FUNDING**: dev
 
 ## P0 open work (6)
 
@@ -31,14 +31,13 @@
 - [ ] **payload-integration** — Sensor suite + gondola integration _(hardware)_
 - [ ] **launch-window-2027** — Launch window readiness (Q4 2027) _(mission)_
 
-## All open tasks (9)
+## All open tasks (8)
 
 - [P0] Flip Stripe from test mode to live keys + live webhook — `planned`
 - [P1] Fill first weekly research brief with real sources — `planned`
 - [P2] Post first social drafts from automation/social-drafts — `planned`
 - [P0] Start fluoropolymer acid coupon test campaign — `planned`
 - [P0] Execute P0 partner next_steps (sensors + materials) — `planned`
-- [P2] Optional weekly digest email to TEAM_EMAIL — `planned`
 - [P0] Balloon envelope ground tests — `planned`
 - [P0] Sensor suite + gondola integration — `planned`
 - [P0] Launch window readiness (Q4 2027) — `planned`
@@ -82,6 +81,9 @@ _Full register: `site/content/data/risks.json` (7 active)._
 
 ## Recent research notes
 
+- `research/notes/LATEST-COMPETITOR-WATCH.md`
+- `research/notes/LATEST-DIGEST.md`
+- `research/notes/LATEST-PARTNER-STALE.md`
 - `research/notes/automation-roadmap.md`
 - `research/notes/open-questions.md`
 
@@ -105,4 +107,4 @@ npx tsx automation/scripts/evolve.ts press
 ```
 
 ---
-Generated 2026-07-09T01:19:26.181Z · do not hand-edit structure; append notes below the line if needed.
+Generated 2026-07-09T01:24:18.077Z · do not hand-edit structure; append notes below the line if needed.

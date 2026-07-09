@@ -170,11 +170,44 @@
   {
     "id": "digest-email",
     "title": "Optional weekly digest email to TEAM_EMAIL",
-    "status": "planned",
+    "status": "done",
     "priority": "P2",
     "area": "ops",
     "quarter": "2026-Q3"
   },
+  {
+    "id": "mass-margin-ci",
+    "title": "Mass budget hygiene check in CI",
+    "status": "done",
+    "priority": "P1",
+    "area": "ops",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "partner-stale-automation",
+    "title": "Partner stale detection + social-from-digest",
+    "status": "done",
+    "priority": "P1",
+    "area": "ops",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "telemetry-sync-script",
+    "title": "Telemetry auto-align from mission-control checklist",
+    "status": "done",
+    "priority": "P2",
+    "area": "ops",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "risk-matrix-ui",
+    "title": "Risk matrix chart on /mission",
+    "status": "done",
+    "priority": "P2",
+    "area": "site",
+    "quarter": "2026-Q3"
+  },
+
   {
     "id": "ground-test-2026",
     "title": "Balloon envelope ground tests",

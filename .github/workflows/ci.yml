@@ -31,6 +31,9 @@ jobs:
       - name: Validate content schemas
         run: pnpm validate:content
 
+      - name: Mass budget hygiene
+        run: pnpm check:mass
+
       - name: Typecheck
         run: pnpm typecheck
 

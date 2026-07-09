@@ -67,6 +67,7 @@ export type PartnerItem = {
   ask: string;
   next_step: string;
   priority: string;
+  last_touched?: string;
 };
 
 export type MissionCheckItem = {

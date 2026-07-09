@@ -30,15 +30,16 @@ Build and operate **Project AETHER** (Cloudseeker): a lean, private Venus cloud-
 
 ```bash
 # From repo root
-npx tsx automation/scripts/evolve.ts digest    # weekly MCC snapshot
-npx tsx automation/scripts/evolve.ts research  # research brief scaffold
-npx tsx automation/scripts/evolve.ts metrics   # decks/metrics-one-pager.md
-npx tsx automation/scripts/evolve.ts press     # decks/press-kit.md
-npx tsx automation/scripts/evolve.ts social    # social drafts
-npx tsx automation/scripts/evolve.ts kb        # research/INDEX.md
-npx tsx automation/scripts/evolve.ts health    # prod health
-npx tsx automation/scripts/evolve.ts links     # heritage URLs
-npx tsx automation/scripts/evolve.ts full      # most scaffolds
+npx tsx automation/scripts/evolve.ts digest         # MCC + partners + social-from-digest
+npx tsx automation/scripts/evolve.ts research       # research brief scaffold
+npx tsx automation/scripts/evolve.ts watch          # competitor keyword checklist
+npx tsx automation/scripts/evolve.ts telemetry      # sync telemetry from checklist
+npx tsx automation/scripts/evolve.ts env            # Stripe mode / env drift
+npx tsx automation/scripts/evolve.ts partners       # stale pipeline
+npx tsx automation/scripts/evolve.ts social-digest  # social without new MDX
+npx tsx automation/scripts/evolve.ts digest-email   # email digest (needs RESEND_*)
+npx tsx automation/scripts/evolve.ts full           # most scaffolds
+cd site && pnpm validate:content && pnpm check:mass
 ```
 
 ## When asked to “update the mission”

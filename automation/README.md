@@ -9,8 +9,10 @@ Agents: start at root [`AGENTS.md`](../AGENTS.md). Knowledge map: [`research/IND
 | Loop | Trigger | Output |
 |------|---------|--------|
 | **Research** | Mon 14:00 UTC / `evolve.ts research` | `research/notes/*-brief.md` + draft MDX → PR |
-| **Mission digest** | Mon 15:00 UTC / `evolve.ts digest` | digest + KB index + press + metrics → PR |
+| **Mission digest** | Mon 15:00 UTC / `evolve.ts digest` | digest + stale partners + watch + social-from-digest + telemetry → PR |
+| **Partner stale** | Mon 13:00 UTC / `evolve.ts partners` | stale P0/P1 report → PR |
 | **Social** | Push to updates MDX / `evolve.ts social` | `automation/social-drafts/` → PR |
+| **Social from digest** | With digest / `evolve.ts social-digest` | posts even without new MDX |
 | **Metrics** | Push to `content/data/**` / `evolve.ts metrics` | `decks/metrics-one-pager.md` |
 | **Health** | Daily 16:00 UTC / `evolve.ts health` | Prod endpoint probes (fail CI if down) |
 | **Links** | Sun / heritage PR / `evolve.ts links` | Validates `heritage.json` URLs |
@@ -40,6 +42,12 @@ cd site && pnpm validate:content && pnpm ci
 | `evolve.ts` | CLI router for all modes |
 | `research-weekly.ts` | Research brief + draft MDX scaffold |
 | `mission-digest.ts` | MCC snapshot from tasks/risks/partners/telemetry |
+| `partner-stale.ts` | P0/P1 pipeline aging |
+| `social-from-digest.ts` | Social drafts from digest |
+| `send-digest-email.ts` | Email digest via Resend (opt-in) |
+| `env-check.ts` | Env presence + Stripe test/live mode |
+| `sync-telemetry.ts` | Align telemetry with MCC checklist |
+| `competitor-watch.ts` | Agent search checklist from watch list |
 | `sync-metrics.ts` | Investor/metrics one-pager |
 | `press-kit.ts` | Press & partner boilerplate |
 | `social-draft.ts` | X / LinkedIn drafts from MDX |

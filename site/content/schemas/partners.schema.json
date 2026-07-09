@@ -20,7 +20,8 @@
           },
           "ask": { "type": "string" },
           "next_step": { "type": "string" },
-          "priority": { "type": "string", "enum": ["P0", "P1", "P2", "P3"] }
+          "priority": { "type": "string", "enum": ["P0", "P1", "P2", "P3"] },
+          "last_touched": { "type": "string" }
         }
       }
     },

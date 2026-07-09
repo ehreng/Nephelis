@@ -24,6 +24,7 @@ const pairs = [
   ['risks.json', 'risks.schema.json'],
   ['partners.json', 'partners.schema.json'],
   ['mission-control.json', 'mission-control.schema.json'],
+  ['competitors-watch.json', 'competitors-watch.schema.json'],
 ];
 
 const ajv = new Ajv({ allErrors: true, strict: false });

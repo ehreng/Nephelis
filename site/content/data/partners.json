@@ -8,7 +8,8 @@
       "status": "prospect",
       "ask": "Mass-spec or nephelometer in-kind or joint proposal",
       "next_step": "Identify 2–3 groups with Venus cloud experience",
-      "priority": "P0"
+      "priority": "P0",
+      "last_touched": "2026-07-09"
     },
     {
       "id": "p-materials",
@@ -17,7 +18,8 @@
       "status": "prospect",
       "ask": "Envelope material samples + acid-test support",
       "next_step": "RFQ for small-batch film samples",
-      "priority": "P0"
+      "priority": "P0",
+      "last_touched": "2026-07-09"
     },
     {
       "id": "p-launch",
@@ -26,7 +28,8 @@
       "status": "research",
       "ask": "2027 Venus-transfer compatible slot estimate",
       "next_step": "Map 2027 windows vs vehicle options",
-      "priority": "P1"
+      "priority": "P1",
+      "last_touched": "2026-07-09"
     },
     {
       "id": "p-sponsor-corp",
@@ -35,7 +38,8 @@
       "status": "prospect",
       "ask": "Tiered sponsorship beyond individual DNA/engraving",
       "next_step": "One-pager from press kit + warm intros",
-      "priority": "P1"
+      "priority": "P1",
+      "last_touched": "2026-07-09"
     },
     {
       "id": "p-comms-cubesat",
@@ -44,7 +48,8 @@
       "status": "research",
       "ask": "3U relay bus or radios",
       "next_step": "List of flight-heritage UHF/S-band options",
-      "priority": "P1"
+      "priority": "P1",
+      "last_touched": "2026-07-09"
     }
   ],
   "advisors_public": [

@@ -1,0 +1,33 @@
+name: Partner stale check
+
+on:
+  schedule:
+    - cron: '0 13 * * 1' # Mondays 13:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Partner stale report
+        run: npx --yes tsx automation/scripts/partner-stale.ts
+        env:
+          PARTNER_STALE_DAYS: '14'
+      - name: Create PR if report changed
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: 'chore(partners): stale pipeline report'
+          title: 'Partner pipeline stale report'
+          body: |
+            Auto report from `partner-stale.ts`. Update `last_touched` when advancing next_steps.
+          branch: automation/partner-stale
+          delete-branch: true
+          labels: growth, automation

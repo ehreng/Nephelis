@@ -7,8 +7,8 @@
       "category": "hardware",
       "likelihood": "medium",
       "impact": "high",
-      "status": "open",
-      "mitigation": "Multi-layer fluoropolymer; altitude selection; ground acid exposure tests",
+      "status": "mitigating",
+      "mitigation": "Multi-layer fluoropolymer; altitude selection; coupon protocol in docs/materials-coupon-test-protocol.md",
       "owner": "structures"
     },
     {

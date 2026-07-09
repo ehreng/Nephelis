@@ -18,6 +18,8 @@ Venus cloud aerosols include concentrated sulfuric acid. Super-pressure balloon 
 
 ## Test plan (ground)
 
+**Full protocol:** [`docs/materials-coupon-test-protocol.md`](../../docs/materials-coupon-test-protocol.md)
+
 1. Coupon soak in concentrated H₂SO₄ at relevant T  
 2. Fold / crease cycle + re-soak  
 3. Seam / weld samples under differential pressure  

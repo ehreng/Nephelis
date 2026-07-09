@@ -186,8 +186,8 @@
   },
   {
     "id": "funding-campaign-v1",
-    "title": "Public crowdfund campaign narrative + tier fulfillment SOPs",
-    "status": "planned",
+    "title": "Public crowdfund campaign narrative + tier fulfillment SOPs (SOP: docs/funding-fulfillment-sop.md)",
+    "status": "done",
     "priority": "P0",
     "area": "growth",
     "quarter": "2026-Q3"
@@ -299,8 +299,8 @@
   },
   {
     "id": "materials-coupon-campaign",
-    "title": "Fluoropolymer acid coupon campaign (soak, crease, seam samples)",
-    "status": "planned",
+    "title": "Fluoropolymer acid coupon campaign (protocol: docs/materials-coupon-test-protocol.md)",
+    "status": "in_progress",
     "priority": "P0",
     "area": "hardware",
     "quarter": "2026-Q4"
@@ -371,8 +371,8 @@
   },
   {
     "id": "power-budget-v1",
-    "title": "Power budget v1: solar at float, battery, duty cycles",
-    "status": "planned",
+    "title": "Power budget v1: solar at float, battery, duty cycles (v0 data: power-budget.json)",
+    "status": "in_progress",
     "priority": "P0",
     "area": "avionics",
     "quarter": "2026-Q4"

@@ -11,7 +11,8 @@ Build and operate **Project AETHER** (Cloudseeker): a lean, private Venus cloud-
 | Path | Role |
 |------|------|
 | `site/` | Next.js site (Vercel root directory) |
-| `site/content/data/` | **Source of truth** for public mission numbers |
+| `site/content/data/` | **Source of truth** for public mission numbers (incl. `power-budget.json`) |
+| `docs/` | CONOPS, requirements, SOPs, war board, protocols |
 | `site/content/updates/` | MDX mission logs |
 | `research/` | Living knowledge base (science, competitors, digests) |
 | `automation/` | Scripts, prompts, social drafts |

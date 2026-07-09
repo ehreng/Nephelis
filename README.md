@@ -96,7 +96,8 @@ Knowledge base: [`research/`](./research/) (see `research/INDEX.md` after `evolv
 
 Roadmap: [site `/roadmap`](https://www.nephelisindustries.com/roadmap) · go-live: [`docs/go-live.md`](./docs/go-live.md)  
 **30-day war board:** [`docs/30-day-war-board.md`](./docs/30-day-war-board.md) · partner drafts: [`docs/partner-outreach-drafts.md`](./docs/partner-outreach-drafts.md)  
-**Design package (v0.9):** [`docs/conops-v0.9.md`](./docs/conops-v0.9.md) · [`docs/requirements-baseline-v0.9.md`](./docs/requirements-baseline-v0.9.md) · [`docs/system-icd-skeleton.md`](./docs/system-icd-skeleton.md)
+**Design package:** [`docs/conops-v0.9.md`](./docs/conops-v0.9.md) · [`docs/requirements-baseline-v0.9.md`](./docs/requirements-baseline-v0.9.md) · [`docs/system-icd-skeleton.md`](./docs/system-icd-skeleton.md) · [`docs/power-budget-v0.md`](./docs/power-budget-v0.md)  
+**Ops:** [`docs/funding-fulfillment-sop.md`](./docs/funding-fulfillment-sop.md) · [`docs/materials-coupon-test-protocol.md`](./docs/materials-coupon-test-protocol.md)
 
 ## Contributing
 

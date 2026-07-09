@@ -111,8 +111,64 @@ export default function MissionPage() {
         </p>
       </div>
 
-      <div className="mt-10 text-xs text-foreground/60 font-mono border-l-2 border-venus pl-3">
-        Data-driven from mass-budget.json, mission-control.json, risks.json, specs.json.
+      <div className="mt-10 text-sm border border-white/10 p-4 bg-white/[0.02]">
+        <div className="font-mono text-[10px] tracking-widest text-venus/80 mb-2">DESIGN PACKAGE (REPO)</div>
+        <ul className="text-gray-400 text-xs space-y-1 font-mono">
+          <li>
+            <a
+              className="text-venus hover:underline"
+              href="https://github.com/ehreng/Nephelis/blob/main/docs/conops-v0.9.md"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CONOPS v0.9
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-venus hover:underline"
+              href="https://github.com/ehreng/Nephelis/blob/main/docs/requirements-baseline-v0.9.md"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Requirements baseline
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-venus hover:underline"
+              href="https://github.com/ehreng/Nephelis/blob/main/docs/power-budget-v0.md"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Power budget v0
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-venus hover:underline"
+              href="https://github.com/ehreng/Nephelis/blob/main/docs/materials-coupon-test-protocol.md"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Materials coupon protocol
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-venus hover:underline"
+              href="https://github.com/ehreng/Nephelis/blob/main/docs/funding-fulfillment-sop.md"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Funding fulfillment SOP
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div className="mt-6 text-xs text-foreground/60 font-mono border-l-2 border-venus pl-3">
+        Data-driven from mass-budget.json, mission-control.json, risks.json, specs.json, power-budget.json.
       </div>
     </div>
   );

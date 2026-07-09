@@ -22,18 +22,17 @@
 - **NAV/AI**: nominal
 - **FUNDING**: dev
 
-## P0 open work (51)
+## P0 open work (50)
 
 - [ ] **war-board-30d** — Execute 30-day war board (docs/30-day-war-board.md) _(program)_
 - [ ] **stripe-live** — Flip Stripe to live keys + live webhook; real $100 smoke test _(growth)_
-- [ ] **funding-campaign-v1** — Public crowdfund campaign narrative + tier fulfillment SOPs _(growth)_
 - [ ] **partner-p0-outreach** — Execute P0 partner outreach: sensor lab + fluoropolymer supplier _(partners)_
 - [ ] **conops-v1** — CONOPS v1: launch → cruise → entry → inflate → float → end-of-life (v0.9 drafted in docs/) _(mission)_
 - [ ] **system-architecture-icd** — System architecture + ICD draft (skeleton in docs/system-icd-skeleton.md) _(hardware)_
 - [ ] **requirements-baseline** — Mission requirements baseline (v0.9 drafted in docs/requirements-baseline-v0.9.md) _(mission)_
 - [ ] **entry-corridor-study** — Entry corridor & peak heat-rate study for ~10.7 km/s Venus entry class _(hardware)_
 - [ ] **pdr-lite** — Preliminary design review (lite): freeze interfaces, mass/power books _(mission)_
-- [ ] **materials-coupon-campaign** — Fluoropolymer acid coupon campaign (soak, crease, seam samples) _(hardware)_
+- [ ] **materials-coupon-campaign** — Fluoropolymer acid coupon campaign (protocol: docs/materials-coupon-test-protocol.md) _(hardware)_
 - [ ] **balloon-prototype-1** — Build subscale super-pressure balloon prototype #1 (Earth ambient) _(hardware)_
 - [ ] **ground-test-leak** — Envelope leak / pressure-hold ground test protocol + first run _(hardware)_
 - [ ] **heatshield-trade** — Heatshield geometry/material trade (blunt body mass vs peak load) _(hardware)_
@@ -41,7 +40,7 @@
 - [ ] **sensor-suite-baseline** — Baseline sensor suite with mass/power/data rates (imagery, MS, met, bio) _(science)_
 - [ ] **partner-sensor-mou** — MOU or in-kind LOI with at least one sensor / lab partner _(partners)_
 - [ ] **partner-materials-samples** — Receive materials samples + vendor datasheets for envelope film _(partners)_
-- [ ] **power-budget-v1** — Power budget v1: solar at float, battery, duty cycles _(avionics)_
+- [ ] **power-budget-v1** — Power budget v1: solar at float, battery, duty cycles (v0 data: power-budget.json) _(avionics)_
 - [ ] **comms-arch-review** — Comms architecture review: direct-to-Earth vs 3U relay vs hybrid _(comms)_
 - [ ] **funding-25pct** — Hit 25% of $500k funding goal (cash + committed in-kind valued) _(growth)_
 - [ ] **cdr-lite** — Critical design review (lite): drawings, BOMs, test plans signed _(mission)_
@@ -76,11 +75,10 @@
 - [ ] **float-ops-30d** — Float operations day 1–30: science collection + daily downlink _(mission)_
 - [ ] **data-release-1** — Public data release #1 + mission report _(science)_
 
-## All open tasks (77)
+## All open tasks (76)
 
 - [P0] Execute 30-day war board (docs/30-day-war-board.md) — `in_progress`
 - [P0] Flip Stripe to live keys + live webhook; real $100 smoke test — `planned`
-- [P0] Public crowdfund campaign narrative + tier fulfillment SOPs — `planned`
 - [P0] Execute P0 partner outreach: sensor lab + fluoropolymer supplier — `planned`
 - [P1] Confirm 2–3 technical advisors (structures, entry, Venus science) with written scope — `planned`
 - [P0] CONOPS v1: launch → cruise → entry → inflate → float → end-of-life (v0.9 drafted in docs/) — `in_progress`
@@ -94,14 +92,15 @@
 - [P2] Establish weekly public update cadence (X + site MDX) — `planned`
 - [P1] Recruit core volunteer leads: structures, avionics, software, science — `planned`
 - [P0] Preliminary design review (lite): freeze interfaces, mass/power books — `planned`
-- [P0] Fluoropolymer acid coupon campaign (soak, crease, seam samples) — `planned`
+- [P0] Fluoropolymer acid coupon campaign (protocol: docs/materials-coupon-test-protocol.md) — `in_progress`
 - [P0] Build subscale super-pressure balloon prototype #1 (Earth ambient) — `planned`
 - [P0] Envelope leak / pressure-hold ground test protocol + first run — `planned`
 - [P0] Heatshield geometry/material trade (blunt body mass vs peak load) — `planned`
+- [P0] Balloon inflation system concept (gas budget, valves, sequence) — `planned`
 
 ## Risk radar (open / mitigating)
 
-- **R-01** [high/medium] Acid degradation of balloon envelope — _open_
+- **R-01** [high/medium] Acid degradation of balloon envelope — _mitigating_
 - **R-02** [critical/medium] Entry / inflation sequence failure — _open_
 - **R-03** [high/medium] Comms blackout / insufficient downlink — _open_
 - **R-04** [high/medium] Launch rideshare slip past 2027 window — _open_
@@ -177,4 +176,4 @@ npx tsx automation/scripts/evolve.ts press
 ```
 
 ---
-Generated 2026-07-09T01:34:04.576Z · do not hand-edit structure; append notes below the line if needed.
+Generated 2026-07-09T01:42:40.324Z · do not hand-edit structure; append notes below the line if needed.

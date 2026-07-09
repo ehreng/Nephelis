@@ -10,7 +10,8 @@
     "typecheck": "tsc --noEmit",
     "validate:content": "node scripts/validate-content.mjs",
     "check:mass": "node scripts/check-mass-margin.mjs",
-    "ci": "pnpm validate:content && pnpm check:mass && pnpm typecheck && pnpm lint && pnpm build"
+    "check:power": "node scripts/check-power.mjs",
+    "ci": "pnpm validate:content && pnpm check:mass && pnpm check:power && pnpm typecheck && pnpm lint && pnpm build"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.0.0",

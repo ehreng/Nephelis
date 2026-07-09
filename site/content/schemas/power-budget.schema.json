@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PowerBudget",
+  "type": "object",
+  "required": ["updated_at", "notes", "modes", "generation", "storage"],
+  "properties": {
+    "updated_at": { "type": "string" },
+    "version": { "type": "string" },
+    "notes": { "type": "string" },
+    "modes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "loads"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "duration_days_nom": { "type": "number" },
+          "notes": { "type": "string" },
+          "loads": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["id", "name", "power_w", "duty"],
+              "properties": {
+                "id": { "type": "string" },
+                "name": { "type": "string" },
+                "power_w": { "type": "number", "minimum": 0 },
+                "duty": { "type": "number", "minimum": 0, "maximum": 1 },
+                "estimate": { "type": "boolean" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "generation": {
+      "type": "object",
+      "properties": {
+        "float_solar_w_peak_est": { "type": ["number", "null"] },
+        "cruise_solar_w_peak_est": { "type": ["number", "null"] },
+        "notes": { "type": "string" }
+      }
+    },
+    "storage": {
+      "type": "object",
+      "properties": {
+        "battery_wh_est": { "type": ["number", "null"] },
+        "dod_fraction_est": { "type": ["number", "null"] },
+        "notes": { "type": "string" }
+      }
+    },
+    "derived_avg_w": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "updated_at": "2026-07-09T18:00:00.000Z",
+  "version": "0.0",
+  "notes": "Order-of-magnitude estimates only — NOT flight. Load watts are placeholders for architecture trades. Generation and storage left null until solar/battery sizing.",
+  "modes": [
+    {
+      "id": "cruise",
+      "name": "Cruise (heliocentric)",
+      "duration_days_nom": 146,
+      "notes": "Sparse activity; survival + occasional contact",
+      "loads": [
+        {
+          "id": "avionics_idle",
+          "name": "Flight computer + bus idle",
+          "power_w": 1.5,
+          "duty": 1.0,
+          "estimate": true
+        },
+        {
+          "id": "thermal_survival",
+          "name": "Thermal / heaters (duty cycled)",
+          "power_w": 5.0,
+          "duty": 0.15,
+          "estimate": true
+        },
+        {
+          "id": "comms_contact",
+          "name": "RF during contact windows",
+          "power_w": 8.0,
+          "duty": 0.02,
+          "estimate": true
+        },
+        {
+          "id": "instruments_cruise",
+          "name": "Instrument keep-alive / rare cal",
+          "power_w": 2.0,
+          "duty": 0.05,
+          "estimate": true
+        }
+      ]
+    },
+    {
+      "id": "float_day",
+      "name": "Float — science day",
+      "duration_days_nom": 30,
+      "notes": "Primary mission mode; solar available",
+      "loads": [
+        {
+          "id": "avionics_active",
+          "name": "Flight computer + C&DH active",
+          "power_w": 2.5,
+          "duty": 1.0,
+          "estimate": true
+        },
+        {
+          "id": "camera",
+          "name": "Imagery (burst)",
+          "power_w": 4.0,
+          "duty": 0.1,
+          "estimate": true
+        },
+        {
+          "id": "met_suite",
+          "name": "Meteorology suite",
+          "power_w": 1.0,
+          "duty": 0.5,
+          "estimate": true
+        },
+        {
+          "id": "mass_spec_or_chem",
+          "name": "Mass-spec / chem channel",
+          "power_w": 8.0,
+          "duty": 0.15,
+          "estimate": true
+        },
+        {
+          "id": "nephelometer",
+          "name": "Nephelometer / aerosol",
+          "power_w": 1.5,
+          "duty": 0.2,
+          "estimate": true
+        },
+        {
+          "id": "comms_relay",
+          "name": "Uplink to relay / DTE",
+          "power_w": 10.0,
+          "duty": 0.08,
+          "estimate": true
+        },
+        {
+          "id": "margin_day",
+          "name": "Unallocated margin",
+          "power_w": 2.0,
+          "duty": 1.0,
+          "estimate": true
+        }
+      ]
+    },
+    {
+      "id": "float_night",
+      "name": "Float — night / low sun",
+      "duration_days_nom": 30,
+      "notes": "Science shed; survival + met low-rate",
+      "loads": [
+        {
+          "id": "avionics_idle_night",
+          "name": "Flight computer idle",
+          "power_w": 1.5,
+          "duty": 1.0,
+          "estimate": true
+        },
+        {
+          "id": "met_low",
+          "name": "Met low-rate",
+          "power_w": 0.5,
+          "duty": 0.3,
+          "estimate": true
+        },
+        {
+          "id": "comms_rare",
+          "name": "Rare comms",
+          "power_w": 10.0,
+          "duty": 0.02,
+          "estimate": true
+        },
+        {
+          "id": "heater_night",
+          "name": "Thermal if needed",
+          "power_w": 4.0,
+          "duty": 0.2,
+          "estimate": true
+        }
+      ]
+    },
+    {
+      "id": "entry_sequence",
+      "name": "Entry + inflate (hours)",
+      "duration_days_nom": 0.1,
+      "notes": "Battery-dominated; peak loads short",
+      "loads": [
+        {
+          "id": "avionics_peak",
+          "name": "Sequencer peak",
+          "power_w": 5.0,
+          "duty": 1.0,
+          "estimate": true
+        },
+        {
+          "id": "pyro_or_valve",
+          "name": "Valve / deploy actuators (averaged)",
+          "power_w": 15.0,
+          "duty": 0.2,
+          "estimate": true
+        },
+        {
+          "id": "comms_beacon",
+          "name": "Beacon if any",
+          "power_w": 5.0,
+          "duty": 0.5,
+          "estimate": true
+        }
+      ]
+    }
+  ],
+  "generation": {
+    "float_solar_w_peak_est": null,
+    "cruise_solar_w_peak_est": null,
+    "notes": "TBD: array area, cell efficiency, Venus solar geometry at float altitude, dust/acid obscuration factor"
+  },
+  "storage": {
+    "battery_wh_est": null,
+    "dod_fraction_est": 0.3,
+    "notes": "TBD: size from night energy + entry peak; chemistry COTS Li-ion vs mission environment"
+  },
+  "derived_avg_w": {
+    "notes": "avg_w = sum(power_w * duty) per mode — keep in sync via pnpm check:power",
+    "cruise": 2.51,
+    "float_day": 7.7,
+    "float_night": 2.65,
+    "entry_sequence": 10.5
+  }
+}

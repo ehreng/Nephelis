@@ -12,12 +12,12 @@ Source of truth for full list: `site/content/data/tasks.json` · public view: `/
 | # | Outcome | Linked tasks |
 |---|---------|----------------|
 | 1 | Stripe **live** + one real payment | `stripe-live` |
-| 2 | Crowdfund SOP written (fulfillment for Tier 1/2) | `funding-campaign-v1` |
+| 2 | Crowdfund SOP written (fulfillment for Tier 1/2) | `funding-campaign-v1` → **done** `docs/funding-fulfillment-sop.md` |
 | 3 | CONOPS v0.9 circulated internally | `conops-v1` → **drafted** `docs/conops-v0.9.md` |
 | 4 | System ICD skeleton (even incomplete) | `system-architecture-icd` → **drafted** `docs/system-icd-skeleton.md` |
 | 5 | Requirements baseline draft | `requirements-baseline` → **drafted** `docs/requirements-baseline-v0.9.md` |
 | 6 | ≥2 sensor labs + ≥2 materials vendors named & contacted | `partner-p0-outreach` |
-| 7 | Materials test plan written (coupons ready to order) | `materials-coupon-campaign` |
+| 7 | Materials test plan written (coupons ready to order) | `materials-coupon-campaign` → **protocol** `docs/materials-coupon-test-protocol.md` |
 | 8 | Weekly public pulse (1 post + optional MDX) | `social-post-cadence` |
 
 Stretch (if capacity): entry corridor literature dig started (`entry-corridor-study`), advisor soft commits (`advisor-board-soft`).
@@ -31,7 +31,7 @@ Stretch (if capacity): entry corridor literature dig started (`entry-corridor-st
 | Day focus | Task IDs | Owner default | Done when |
 |-----------|----------|---------------|-----------|
 | Stripe live flip | `stripe-live` | Ehren | Live webhook 200; real $100 charge (+ refund OK) |
-| Funding SOP | `funding-campaign-v1` | Ehren | 1-page: payment → kit email → engraving list / DNA ship |
+| Funding SOP | `funding-campaign-v1` | Ehren | **Drafted** `docs/funding-fulfillment-sop.md` — human: live Stripe + private sheet |
 | CONOPS outline | `conops-v1` | Mission | One-pager: phases, decisions, failure modes (bullet form OK) |
 | Requirements skeleton | `requirements-baseline` | Mission | Table: science / mass / power / data / reliability (TBD allowed) |
 | Partner list build | `partner-p0-outreach` | Growth | Spreadsheet: 3 labs + 3 film suppliers with emails |

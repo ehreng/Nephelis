@@ -34,6 +34,9 @@ jobs:
       - name: Mass budget hygiene
         run: pnpm check:mass
 
+      - name: Power budget sanity
+        run: pnpm check:power
+
       - name: Typecheck
         run: pnpm typecheck
 

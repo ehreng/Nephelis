@@ -1,27 +1,52 @@
 [
   {
-    "year": "2027",
-    "event": "Launch of AETHER probe (Nephelis)",
-    "status": "target"
-  },
-  {
-    "year": "2026",
-    "event": "Final design & integration. Competing private mission (Rocket Lab Venus Life Finder) also targeting 2026 launch window for cloud layer exploration.",
-    "status": "current"
-  },
-  {
     "year": "2025",
-    "event": "Concept validation & partnership development",
+    "event": "Concept validation, branding, and early partnership development for Project AETHER",
     "status": "complete"
   },
   {
-    "year": "2022+",
-    "event": "Multiple concepts (NASA aerobot, ESA VEP) proposed for variable altitude balloons in 48-60km range",
-    "status": "background"
+    "year": "2026-Q3",
+    "event": "Requirements, CONOPS, system ICD, live crowdfund stack, P0 partner outreach (accelerated Phase A/B start)",
+    "status": "current"
+  },
+  {
+    "year": "2026-Q4",
+    "event": "PDR-lite, materials & balloon prototype tests, sensor/comms baselining, facility access",
+    "status": "target"
+  },
+  {
+    "year": "2027-Q1",
+    "event": "CDR-lite, flight hardware fab, payload integration, 50% funding milestone",
+    "status": "target"
+  },
+  {
+    "year": "2027-Q2",
+    "event": "Environmental qual, system I&T, inflation sequence test, launch LOI / rideshare path",
+    "status": "target"
+  },
+  {
+    "year": "2027-Q3",
+    "event": "Flight software freeze, ops rehearsals, ship prep, funding closeout",
+    "status": "target"
+  },
+  {
+    "year": "2027-Q4",
+    "event": "Launch campaign + Venus transfer injection (target window ~2027-12-15)",
+    "status": "target"
+  },
+  {
+    "year": "2028-H1",
+    "event": "Cruise → Venus entry → balloon float ops (30–90 days) + first public data release",
+    "status": "future"
   },
   {
     "year": "2028+",
-    "event": "Larger aerostats → first habitats → self-sustaining outposts",
+    "event": "Phase II: larger aerostats → habitation tech path (post-flight lessons)",
     "status": "future"
+  },
+  {
+    "year": "2022+",
+    "event": "Agency background: NASA aerobot / ESA concepts for 48–60 km variable balloons",
+    "status": "background"
   }
 ]

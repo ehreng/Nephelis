@@ -96,35 +96,11 @@
     "quarter": "2026-Q3"
   },
   {
-    "id": "stripe-live",
-    "title": "Flip Stripe from test mode to live keys + live webhook",
-    "status": "planned",
-    "priority": "P0",
-    "area": "growth",
-    "quarter": "2026-Q3"
-  },
-  {
     "id": "seo-share",
     "title": "SEO: sitemap, robots, Open Graph / Twitter cards",
     "status": "done",
     "priority": "P1",
     "area": "site",
-    "quarter": "2026-Q3"
-  },
-  {
-    "id": "first-research-fill",
-    "title": "Fill first weekly research brief with real sources",
-    "status": "planned",
-    "priority": "P1",
-    "area": "content",
-    "quarter": "2026-Q3"
-  },
-  {
-    "id": "social-post-cadence",
-    "title": "Post first social drafts from automation/social-drafts",
-    "status": "planned",
-    "priority": "P2",
-    "area": "growth",
     "quarter": "2026-Q3"
   },
   {
@@ -149,22 +125,6 @@
     "status": "done",
     "priority": "P1",
     "area": "ops",
-    "quarter": "2026-Q3"
-  },
-  {
-    "id": "materials-coupon-campaign",
-    "title": "Start fluoropolymer acid coupon test campaign",
-    "status": "planned",
-    "priority": "P0",
-    "area": "hardware",
-    "quarter": "2026-Q4"
-  },
-  {
-    "id": "partner-p0-outreach",
-    "title": "Execute P0 partner next_steps (sensors + materials)",
-    "status": "planned",
-    "priority": "P0",
-    "area": "growth",
     "quarter": "2026-Q3"
   },
   {
@@ -209,27 +169,617 @@
   },
 
   {
-    "id": "ground-test-2026",
-    "title": "Balloon envelope ground tests",
+    "id": "stripe-live",
+    "title": "Flip Stripe to live keys + live webhook; real $100 smoke test",
+    "status": "planned",
+    "priority": "P0",
+    "area": "growth",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "funding-campaign-v1",
+    "title": "Public crowdfund campaign narrative + tier fulfillment SOPs",
+    "status": "planned",
+    "priority": "P0",
+    "area": "growth",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "partner-p0-outreach",
+    "title": "Execute P0 partner outreach: sensor lab + fluoropolymer supplier",
+    "status": "planned",
+    "priority": "P0",
+    "area": "partners",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "advisor-board-soft",
+    "title": "Confirm 2–3 technical advisors (structures, entry, Venus science) with written scope",
+    "status": "planned",
+    "priority": "P1",
+    "area": "partners",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "conops-v1",
+    "title": "CONOPS v1: launch → cruise → entry → inflate → float → end-of-life",
+    "status": "in_progress",
+    "priority": "P0",
+    "area": "mission",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "system-architecture-icd",
+    "title": "System architecture + ICD draft (balloon, gondola, power, comms, GNC)",
+    "status": "in_progress",
+    "priority": "P0",
+    "area": "hardware",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "requirements-baseline",
+    "title": "Mission requirements baseline (science, mass, power, data, reliability)",
+    "status": "planned",
+    "priority": "P0",
+    "area": "mission",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "traj-delta-v-refine",
+    "title": "Refine transfer Δv / TOF with published ephemeris (not only Hohmann demo)",
+    "status": "planned",
+    "priority": "P1",
+    "area": "mission",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "entry-corridor-study",
+    "title": "Entry corridor & peak heat-rate study for ~10.7 km/s Venus entry class",
+    "status": "planned",
+    "priority": "P0",
+    "area": "hardware",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "science-traceability",
+    "title": "Science traceability matrix: goals → instruments → data products",
+    "status": "planned",
+    "priority": "P1",
+    "area": "science",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "planetary-protection-screen",
+    "title": "Planetary protection / DNA-tier legal-regulatory screening memo",
+    "status": "planned",
+    "priority": "P1",
+    "area": "program",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "first-research-fill",
+    "title": "Fill first research brief with cited Venus aerobot / materials sources",
+    "status": "planned",
+    "priority": "P1",
+    "area": "content",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "social-post-cadence",
+    "title": "Establish weekly public update cadence (X + site MDX)",
+    "status": "planned",
+    "priority": "P2",
+    "area": "growth",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "volunteer-core-team",
+    "title": "Recruit core volunteer leads: structures, avionics, software, science",
+    "status": "planned",
+    "priority": "P1",
+    "area": "program",
+    "quarter": "2026-Q3"
+  },
+
+  {
+    "id": "pdr-lite",
+    "title": "Preliminary design review (lite): freeze interfaces, mass/power books",
+    "status": "planned",
+    "priority": "P0",
+    "area": "mission",
+    "quarter": "2026-Q4"
+  },
+  {
+    "id": "materials-coupon-campaign",
+    "title": "Fluoropolymer acid coupon campaign (soak, crease, seam samples)",
     "status": "planned",
     "priority": "P0",
     "area": "hardware",
     "quarter": "2026-Q4"
   },
   {
-    "id": "payload-integration",
-    "title": "Sensor suite + gondola integration",
+    "id": "balloon-prototype-1",
+    "title": "Build subscale super-pressure balloon prototype #1 (Earth ambient)",
+    "status": "planned",
+    "priority": "P0",
+    "area": "hardware",
+    "quarter": "2026-Q4"
+  },
+  {
+    "id": "ground-test-leak",
+    "title": "Envelope leak / pressure-hold ground test protocol + first run",
+    "status": "planned",
+    "priority": "P0",
+    "area": "hardware",
+    "quarter": "2026-Q4"
+  },
+  {
+    "id": "heatshield-trade",
+    "title": "Heatshield geometry/material trade (blunt body mass vs peak load)",
+    "status": "planned",
+    "priority": "P0",
+    "area": "hardware",
+    "quarter": "2026-Q4"
+  },
+  {
+    "id": "inflation-system-concept",
+    "title": "Balloon inflation system concept (gas budget, valves, sequence)",
+    "status": "planned",
+    "priority": "P0",
+    "area": "hardware",
+    "quarter": "2026-Q4"
+  },
+  {
+    "id": "sensor-suite-baseline",
+    "title": "Baseline sensor suite with mass/power/data rates (imagery, MS, met, bio)",
+    "status": "planned",
+    "priority": "P0",
+    "area": "science",
+    "quarter": "2026-Q4"
+  },
+  {
+    "id": "partner-sensor-mou",
+    "title": "MOU or in-kind LOI with at least one sensor / lab partner",
+    "status": "planned",
+    "priority": "P0",
+    "area": "partners",
+    "quarter": "2026-Q4"
+  },
+  {
+    "id": "partner-materials-samples",
+    "title": "Receive materials samples + vendor datasheets for envelope film",
+    "status": "planned",
+    "priority": "P0",
+    "area": "partners",
+    "quarter": "2026-Q4"
+  },
+  {
+    "id": "avionics-stack-select",
+    "title": "Select flight computer / rad-tolerant strategy (COTS + shielding trade)",
+    "status": "planned",
+    "priority": "P1",
+    "area": "avionics",
+    "quarter": "2026-Q4"
+  },
+  {
+    "id": "power-budget-v1",
+    "title": "Power budget v1: solar at float, battery, duty cycles",
+    "status": "planned",
+    "priority": "P0",
+    "area": "avionics",
+    "quarter": "2026-Q4"
+  },
+  {
+    "id": "comms-arch-review",
+    "title": "Comms architecture review: direct-to-Earth vs 3U relay vs hybrid",
+    "status": "planned",
+    "priority": "P0",
+    "area": "comms",
+    "quarter": "2026-Q4"
+  },
+  {
+    "id": "cubesat-partner-scan",
+    "title": "CubeSat bus/radio partner shortlist (flight heritage preferred)",
+    "status": "planned",
+    "priority": "P1",
+    "area": "partners",
+    "quarter": "2026-Q4"
+  },
+  {
+    "id": "fs-software-skeleton",
+    "title": "Flight software skeleton: modes, fault protection, telemetry schema",
+    "status": "planned",
+    "priority": "P1",
+    "area": "software",
+    "quarter": "2026-Q4"
+  },
+  {
+    "id": "gnd-software-sim",
+    "title": "Ground tools: link budget spreadsheet + simple entry/float sim hooks",
+    "status": "planned",
+    "priority": "P2",
+    "area": "software",
+    "quarter": "2026-Q4"
+  },
+  {
+    "id": "facility-access",
+    "title": "Secure lab/fab access (clean workbench, pressure test, electronics)",
+    "status": "planned",
+    "priority": "P1",
+    "area": "program",
+    "quarter": "2026-Q4"
+  },
+  {
+    "id": "insurance-export-screen",
+    "title": "Export control / ITAR-EAR self-screen for parts & partners",
+    "status": "planned",
+    "priority": "P1",
+    "area": "program",
+    "quarter": "2026-Q4"
+  },
+  {
+    "id": "funding-25pct",
+    "title": "Hit 25% of $500k funding goal (cash + committed in-kind valued)",
+    "status": "planned",
+    "priority": "P0",
+    "area": "growth",
+    "quarter": "2026-Q4"
+  },
+
+  {
+    "id": "cdr-lite",
+    "title": "Critical design review (lite): drawings, BOMs, test plans signed",
+    "status": "planned",
+    "priority": "P0",
+    "area": "mission",
+    "quarter": "2027-Q1"
+  },
+  {
+    "id": "balloon-flight-unit-fab",
+    "title": "Fabricate flight-intent balloon envelope + inflation hardware",
     "status": "planned",
     "priority": "P0",
     "area": "hardware",
     "quarter": "2027-Q1"
   },
   {
-    "id": "launch-window-2027",
-    "title": "Launch window readiness (Q4 2027)",
+    "id": "gondola-structure-fab",
+    "title": "Fabricate gondola structure + instrument mounts",
+    "status": "planned",
+    "priority": "P0",
+    "area": "hardware",
+    "quarter": "2027-Q1"
+  },
+  {
+    "id": "heatshield-fab",
+    "title": "Fabricate/procure heatshield + attachment hardware",
+    "status": "planned",
+    "priority": "P0",
+    "area": "hardware",
+    "quarter": "2027-Q1"
+  },
+  {
+    "id": "payload-integration",
+    "title": "Integrate sensor suite into gondola (electrical + mechanical)",
+    "status": "planned",
+    "priority": "P0",
+    "area": "hardware",
+    "quarter": "2027-Q1"
+  },
+  {
+    "id": "avionics-board-bringup",
+    "title": "Flight avionics board bring-up + sensor drivers",
+    "status": "planned",
+    "priority": "P0",
+    "area": "avionics",
+    "quarter": "2027-Q1"
+  },
+  {
+    "id": "solar-power-demo",
+    "title": "Solar + battery power demo at expected float illumination",
+    "status": "planned",
+    "priority": "P1",
+    "area": "avionics",
+    "quarter": "2027-Q1"
+  },
+  {
+    "id": "comms-breadboard",
+    "title": "Comms breadboard: packet radio / store-and-forward demo",
+    "status": "planned",
+    "priority": "P0",
+    "area": "comms",
+    "quarter": "2027-Q1"
+  },
+  {
+    "id": "cubesat-relay-baseline",
+    "title": "Baseline CubeSat relay (buy vs partner vs descoped direct link)",
+    "status": "planned",
+    "priority": "P0",
+    "area": "comms",
+    "quarter": "2027-Q1"
+  },
+  {
+    "id": "kick-stage-trade",
+    "title": "Kick/transfer stage: make vs buy vs rideshare-provided Δv",
+    "status": "planned",
+    "priority": "P0",
+    "area": "mission",
+    "quarter": "2027-Q1"
+  },
+  {
+    "id": "funding-50pct",
+    "title": "Hit 50% of $500k goal (cash + binding in-kind)",
+    "status": "planned",
+    "priority": "P0",
+    "area": "growth",
+    "quarter": "2027-Q1"
+  },
+  {
+    "id": "sponsor-corp-tier",
+    "title": "Close first corporate / logo sponsorship above individual tiers",
+    "status": "planned",
+    "priority": "P1",
+    "area": "partners",
+    "quarter": "2027-Q1"
+  },
+  {
+    "id": "science-cal-plan",
+    "title": "Instrument calibration plan + ground truth datasets",
+    "status": "planned",
+    "priority": "P1",
+    "area": "science",
+    "quarter": "2027-Q1"
+  },
+  {
+    "id": "data-rights-policy",
+    "title": "Public data release policy (latency, formats, credit)",
+    "status": "planned",
+    "priority": "P2",
+    "area": "science",
+    "quarter": "2027-Q1"
+  },
+
+  {
+    "id": "env-qual-plan",
+    "title": "Environmental qualification plan signed (TVAC, vibe, shock, thermal)",
+    "status": "planned",
+    "priority": "P0",
+    "area": "hardware",
+    "quarter": "2027-Q2"
+  },
+  {
+    "id": "vibe-test",
+    "title": "Vibration / shock test of integrated stack (or mass model path)",
+    "status": "planned",
+    "priority": "P0",
+    "area": "hardware",
+    "quarter": "2027-Q2"
+  },
+  {
+    "id": "tvac-test",
+    "title": "Thermal-vacuum test of gondola/avionics (or chamber access partner)",
+    "status": "planned",
+    "priority": "P0",
+    "area": "hardware",
+    "quarter": "2027-Q2"
+  },
+  {
+    "id": "balloon-cold-test",
+    "title": "Cold / altitude-chamber or high-altitude balloon analog for envelope",
+    "status": "planned",
+    "priority": "P1",
+    "area": "hardware",
+    "quarter": "2027-Q2"
+  },
+  {
+    "id": "system-integration-test",
+    "title": "End-to-end system integration test: power → sensors → store → radio",
+    "status": "planned",
+    "priority": "P0",
+    "area": "hardware",
+    "quarter": "2027-Q2"
+  },
+  {
+    "id": "inflation-sequence-test",
+    "title": "Full inflation sequence dry run on Earth (timed, instrumented)",
+    "status": "planned",
+    "priority": "P0",
+    "area": "hardware",
+    "quarter": "2027-Q2"
+  },
+  {
+    "id": "fs-fault-protection",
+    "title": "Flight software fault protection + safe modes verified on hardware",
+    "status": "planned",
+    "priority": "P0",
+    "area": "software",
+    "quarter": "2027-Q2"
+  },
+  {
+    "id": "launch-vehicle-loi",
+    "title": "Launch path LOI / rideshare reservation for 2027 Venus window class",
+    "status": "planned",
+    "priority": "P0",
+    "area": "mission",
+    "quarter": "2027-Q2"
+  },
+  {
+    "id": "launch-broker-partner",
+    "title": "Sign launch broker or secondary payload agreement (or dedicated option)",
+    "status": "planned",
+    "priority": "P0",
+    "area": "partners",
+    "quarter": "2027-Q2"
+  },
+  {
+    "id": "range-safety-docs",
+    "title": "Range safety / payload ICD inputs for launch provider",
+    "status": "planned",
+    "priority": "P1",
+    "area": "mission",
+    "quarter": "2027-Q2"
+  },
+  {
+    "id": "funding-75pct",
+    "title": "Hit 75% of funding goal before integration freeze",
+    "status": "planned",
+    "priority": "P0",
+    "area": "growth",
+    "quarter": "2027-Q2"
+  },
+  {
+    "id": "ground-station-plan",
+    "title": "Ground station / data downlink operations plan (partners or commercial)",
+    "status": "planned",
+    "priority": "P1",
+    "area": "comms",
+    "quarter": "2027-Q2"
+  },
+
+  {
+    "id": "flight-software-freeze",
+    "title": "Flight software freeze + config management for flight load",
+    "status": "planned",
+    "priority": "P0",
+    "area": "software",
+    "quarter": "2027-Q3"
+  },
+  {
+    "id": "ops-playbook-v1",
+    "title": "Ops playbook v1: entry through float daily comms windows",
+    "status": "planned",
+    "priority": "P0",
+    "area": "mission",
+    "quarter": "2027-Q3"
+  },
+  {
+    "id": "mission-rehearsal",
+    "title": "Mission ops rehearsal (tabletop + sim): anomalies and contingencies",
+    "status": "planned",
+    "priority": "P0",
+    "area": "mission",
+    "quarter": "2027-Q3"
+  },
+  {
+    "id": "ship-prep",
+    "title": "Ship/flight prep: packing, hazardous materials, logistics to launch site",
+    "status": "planned",
+    "priority": "P0",
+    "area": "program",
+    "quarter": "2027-Q3"
+  },
+  {
+    "id": "payload-engraving-freeze",
+    "title": "Freeze Tier-1 engraving list + DNA capsule packing procedure",
+    "status": "planned",
+    "priority": "P1",
+    "area": "growth",
+    "quarter": "2027-Q3"
+  },
+  {
+    "id": "press-kit-launch",
+    "title": "Launch press kit + media list + embargo plan",
+    "status": "planned",
+    "priority": "P1",
+    "area": "growth",
+    "quarter": "2027-Q3"
+  },
+  {
+    "id": "funding-100pct",
+    "title": "Close remaining funding / contingency reserve for launch ops",
+    "status": "planned",
+    "priority": "P0",
+    "area": "growth",
+    "quarter": "2027-Q3"
+  },
+  {
+    "id": "final-acceptance-test",
+    "title": "Final acceptance test of flight stack before ship",
+    "status": "planned",
+    "priority": "P0",
+    "area": "hardware",
+    "quarter": "2027-Q3"
+  },
+  {
+    "id": "red-team-risk-review",
+    "title": "Independent red-team risk review (entry, inflate, comms, power)",
+    "status": "planned",
+    "priority": "P1",
+    "area": "mission",
+    "quarter": "2027-Q3"
+  },
+
+  {
+    "id": "launch-campaign",
+    "title": "Launch campaign: integration with vehicle, checkouts, go/no-go",
     "status": "planned",
     "priority": "P0",
     "area": "mission",
     "quarter": "2027-Q4"
+  },
+  {
+    "id": "launch-window-2027",
+    "title": "Launch in Q4 2027 Venus transfer window (target 2027-12-15)",
+    "status": "planned",
+    "priority": "P0",
+    "area": "mission",
+    "quarter": "2027-Q4"
+  },
+  {
+    "id": "cruise-ops",
+    "title": "Cruise operations: health checks, TCMs if any, instrument keep-alive",
+    "status": "planned",
+    "priority": "P0",
+    "area": "mission",
+    "quarter": "2027-Q4"
+  },
+  {
+    "id": "public-telemetry-stream",
+    "title": "Public mission status stream on site (cruise → approach)",
+    "status": "planned",
+    "priority": "P2",
+    "area": "site",
+    "quarter": "2027-Q4"
+  },
+
+  {
+    "id": "venus-entry-ops",
+    "title": "Venus approach & entry ops: real-time decision tree execution",
+    "status": "planned",
+    "priority": "P0",
+    "area": "mission",
+    "quarter": "2028-Q1"
+  },
+  {
+    "id": "float-ops-30d",
+    "title": "Float operations day 1–30: science collection + daily downlink",
+    "status": "planned",
+    "priority": "P0",
+    "area": "mission",
+    "quarter": "2028-Q1"
+  },
+  {
+    "id": "extended-float",
+    "title": "Extended float to 90 days if health allows",
+    "status": "planned",
+    "priority": "P1",
+    "area": "mission",
+    "quarter": "2028-Q2"
+  },
+  {
+    "id": "data-release-1",
+    "title": "Public data release #1 + mission report",
+    "status": "planned",
+    "priority": "P0",
+    "area": "science",
+    "quarter": "2028-Q2"
+  },
+  {
+    "id": "phase2-lessons",
+    "title": "Lessons learned → Phase II larger aerostat / habitat tech roadmap",
+    "status": "planned",
+    "priority": "P1",
+    "area": "program",
+    "quarter": "2028-Q2"
   }
 ]

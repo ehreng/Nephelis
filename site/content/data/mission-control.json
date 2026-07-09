@@ -1,41 +1,76 @@
 {
-  "updated_at": "2026-07-09T00:00:00.000Z",
+  "updated_at": "2026-07-09T12:00:00.000Z",
   "callsign": "NEPHELIS.MCC",
   "phase": "DESIGN",
   "launch_target": "2027-12-15",
   "funding_goal_usd": 500000,
   "checklist": [
     {
-      "id": "mc-design-freeze",
-      "item": "Preliminary design freeze (balloon + gondola ICD)",
+      "id": "mc-requirements",
+      "item": "Mission requirements baseline signed",
+      "phase": "DESIGN",
+      "status": "planned",
+      "due": "2026-Q3"
+    },
+    {
+      "id": "mc-conops",
+      "item": "CONOPS v1 (launch → float → EOM)",
       "phase": "DESIGN",
       "status": "in_progress",
+      "due": "2026-Q3"
+    },
+    {
+      "id": "mc-design-freeze",
+      "item": "PDR-lite: balloon + gondola ICD freeze",
+      "phase": "DESIGN",
+      "status": "planned",
       "due": "2026-Q4"
     },
     {
       "id": "mc-materials-test",
-      "item": "Acid / materials coupon campaign started",
+      "item": "Acid / materials coupon campaign complete enough for fab decision",
       "phase": "DESIGN",
       "status": "planned",
       "due": "2026-Q4"
     },
     {
       "id": "mc-sensor-baselined",
-      "item": "Sensor suite baselined with mass/power numbers",
+      "item": "Sensor suite baselined with mass/power/data numbers",
       "phase": "DESIGN",
+      "status": "planned",
+      "due": "2026-Q4"
+    },
+    {
+      "id": "mc-comms-arch",
+      "item": "Comms architecture review (CubeSat relay / hybrid)",
+      "phase": "DESIGN",
+      "status": "planned",
+      "due": "2026-Q4"
+    },
+    {
+      "id": "mc-cdr",
+      "item": "CDR-lite: drawings, BOMs, test plans",
+      "phase": "BUILD",
       "status": "planned",
       "due": "2027-Q1"
     },
     {
-      "id": "mc-comms-arch",
-      "item": "Comms architecture review (CubeSat relay)",
-      "phase": "DESIGN",
+      "id": "mc-funding-50",
+      "item": "50% of $500k goal committed",
+      "phase": "PROGRAM",
       "status": "planned",
       "due": "2027-Q1"
     },
     {
       "id": "mc-env-qual",
-      "item": "Environmental qualification plan signed",
+      "item": "Environmental qualification campaign executed",
+      "phase": "INTEGRATION",
+      "status": "planned",
+      "due": "2027-Q2"
+    },
+    {
+      "id": "mc-system-it",
+      "item": "System integration & inflation sequence tests pass",
       "phase": "INTEGRATION",
       "status": "planned",
       "due": "2027-Q2"
@@ -48,18 +83,39 @@
       "due": "2027-Q2"
     },
     {
-      "id": "mc-funding-50",
-      "item": "50% of $500k goal committed",
-      "phase": "PROGRAM",
-      "status": "planned",
-      "due": "2027-Q1"
-    },
-    {
-      "id": "mc-crew-ops",
-      "item": "Ops playbook v1 (entry → float → downlink)",
+      "id": "mc-fs-freeze",
+      "item": "Flight software freeze + ops playbook v1",
       "phase": "OPS",
       "status": "planned",
       "due": "2027-Q3"
+    },
+    {
+      "id": "mc-crew-ops",
+      "item": "Mission ops rehearsal complete",
+      "phase": "OPS",
+      "status": "planned",
+      "due": "2027-Q3"
+    },
+    {
+      "id": "mc-ship",
+      "item": "Flight stack accepted and shipped to launch site",
+      "phase": "OPS",
+      "status": "planned",
+      "due": "2027-Q3"
+    },
+    {
+      "id": "mc-launch",
+      "item": "Launch + successful Venus transfer injection",
+      "phase": "FLIGHT",
+      "status": "planned",
+      "due": "2027-Q4"
+    },
+    {
+      "id": "mc-float",
+      "item": "Successful inflate + ≥30 days float with science downlink",
+      "phase": "FLIGHT",
+      "status": "planned",
+      "due": "2028-Q1"
     }
   ]
 }

@@ -22,25 +22,81 @@
 - **NAV/AI**: nominal
 - **FUNDING**: dev
 
-## P0 open work (6)
+## P0 open work (50)
 
-- [ ] **stripe-live** — Flip Stripe from test mode to live keys + live webhook _(growth)_
-- [ ] **materials-coupon-campaign** — Start fluoropolymer acid coupon test campaign _(hardware)_
-- [ ] **partner-p0-outreach** — Execute P0 partner next_steps (sensors + materials) _(growth)_
-- [ ] **ground-test-2026** — Balloon envelope ground tests _(hardware)_
-- [ ] **payload-integration** — Sensor suite + gondola integration _(hardware)_
-- [ ] **launch-window-2027** — Launch window readiness (Q4 2027) _(mission)_
+- [ ] **stripe-live** — Flip Stripe to live keys + live webhook; real $100 smoke test _(growth)_
+- [ ] **funding-campaign-v1** — Public crowdfund campaign narrative + tier fulfillment SOPs _(growth)_
+- [ ] **partner-p0-outreach** — Execute P0 partner outreach: sensor lab + fluoropolymer supplier _(partners)_
+- [ ] **conops-v1** — CONOPS v1: launch → cruise → entry → inflate → float → end-of-life _(mission)_
+- [ ] **system-architecture-icd** — System architecture + ICD draft (balloon, gondola, power, comms, GNC) _(hardware)_
+- [ ] **requirements-baseline** — Mission requirements baseline (science, mass, power, data, reliability) _(mission)_
+- [ ] **entry-corridor-study** — Entry corridor & peak heat-rate study for ~10.7 km/s Venus entry class _(hardware)_
+- [ ] **pdr-lite** — Preliminary design review (lite): freeze interfaces, mass/power books _(mission)_
+- [ ] **materials-coupon-campaign** — Fluoropolymer acid coupon campaign (soak, crease, seam samples) _(hardware)_
+- [ ] **balloon-prototype-1** — Build subscale super-pressure balloon prototype #1 (Earth ambient) _(hardware)_
+- [ ] **ground-test-leak** — Envelope leak / pressure-hold ground test protocol + first run _(hardware)_
+- [ ] **heatshield-trade** — Heatshield geometry/material trade (blunt body mass vs peak load) _(hardware)_
+- [ ] **inflation-system-concept** — Balloon inflation system concept (gas budget, valves, sequence) _(hardware)_
+- [ ] **sensor-suite-baseline** — Baseline sensor suite with mass/power/data rates (imagery, MS, met, bio) _(science)_
+- [ ] **partner-sensor-mou** — MOU or in-kind LOI with at least one sensor / lab partner _(partners)_
+- [ ] **partner-materials-samples** — Receive materials samples + vendor datasheets for envelope film _(partners)_
+- [ ] **power-budget-v1** — Power budget v1: solar at float, battery, duty cycles _(avionics)_
+- [ ] **comms-arch-review** — Comms architecture review: direct-to-Earth vs 3U relay vs hybrid _(comms)_
+- [ ] **funding-25pct** — Hit 25% of $500k funding goal (cash + committed in-kind valued) _(growth)_
+- [ ] **cdr-lite** — Critical design review (lite): drawings, BOMs, test plans signed _(mission)_
+- [ ] **balloon-flight-unit-fab** — Fabricate flight-intent balloon envelope + inflation hardware _(hardware)_
+- [ ] **gondola-structure-fab** — Fabricate gondola structure + instrument mounts _(hardware)_
+- [ ] **heatshield-fab** — Fabricate/procure heatshield + attachment hardware _(hardware)_
+- [ ] **payload-integration** — Integrate sensor suite into gondola (electrical + mechanical) _(hardware)_
+- [ ] **avionics-board-bringup** — Flight avionics board bring-up + sensor drivers _(avionics)_
+- [ ] **comms-breadboard** — Comms breadboard: packet radio / store-and-forward demo _(comms)_
+- [ ] **cubesat-relay-baseline** — Baseline CubeSat relay (buy vs partner vs descoped direct link) _(comms)_
+- [ ] **kick-stage-trade** — Kick/transfer stage: make vs buy vs rideshare-provided Δv _(mission)_
+- [ ] **funding-50pct** — Hit 50% of $500k goal (cash + binding in-kind) _(growth)_
+- [ ] **env-qual-plan** — Environmental qualification plan signed (TVAC, vibe, shock, thermal) _(hardware)_
+- [ ] **vibe-test** — Vibration / shock test of integrated stack (or mass model path) _(hardware)_
+- [ ] **tvac-test** — Thermal-vacuum test of gondola/avionics (or chamber access partner) _(hardware)_
+- [ ] **system-integration-test** — End-to-end system integration test: power → sensors → store → radio _(hardware)_
+- [ ] **inflation-sequence-test** — Full inflation sequence dry run on Earth (timed, instrumented) _(hardware)_
+- [ ] **fs-fault-protection** — Flight software fault protection + safe modes verified on hardware _(software)_
+- [ ] **launch-vehicle-loi** — Launch path LOI / rideshare reservation for 2027 Venus window class _(mission)_
+- [ ] **launch-broker-partner** — Sign launch broker or secondary payload agreement (or dedicated option) _(partners)_
+- [ ] **funding-75pct** — Hit 75% of funding goal before integration freeze _(growth)_
+- [ ] **flight-software-freeze** — Flight software freeze + config management for flight load _(software)_
+- [ ] **ops-playbook-v1** — Ops playbook v1: entry through float daily comms windows _(mission)_
+- [ ] **mission-rehearsal** — Mission ops rehearsal (tabletop + sim): anomalies and contingencies _(mission)_
+- [ ] **ship-prep** — Ship/flight prep: packing, hazardous materials, logistics to launch site _(program)_
+- [ ] **funding-100pct** — Close remaining funding / contingency reserve for launch ops _(growth)_
+- [ ] **final-acceptance-test** — Final acceptance test of flight stack before ship _(hardware)_
+- [ ] **launch-campaign** — Launch campaign: integration with vehicle, checkouts, go/no-go _(mission)_
+- [ ] **launch-window-2027** — Launch in Q4 2027 Venus transfer window (target 2027-12-15) _(mission)_
+- [ ] **cruise-ops** — Cruise operations: health checks, TCMs if any, instrument keep-alive _(mission)_
+- [ ] **venus-entry-ops** — Venus approach & entry ops: real-time decision tree execution _(mission)_
+- [ ] **float-ops-30d** — Float operations day 1–30: science collection + daily downlink _(mission)_
+- [ ] **data-release-1** — Public data release #1 + mission report _(science)_
 
-## All open tasks (8)
+## All open tasks (76)
 
-- [P0] Flip Stripe from test mode to live keys + live webhook — `planned`
-- [P1] Fill first weekly research brief with real sources — `planned`
-- [P2] Post first social drafts from automation/social-drafts — `planned`
-- [P0] Start fluoropolymer acid coupon test campaign — `planned`
-- [P0] Execute P0 partner next_steps (sensors + materials) — `planned`
-- [P0] Balloon envelope ground tests — `planned`
-- [P0] Sensor suite + gondola integration — `planned`
-- [P0] Launch window readiness (Q4 2027) — `planned`
+- [P0] Flip Stripe to live keys + live webhook; real $100 smoke test — `planned`
+- [P0] Public crowdfund campaign narrative + tier fulfillment SOPs — `planned`
+- [P0] Execute P0 partner outreach: sensor lab + fluoropolymer supplier — `planned`
+- [P1] Confirm 2–3 technical advisors (structures, entry, Venus science) with written scope — `planned`
+- [P0] CONOPS v1: launch → cruise → entry → inflate → float → end-of-life — `in_progress`
+- [P0] System architecture + ICD draft (balloon, gondola, power, comms, GNC) — `in_progress`
+- [P0] Mission requirements baseline (science, mass, power, data, reliability) — `planned`
+- [P1] Refine transfer Δv / TOF with published ephemeris (not only Hohmann demo) — `planned`
+- [P0] Entry corridor & peak heat-rate study for ~10.7 km/s Venus entry class — `planned`
+- [P1] Science traceability matrix: goals → instruments → data products — `planned`
+- [P1] Planetary protection / DNA-tier legal-regulatory screening memo — `planned`
+- [P1] Fill first research brief with cited Venus aerobot / materials sources — `planned`
+- [P2] Establish weekly public update cadence (X + site MDX) — `planned`
+- [P1] Recruit core volunteer leads: structures, avionics, software, science — `planned`
+- [P0] Preliminary design review (lite): freeze interfaces, mass/power books — `planned`
+- [P0] Fluoropolymer acid coupon campaign (soak, crease, seam samples) — `planned`
+- [P0] Build subscale super-pressure balloon prototype #1 (Earth ambient) — `planned`
+- [P0] Envelope leak / pressure-hold ground test protocol + first run — `planned`
+- [P0] Heatshield geometry/material trade (blunt body mass vs peak load) — `planned`
+- [P0] Balloon inflation system concept (gas budget, valves, sequence) — `planned`
 
 ## Risk radar (open / mitigating)
 
@@ -62,22 +118,35 @@ _Full register: `site/content/data/risks.json` (7 active)._
 
 ## Mission control checklist (open)
 
-- [ ] Preliminary design freeze (balloon + gondola ICD) — due 2026-Q4 (`in_progress`)
-- [ ] Acid / materials coupon campaign started — due 2026-Q4 (`planned`)
-- [ ] Sensor suite baselined with mass/power numbers — due 2027-Q1 (`planned`)
-- [ ] Comms architecture review (CubeSat relay) — due 2027-Q1 (`planned`)
-- [ ] Environmental qualification plan signed — due 2027-Q2 (`planned`)
-- [ ] Launch path LOI or rideshare reservation — due 2027-Q2 (`planned`)
+- [ ] Mission requirements baseline signed — due 2026-Q3 (`planned`)
+- [ ] CONOPS v1 (launch → float → EOM) — due 2026-Q3 (`in_progress`)
+- [ ] PDR-lite: balloon + gondola ICD freeze — due 2026-Q4 (`planned`)
+- [ ] Acid / materials coupon campaign complete enough for fab decision — due 2026-Q4 (`planned`)
+- [ ] Sensor suite baselined with mass/power/data numbers — due 2026-Q4 (`planned`)
+- [ ] Comms architecture review (CubeSat relay / hybrid) — due 2026-Q4 (`planned`)
+- [ ] CDR-lite: drawings, BOMs, test plans — due 2027-Q1 (`planned`)
 - [ ] 50% of $500k goal committed — due 2027-Q1 (`planned`)
-- [ ] Ops playbook v1 (entry → float → downlink) — due 2027-Q3 (`planned`)
+- [ ] Environmental qualification campaign executed — due 2027-Q2 (`planned`)
+- [ ] System integration & inflation sequence tests pass — due 2027-Q2 (`planned`)
+- [ ] Launch path LOI or rideshare reservation — due 2027-Q2 (`planned`)
+- [ ] Flight software freeze + ops playbook v1 — due 2027-Q3 (`planned`)
+- [ ] Mission ops rehearsal complete — due 2027-Q3 (`planned`)
+- [ ] Flight stack accepted and shipped to launch site — due 2027-Q3 (`planned`)
+- [ ] Launch + successful Venus transfer injection — due 2027-Q4 (`planned`)
+- [ ] Successful inflate + ≥30 days float with science downlink — due 2028-Q1 (`planned`)
 
 ## Timeline milestones
 
-- **2027** (target): Launch of AETHER probe (Nephelis)
-- **2026** (current): Final design & integration. Competing private mission (Rocket Lab Venus Life Finder) also targeting 2026 launch window for cloud layer exploration.
-- **2025** (complete): Concept validation & partnership development
-- **2022+** (background): Multiple concepts (NASA aerobot, ESA VEP) proposed for variable altitude balloons in 48-60km range
-- **2028+** (future): Larger aerostats → first habitats → self-sustaining outposts
+- **2025** (complete): Concept validation, branding, and early partnership development for Project AETHER
+- **2026-Q3** (current): Requirements, CONOPS, system ICD, live crowdfund stack, P0 partner outreach (accelerated Phase A/B start)
+- **2026-Q4** (target): PDR-lite, materials & balloon prototype tests, sensor/comms baselining, facility access
+- **2027-Q1** (target): CDR-lite, flight hardware fab, payload integration, 50% funding milestone
+- **2027-Q2** (target): Environmental qual, system I&T, inflation sequence test, launch LOI / rideshare path
+- **2027-Q3** (target): Flight software freeze, ops rehearsals, ship prep, funding closeout
+- **2027-Q4** (target): Launch campaign + Venus transfer injection (target window ~2027-12-15)
+- **2028-H1** (future): Cruise → Venus entry → balloon float ops (30–90 days) + first public data release
+- **2028+** (future): Phase II: larger aerostats → habitation tech path (post-flight lessons)
+- **2022+** (background): Agency background: NASA aerobot / ESA concepts for 48–60 km variable balloons
 
 ## Recent research notes
 
@@ -107,4 +176,4 @@ npx tsx automation/scripts/evolve.ts press
 ```
 
 ---
-Generated 2026-07-09T01:24:18.077Z · do not hand-edit structure; append notes below the line if needed.
+Generated 2026-07-09T01:29:19.886Z · do not hand-edit structure; append notes below the line if needed.

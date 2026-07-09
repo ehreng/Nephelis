@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Specs",
+  "type": "object",
+  "required": ["probe", "launch", "science_goals"],
+  "properties": {
+    "probe": {
+      "type": "object",
+      "required": ["type", "target_altitude_km", "expected_duration_days"],
+      "properties": {
+        "type": { "type": "string" },
+        "target_altitude_km": {
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "temperature_range_c": {
+          "type": "array",
+          "items": { "type": "number" }
+        },
+        "pressure_atm": { "type": "number" },
+        "expected_duration_days": { "type": "number" },
+        "instruments": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "launch": {
+      "type": "object",
+      "required": ["target_year"],
+      "properties": {
+        "target_year": { "type": "number" },
+        "vehicle_options": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "transfer": { "type": "string" }
+      }
+    },
+    "science_goals": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    }
+  }
+}

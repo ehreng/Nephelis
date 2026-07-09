@@ -27,6 +27,12 @@ We welcome contributions from engineers, scientists, designers, writers, and any
 - Improve scripts in `automation/scripts/`
 - Write or refine prompts
 - Help build agent workflows that keep the project moving (research → content → visuals → deploy)
+- Fill weekly research PRs opened by CI (`research/notes/*-research-brief.md`)
+- Review social drafts in `automation/social-drafts/` before posting
+
+### 5. Volunteer form
+- Prefer the form on the site (`/#contribute`) so skills are tagged
+- Or open a GitHub issue with the `volunteer` label
 
 ## Development Setup
 

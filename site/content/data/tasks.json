@@ -1,0 +1,122 @@
+[
+  {
+    "id": "ci-pipeline",
+    "title": "CI: lint, typecheck, build, content validation",
+    "status": "done",
+    "priority": "P0",
+    "area": "ops",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "lead-pipeline",
+    "title": "Lead system: Resend audience, auto-reply, tags",
+    "status": "done",
+    "priority": "P0",
+    "area": "growth",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "stripe-funding",
+    "title": "Stripe Checkout + live allocation counters",
+    "status": "done",
+    "priority": "P0",
+    "area": "growth",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "research-loop",
+    "title": "Weekly research Action → draft PR",
+    "status": "done",
+    "priority": "P1",
+    "area": "content",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "social-drafts",
+    "title": "Social drafts from MDX updates",
+    "status": "done",
+    "priority": "P1",
+    "area": "growth",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "knowledge-base",
+    "title": "Seed living research knowledge base",
+    "status": "done",
+    "priority": "P1",
+    "area": "content",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "metrics-sync",
+    "title": "Deck / one-pager metrics sync from JSON",
+    "status": "done",
+    "priority": "P2",
+    "area": "ops",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "public-roadmap",
+    "title": "Public roadmap page driven by data",
+    "status": "done",
+    "priority": "P1",
+    "area": "site",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "telemetry-strip",
+    "title": "JSON-driven systems / telemetry strip",
+    "status": "done",
+    "priority": "P2",
+    "area": "site",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "volunteer-intake",
+    "title": "Volunteer intake form + routing",
+    "status": "done",
+    "priority": "P1",
+    "area": "growth",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "ops-dashboard",
+    "title": "Private ops dashboard",
+    "status": "done",
+    "priority": "P2",
+    "area": "ops",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "prod-secrets",
+    "title": "Configure Vercel secrets (Resend domain, Stripe webhook, OPS_TOKEN)",
+    "status": "planned",
+    "priority": "P0",
+    "area": "ops",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "ground-test-2026",
+    "title": "Balloon envelope ground tests",
+    "status": "planned",
+    "priority": "P0",
+    "area": "hardware",
+    "quarter": "2026-Q4"
+  },
+  {
+    "id": "payload-integration",
+    "title": "Sensor suite + gondola integration",
+    "status": "planned",
+    "priority": "P0",
+    "area": "hardware",
+    "quarter": "2027-Q1"
+  },
+  {
+    "id": "launch-window-2027",
+    "title": "Launch window readiness (Q4 2027)",
+    "status": "planned",
+    "priority": "P0",
+    "area": "mission",
+    "quarter": "2027-Q4"
+  }
+]

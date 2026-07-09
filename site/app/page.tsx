@@ -4,6 +4,8 @@ import MissionPlanner from "@/components/MissionPlanner";
 import FundingTiers from "@/components/FundingTiers";
 import SignupForm from "@/components/SignupForm";
 import Countdown from "@/components/Countdown";
+import SystemsStatus from "@/components/SystemsStatus";
+import VolunteerForm from "@/components/VolunteerForm";
 import { getTimeline, getHeritage } from "@/lib/content";
 
 export default function NephelisHome() {
@@ -66,9 +68,11 @@ export default function NephelisHome() {
         <div className="absolute bottom-10 right-10 hidden md:block font-mono text-xs text-gray-400 text-right z-20">
           <p>T-MINUS: <Countdown targetDate="2027-12-15" /></p>
           <p>TARGET: 0.72 AU</p>
-          <p>STATUS: SYSTEMS NOMINAL</p>
+          <SystemsStatus compact />
         </div>
       </section>
+
+      <SystemsStatus />
 
       {/* 01 // THE OBJECTIVE */}
       <section id="mission" className="py-24 bg-void border-b border-white/10">
@@ -521,9 +525,14 @@ export default function NephelisHome() {
 
       {/* Data-driven Roadmap (kept from new functionality) */}
       <section className="max-w-5xl mx-auto px-4 py-20 border-b border-white/10">
-        <div className="mb-8">
-          <div className="uppercase tracking-[2px] text-xs text-foreground/60">ROADMAP</div>
-          <h3 className="text-3xl font-semibold tracking-tight">Current Milestones</h3>
+        <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <div className="uppercase tracking-[2px] text-xs text-foreground/60">ROADMAP</div>
+            <h3 className="text-3xl font-semibold tracking-tight">Current Milestones</h3>
+          </div>
+          <Link href="/roadmap" className="font-mono text-xs uppercase tracking-wider text-venus hover:underline">
+            Full roadmap →
+          </Link>
         </div>
         <div className="space-y-4 pl-1">
           {timeline.map((item, i) => (
@@ -543,10 +552,12 @@ export default function NephelisHome() {
           The entire stack (content, visuals, code, research, automation) lives here. Volunteers can edit data/MDX, contribute designs, or help run agent loops.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-4">
-          <a href="https://github.com/ehreng/nephelis" target="_blank" className="px-6 py-2 border border-white/30 font-mono text-sm uppercase tracking-wider hover:border-venus hover:text-venus">View on GitHub</a>
+          <a href="https://github.com/ehreng/Nephelis" target="_blank" className="px-6 py-2 border border-white/30 font-mono text-sm uppercase tracking-wider hover:border-venus hover:text-venus">View on GitHub</a>
           <Link href="/updates" className="px-6 py-2 border border-white/30 font-mono text-sm uppercase tracking-wider hover:border-venus hover:text-venus">Read Updates</Link>
-          <a href="https://github.com/ehreng/nephelis/blob/main/CONTRIBUTING.md" target="_blank" className="px-6 py-2 bg-venus text-black font-mono text-sm uppercase tracking-wider">How to Contribute</a>
+          <Link href="/roadmap" className="px-6 py-2 border border-white/30 font-mono text-sm uppercase tracking-wider hover:border-venus hover:text-venus">Roadmap</Link>
+          <a href="https://github.com/ehreng/Nephelis/blob/main/CONTRIBUTING.md" target="_blank" className="px-6 py-2 bg-venus text-black font-mono text-sm uppercase tracking-wider">How to Contribute</a>
         </div>
+        <VolunteerForm />
         <p className="mt-4 text-xs text-foreground/50">Agents can propose changes, generate content, and keep the todo list fresh.</p>
       </section>
 

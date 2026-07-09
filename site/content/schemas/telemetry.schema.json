@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Telemetry",
+  "type": "object",
+  "required": ["updated_at", "mission_phase", "overall_status", "systems"],
+  "properties": {
+    "updated_at": { "type": "string" },
+    "mission_phase": { "type": "string" },
+    "overall_status": { "type": "string" },
+    "systems": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "status", "value", "detail"],
+        "properties": {
+          "id": { "type": "string" },
+          "label": { "type": "string" },
+          "status": {
+            "type": "string",
+            "enum": ["nominal", "dev", "attention", "critical", "offline"]
+          },
+          "value": { "type": "string" },
+          "detail": { "type": "string" }
+        }
+      }
+    }
+  }
+}

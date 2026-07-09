@@ -29,6 +29,7 @@ export default function MobileMenu() {
             <a href="/#thesis" onClick={close} className="block px-3 py-2 text-gray-300 hover:text-venus">Thesis</a>
             <a href="/#heritage" onClick={close} className="block px-3 py-2 text-gray-300 hover:text-venus">History</a>
             <Link href="/updates" onClick={close} className="block px-3 py-2 text-gray-300 hover:text-venus">Updates</Link>
+            <Link href="/roadmap" onClick={close} className="block px-3 py-2 text-gray-300 hover:text-venus">Roadmap</Link>
             <a href="/#contribute" onClick={close} className="block px-3 py-2 text-gray-300 hover:text-venus">Contribute</a>
             <a href="/#funding" onClick={close} className="block px-3 py-2 text-venus font-bold">Sponsor</a>
           </div>

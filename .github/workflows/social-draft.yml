@@ -1,0 +1,38 @@
+name: Social drafts from updates
+
+on:
+  push:
+    paths:
+      - 'site/content/updates/**'
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Generate social drafts
+        run: npx --yes tsx automation/scripts/social-draft.ts
+
+      - name: Create PR with drafts
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: 'chore(social): refresh drafts from MDX updates'
+          title: 'Social drafts: review before posting'
+          body: |
+            Generated `automation/social-drafts/latest.md` from the newest mission update MDX.
+
+            **Human step:** copy into X / LinkedIn (or Buffer). Do not auto-post.
+          branch: automation/social-drafts
+          delete-branch: true
+          labels: growth, automation

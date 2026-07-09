@@ -43,8 +43,16 @@ See `automation/prompts/` for starting agent workflows and `site/README.md` for 
 - [x] Content ported/enhanced from 82083 and ehreng.github.io
 - [x] Assets partially organized
 - [x] First agent research loop run (competitor missions update added)
+- [x] Deployed to Vercel under nephelisindustries.com
+- [x] CI (lint / typecheck / build / content schemas)
+- [x] Lead pipeline (Resend audience + auto-reply + tags)
+- [x] Stripe Checkout + webhook + live allocation API
+- [x] Weekly research scaffold Action → PR
+- [x] Social drafts + metrics one-pager sync Actions
+- [x] Living research knowledge base seed
+- [x] Public `/roadmap` + telemetry strip + volunteer form + `/ops`
 - [ ] Full asset sync + more visuals
-- [ ] Deployed to Vercel under nephelisindustries.com
+- [ ] Configure production secrets (Resend domain, Stripe webhook, OPS_TOKEN)
 
 ## Local Development
 
@@ -113,16 +121,21 @@ Agents (and humans) can use plan/implement/review loops. Contributions via PRs a
 See `site/content/data/timeline.json` for milestones.
 
 Open tasks (volunteers + agents encouraged):
-- Match logo + hero styling even closer to current deck/live
-- Add real telemetry simulation chart (SVG or Canvas)
-- Improve funding flow (form backend or integration)
+- Wire Vercel env vars from `site/.env.example` (Resend, Stripe, OPS_TOKEN)
 - Expand visuals gallery + more videos
-- Public roadmap page driven by data
-- GitHub issue templates + project board
-- More content: science deep dives, partner logos, press
-- CI checks + automated visual regression if helpful
+- Science deep dives, partner logos, press
+- Optional visual regression tests
+- Fill weekly research PRs as they open
 
-Run automation or ask an agent: "Build a prioritized todo list for the next 30 days and update the site."
+See public roadmap: `/roadmap` (driven by `site/content/data/tasks.json`).
+
+```bash
+# Automation scaffolds
+npx tsx automation/scripts/evolve.ts full
+
+# Site CI gate
+cd site && pnpm ci
+```
 
 ## Current Status
 

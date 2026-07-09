@@ -1,0 +1,49 @@
+{
+  "updated_at": "2026-07-08T00:00:00.000Z",
+  "mission_phase": "DESIGN",
+  "overall_status": "SYSTEMS NOMINAL",
+  "systems": [
+    {
+      "id": "power",
+      "label": "POWER",
+      "status": "nominal",
+      "value": "SOLAR SIM",
+      "detail": "Ground power model; flight solar TBD"
+    },
+    {
+      "id": "comms",
+      "label": "COMMS",
+      "status": "nominal",
+      "value": "LINK PLAN",
+      "detail": "CubeSat relay architecture baselined"
+    },
+    {
+      "id": "balloon",
+      "label": "AEROSTAT",
+      "status": "dev",
+      "value": "DESIGN",
+      "detail": "Fluoropolymer envelope — materials trade"
+    },
+    {
+      "id": "avionics",
+      "label": "AVIONICS",
+      "status": "dev",
+      "value": "SPEC",
+      "detail": "Rad-tolerant stack under selection"
+    },
+    {
+      "id": "nav",
+      "label": "NAV/AI",
+      "status": "nominal",
+      "value": "ACTIVE",
+      "detail": "Autonomous entry/float algorithms in sim"
+    },
+    {
+      "id": "funding",
+      "label": "FUNDING",
+      "status": "attention",
+      "value": "OPEN",
+      "detail": "Crowdfund + partner pipeline live"
+    }
+  ]
+}

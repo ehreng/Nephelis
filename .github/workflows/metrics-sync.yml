@@ -1,0 +1,36 @@
+name: Metrics one-pager sync
+
+on:
+  push:
+    paths:
+      - 'site/content/data/**'
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Sync metrics one-pager
+        run: npx --yes tsx automation/scripts/sync-metrics.ts
+
+      - name: Create PR if changed
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: 'chore(decks): sync metrics one-pager from content data'
+          title: 'Sync metrics one-pager'
+          body: |
+            Regenerated `decks/metrics-one-pager.md` from `site/content/data/*`.
+          branch: automation/metrics-sync
+          delete-branch: true
+          labels: automation

@@ -1,6 +1,9 @@
 import timeline from '../content/data/timeline.json';
 import specs from '../content/data/specs.json';
 import heritage from '../content/data/heritage.json';
+import tasks from '../content/data/tasks.json';
+import telemetry from '../content/data/telemetry.json';
+import funding from '../content/data/funding.json';
 
 export type TimelineItem = {
   year: string;
@@ -17,6 +20,30 @@ export type HeritageItem = {
   link?: string | null;
 };
 
+export type TaskItem = {
+  id: string;
+  title: string;
+  status: string;
+  priority: string;
+  area: string;
+  quarter: string;
+};
+
+export type TelemetrySystem = {
+  id: string;
+  label: string;
+  status: string;
+  value: string;
+  detail: string;
+};
+
+export type Telemetry = {
+  updated_at: string;
+  mission_phase: string;
+  overall_status: string;
+  systems: TelemetrySystem[];
+};
+
 export function getTimeline(): TimelineItem[] {
   return timeline as TimelineItem[];
 }
@@ -27,6 +54,18 @@ export function getSpecs() {
 
 export function getHeritage(): HeritageItem[] {
   return heritage as HeritageItem[];
+}
+
+export function getTasks(): TaskItem[] {
+  return tasks as TaskItem[];
+}
+
+export function getTelemetry(): Telemetry {
+  return telemetry as Telemetry;
+}
+
+export function getFunding() {
+  return funding;
 }
 
 // Placeholder for future MDX loaded updates

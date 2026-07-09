@@ -1,0 +1,25 @@
+{
+  "tiers": {
+    "legacy": {
+      "id": "legacy",
+      "name": "Balloon Engraving",
+      "label": "TIER 1: THE LEGACY",
+      "price_usd": 100,
+      "capacity": 500,
+      "baseline_allocated": 0,
+      "description": "Laser-etch your name onto the aerostat balloon of Cloudseeker."
+    },
+    "dna": {
+      "id": "dna",
+      "name": "DNA Capsule",
+      "label": "TIER 2: THE IMMORTAL",
+      "price_usd": 500,
+      "capacity": 100,
+      "baseline_allocated": 0,
+      "description": "Send a biological sample (hair/nail) in our inert time capsule."
+    }
+  },
+  "currency": "usd",
+  "success_path": "/?checkout=success#funding",
+  "cancel_path": "/?checkout=cancel#funding"
+}

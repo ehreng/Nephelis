@@ -3,6 +3,13 @@ site/.next
 site/out
 site/node_modules
 
+# Secrets
+site/.env
+site/.env.local
+site/.env.*.local
+.env
+.env.local
+
 # Keep generated assets but not huge binaries if you prefer
 # assets/visuals/*.mp4
 # assets/visuals/*.mov

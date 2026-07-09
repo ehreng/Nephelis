@@ -1,66 +1,77 @@
 /**
  * Nephelis Evolution Runner
  *
- * Usage (after pnpm install in site/):
- *   cd site
- *   npx tsx ../automation/scripts/evolve.ts research
- *
- * This script outlines steps for AI-driven (Grok + subagents) development.
- * In this environment, you can invoke me with prompts to execute parts of the loop.
- *
- * Example full loop from Grok chat:
- * 1. "Research latest Venus cloud missions using tools"
- * 2. "Update timeline.json and create new MDX update based on research"
- * 3. "Generate visual briefs and update visuals page if needed"
- * 4. "Review changes and prepare summary/PR description"
+ * Usage:
+ *   npx tsx automation/scripts/evolve.ts research
+ *   npx tsx automation/scripts/evolve.ts visuals
+ *   npx tsx automation/scripts/evolve.ts social
+ *   npx tsx automation/scripts/evolve.ts metrics
+ *   npx tsx automation/scripts/evolve.ts full
  */
+import { spawnSync } from 'node:child_process';
+import { join } from 'node:path';
 
 const mode = process.argv[2] || 'help';
+const scripts = join(__dirname);
 
 console.log(`[Nephelis Evolve] Running in mode: ${mode}\n`);
 
-if (mode === 'research') {
-  console.log(`Steps for RESEARCH + CONTENT loop:
-1. Call web_search + x_keyword_search / x_semantic_search for "Venus cloud layer" "super pressure balloon" "Venus life finder" etc.
-2. Synthesize key facts.
-3. Propose edits to:
-   - research/science/ (new .md files)
-   - content/data/timeline.json
-   - content/data/specs.json
-   - content/updates/ (new .mdx)
-4. Use search_replace or implement to apply.
-5. Verify with site build.
+function run(script: string) {
+  const r = spawnSync('npx', ['tsx', join(scripts, script)], {
+    stdio: 'inherit',
+    cwd: join(__dirname, '../..'),
+  });
+  if (r.status !== 0) process.exit(r.status || 1);
+}
 
-Example invocation: Ask Grok to run the research and output patches.`);
+if (mode === 'research') {
+  console.log('Scaffolding weekly research brief + draft MDX…\n');
+  run('research-weekly.ts');
+  console.log(`
+Manual / agent follow-up:
+1. web_search + X search for Venus cloud / competitor news
+2. Fill research/notes/*-research-brief.md
+3. Update research/science or research/competitors
+4. Promote draft MDX or edit timeline.json
+5. pnpm --dir site validate:content && open PR
+`);
 }
 
 if (mode === 'visuals') {
   console.log(`Steps for VISUALS loop:
 1. Read automation/prompts/visual-brief.md
-2. Use imagine skill (or call image_gen) with branding constraints (venus orange, dark space, technical).
-3. Edit with image_edit for consistency.
-4. Save to assets/visuals/ and public/assets/visuals/
-5. Update visuals/page.tsx list if needed.`);
+2. Use image generation with branding (venus orange, dark space, technical)
+3. Save to assets/visuals/ and site/public/assets/visuals/
+4. Update visuals gallery if needed
+`);
+}
+
+if (mode === 'social') {
+  run('social-draft.ts');
+}
+
+if (mode === 'metrics') {
+  run('sync-metrics.ts');
 }
 
 if (mode === 'full') {
-  console.log(`FULL EVOLUTION:
-Combine research + visuals + code changes using:
-- plan mode for architecture
-- subagents for parallel research/design/code
-- implement + review
-- execute-plan for multi-step features
-
-All changes versioned in git. Deploy via Vercel.`);
+  run('research-weekly.ts');
+  run('sync-metrics.ts');
+  run('social-draft.ts');
+  console.log(`
+FULL cycle scaffolded. Next: research fill → content PR → review → merge → Vercel deploy.
+Then copy automation/social-drafts/latest.md into X/LinkedIn (human approve).
+`);
 }
 
-if (mode === 'help' || !mode) {
+if (mode === 'help' || !['research', 'visuals', 'social', 'metrics', 'full'].includes(mode)) {
   console.log(`Available modes:
-  research   - Trigger research + content update loop
-  visuals    - Trigger visual generation briefs
-  full       - Full evolution cycle
+  research   - Scaffold research brief + draft MDX
+  visuals    - Print visual generation steps
+  social     - Draft X/LinkedIn posts from latest MDX
+  metrics    - Regenerate decks/metrics-one-pager.md
+  full       - research + metrics + social scaffolds
 
-Run with: npx tsx ../automation/scripts/evolve.ts <mode>
-
-This environment (Grok + tools + subagents + plan/implement/review skills) is the primary automation engine.`);
+Run: npx tsx automation/scripts/evolve.ts <mode>
+`);
 }

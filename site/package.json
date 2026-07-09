@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "validate:content": "node scripts/validate-content.mjs",
+    "ci": "pnpm validate:content && pnpm typecheck && pnpm lint && pnpm build"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.0.0",
@@ -23,12 +25,14 @@
     "react": "^19",
     "react-dom": "^19",
     "resend": "^6.16.0",
+    "stripe": "^22.3.0",
     "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "ajv": "^8.20.0",
     "eslint": "^8",
     "eslint-config-next": "15.3.1",
     "postcss": "^8",

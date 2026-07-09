@@ -1,0 +1,55 @@
+name: Weekly research scaffold
+
+on:
+  schedule:
+    # Mondays 14:00 UTC
+    - cron: '0 14 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install tsx
+        run: npm install -g tsx
+
+      - name: Set date
+        id: d
+        run: echo "date=$(date -u +%F)" >> "$GITHUB_OUTPUT"
+
+      - name: Scaffold research brief
+        run: npx tsx automation/scripts/research-weekly.ts
+        env:
+          RESEARCH_DATE: ${{ steps.d.outputs.date }}
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore(research): weekly brief scaffold ${{ steps.d.outputs.date }}"
+          title: "Research cycle: ${{ steps.d.outputs.date }}"
+          body: |
+            ## Weekly research scaffold
+
+            Auto-opened by `.github/workflows/research-weekly.yml`.
+
+            ### Checklist
+            - [ ] Fill `research/notes/*-research-brief.md` findings + sources
+            - [ ] Update `research/science/` or `research/competitors/` as needed
+            - [ ] Promote or delete draft MDX under `site/content/updates/`
+            - [ ] Run site content validation if JSON changed
+            - [ ] Human review before merge (do not auto-merge research)
+
+            Agents: use `automation/prompts/research-update.md`.
+          branch: research/weekly-${{ steps.d.outputs.date }}
+          delete-branch: true
+          labels: research, automation

@@ -1,6 +1,6 @@
 # Nephelis Industries — Metrics One-Pager
 
-_Auto-generated from `site/content/data/*` · 2026-07-09T01:30:55.550Z_  
+_Auto-generated from `site/content/data/*` · 2026-07-13T17:09:33.010Z_  
 **Do not hand-edit** — run `npx tsx automation/scripts/sync-metrics.ts` after data changes.
 
 ## Mission snapshot
@@ -60,12 +60,11 @@ _Paid counts come from Stripe at runtime; baseline is static marketing/pre-sales
 
 - [P0] Execute 30-day war board (docs/30-day-war-board.md) — _in_progress_ (2026-Q3)
 - [P0] Flip Stripe to live keys + live webhook; real $100 smoke test — _planned_ (2026-Q3)
-- [P0] Public crowdfund campaign narrative + tier fulfillment SOPs — _planned_ (2026-Q3)
 - [P0] Execute P0 partner outreach: sensor lab + fluoropolymer supplier — _planned_ (2026-Q3)
 - [P1] Confirm 2–3 technical advisors (structures, entry, Venus science) with written scope — _planned_ (2026-Q3)
-- [P0] CONOPS v1: launch → cruise → entry → inflate → float → end-of-life — _in_progress_ (2026-Q3)
-- [P0] System architecture + ICD draft (balloon, gondola, power, comms, GNC) — _in_progress_ (2026-Q3)
-- [P0] Mission requirements baseline (science, mass, power, data, reliability) — _planned_ (2026-Q3)
+- [P0] CONOPS v1: launch → cruise → entry → inflate → float → end-of-life (v0.9 drafted in docs/) — _in_progress_ (2026-Q3)
+- [P0] System architecture + ICD draft (skeleton in docs/system-icd-skeleton.md) — _in_progress_ (2026-Q3)
+- [P0] Mission requirements baseline (v0.9 drafted in docs/requirements-baseline-v0.9.md) — _in_progress_ (2026-Q3)
 - [P1] Refine transfer Δv / TOF with published ephemeris (not only Hohmann demo) — _planned_ (2026-Q3)
 - [P0] Entry corridor & peak heat-rate study for ~10.7 km/s Venus entry class — _planned_ (2026-Q3)
 - [P1] Science traceability matrix: goals → instruments → data products — _planned_ (2026-Q3)
@@ -73,7 +72,7 @@ _Paid counts come from Stripe at runtime; baseline is static marketing/pre-sales
 - [P1] Fill first research brief with cited Venus aerobot / materials sources — _planned_ (2026-Q3)
 - [P1] Recruit core volunteer leads: structures, avionics, software, science — _planned_ (2026-Q3)
 - [P0] Preliminary design review (lite): freeze interfaces, mass/power books — _planned_ (2026-Q4)
-- [P0] Fluoropolymer acid coupon campaign (soak, crease, seam samples) — _planned_ (2026-Q4)
+- [P0] Fluoropolymer acid coupon campaign (protocol: docs/materials-coupon-test-protocol.md) — _in_progress_ (2026-Q4)
 - [P0] Build subscale super-pressure balloon prototype #1 (Earth ambient) — _planned_ (2026-Q4)
 - [P0] Envelope leak / pressure-hold ground test protocol + first run — _planned_ (2026-Q4)
 - [P0] Heatshield geometry/material trade (blunt body mass vs peak load) — _planned_ (2026-Q4)
@@ -82,7 +81,7 @@ _Paid counts come from Stripe at runtime; baseline is static marketing/pre-sales
 - [P0] MOU or in-kind LOI with at least one sensor / lab partner — _planned_ (2026-Q4)
 - [P0] Receive materials samples + vendor datasheets for envelope film — _planned_ (2026-Q4)
 - [P1] Select flight computer / rad-tolerant strategy (COTS + shielding trade) — _planned_ (2026-Q4)
-- [P0] Power budget v1: solar at float, battery, duty cycles — _planned_ (2026-Q4)
+- [P0] Power budget v1: solar at float, battery, duty cycles (v0 data: power-budget.json) — _in_progress_ (2026-Q4)
 - [P0] Comms architecture review: direct-to-Earth vs 3U relay vs hybrid — _planned_ (2026-Q4)
 - [P1] CubeSat bus/radio partner shortlist (flight heritage preferred) — _planned_ (2026-Q4)
 - [P1] Flight software skeleton: modes, fault protection, telemetry schema — _planned_ (2026-Q4)

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-09T01:23:38.271Z",
+  "updated_at": "2026-07-20T16:20:57.650Z",
   "mission_phase": "DESIGN",
   "overall_status": "SYSTEMS NOMINAL",
   "systems": [
@@ -21,14 +21,14 @@
       "id": "balloon",
       "label": "AEROSTAT",
       "status": "dev",
-      "value": "DESIGN",
+      "value": "PLANNED",
       "detail": "Fluoropolymer envelope — materials trade"
     },
     {
       "id": "avionics",
       "label": "AVIONICS",
       "status": "dev",
-      "value": "SPEC",
+      "value": "PLANNED",
       "detail": "Rad-tolerant stack under selection"
     },
     {

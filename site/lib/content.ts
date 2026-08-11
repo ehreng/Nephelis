@@ -126,18 +126,26 @@ export function getMissionControl() {
 }
 
 export function getUpdates() {
+  // Newest first
   return [
     {
-      slug: '2026-06-mission-update',
-      title: 'Mission update — June 2026',
-      date: '2026-06-01',
-      excerpt: 'Initial design work for the AETHER probe is progressing on schedule.',
+      slug: '2026-08-aether-os',
+      title: 'AETHER OS online — August 2026',
+      date: '2026-08-11',
+      excerpt:
+        'Mission automation is live. Collaborators, contributors, and new team members welcome at L1–L3.',
     },
     {
       slug: '2026-07-competitor-missions',
       title: 'Competitor missions update — July 2026',
       date: '2026-07-01',
       excerpt: 'Recent developments in Venus cloud exploration from Rocket Lab, NASA and ESA.',
+    },
+    {
+      slug: '2026-06-mission-update',
+      title: 'Mission update — June 2026',
+      date: '2026-06-01',
+      excerpt: 'Initial design work for the AETHER probe is progressing on schedule.',
     },
   ];
 }

@@ -35,10 +35,10 @@ export default function NephelisHome() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 text-left w-full">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center space-x-2 border border-venus/30 bg-venus/10 rounded-full px-4 py-1 mb-8 backdrop-blur-md">
-              <span className="w-2 h-2 rounded-full bg-amber-400"></span>
+            <div className="inline-flex items-center space-x-2 border border-venus/30 bg-venus/10 rounded-full px-4 py-1 mb-8 animate-pulse-slow backdrop-blur-md">
+              <span className="w-2 h-2 rounded-full bg-venus"></span>
               <span className="text-venus font-mono text-xs uppercase tracking-widest">
-                Status: Pre-hardware · Open collaboration
+                Target: Venus cloud layer · 50–55 km
               </span>
             </div>
 
@@ -48,39 +48,30 @@ export default function NephelisHome() {
             </h1>
 
             <p className="mt-4 max-w-xl text-xl text-gray-200 font-mono leading-relaxed drop-shadow-md">
-              Project AETHER is a long-duration Venus cloud-layer aerostat concept targeting the{' '}
-              <span className="text-white font-bold">~50–55 km temperate band</span>. Today: docs,
-              open engineering, and ground demonstrators — not a finished flight program.
+              Project AETHER is humanity&apos;s return to the clouds — a long-duration aerostat probe
+              for the <span className="text-white font-bold">habitable zone of Venus</span>, where
+              pressure and temperature turn alien into almost familiar.
             </p>
 
-            <div className="mt-4 max-w-xl text-sm tracking-wide text-venus/90 font-mono leading-relaxed">
-              VISION: Venus cloud science and long-term habitation tech. EXECUTION: prove materials
-              and float systems on Earth first. $500k = early ground/R&amp;D campaign scale, not full
-              flight cost. No committed launch date.
+            <div className="mt-4 max-w-xl text-sm uppercase tracking-widest text-venus/90 font-mono leading-relaxed">
+              We&apos;re not NASA. We&apos;re Nephelis Industries — builders betting on the clouds.
+              Join the open mission.
             </div>
 
             <div className="mt-10 flex flex-wrap gap-4">
-              <a href="/status" className="px-8 py-4 bg-white text-black font-bold font-mono uppercase tracking-wider hover:bg-gray-200 transition-colors">
-                Status
-              </a>
-              <a href="#mission" className="px-8 py-4 border border-white/20 text-white font-bold font-mono uppercase tracking-wider hover:border-venus hover:text-venus transition-all">
+              <a href="#mission" className="px-8 py-4 bg-white text-black font-bold font-mono uppercase tracking-wider hover:bg-gray-200 transition-colors">
                 Mission Brief
               </a>
-              <a
-                href="https://github.com/ehreng/Nephelis"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-8 py-4 border border-white/20 text-white font-bold font-mono uppercase tracking-wider hover:border-venus hover:text-venus transition-all"
-              >
-                GitHub
+              <a href="#contribute" className="px-8 py-4 border border-white/20 text-white font-bold font-mono uppercase tracking-wider hover:border-venus hover:text-venus transition-all">
+                Join the Crew
               </a>
             </div>
           </div>
         </div>
 
         <div className="absolute bottom-10 right-10 hidden md:block font-mono text-xs text-gray-400 text-right z-20">
-          <p>PHASE: PRE-HARDWARE</p>
-          <p>TARGET BAND: ~0.72 AU · 50–55 km</p>
+          <p>TARGET: 0.72 AU</p>
+          <p>BAND: 50–55 km</p>
           <SystemsStatus compact />
         </div>
       </section>

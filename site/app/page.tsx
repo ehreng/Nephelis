@@ -50,7 +50,7 @@ export default function NephelisHome() {
             <p className="mt-4 max-w-xl text-xl text-gray-200 font-mono leading-relaxed drop-shadow-md">
               Project AETHER is humanity&apos;s return to the clouds — a long-duration aerostat probe
               for the <span className="text-white font-bold">habitable zone of Venus</span>, where
-              pressure and temperature turn alien into almost familiar.
+              Earth-like pressure and temperate skies open a second world to science.
             </p>
 
             <div className="mt-4 max-w-xl text-sm uppercase tracking-widest text-venus/90 font-mono leading-relaxed">

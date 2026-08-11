@@ -8,6 +8,7 @@ import massBudget from '../content/data/mass-budget.json';
 import risks from '../content/data/risks.json';
 import partners from '../content/data/partners.json';
 import missionControl from '../content/data/mission-control.json';
+import progress from '../content/data/progress.json';
 
 export type TimelineItem = {
   year: string;
@@ -121,13 +122,44 @@ export function getMissionControl() {
     phase: string;
     launch_target: string;
     funding_goal_usd: number;
+    funding_goal_label?: string;
     checklist: MissionCheckItem[];
+  };
+}
+
+export function getProgress() {
+  return progress as {
+    updated_at: string;
+    headline: string;
+    phase: string;
+    next_engineering_milestone: string;
+    launch_posture: {
+      previous_public_claim: string;
+      current: string;
+      note: string;
+    };
+    budget_posture: {
+      crowdfund_target_usd: number;
+      label: string;
+      flight_estimate_note: string;
+    };
+    built: { item: string; evidence: string }[];
+    not_yet: string[];
+    team: { public: string; authority_claims: string };
+    repos: { name: string; url: string; role: string }[];
   };
 }
 
 export function getUpdates() {
   // Newest first
   return [
+    {
+      slug: '2026-08-honesty-reset',
+      title: 'Honesty reset — August 2026',
+      date: '2026-08-11',
+      excerpt:
+        'No empty authority claims. No fake 2027 flight commitment. Pre-hardware status and open GitHub work.',
+    },
     {
       slug: '2026-08-aether-os',
       title: 'AETHER OS online — August 2026',

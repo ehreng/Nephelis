@@ -20,6 +20,7 @@
     }
   },
   "currency": "usd",
+  "campaign_note": "Tiers support early ground demonstrators / R&D — not a complete Venus flight budget. Checkout may be offline until Stripe is configured.",
   "success_path": "/?checkout=success#funding",
   "cancel_path": "/?checkout=cancel#funding"
 }

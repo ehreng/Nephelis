@@ -9,6 +9,7 @@
     "phase": { "type": "string" },
     "launch_target": { "type": "string" },
     "funding_goal_usd": { "type": "number" },
+    "funding_goal_label": { "type": "string" },
     "checklist": {
       "type": "array",
       "minItems": 1,

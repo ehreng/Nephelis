@@ -3,7 +3,6 @@ import { ArrowRight } from "lucide-react";
 import MissionPlanner from "@/components/MissionPlanner";
 import FundingTiers from "@/components/FundingTiers";
 import SignupForm from "@/components/SignupForm";
-import Countdown from "@/components/Countdown";
 import SystemsStatus from "@/components/SystemsStatus";
 import VolunteerForm from "@/components/VolunteerForm";
 import { getTimeline, getHeritage } from "@/lib/content";
@@ -36,9 +35,11 @@ export default function NephelisHome() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 text-left w-full">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center space-x-2 border border-venus/30 bg-venus/10 rounded-full px-4 py-1 mb-8 animate-pulse-slow backdrop-blur-md">
-              <span className="w-2 h-2 rounded-full bg-venus"></span>
-              <span className="text-venus font-mono text-xs uppercase tracking-widest">Launch Window: Q4 2027</span>
+            <div className="inline-flex items-center space-x-2 border border-venus/30 bg-venus/10 rounded-full px-4 py-1 mb-8 backdrop-blur-md">
+              <span className="w-2 h-2 rounded-full bg-amber-400"></span>
+              <span className="text-venus font-mono text-xs uppercase tracking-widest">
+                Status: Pre-hardware · Open collaboration
+              </span>
             </div>
 
             <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-white mb-6 uppercase leading-none drop-shadow-2xl">
@@ -47,27 +48,39 @@ export default function NephelisHome() {
             </h1>
 
             <p className="mt-4 max-w-xl text-xl text-gray-200 font-mono leading-relaxed drop-shadow-md">
-              Project Aether is humanity's return to the clouds. A long-duration aerostat probe targeting the <span className="text-white font-bold">55km habitable zone</span> of Venus.
+              Project AETHER is a long-duration Venus cloud-layer aerostat concept targeting the{' '}
+              <span className="text-white font-bold">~50–55 km temperate band</span>. Today: docs,
+              open engineering, and ground demonstrators — not a finished flight program.
             </p>
 
-            <div className="mt-4 max-w-xl text-sm uppercase tracking-widest text-venus/90 font-mono">
-              WE’RE NOT NASA. WE’RE NEPHELIS INDUSTRIES: DREAMERS AND BUILDERS BETTING $500,000 ON A CROWD-FUNDED PROBE TO VENUS. LET'S EXTEND HUMAN AND AI CONSCIOUSNESS BEYOND EARTH NOW.
+            <div className="mt-4 max-w-xl text-sm tracking-wide text-venus/90 font-mono leading-relaxed">
+              VISION: Venus cloud science and long-term habitation tech. EXECUTION: prove materials
+              and float systems on Earth first. $500k = early ground/R&amp;D campaign scale, not full
+              flight cost. No committed launch date.
             </div>
 
-            <div className="mt-10 flex gap-4">
-              <a href="#mission" className="px-8 py-4 bg-white text-black font-bold font-mono uppercase tracking-wider hover:bg-gray-200 transition-colors">
+            <div className="mt-10 flex flex-wrap gap-4">
+              <a href="/status" className="px-8 py-4 bg-white text-black font-bold font-mono uppercase tracking-wider hover:bg-gray-200 transition-colors">
+                Honest Status
+              </a>
+              <a href="#mission" className="px-8 py-4 border border-white/20 text-white font-bold font-mono uppercase tracking-wider hover:border-venus hover:text-venus transition-all">
                 Mission Brief
               </a>
-              <a href="#funding" className="px-8 py-4 border border-white/20 text-white font-bold font-mono uppercase tracking-wider hover:border-venus hover:text-venus transition-all">
-                Join Flight Crew
+              <a
+                href="https://github.com/ehreng/Nephelis"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 border border-white/20 text-white font-bold font-mono uppercase tracking-wider hover:border-venus hover:text-venus transition-all"
+              >
+                GitHub
               </a>
             </div>
           </div>
         </div>
 
         <div className="absolute bottom-10 right-10 hidden md:block font-mono text-xs text-gray-400 text-right z-20">
-          <p>T-MINUS: <Countdown targetDate="2027-12-15" /></p>
-          <p>TARGET: 0.72 AU</p>
+          <p>PHASE: PRE-HARDWARE</p>
+          <p>TARGET BAND: ~0.72 AU · 50–55 km</p>
           <SystemsStatus compact />
         </div>
       </section>
@@ -82,35 +95,57 @@ export default function NephelisHome() {
             <h3 className="text-4xl font-bold text-white mb-6">Cloudseeker: A Floating Laboratory</h3>
             <div className="space-y-6 text-gray-400 font-light leading-relaxed">
               <p>
-                While Mars captures the imagination, Venus captures the data. At 50km altitude, Venus boasts Earth-like atmospheric pressure (1 bar) and temperatures (0-50°C). It is the most habitable environment in the solar system outside Earth.
+                At roughly 50–55 km altitude, Venus has near–1 bar pressure and temperate temperatures —
+                a scientifically interesting cloud environment. That fact is well established (VEGA
+                balloons in 1985; ongoing NASA/ESA aerobot studies). The hard part is engineering a
+                long-duration private mission that survives entry, acid, and float ops.
               </p>
               <p>
-                <strong className="text-white">Project AETHER</strong> deploys a super-pressure fluoropolymer balloon designed to ride the super-rotating winds of Venus, circling the planet every 4 days while streaming high-bandwidth telemetry via a 3U CubeSat relay.
+                <strong className="text-white">Project AETHER (Cloudseeker)</strong> is a concept for a
+                super-pressure fluoropolymer aerostat and optional CubeSat relay. Today the program is
+                in <strong className="text-white">pre-hardware</strong>: public documentation, mass and
+                risk models, and AETHER OS for open contribution — not a flight-ready stack.
               </p>
               <p>
-                We are designing and building Cloudseeker: a long-duration aerostat probe. The program includes balloon envelope fabrication and testing, payload integration (spectrometers, cameras, meteorology, life-detection sensors), communications relay via CubeSat, and launch on a rideshare or dedicated small vehicle in the 2027 window. 
+                <strong className="text-white">Near-term execution (real work):</strong> acid-resistant
+                material coupons, a small helium ground float with basic sensors/telemetry, and
+                transparent logs of failures and tests. Flight architecture (entry system, inflation,
+                rad-tolerant avionics, relay) remains trade/TBD until ground gates pass.
               </p>
               <p>
-                Mission steps: (1) Final design &amp; ground testing 2026, (2) Integration &amp; environmental qualification, (3) Launch to Venus transfer, (4) Atmospheric entry and balloon inflation at target altitude, (5) 30-90 days of floating operations with daily data downlink, (6) Analysis and public data release. This is the first dedicated private mission focused on the habitable cloud layer.
+                <strong className="text-white">Vision (clearly labeled):</strong> long-term interest in
+                cloud-layer science and habitation technology. A 30–90 day robotic probe is not
+                “humanity’s backup plan” or a cloud city — it is, at most, an early science and
+                engineering step. We keep the inspiration; we do not sell it as current maturity.
               </p>
               <p>
-                Venus offers abundant solar power, CO₂ for fuel, and nitrogen for breathable air. We need $500,000+ in crowdfunding for build, testing, and launch. Our budget is lean compared to Rocket Lab's Venus Life Finder (&lt;$10M), but laser-focused on practical habitation validation.
+                <strong className="text-white">Budget honesty:</strong> a ~$500k crowdfund target is
+                framed as a <em>ground demonstrator / early R&amp;D</em> campaign. A full Venus flight
+                system will cost far more. Rideshare “$80/kg” figures on this site are{' '}
+                <em>illustrative optimistic architecture math</em>, not booked launch contracts.
               </p>
               <p>
-                Volunteers welcome: engineers, scientists, AI experts, fabricators—email to join. Be part of humanity’s backup plan. Venus ensures life thrives across the solar system.
-              </p>
-              <p>
-                With hypothetical VenusExpress service using next-gen propulsion (nuclear electric or VASIMR), travel time could shrink to 30–45 days versus today’s 3–6 months.
+                Contributors welcome (L1–L3) via{' '}
+                <a
+                  href="https://github.com/ehreng/Nephelis"
+                  className="text-venus hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>{' '}
+                and the volunteer form. No empty “backed by SpaceX/JPL veterans” claims — only named
+                people with permission, or silence.
               </p>
 
               <div className="grid grid-cols-2 gap-4 mt-8">
                 <div className="p-4 border border-white/10 bg-white/5">
-                  <div className="text-2xl font-mono text-venus font-bold">30-90d</div>
-                  <div className="text-xs text-gray-500 uppercase tracking-wider mt-1">Operational Life</div>
+                  <div className="text-2xl font-mono text-venus font-bold">PRE-HW</div>
+                  <div className="text-xs text-gray-500 uppercase tracking-wider mt-1">Program phase</div>
                 </div>
                 <div className="p-4 border border-white/10 bg-white/5">
-                  <div className="text-2xl font-mono text-venus font-bold">52km</div>
-                  <div className="text-xs text-gray-500 uppercase tracking-wider mt-1">Target Altitude</div>
+                  <div className="text-2xl font-mono text-venus font-bold">50–55km</div>
+                  <div className="text-xs text-gray-500 uppercase tracking-wider mt-1">Target band (science)</div>
                 </div>
               </div>
             </div>
@@ -118,7 +153,7 @@ export default function NephelisHome() {
 
           <div className="glass-panel p-6 rounded-sm hud-border relative">
             <div className="mb-3 flex justify-end">
-              <span className="text-xs font-mono text-venus animate-pulse">Live Prototype Schematic</span>
+              <span className="text-xs font-mono text-venus">Concept art — not flight hardware</span>
             </div>
             <div className="relative flex items-center justify-center bg-black/80 rounded overflow-hidden" style={{minHeight: '520px'}}>
               <img src="/assets/visuals/NephelisIndustries.jpg" alt="Nephelis Industries" className="max-h-[520px] w-auto object-contain" />
@@ -136,19 +171,28 @@ export default function NephelisHome() {
           <div className="mb-12">
             <h2 className="text-venus font-mono text-sm uppercase tracking-widest mb-2">02 // Mission Control</h2>
             <h3 className="text-4xl font-bold text-white">Astrodynamics &amp; Trajectory</h3>
-            <p className="text-gray-400 mt-2 font-mono text-sm">Interactive Mission Planner. Dec 2027 launch window. Planets move in real time; trajectory arc updates with launch date. Wet mass fixed, dry mass tunable.</p>
+            <p className="text-gray-400 mt-2 font-mono text-sm">
+              Interactive trajectory sandbox (illustrative). Not a booked launch. Default epoch is a
+              study date — adjust freely. Wet mass concept ~400 kg class; dry mass tunable in the
+              tool.
+            </p>
           </div>
 
           <MissionPlanner />
 
-          {/* Updated Optimistic Architecture Summary — after Mission Planner */}
           <div className="mt-16 max-w-6xl">
             <div className="mb-8">
-              <div className="font-mono text-venus text-xs uppercase tracking-[2px] mb-1">LAUNCH VEHICLE &amp; ARCHITECTURE</div>
-              <h3 className="text-3xl font-bold text-white">Updated Optimistic Architecture Summary (Late 2027 Baseline)</h3>
+              <div className="font-mono text-venus text-xs uppercase tracking-[2px] mb-1">
+                LAUNCH VEHICLE &amp; ARCHITECTURE (STUDY ONLY)
+              </div>
+              <h3 className="text-3xl font-bold text-white">Optimistic mass / cost sketch — not a contract</h3>
               <p className="mt-2 text-gray-400 max-w-prose">
-                Cloudseeker targets a total wet mass of <span className="text-white font-medium">400 kg</span> — comfortable for Falcon 9 rideshare or, better, Starship secondary/dedicated small payload slot. 
-                Launch cost: <span className="text-venus font-semibold">~$32,000</span> (<span className="font-mono">$80/kg × 400 kg</span>). A massive de-risk for Nephelis and a powerful signal for investors and partners.
+                Concept wet mass ~<span className="text-white font-medium">400 kg</span> for
+                discussion of rideshare-class vehicles. Figures like{' '}
+                <span className="font-mono text-venus">$80/kg → ~$32k</span> are{' '}
+                <strong className="text-white">hypothetical optimistic pricing</strong>, not a
+                reserved Starship or Falcon secondary. Real Venus entry + float hardware will
+                dominate cost long before launch services.
               </p>
             </div>
 
@@ -210,40 +254,47 @@ export default function NephelisHome() {
               <p className="mt-3 text-xs text-gray-500 font-mono">Power/Comms/Thermal: Solar on balloon top + efficient systems. Radiation-hardened avionics. Site comms/day estimator and atmosphere model apply directly.</p>
             </div>
 
-            {/* Cost Estimate */}
-            <div className="glass-panel p-6 border-l-2 border-l-tech mb-4">
-              <div className="font-mono text-xs uppercase tracking-widest text-tech mb-2">2027 Launch Cost Estimate (Optimistic Baseline)</div>
-              <p className="text-gray-400">
-                With aggressive rideshare / Starship secondary pricing at scale: <span className="text-venus font-semibold text-lg font-mono">$80/kg</span>.
+            {/* Cost honesty */}
+            <div className="glass-panel p-6 border-l-2 border-l-amber-500/60 mb-4">
+              <div className="font-mono text-xs uppercase tracking-widest text-amber-400/90 mb-2">
+                Cost honesty
+              </div>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Optimistic rideshare math (e.g. <span className="font-mono text-venus">$80/kg × 400 kg ≈ $32k</span>) is a{' '}
+                <strong className="text-white">whiteboard scenario</strong>, not a quote. Entry systems,
+                materials, test campaigns, and avionics dominate real budgets. Our public ~$500k target
+                is for <strong className="text-white">ground demonstrators and early R&amp;D</strong>, not
+                an end-to-end Venus flight.
               </p>
-              <p className="mt-1 text-sm">Total for 400 kg stack: <span className="text-white font-semibold">~$32,000</span>. From multi-million dollar missions to low tens of thousands — dramatically improves ROI, sponsorship appeal, and iteration speed.</p>
             </div>
 
-            {/* Why This Is a Game-Changer */}
             <div className="glass-panel p-6 mb-4">
-              <div className="font-mono text-xs uppercase tracking-widest text-venus mb-3">Why This Is a Game-Changer</div>
+              <div className="font-mono text-xs uppercase tracking-widest text-venus mb-3">
+                What we optimize for now
+              </div>
               <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 text-sm text-gray-400">
                 <div>
-                  <span className="text-white font-medium block">Cost</span>
-                  From multi-million to low tens of thousands → dramatically improves ROI, sponsorship appeal (panel/DNA tiers), and ability to iterate fast.
+                  <span className="text-white font-medium block">Ground truth</span>
+                  Materials coupons, float demos, and logged test results before flight rhetoric.
                 </div>
                 <div>
-                  <span className="text-white font-medium block">Mass Margin</span>
-                  Room to enhance science return or add ISRU demo elements (e.g., simple CO₂ processing test).
+                  <span className="text-white font-medium block">Open engineering</span>
+                  Public GitHub, claimable tasks, contribution record — not empty authority name-drops.
                 </div>
                 <div>
-                  <span className="text-white font-medium block">Risk Reduction</span>
-                  Lighter stack = gentler entry loads, easier balloon deployment, higher reliability.
+                  <span className="text-white font-medium block">Mass discipline</span>
+                  Concept ~400 kg wet stack keeps rideshare-class options open if we ever earn a flight gate.
                 </div>
                 <div>
-                  <span className="text-white font-medium block">Scalability</span>
-                  Proves the tech for Phase II larger aerostats and future human-scale floating habitats.
+                  <span className="text-white font-medium block">Vision vs execution</span>
+                  Cloud cities stay long-term vision. Near-term is prove float + acid resistance on Earth.
                 </div>
               </div>
             </div>
 
             <div className="text-xs text-gray-500 font-mono">
-              End-to-end: Falcon 9 / Starship secondary → LEO → ~2.5 km/s onboard burn → 146-day cruise → hyperbolic entry (~10.7 km/s) → heat shield + parachute → balloon inflation at ~55 km → 30–90 days float with CubeSat relay.
+              Study CONOPS sketch only: rideshare-class LEO → transfer → entry → inflate ~50–55 km →
+              multi-week float. None of these phases is currently hardware-qualified.
             </div>
           </div>
         </div>
@@ -256,7 +307,8 @@ export default function NephelisHome() {
             <h2 className="text-venus font-mono text-sm uppercase tracking-widest mb-2">03 // The Thesis</h2>
             <h3 className="text-4xl font-bold text-white">Why We Choose The Clouds</h3>
             <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
-              Venus isn't just a science target; it is the most logical industrial gateway to the inner solar system. We are building the infrastructure for a multi-planetary economy.
+              Venus is a compelling science target and a long-horizon industrial idea. Near-term we
+              build and test; multi-planetary infrastructure remains vision, not current scope.
             </p>
           </div>
 
@@ -566,9 +618,11 @@ export default function NephelisHome() {
         <div className="absolute inset-0 bg-venus/5 pointer-events-none"></div>
         <div className="max-w-5xl mx-auto px-4 relative z-10">
           <div className="text-center mb-10">
-            <h2 className="text-5xl font-black tracking-[-1px] text-white mb-4 uppercase">Etch Your Name on History</h2>
+            <h2 className="text-5xl font-black tracking-[-1px] text-white mb-4 uppercase">Support the work</h2>
             <p className="max-w-xl mx-auto text-xl text-gray-400">
-              We are crowd-sourcing a portion of the payload. Your name, your DNA, or your company logo can be part of the first private mission to Venus.
+              Early crowdfund tiers are aimed at ground demonstrators and R&amp;D — not a sold-out
+              flight ticket. DNA / sample concepts require legal clearance before any sale. Prefer
+              open engineering? Contribute on GitHub first.
             </p>
           </div>
 

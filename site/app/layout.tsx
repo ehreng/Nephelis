@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s | Nephelis Industries",
   },
   description:
-    "Project AETHER: a crowd-funded super-pressure balloon probe for Venus's habitable cloud layer. Launch window Q4 2027. Sponsor a payload slot or join the crew.",
+    "Project AETHER: early-stage Venus cloud-layer aerostat program. Pre-hardware. Open engineering on GitHub. Ground demonstrators first — no empty authority claims, no fake 2027 flight commitment.",
   keywords: [
     "Venus",
     "aerostat",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "Nephelis Industries",
     title: "Nephelis Industries | Project AETHER",
     description:
-      "Humanity's return to the clouds — private Venus cloud-layer probe, launch 2027.",
+      "Venus cloud aerostat concept + open engineering. Honest status: pre-hardware, contributors welcome.",
     images: [
       {
         url: "/assets/visuals/Venus Visions.png",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@NephelisCo",
     title: "Nephelis Industries | Project AETHER",
-    description: "Private Venus cloud-layer probe. Launch Q4 2027. Join the flight crew.",
+    description: "Venus cloud aerostat concept. Pre-hardware. Open GitHub collaboration.",
     images: ["/assets/visuals/Venus Visions.png"],
   },
   icons: {
@@ -103,6 +103,7 @@ export default function RootLayout({
                   <a href="/#heritage" className="hover:text-venus transition-colors">History</a>
                   <Link href="/updates" className="hover:text-venus transition-colors">Updates</Link>
                   <Link href="/roadmap" className="hover:text-venus transition-colors">Roadmap</Link>
+                  <Link href="/status" className="hover:text-venus transition-colors">Status</Link>
                   <Link href="/aether-os" className="hover:text-venus transition-colors">AETHER OS</Link>
                   <a href="/#contribute" className="hover:text-venus transition-colors">Contribute</a>
                   <a href="/#funding" className="text-venus border border-venus/50 px-4 py-2 hover:bg-venus hover:text-black transition-all">Sponsor</a>

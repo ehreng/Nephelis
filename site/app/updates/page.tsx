@@ -1,12 +1,18 @@
 'use client';
 
 import Link from 'next/link';
+import Update202608Honesty from '../../content/updates/2026-08-honesty-reset.mdx';
 import Update202608 from '../../content/updates/2026-08-aether-os.mdx';
 import Update202607 from '../../content/updates/2026-07-competitor-missions.mdx';
 import Update202606 from '../../content/updates/2026-06-mission-update.mdx';
 
 /** Newest first — keep in sync with getUpdates() in lib/content.ts */
 const UPDATES = [
+  {
+    date: '2026-08-11',
+    title: 'Honesty reset — August 2026',
+    Component: Update202608Honesty,
+  },
   {
     date: '2026-08-11',
     title: 'AETHER OS online — August 2026',
@@ -65,7 +71,7 @@ export default function UpdatesPage() {
         <div className="space-y-12">
           {UPDATES.map(({ date, title, Component }) => (
             <article
-              key={date}
+              key={`${date}-${title}`}
               className="glass-panel prose prose-invert max-w-none rounded-sm border border-white/10 p-8 prose-headings:font-semibold prose-headings:tracking-tight"
             >
               <div className="mb-4 not-prose">

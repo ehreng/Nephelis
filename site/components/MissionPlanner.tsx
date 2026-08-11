@@ -20,8 +20,8 @@ export default function MissionPlanner() {
   const earthDist = Math.max(0, Math.round(12000000 * (progress / 100) + (offset * 12000)));
   const venusDist = Math.round(41000000 * (1 - progress / 100) + Math.abs(offset) * 80000);
 
-  // Estimated arrival: nominal launch Dec 15 2027 + offset days + 146 day cruise
-  const nominalLaunch = new Date('2027-12-15');
+  // Study epoch only — not a committed launch date (see /status)
+  const nominalLaunch = new Date('2030-12-15');
   const launchDate = new Date(nominalLaunch.getTime());
   launchDate.setDate(launchDate.getDate() + offset);
   const arrivalDate = new Date(launchDate.getTime());

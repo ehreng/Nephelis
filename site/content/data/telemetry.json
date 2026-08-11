@@ -1,49 +1,49 @@
 {
-  "updated_at": "2026-07-09T01:23:38.271Z",
-  "mission_phase": "DESIGN",
-  "overall_status": "SYSTEMS NOMINAL",
+  "updated_at": "2026-08-11T12:00:00.000Z",
+  "mission_phase": "EARLY — CONCEPT + DOCS",
+  "overall_status": "PRE-HARDWARE",
   "systems": [
     {
       "id": "power",
       "label": "POWER",
-      "status": "nominal",
-      "value": "SOLAR SIM",
-      "detail": "Ground power model; flight solar TBD"
+      "status": "dev",
+      "value": "CONCEPT",
+      "detail": "Ground power models only — flight solar not baselined"
     },
     {
       "id": "comms",
       "label": "COMMS",
       "status": "dev",
-      "value": "PLANNED",
-      "detail": "CubeSat relay architecture baselined"
+      "value": "TBD",
+      "detail": "CubeSat relay is a concept architecture, not selected hardware"
     },
     {
       "id": "balloon",
       "label": "AEROSTAT",
       "status": "dev",
-      "value": "DESIGN",
-      "detail": "Fluoropolymer envelope — materials trade"
+      "value": "TRADE",
+      "detail": "Fluoropolymer envelope trade — no acid chamber coupons yet"
     },
     {
       "id": "avionics",
       "label": "AVIONICS",
       "status": "dev",
-      "value": "SPEC",
-      "detail": "Rad-tolerant stack under selection"
+      "value": "TBD",
+      "detail": "Rad-tolerant stack not selected; no flight board yet"
     },
     {
       "id": "nav",
       "label": "NAV/AI",
-      "status": "nominal",
-      "value": "ACTIVE",
-      "detail": "Autonomous entry/float algorithms in sim"
+      "status": "dev",
+      "value": "SIM",
+      "detail": "Algorithms discussed in sim notes only — not flight software"
     },
     {
       "id": "funding",
       "label": "FUNDING",
-      "status": "dev",
-      "value": "PLANNED",
-      "detail": "Crowdfund + partner pipeline live"
+      "status": "attention",
+      "value": "SETUP",
+      "detail": "Crowdfund rails incomplete; $500k is ground-test campaign target"
     }
   ]
 }

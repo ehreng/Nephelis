@@ -111,8 +111,24 @@ export default function FundingTiers() {
   const legacyCap = allocation?.legacy.capacity ?? 500;
   const legacyPct = Math.min(100, Math.round((legacyAlloc / legacyCap) * 100));
 
+  const stripeReady = allocation?.stripe_configured === true;
+
   return (
     <>
+      <div className="mb-6 border border-amber-500/30 bg-amber-500/5 px-4 py-3 text-center text-sm text-gray-300">
+        <span className="font-mono text-xs text-amber-400/90 uppercase tracking-wider">
+          Campaign honesty
+        </span>
+        <p className="mt-1 text-sm text-gray-400 leading-relaxed">
+          Tiers fund <strong className="text-white">early ground / R&amp;D work</strong>, not a full
+          Venus flight budget. Checkout may be offline until Stripe is configured
+          {stripeReady ? ' (rails live).' : ' (currently incomplete).'} See{' '}
+          <a href="/status" className="text-venus hover:underline">
+            honest status
+          </a>
+          .
+        </p>
+      </div>
       {banner === 'success' && (
         <div className="mb-6 border border-venus/40 bg-venus/10 px-4 py-3 text-center text-sm text-venus font-mono">
           Payment received. Welcome to the flight crew — check your email for next steps.
@@ -184,15 +200,27 @@ export default function FundingTiers() {
         </div>
       </div>
 
-      <div className="border-t border-white/10 pt-8">
-        <p className="text-gray-500 font-mono text-xs tracking-[1px] mb-5">BACKED BY VETERANS FROM</p>
-        <div className="flex flex-wrap justify-center gap-x-10 gap-y-3 text-xs uppercase tracking-[2px] text-white/40">
-          <div>SPACEX</div>
-          <div>NASA JPL</div>
-          <div>DARPA</div>
-          <div>ESA</div>
-          <div>BLUE ORIGIN</div>
-        </div>
+      <div className="border-t border-white/10 pt-8 text-center">
+        <p className="text-gray-500 font-mono text-xs tracking-[1px] mb-3">
+          OPEN ENGINEERING — NO EMPTY AUTHORITY CLAIMS
+        </p>
+        <p className="mx-auto max-w-xl text-sm text-gray-400">
+          Named advisors will be listed only with permission and real roles. Until then: contribute
+          via{' '}
+          <a
+            href="https://github.com/ehreng/Nephelis"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-venus hover:underline"
+          >
+            GitHub
+          </a>{' '}
+          (L1–L3) or the form above. See{' '}
+          <a href="/status" className="text-venus hover:underline">
+            honest status
+          </a>
+          .
+        </p>
       </div>
 
       {/* Modal */}

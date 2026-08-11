@@ -11,7 +11,16 @@
       "event": { "type": "string", "minLength": 1 },
       "status": {
         "type": "string",
-        "enum": ["target", "current", "complete", "background", "future", "planned"]
+        "enum": [
+          "target",
+          "current",
+          "complete",
+          "background",
+          "future",
+          "planned",
+          "aspirational",
+          "vision"
+        ]
       }
     },
     "additionalProperties": false

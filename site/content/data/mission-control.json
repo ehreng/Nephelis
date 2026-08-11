@@ -1,121 +1,80 @@
 {
-  "updated_at": "2026-07-09T12:00:00.000Z",
+  "updated_at": "2026-08-11T12:00:00.000Z",
   "callsign": "NEPHELIS.MCC",
-  "phase": "DESIGN",
-  "launch_target": "2027-12-15",
+  "phase": "PRE-HARDWARE",
+  "launch_target": "uncommitted — earliest class ~2030–2031+ if gates pass",
   "funding_goal_usd": 500000,
+  "funding_goal_label": "Ground demonstrator / early R&D campaign (not full flight cost)",
   "checklist": [
     {
-      "id": "mc-requirements",
-      "item": "Mission requirements baseline signed (v0.9 draft in docs/)",
-      "phase": "DESIGN",
+      "id": "mc-honesty-reset",
+      "item": "Public honesty reset: remove empty authority claims; publish progress tracker",
+      "phase": "PROGRAM",
       "status": "in_progress",
       "due": "2026-Q3"
+    },
+    {
+      "id": "mc-github-ssot",
+      "item": "GitHub ehreng/Nephelis as single source of truth with open L1–L3 issues",
+      "phase": "PROGRAM",
+      "status": "in_progress",
+      "due": "2026-Q3"
+    },
+    {
+      "id": "mc-requirements",
+      "item": "Mission requirements baseline (v0.9 draft exists — keep honest about incompleteness)",
+      "phase": "DESIGN",
+      "status": "in_progress",
+      "due": "2026-Q4"
     },
     {
       "id": "mc-conops",
-      "item": "CONOPS v1 (v0.9 draft in docs/conops-v0.9.md)",
-      "phase": "DESIGN",
-      "status": "in_progress",
-      "due": "2026-Q3"
-    },
-    {
-      "id": "mc-design-freeze",
-      "item": "PDR-lite: balloon + gondola ICD freeze",
+      "item": "CONOPS updated for ground-first program (flight dates aspirational)",
       "phase": "DESIGN",
       "status": "planned",
       "due": "2026-Q4"
     },
     {
       "id": "mc-materials-test",
-      "item": "Acid / materials coupon campaign complete enough for fab decision",
-      "phase": "DESIGN",
+      "item": "Acid / materials coupon campaign started (first coupons + log photos)",
+      "phase": "GROUND",
       "status": "planned",
+      "due": "2027-H1"
+    },
+    {
+      "id": "mc-he-float",
+      "item": "Small helium ground float prototype with basic telemetry",
+      "phase": "GROUND",
+      "status": "planned",
+      "due": "2027"
+    },
+    {
+      "id": "mc-regulatory-notes",
+      "item": "Regulatory path notes (FAA/FCC/export) drafted publicly",
+      "phase": "PROGRAM",
+      "status": "in_progress",
       "due": "2026-Q4"
     },
     {
-      "id": "mc-sensor-baselined",
-      "item": "Sensor suite baselined with mass/power/data numbers",
-      "phase": "DESIGN",
+      "id": "mc-funding-rails",
+      "item": "Live payment rails OR honest “not open yet” state (no fake allocation)",
+      "phase": "PROGRAM",
       "status": "planned",
       "due": "2026-Q4"
-    },
-    {
-      "id": "mc-comms-arch",
-      "item": "Comms architecture review (CubeSat relay / hybrid)",
-      "phase": "DESIGN",
-      "status": "planned",
-      "due": "2026-Q4"
-    },
-    {
-      "id": "mc-cdr",
-      "item": "CDR-lite: drawings, BOMs, test plans",
-      "phase": "BUILD",
-      "status": "planned",
-      "due": "2027-Q1"
     },
     {
       "id": "mc-funding-50",
-      "item": "50% of $500k goal committed",
+      "item": "50% of $500k ground-campaign goal committed (if fundraising opens)",
       "phase": "PROGRAM",
       "status": "planned",
-      "due": "2027-Q1"
+      "due": "2027+"
     },
     {
-      "id": "mc-env-qual",
-      "item": "Environmental qualification campaign executed",
-      "phase": "INTEGRATION",
+      "id": "mc-flight-gate",
+      "item": "Flight program gate: only after ground demonstrator success + credible capital plan",
+      "phase": "FLIGHT-GATE",
       "status": "planned",
-      "due": "2027-Q2"
-    },
-    {
-      "id": "mc-system-it",
-      "item": "System integration & inflation sequence tests pass",
-      "phase": "INTEGRATION",
-      "status": "planned",
-      "due": "2027-Q2"
-    },
-    {
-      "id": "mc-launch-loi",
-      "item": "Launch path LOI or rideshare reservation",
-      "phase": "INTEGRATION",
-      "status": "planned",
-      "due": "2027-Q2"
-    },
-    {
-      "id": "mc-fs-freeze",
-      "item": "Flight software freeze + ops playbook v1",
-      "phase": "OPS",
-      "status": "planned",
-      "due": "2027-Q3"
-    },
-    {
-      "id": "mc-crew-ops",
-      "item": "Mission ops rehearsal complete",
-      "phase": "OPS",
-      "status": "planned",
-      "due": "2027-Q3"
-    },
-    {
-      "id": "mc-ship",
-      "item": "Flight stack accepted and shipped to launch site",
-      "phase": "OPS",
-      "status": "planned",
-      "due": "2027-Q3"
-    },
-    {
-      "id": "mc-launch",
-      "item": "Launch + successful Venus transfer injection",
-      "phase": "FLIGHT",
-      "status": "planned",
-      "due": "2027-Q4"
-    },
-    {
-      "id": "mc-float",
-      "item": "Successful inflate + ≥30 days float with science downlink",
-      "phase": "FLIGHT",
-      "status": "planned",
-      "due": "2028-Q1"
+      "due": "2028+"
     }
   ]
 }

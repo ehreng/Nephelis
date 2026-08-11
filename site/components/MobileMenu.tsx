@@ -30,6 +30,7 @@ export default function MobileMenu() {
             <a href="/#heritage" onClick={close} className="block px-3 py-2 text-gray-300 hover:text-venus">History</a>
             <Link href="/updates" onClick={close} className="block px-3 py-2 text-gray-300 hover:text-venus">Updates</Link>
             <Link href="/roadmap" onClick={close} className="block px-3 py-2 text-gray-300 hover:text-venus">Roadmap</Link>
+            <Link href="/status" onClick={close} className="block px-3 py-2 text-gray-300 hover:text-venus">Status</Link>
             <Link href="/aether-os" onClick={close} className="block px-3 py-2 text-gray-300 hover:text-venus">AETHER OS</Link>
             <a href="/#contribute" onClick={close} className="block px-3 py-2 text-gray-300 hover:text-venus">Contribute</a>
             <a href="/#funding" onClick={close} className="block px-3 py-2 text-venus font-bold">Sponsor</a>

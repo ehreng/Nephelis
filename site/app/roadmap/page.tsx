@@ -5,7 +5,7 @@ import { getMissionControl, getRisks, getTasks, getTimeline } from '@/lib/conten
 export const metadata: Metadata = {
   title: 'Roadmap',
   description:
-    'Project AETHER accelerated roadmap — design, build, test, launch, and float ops through 2028.',
+    'Project AETHER honest roadmap — ground demonstrators first; flight dates aspirational only.',
 };
 
 const statusStyle: Record<string, string> = {
@@ -19,6 +19,8 @@ const statusStyle: Record<string, string> = {
   complete: 'text-emerald-400 border-emerald-400/40',
   background: 'text-gray-500 border-white/10',
   future: 'text-gray-400 border-white/20',
+  aspirational: 'text-amber-400/90 border-amber-400/30',
+  vision: 'text-purple-300/70 border-purple-400/20',
 };
 
 const areaOrder = [

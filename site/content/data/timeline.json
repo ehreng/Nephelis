@@ -1,52 +1,47 @@
 [
   {
     "year": "2025",
-    "event": "Concept validation, branding, and early partnership development for Project AETHER",
+    "event": "Concept, brand, public site, early research notes for Project AETHER",
     "status": "complete"
   },
   {
-    "year": "2026-Q3",
-    "event": "Requirements, CONOPS, system ICD, live crowdfund stack, P0 partner outreach (accelerated Phase A/B start)",
+    "year": "2026-H1",
+    "event": "Vision site, CONOPS/requirements drafts, AETHER OS contribution framework",
+    "status": "complete"
+  },
+  {
+    "year": "2026-H2",
+    "event": "Honest status reset: public GitHub as SSOT, open issues, materials coupon plan, regulatory notes",
     "status": "current"
   },
   {
-    "year": "2026-Q4",
-    "event": "PDR-lite, materials & balloon prototype tests, sensor/comms baselining, facility access",
+    "year": "2027",
+    "event": "Ground program: acid-resistant material coupons, small He prototype float, basic telemetry demo",
     "status": "target"
   },
   {
-    "year": "2027-Q1",
-    "event": "CDR-lite, flight hardware fab, payload integration, 50% funding milestone",
+    "year": "2028",
+    "event": "Iterate prototypes: inflation sequence, link budget tests, partner LOIs (if funded)",
     "status": "target"
   },
   {
-    "year": "2027-Q2",
-    "event": "Environmental qual, system I&T, inflation sequence test, launch LOI / rideshare path",
-    "status": "target"
+    "year": "2029–2030",
+    "event": "Only if prior gates pass: env qual path, flight-ish stack design freeze, rideshare exploration",
+    "status": "aspirational"
   },
   {
-    "year": "2027-Q3",
-    "event": "Flight software freeze, ops rehearsals, ship prep, funding closeout",
-    "status": "target"
+    "year": "2030–2031+",
+    "event": "Earliest plausible Venus transfer window class — not a commitment; depends on hardware + capital",
+    "status": "aspirational"
   },
   {
-    "year": "2027-Q4",
-    "event": "Launch campaign + Venus transfer injection (target window ~2027-12-15)",
-    "status": "target"
+    "year": "Long-term vision",
+    "event": "Cloud-layer science → habitation tech path (labeled vision, not near-term engineering)",
+    "status": "vision"
   },
   {
-    "year": "2028-H1",
-    "event": "Cruise → Venus entry → balloon float ops (30–90 days) + first public data release",
-    "status": "future"
-  },
-  {
-    "year": "2028+",
-    "event": "Phase II: larger aerostats → habitation tech path (post-flight lessons)",
-    "status": "future"
-  },
-  {
-    "year": "2022+",
-    "event": "Agency background: NASA aerobot / ESA concepts for 48–60 km variable balloons",
+    "year": "1985 / 2022+",
+    "event": "Heritage: VEGA balloons; NASA/ESA aerobot studies (context only)",
     "status": "background"
   }
 ]

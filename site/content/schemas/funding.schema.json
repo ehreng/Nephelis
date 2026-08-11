@@ -5,6 +5,7 @@
   "required": ["tiers", "currency"],
   "properties": {
     "currency": { "type": "string" },
+    "campaign_note": { "type": "string" },
     "success_path": { "type": "string" },
     "cancel_path": { "type": "string" },
     "tiers": {

@@ -33,23 +33,33 @@
     },
     {
       "id": "R-04",
-      "title": "Launch rideshare slip past 2027 window",
+      "title": "No committed launch path; schedule risk is structural",
       "category": "program",
-      "likelihood": "medium",
+      "likelihood": "high",
       "impact": "high",
       "status": "open",
-      "mitigation": "Multiple vehicle options; mass keeps rideshare-compatible; early LOI talks",
+      "mitigation": "Do not promise 2027 flight; gate flight talk on ground demonstrator success; explore rideshare only after hardware gates",
       "owner": "ops"
     },
     {
       "id": "R-05",
-      "title": "Crowdfund / partner capital shortfall",
+      "title": "Capital shortfall vs flight-class cost",
       "category": "growth",
+      "likelihood": "high",
+      "impact": "high",
+      "status": "open",
+      "mitigation": "$500k framed as ground/prototype campaign only; Stripe not yet live; partner in-kind; honest fundraising copy",
+      "owner": "growth"
+    },
+    {
+      "id": "R-08",
+      "title": "Credibility damage from vision-as-flight marketing",
+      "category": "program",
       "likelihood": "medium",
       "impact": "high",
       "status": "mitigating",
-      "mitigation": "Stripe tiers live; sponsor outreach; in-kind hardware path",
-      "owner": "growth"
+      "mitigation": "Public progress tracker; remove empty authority claims; separate vision from execution; show tests",
+      "owner": "ops"
     },
     {
       "id": "R-06",

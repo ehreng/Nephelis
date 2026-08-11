@@ -69,7 +69,15 @@ const modes: Record<string, () => void> = {
   telemetry() {
     run('sync-telemetry.ts');
   },
+  /** AETHER OS Daily Mission Loop (DETECT→PLAN→EXECUTE→VERIFY) */
+  daily() {
+    run('daily-mission.ts');
+  },
+  mission() {
+    run('daily-mission.ts');
+  },
   full() {
+    run('daily-mission.ts');
     run('research-weekly.ts');
     run('competitor-watch.ts');
     run('mission-digest.ts');
@@ -81,7 +89,7 @@ const modes: Record<string, () => void> = {
     run('social-from-digest.ts');
     run('kb-index.ts');
     console.log(`
-FULL complete. Optional:
+FULL complete (incl. AETHER OS daily). Optional:
   npx tsx automation/scripts/evolve.ts health
   npx tsx automation/scripts/evolve.ts env
   DRY_RUN=1 npx tsx automation/scripts/evolve.ts digest-email
@@ -89,6 +97,8 @@ FULL complete. Optional:
   },
   help() {
     console.log(`Modes:
+  daily           AETHER OS Daily Mission Loop (brief + tasks)
+  mission         Alias for daily
   research        Research brief + draft MDX
   visuals         Visual generation steps
   social          Social from latest MDX
@@ -104,11 +114,13 @@ FULL complete. Optional:
   partners        Stale partner pipeline report
   watch           Competitor watch checklist
   telemetry       Sync telemetry.json from mission-control
-  full            Most scaffolds + telemetry + watch
+  full            Daily + most scaffolds + telemetry + watch
+
+AETHER OS: docs/AETHER_OS_Architecture_v1.md · aether-os/
 
 Examples:
+  npx tsx automation/scripts/evolve.ts daily
   npx tsx automation/scripts/evolve.ts digest
-  npx tsx automation/scripts/evolve.ts env
   DRY_RUN=1 npx tsx automation/scripts/evolve.ts digest-email
 `);
   },

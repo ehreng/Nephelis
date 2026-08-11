@@ -8,6 +8,7 @@ Agents: start at root [`AGENTS.md`](../AGENTS.md). Knowledge map: [`research/IND
 
 | Loop | Trigger | Output |
 |------|---------|--------|
+| **Daily Mission (AETHER OS)** | Daily 14:00 UTC / `evolve.ts daily` | `aether-os/briefs/*` + social seed + PROGRESS |
 | **Research** | Mon 14:00 UTC / `evolve.ts research` | `research/notes/*-brief.md` + draft MDX → PR |
 | **Mission digest** | Mon 15:00 UTC / `evolve.ts digest` | digest + stale partners + watch + social-from-digest + telemetry → PR |
 | **Partner stale** | Mon 13:00 UTC / `evolve.ts partners` | stale P0/P1 report → PR |
@@ -25,6 +26,7 @@ Agents: start at root [`AGENTS.md`](../AGENTS.md). Knowledge map: [`research/IND
 ```bash
 # From repo root
 npx tsx automation/scripts/evolve.ts help
+npx tsx automation/scripts/evolve.ts daily    # AETHER OS mission brief
 npx tsx automation/scripts/evolve.ts digest
 npx tsx automation/scripts/evolve.ts full
 npx tsx automation/scripts/evolve.ts health   # uses www by default
@@ -40,6 +42,7 @@ cd site && pnpm validate:content && pnpm ci
 | Script | Purpose |
 |--------|---------|
 | `evolve.ts` | CLI router for all modes |
+| `daily-mission.ts` | AETHER OS Daily Mission Loop (DETECT→PLAN→EXECUTE→VERIFY) |
 | `research-weekly.ts` | Research brief + draft MDX scaffold |
 | `mission-digest.ts` | MCC snapshot from tasks/risks/partners/telemetry |
 | `partner-stale.ts` | P0/P1 pipeline aging |

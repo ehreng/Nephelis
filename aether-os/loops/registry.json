@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "updated": "2026-08-11",
+  "meta_loop": {
+    "id": "meta",
+    "status": "armed",
+    "first_review_after_days": 14,
+    "notes": "Evaluate all loops after 7–14 days of Daily Mission operation"
+  },
+  "loops": [
+    {
+      "id": "daily-mission",
+      "name": "Daily Mission Loop",
+      "status": "active",
+      "phases": ["detect", "plan", "execute", "verify"],
+      "script": "automation/scripts/daily-mission.ts",
+      "evolve_mode": "daily",
+      "schedule": "daily (manual or GitHub Action)",
+      "outputs": ["aether-os/briefs/", "aether-os/PROGRESS.md", "automation/social-drafts/"]
+    },
+    {
+      "id": "mission-digest",
+      "name": "Weekly Mission Digest",
+      "status": "active",
+      "script": "automation/scripts/mission-digest.ts",
+      "evolve_mode": "digest",
+      "schedule": "Mon 15:00 UTC"
+    },
+    {
+      "id": "website-evolution",
+      "name": "Website Evolution Loop",
+      "status": "planned",
+      "notes": "Detect stale sections; open PRs via agent sessions"
+    },
+    {
+      "id": "newsletter",
+      "name": "Monthly Newsletter Loop",
+      "status": "planned",
+      "platform": "beehiiv (preferred) or buttondown",
+      "outputs": ["aether-os/newsletter/"]
+    },
+    {
+      "id": "hardware",
+      "name": "Prototype / Hardware Coordination",
+      "status": "planned",
+      "tier_gate": "L3"
+    },
+    {
+      "id": "regulatory",
+      "name": "Regulatory / Compliance Awareness",
+      "status": "planned",
+      "priority": "P0 when deadlines present"
+    },
+    {
+      "id": "research",
+      "name": "Research Loop",
+      "status": "active",
+      "script": "automation/scripts/research-weekly.ts",
+      "evolve_mode": "research"
+    },
+    {
+      "id": "social",
+      "name": "Social Draft Loop",
+      "status": "active",
+      "script": "automation/scripts/social-draft.ts"
+    },
+    {
+      "id": "health",
+      "name": "Production Health",
+      "status": "active",
+      "script": "automation/scripts/health-check.ts",
+      "schedule": "Daily 16:00 UTC"
+    }
+  ],
+  "priority_order": [
+    "safety_regulatory",
+    "critical_hardware",
+    "public_progress",
+    "nice_to_have"
+  ]
+}

@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Project AETHER live site
+    url: https://www.nephelisindustries.com
+    about: Mission narrative, funding tiers, volunteer form
+  - name: AETHER OS architecture
+    url: https://github.com/ehreng/Nephelis/blob/main/docs/AETHER_OS_Architecture_v1.md
+    about: How the mission OS coordinates loops and contributions

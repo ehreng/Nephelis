@@ -1,0 +1,47 @@
+name: "L2 Contribution (Skilled)"
+description: Code, simulations, technical writing, design
+title: "[L2] "
+labels: ["contribution", "L2", "claimable"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Level 2** — skilled contributors.  
+        Prefer PRs against `main`. Validate site data with `cd site && pnpm validate:content` when touching JSON.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Contribution type
+      options:
+        - Code / site feature
+        - Simulation / analysis
+        - Technical writing
+        - Design / UX
+        - Automation / agent loop
+        - Other L2
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: |
+        - [ ] ...
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence required
+    validations:
+      required: true
+  - type: textarea
+    id: skills
+    attributes:
+      label: Relevant skills / prior work (optional)

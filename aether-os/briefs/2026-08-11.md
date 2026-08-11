@@ -1,0 +1,150 @@
+# Daily Mission Brief — 2026-08-11
+
+> **AETHER OS** · Daily Mission Loop  
+> Generated: `2026-08-11T17:22:44.381Z` · Agent: Grok Build / `daily-mission.ts`  
+> Founder oversight: Ehren Goossens (Founder Emeritus) — override any loop if required.
+
+---
+
+## 1. DETECT (system status)
+
+| Field | Value |
+|-------|-------|
+| Callsign | NEPHELIS.MCC |
+| Phase | **DESIGN** / telemetry **DESIGN** |
+| Systems | SYSTEMS NOMINAL |
+| Wet mass / float | 400 kg · ~55 km |
+| Funding goal | $500,000 |
+| Open tasks | 76 (P0: 50, P1: 22) |
+| Open risks | 7 (high/critical: 5) |
+| Active partners | 5 |
+| MCC open checks | 16 |
+| Active OS loops | daily-mission, mission-digest, research, social, health |
+
+### Systems
+
+- **POWER**: nominal
+- **COMMS**: dev
+- **AEROSTAT**: dev
+- **AVIONICS**: dev
+- **NAV/AI**: nominal
+- **FUNDING**: dev
+
+### Critical / high risks
+
+- **R-01** — Acid degradation of balloon envelope _(medium/high)_
+- **R-02** — Entry / inflation sequence failure _(medium/critical)_
+- **R-03** — Comms blackout / insufficient downlink _(medium/high)_
+- **R-04** — Launch rideshare slip past 2027 window _(medium/high)_
+- **R-05** — Crowdfund / partner capital shortfall _(medium/high)_
+
+### Upcoming timeline
+
+_See timeline.json_
+
+---
+
+## 2. PLAN (prioritized work — claim these)
+
+Priority: **safety/regulatory → hardware → public progress → nice-to-have**.
+
+### 1. [L2][P0] Mitigate or document risk: Acid degradation of balloon envelope
+
+- **Level:** L2 · **Priority:** P0 · **Source:** `R-01`
+- **Acceptance:**
+  - [ ] Risk entry updated in site/content/data/risks.json with status and mitigation notes
+  - [ ] Short note in research/notes or PR description
+- **Evidence:** PR touching risks.json + comment on issue
+- **Claim:** Comment `claiming` on a matching GitHub issue, or open one from [`docs/TASK_TEMPLATE.md`](../../docs/TASK_TEMPLATE.md)
+
+### 2. [L2][P0] Execute 30-day war board (docs/30-day-war-board.md)
+
+- **Level:** L2 · **Priority:** P0 · **Source:** `war-board-30d`
+- **Acceptance:**
+  - [ ] Task `war-board-30d` status advanced or evidence attached
+  - [ ] Linked PR or artifact path
+- **Evidence:** PR or evidence link on GitHub issue
+- **Claim:** Comment `claiming` on a matching GitHub issue, or open one from [`docs/TASK_TEMPLATE.md`](../../docs/TASK_TEMPLATE.md)
+
+### 3. [L2][P0] Flip Stripe to live keys + live webhook; real $100 smoke test
+
+- **Level:** L2 · **Priority:** P0 · **Source:** `stripe-live`
+- **Acceptance:**
+  - [ ] Task `stripe-live` status advanced or evidence attached
+  - [ ] Linked PR or artifact path
+- **Evidence:** PR or evidence link on GitHub issue
+- **Claim:** Comment `claiming` on a matching GitHub issue, or open one from [`docs/TASK_TEMPLATE.md`](../../docs/TASK_TEMPLATE.md)
+
+### 4. [L1][P1] Amplify today’s Mission Brief on X (or draft if posting gated)
+
+- **Level:** L1 · **Priority:** P1
+- **Acceptance:**
+  - [ ] Post or ready-to-post draft in automation/social-drafts/
+  - [ ] Link back to nephelisindustries.com and/or this brief
+- **Evidence:** URL or draft file path
+- **Claim:** Comment `claiming` on a matching GitHub issue, or open one from [`docs/TASK_TEMPLATE.md`](../../docs/TASK_TEMPLATE.md)
+
+### 5. [L1][P1] Claim one open L1 contribution issue (or file a content fix PR)
+
+- **Level:** L1 · **Priority:** P1
+- **Acceptance:**
+  - [ ] Issue claimed with `claiming` comment
+  - [ ] PR or evidence within 72h
+- **Evidence:** Issue comment + PR
+- **Claim:** Comment `claiming` on a matching GitHub issue, or open one from [`docs/TASK_TEMPLATE.md`](../../docs/TASK_TEMPLATE.md)
+
+### 6. [L2][P1] Confirm 2–3 technical advisors (structures, entry, Venus science) with written scope
+
+- **Level:** L2 · **Priority:** P1 · **Source:** `advisor-board-soft`
+- **Acceptance:**
+  - [ ] Progress on `advisor-board-soft` with clear next step
+  - [ ] Evidence in PR or note
+- **Evidence:** PR / note
+- **Claim:** Comment `claiming` on a matching GitHub issue, or open one from [`docs/TASK_TEMPLATE.md`](../../docs/TASK_TEMPLATE.md)
+
+### 7. [L2][P1] Refine transfer Δv / TOF with published ephemeris (not only Hohmann demo)
+
+- **Level:** L2 · **Priority:** P1 · **Source:** `traj-delta-v-refine`
+- **Acceptance:**
+  - [ ] Progress on `traj-delta-v-refine` with clear next step
+  - [ ] Evidence in PR or note
+- **Evidence:** PR / note
+- **Claim:** Comment `claiming` on a matching GitHub issue, or open one from [`docs/TASK_TEMPLATE.md`](../../docs/TASK_TEMPLATE.md)
+
+
+---
+
+## 3. EXECUTE (agent actions this run)
+
+- [x] Wrote this brief to `aether-os/briefs/2026-08-11.md`
+- [x] Updated `aether-os/briefs/latest.md`
+- [x] Appended progress line to `aether-os/PROGRESS.md`
+- [x] Drafted social post seed (see social drafts)
+- [ ] **Human / agent follow-up:** Open or label GitHub issues for claimable tasks above
+- [ ] **Optional:** Post Mission Brief excerpt to X with link to site
+
+---
+
+## 4. VERIFY (end-of-day checklist)
+
+- [ ] Brief reviewed (no invented partners, contracts, or science)
+- [ ] At least one public-facing update (site PR, X draft, or research note)
+- [ ] Claimed tasks logged when completed → `aether-os/CONTRIBUTIONS.md`
+- [ ] Blockers escalated to Founder Emeritus if P0 stuck >48h
+
+---
+
+## Contribution tiers (quick)
+
+| Level | Work |
+|-------|------|
+| L1 | Content, social, ideas, simple graphics |
+| L2 | Code, simulations, technical writing, design |
+| L3 | Hardware, regulatory, deep engineering (gated) |
+
+Architecture: [`docs/AETHER_OS_Architecture_v1.md`](../../docs/AETHER_OS_Architecture_v1.md)  
+Contributing: [`CONTRIBUTING.md`](../../CONTRIBUTING.md)
+
+---
+
+*AETHER OS · DETECT → PLAN → EXECUTE → VERIFY · Not for consumption. For continuation.*

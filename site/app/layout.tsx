@@ -103,6 +103,7 @@ export default function RootLayout({
                   <a href="/#heritage" className="hover:text-venus transition-colors">History</a>
                   <Link href="/updates" className="hover:text-venus transition-colors">Updates</Link>
                   <Link href="/roadmap" className="hover:text-venus transition-colors">Roadmap</Link>
+                  <Link href="/aether-os" className="hover:text-venus transition-colors">AETHER OS</Link>
                   <a href="/#contribute" className="hover:text-venus transition-colors">Contribute</a>
                   <a href="/#funding" className="text-venus border border-venus/50 px-4 py-2 hover:bg-venus hover:text-black transition-all">Sponsor</a>
                 </div>

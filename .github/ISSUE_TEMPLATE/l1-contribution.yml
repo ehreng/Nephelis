@@ -1,0 +1,49 @@
+name: "L1 Contribution (Anyone)"
+description: Content, social, ideas, simple graphics — open to all
+title: "[L1] "
+labels: ["contribution", "L1", "claimable"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Level 1** — no special credentials required.  
+        Read [CONTRIBUTING.md](https://github.com/ehreng/Nephelis/blob/main/CONTRIBUTING.md) and [TASK_TEMPLATE](https://github.com/ehreng/Nephelis/blob/main/docs/TASK_TEMPLATE.md).
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Contribution type
+      options:
+        - Content / copy
+        - Social / build-in-public
+        - Idea / research pointer
+        - Simple graphic / diagram
+        - Other L1
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: What will you deliver?
+      description: 1–3 sentences. Be specific and verifiable.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Checklist of done (one per line)
+      placeholder: |
+        - [ ] ...
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence you will provide
+      placeholder: PR, screenshot path, URL, etc.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        **To claim:** comment `claiming` on this issue after it is opened (or if you are filing work already done, open a PR and link it here).

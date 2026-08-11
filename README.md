@@ -4,19 +4,33 @@
 
 This repository is the **public site + mission ops toolchain** for Nephelis Industries — built so humans and AI agents can advance the mission through structured data, automation loops, and reviewable PRs.
 
-**Live:** [www.nephelisindustries.com](https://www.nephelisindustries.com)
+**Live:** [www.nephelisindustries.com](https://www.nephelisindustries.com) · **AETHER OS:** [/aether-os](https://www.nephelisindustries.com/aether-os)
+
+## AETHER OS
+
+AI-coordinated mission operating system: **DETECT → PLAN → EXECUTE → VERIFY**, contribution tiers (L1–L3), recursive loops.
+
+| Doc | Path |
+|-----|------|
+| Architecture v1.0 | [`docs/AETHER_OS_Architecture_v1.md`](./docs/AETHER_OS_Architecture_v1.md) |
+| Task template | [`docs/TASK_TEMPLATE.md`](./docs/TASK_TEMPLATE.md) |
+| Runtime state | [`aether-os/`](./aether-os/) |
+| Daily loop | `npx tsx automation/scripts/evolve.ts daily` |
+
+Founder: **Ehren Goossens** — Founder Emeritus / Strategic Oversight.
 
 ## Structure
 
 ```
 nephelis/
 ├── AGENTS.md              # Instructions for AI agents
+├── aether-os/             # OS state: briefs, loops, contributions
 ├── site/                  # Next.js website (Vercel root = site/)
 │   └── content/data/      # Source of truth (specs, risks, tasks, …)
 ├── research/              # Knowledge base (science, competitors, digests)
 ├── automation/            # Scripts, prompts, social drafts
 ├── decks/                 # Generated metrics + press kit
-├── docs/                  # Runbooks (go-live, mission automation)
+├── docs/                  # Architecture + runbooks
 └── assets/                # Visuals / media
 ```
 
@@ -37,13 +51,15 @@ cd site && pnpm install && pnpm dev
 
 ```bash
 # From repo root
-npx tsx automation/scripts/evolve.ts full     # scaffold most loops
+npx tsx automation/scripts/evolve.ts daily    # AETHER OS Daily Mission Brief
+npx tsx automation/scripts/evolve.ts full     # daily + most loops
 npx tsx automation/scripts/evolve.ts digest   # weekly MCC digest
 npx tsx automation/scripts/evolve.ts health   # prod health check
 ```
 
 | Loop | What it does |
 |------|----------------|
+| **Daily Mission** | Brief + prioritized tasks + social seed → `aether-os/briefs/` |
 | Research (Mon) | Brief + draft MDX → PR |
 | Mission digest (Mon) | Tasks/risks/partners snapshot → PR |
 | Social | Drafts X/LinkedIn from MDX |

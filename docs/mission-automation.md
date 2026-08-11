@@ -13,17 +13,25 @@ How Nephelis runs as a **content + ops machine** around Project AETHER.
         └──── digests/press/metrics/social ◀── GitHub Actions
 ```
 
+## AETHER OS
+
+Canonical architecture: [`AETHER_OS_Architecture_v1.md`](./AETHER_OS_Architecture_v1.md)  
+Runtime state: [`../aether-os/`](../aether-os/)  
+Daily loop: `npx tsx automation/scripts/evolve.ts daily`
+
 ## Principles
 
 1. **Single source of numbers** — JSON under `site/content/data/`.
-2. **Derived artifacts** — digests, press kit, metrics, social drafts are generated.
+2. **Derived artifacts** — digests, press kit, metrics, social drafts, mission briefs are generated.
 3. **Human gates** — science claims and public posts require review.
 4. **Fail loud** — CI validates schemas; health check fails if prod breaks.
+5. **Loops** — DETECT → PLAN → EXECUTE → VERIFY; meta-loop after 7–14 days of daily operation.
 
 ## Scheduled workflows
 
 | Workflow | Schedule | Purpose |
 |----------|----------|---------|
+| `daily-mission.yml` | Daily 14:00 UTC | AETHER OS Daily Mission Brief PR |
 | `research-weekly.yml` | Mon 14:00 UTC | Research scaffold PR |
 | `mission-digest.yml` | Mon 15:00 UTC | Digest + KB + press + metrics PR |
 | `health-check.yml` | Daily 16:00 UTC | Prod probes |

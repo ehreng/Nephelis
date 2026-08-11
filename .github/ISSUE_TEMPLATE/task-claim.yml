@@ -1,0 +1,41 @@
+name: "Claim / Track a Mission Task"
+description: Claim work from a Daily Mission Brief or create a tracked task
+title: "[TASK] "
+labels: ["claimable", "aether-os"]
+body:
+  - type: input
+    id: brief
+    attributes:
+      label: Brief or source
+      description: e.g. aether-os/briefs/2026-08-11.md or issue number
+  - type: dropdown
+    id: level
+    attributes:
+      label: Level
+      options: [L1, L2, L3]
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options: [P0, P1, P2, P3]
+    validations:
+      required: true
+  - type: textarea
+    id: title_body
+    attributes:
+      label: Task description
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        After filing, comment **`claiming`** if you are taking the work.  
+        On completion, PR + evidence → log in `aether-os/CONTRIBUTIONS.md`.

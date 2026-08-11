@@ -1,0 +1,48 @@
+name: "L3 Contribution (Trusted / Gated)"
+description: Hardware, regulatory, deep engineering — invite or review gated
+title: "[L3] "
+labels: ["contribution", "L3", "review-required"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Level 3** — trusted / invite. Hardware, regulatory, and deep engineering.  
+        Do **not** start material work without founder or designated reviewer acknowledgment.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Domain
+      options:
+        - Hardware / prototype
+        - Materials / test
+        - Regulatory / compliance
+        - Mission architecture (deep)
+        - Other L3
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: Proposed work
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Safety / legal / export risks
+      description: Flag anything that could create liability or compliance issues.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria + evidence
+    validations:
+      required: true
+  - type: checkboxes
+    id: gate
+    attributes:
+      label: Gate
+      options:
+        - label: I understand L3 work requires explicit review before execution
+          required: true

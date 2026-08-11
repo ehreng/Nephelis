@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/roadmap`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${base}/updates`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${base}/mission`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/aether-os`, lastModified: now, changeFrequency: 'weekly', priority: 0.85 },
     { url: `${base}/visuals`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
   ];
 }

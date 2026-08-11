@@ -128,6 +128,31 @@
     "quarter": "2026-Q3"
   },
   {
+    "id": "aether-os-v1",
+    "title": "AETHER OS v1.0: architecture, daily loop, contribution tiers, public page",
+    "status": "done",
+    "priority": "P0",
+    "area": "ops",
+    "quarter": "2026-Q3"
+  },
+  {
+    "id": "aether-os-newsletter",
+    "title": "Configure newsletter platform (Beehiiv preferred) + monthly loop",
+    "status": "planned",
+    "priority": "P2",
+    "area": "growth",
+    "quarter": "2026-Q4"
+  },
+  {
+    "id": "aether-os-meta-review",
+    "title": "Meta-loop first review (day 7–14 of Daily Mission operation)",
+    "status": "planned",
+    "priority": "P1",
+    "area": "ops",
+    "quarter": "2026-Q3"
+  },
+
+  {
     "id": "digest-email",
     "title": "Optional weekly digest email to TEAM_EMAIL",
     "status": "done",

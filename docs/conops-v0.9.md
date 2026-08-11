@@ -4,7 +4,7 @@
 **Organization:** Nephelis Industries  
 **Document status:** Draft for internal use — not flight-certified  
 **Date:** 2026-07-09  
-**Target launch:** 2027-12-15 (Q4 2027 window)  
+**Target launch window:** 2030s class (not a fixed commit date)  
 **Related:** `docs/requirements-baseline-v0.9.md`, `site/content/data/*`, tasks `conops-v1`
 
 ---
@@ -154,7 +154,7 @@ Numbers are design targets in `mass-budget.json` / `specs.json` — refine at PD
 
 | Epoch | Approx |
 |-------|--------|
-| Launch | 2027-12-15 target |
+| Launch | 2030s window class |
 | Venus arrival | ~2028-05 (≈146 d TOF; refine with ephemeris) |
 | Primary float | +0 to +30 d from inflate |
 | Extended float | +30 to +90 d |

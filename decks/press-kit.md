@@ -1,10 +1,10 @@
 # Nephelis Industries — Press & Partner Kit
 
-_Auto-generated 2026-07-09T01:30:55.007Z from mission data. Re-run: `npx tsx automation/scripts/press-kit.ts`_
+_Auto-generated 2026-08-11T18:20:50.679Z from mission data. Re-run: `npx tsx automation/scripts/press-kit.ts`_
 
 ## Boilerplate (short)
 
-**Nephelis Industries** is building **Project AETHER** (Cloudseeker): a low-cost, crowd-supported super-pressure balloon probe targeting the ~55 km habitable cloud layer of Venus. Launch window **2027**.
+**Nephelis Industries** is building **Project AETHER** (Cloudseeker): a low-cost, crowd-supported super-pressure balloon probe targeting the ~55 km habitable cloud layer of Venus. Launch window **2032**.
 
 ## Boilerplate (medium)
 
@@ -22,7 +22,7 @@ While Mars dominates popular attention, Venus’s cloud deck offers near-Earth t
 | Balloon | ~6.6 m class super-pressure |
 | Float life | 30+ days (ops goal 30–90) |
 | Δv (transfer) | ~2500 m/s class |
-| Launch target | 2027-12-15 (DESIGN phase) |
+| Launch target | uncommitted — earliest class ~2030–2031+ if gates pass (PRE-HARDWARE phase) |
 | Vehicles | Rideshare, Dedicated small launcher |
 | Web | https://www.nephelisindustries.com |
 | Contact | ehren@nephelisindustries.com |
@@ -51,20 +51,19 @@ Crew signal list and volunteer intake: https://www.nephelisindustries.com/#contr
 
 ## Timeline (public)
 
-- **2025** (complete): Concept validation, branding, and early partnership development for Project AETHER
-- **2026-Q3** (current): Requirements, CONOPS, system ICD, live crowdfund stack, P0 partner outreach (accelerated Phase A/B start)
-- **2026-Q4** (target): PDR-lite, materials & balloon prototype tests, sensor/comms baselining, facility access
-- **2027-Q1** (target): CDR-lite, flight hardware fab, payload integration, 50% funding milestone
-- **2027-Q2** (target): Environmental qual, system I&T, inflation sequence test, launch LOI / rideshare path
-- **2027-Q3** (target): Flight software freeze, ops rehearsals, ship prep, funding closeout
-- **2027-Q4** (target): Launch campaign + Venus transfer injection (target window ~2027-12-15)
-- **2028-H1** (future): Cruise → Venus entry → balloon float ops (30–90 days) + first public data release
-- **2028+** (future): Phase II: larger aerostats → habitation tech path (post-flight lessons)
-- **2022+** (background): Agency background: NASA aerobot / ESA concepts for 48–60 km variable balloons
+- **2025** (complete): Concept, brand, public site, early research notes for Project AETHER
+- **2026-H1** (complete): Vision site, CONOPS/requirements drafts, AETHER OS contribution framework
+- **2026-H2** (current): Public GitHub as SSOT, open issues, materials coupon plan, regulatory notes
+- **2027** (target): Ground program: acid-resistant material coupons, small He prototype float, basic telemetry demo
+- **2028** (target): Iterate prototypes: inflation sequence, link budget tests, partner LOIs (if funded)
+- **2029–2030** (aspirational): Only if prior gates pass: env qual path, flight-ish stack design freeze, rideshare exploration
+- **2030–2031+** (aspirational): Earliest plausible Venus transfer window class — not a commitment; depends on hardware + capital
+- **Long-term vision** (vision): Cloud-layer science → habitation tech path (labeled vision, not near-term engineering)
+- **1985 / 2022+** (background): Heritage: VEGA balloons; NASA/ESA aerobot studies (context only)
 
 ## Suggested headlines (for partners / media)
 
-1. Private Venus cloud probe aims for 2027 — crowd-funding the float
+1. Private Venus cloud probe aims for the 2030s — open collaboration on the float
 2. Why the clouds of Venus may beat Mars for long-term human physiology
 3. Open-source mission ops: humans + AI agents building in public
 

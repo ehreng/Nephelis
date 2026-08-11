@@ -16,7 +16,7 @@ export default function MissionPlanner() {
     ? Math.round(isp * g0 * Math.log(wetMass / dryMass))
     : 1830;
 
-  // Fake live telemetry based on controls. Launch target: Q4 2027
+  // Fake live telemetry based on controls. Study epoch: 2030s window class
   const earthDist = Math.max(0, Math.round(12000000 * (progress / 100) + (offset * 12000)));
   const venusDist = Math.round(41000000 * (1 - progress / 100) + Math.abs(offset) * 80000);
 
@@ -100,7 +100,7 @@ export default function MissionPlanner() {
       ctx.stroke();
 
       // Transfer trajectory (sampled arc between launch Earth pos and arrival Venus pos)
-      // Uses realistic angle + radius interpolation for Dec 2027 window — does not cross Sun
+      // Uses realistic angle + radius interpolation for 2030s-class study window — does not cross Sun
       ctx.strokeStyle = '#FF4500';
       ctx.setLineDash([2, 3]);
       ctx.lineWidth = 1.5;
@@ -153,7 +153,7 @@ export default function MissionPlanner() {
       ctx.fillText('SYS: ACTIVE', 12, 18);
       ctx.fillText('TRK: HOHMANN', 12, 30);
       ctx.fillText('V_INF: 2.7 km/s', 12, 42);
-      ctx.fillText(`LAUNCH: Q4 2027`, 12, 54);
+      ctx.fillText(`LAUNCH: 2030s (study)`, 12, 54);
 
       requestAnimationFrame(draw);
     };
@@ -278,7 +278,7 @@ export default function MissionPlanner() {
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-5 text-[13px]">
         <div>
           <span className="text-white font-medium block mb-1">Launch Offset (±30 days)</span>
-          Shifts the Dec 2027 launch date within the window. Earth and Venus are orbiting the Sun at different speeds, so this changes their relative angles at departure and at arrival. The red transfer arc and planet dots instantly update to show the shortest viable geometry for that specific date.
+          Shifts the study launch date within a 2030s-class transfer window. Earth and Venus are orbiting the Sun at different speeds, so this changes their relative angles at departure and at arrival. The red transfer arc and planet dots instantly update to show the shortest viable geometry for that specific date.
         </div>
         <div>
           <span className="text-white font-medium block mb-1">Mission Progress (LEO 8% → Venus Capture)</span>
@@ -295,7 +295,7 @@ export default function MissionPlanner() {
       </div>
 
       <div className="mt-4 text-xs text-gray-500">
-        The visualization uses a Sun-centered frame with proper orbital angular rates. The transfer is an approximated inward Hohmann-style arc timed for the 2027 window (does not intersect the Sun). Real operations add navigation, TCMs, and precise ephemeris.
+        The visualization uses a Sun-centered frame with proper orbital angular rates. The transfer is an approximated inward Hohmann-style arc for a 2030s-class study epoch (does not intersect the Sun). Real operations add navigation, TCMs, and precise ephemeris.
       </div>
     </div>
     </>

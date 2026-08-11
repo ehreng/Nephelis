@@ -4,7 +4,7 @@
 
 Project AETHER · Daily Mission Brief 2026-08-11
 
-Phase: DESIGN · Systems: SYSTEMS NOMINAL
+Phase: PRE-HARDWARE · Systems: PRE-HARDWARE
 Today's focus: Mitigate or document risk: Acid degradation of balloon envelope
 
 Claim L1–L2 tasks: github.com/ehreng/Nephelis

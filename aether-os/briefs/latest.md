@@ -1,7 +1,7 @@
 # Daily Mission Brief — 2026-08-11
 
 > **AETHER OS** · Daily Mission Loop  
-> Generated: `2026-08-11T17:22:44.381Z` · Agent: Grok Build / `daily-mission.ts`  
+> Generated: `2026-08-11T18:21:07.699Z` · Agent: Grok Build / `daily-mission.ts`  
 > Founder oversight: Ehren Goossens (Founder Emeritus) — override any loop if required.
 
 ---
@@ -11,32 +11,32 @@
 | Field | Value |
 |-------|-------|
 | Callsign | NEPHELIS.MCC |
-| Phase | **DESIGN** / telemetry **DESIGN** |
-| Systems | SYSTEMS NOMINAL |
+| Phase | **PRE-HARDWARE** / telemetry **EARLY — CONCEPT + DOCS** |
+| Systems | PRE-HARDWARE |
 | Wet mass / float | 400 kg · ~55 km |
 | Funding goal | $500,000 |
-| Open tasks | 76 (P0: 50, P1: 22) |
+| Open tasks | 78 (P0: 50, P1: 23) |
 | Open risks | 7 (high/critical: 5) |
 | Active partners | 5 |
-| MCC open checks | 16 |
+| MCC open checks | 10 |
 | Active OS loops | daily-mission, mission-digest, research, social, health |
 
 ### Systems
 
-- **POWER**: nominal
+- **POWER**: dev
 - **COMMS**: dev
 - **AEROSTAT**: dev
 - **AVIONICS**: dev
-- **NAV/AI**: nominal
-- **FUNDING**: dev
+- **NAV/AI**: dev
+- **FUNDING**: attention
 
 ### Critical / high risks
 
 - **R-01** — Acid degradation of balloon envelope _(medium/high)_
 - **R-02** — Entry / inflation sequence failure _(medium/critical)_
 - **R-03** — Comms blackout / insufficient downlink _(medium/high)_
-- **R-04** — Launch rideshare slip past 2027 window _(medium/high)_
-- **R-05** — Crowdfund / partner capital shortfall _(medium/high)_
+- **R-04** — No committed launch path; schedule risk is structural _(high/high)_
+- **R-05** — Capital shortfall vs flight-class cost _(high/high)_
 
 ### Upcoming timeline
 
@@ -93,20 +93,20 @@ Priority: **safety/regulatory → hardware → public progress → nice-to-have*
 - **Evidence:** Issue comment + PR
 - **Claim:** Comment `claiming` on a matching GitHub issue, or open one from [`docs/TASK_TEMPLATE.md`](../../docs/TASK_TEMPLATE.md)
 
-### 6. [L2][P1] Confirm 2–3 technical advisors (structures, entry, Venus science) with written scope
+### 6. [L2][P1] Meta-loop first review (day 7–14 of Daily Mission operation)
 
-- **Level:** L2 · **Priority:** P1 · **Source:** `advisor-board-soft`
+- **Level:** L2 · **Priority:** P1 · **Source:** `aether-os-meta-review`
 - **Acceptance:**
-  - [ ] Progress on `advisor-board-soft` with clear next step
+  - [ ] Progress on `aether-os-meta-review` with clear next step
   - [ ] Evidence in PR or note
 - **Evidence:** PR / note
 - **Claim:** Comment `claiming` on a matching GitHub issue, or open one from [`docs/TASK_TEMPLATE.md`](../../docs/TASK_TEMPLATE.md)
 
-### 7. [L2][P1] Refine transfer Δv / TOF with published ephemeris (not only Hohmann demo)
+### 7. [L2][P1] Confirm 2–3 technical advisors (structures, entry, Venus science) with written scope
 
-- **Level:** L2 · **Priority:** P1 · **Source:** `traj-delta-v-refine`
+- **Level:** L2 · **Priority:** P1 · **Source:** `advisor-board-soft`
 - **Acceptance:**
-  - [ ] Progress on `traj-delta-v-refine` with clear next step
+  - [ ] Progress on `advisor-board-soft` with clear next step
   - [ ] Evidence in PR or note
 - **Evidence:** PR / note
 - **Claim:** Comment `claiming` on a matching GitHub issue, or open one from [`docs/TASK_TEMPLATE.md`](../../docs/TASK_TEMPLATE.md)

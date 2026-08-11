@@ -7,7 +7,7 @@
       "type": "science",
       "status": "prospect",
       "ask": "Mass-spec or nephelometer in-kind or joint proposal",
-      "next_step": "Identify 2–3 groups with Venus cloud experience",
+      "next_step": "Identify 2\u20133 groups with Venus cloud experience",
       "priority": "P0",
       "last_touched": "2026-07-09"
     },
@@ -26,8 +26,8 @@
       "name": "Rideshare / secondary payload broker",
       "type": "launch",
       "status": "research",
-      "ask": "2027 Venus-transfer compatible slot estimate",
-      "next_step": "Map 2027 windows vs vehicle options",
+      "ask": "2030s Venus-transfer compatible slot estimate",
+      "next_step": "Map 2030s windows vs vehicle options",
       "priority": "P1",
       "last_touched": "2026-07-09"
     },

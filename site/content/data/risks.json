@@ -38,7 +38,7 @@
       "likelihood": "high",
       "impact": "high",
       "status": "open",
-      "mitigation": "Do not promise 2027 flight; gate flight talk on ground demonstrator success; explore rideshare only after hardware gates",
+      "mitigation": "Gate flight talk on ground demonstrator success; explore rideshare after hardware gates; plan for 2030s-class transfer windows",
       "owner": "ops"
     },
     {
@@ -51,7 +51,6 @@
       "mitigation": "$500k framed as ground/prototype campaign only; Stripe not yet live; partner in-kind; honest fundraising copy",
       "owner": "growth"
     },
-
     {
       "id": "R-06",
       "title": "Planetary protection / DNA tier regulatory delay",

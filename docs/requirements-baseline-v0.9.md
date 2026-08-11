@@ -47,7 +47,7 @@ IDs are stable for traceability; do not renumber casually.
 
 | ID | Requirement | Value / notes | Status |
 |----|-------------|-----------------|--------|
-| TRAJ-1 | Launch year window | **2027** (target 2027-12-15) | REQ |
+| TRAJ-1 | Launch year window | **2030s** (window class; refine with transfer opportunities) | REQ |
 | TRAJ-2 | Transfer concept | Direct Venus transfer from LEO-class injection | REQ |
 | TRAJ-3 | Design Δv budget (onboard/stage) | ~**2500 m/s** class | TBR |
 | TRAJ-4 | Design TOF | ~**140–150 days** order | TBR |

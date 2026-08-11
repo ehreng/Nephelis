@@ -71,7 +71,7 @@ Statuses: `paid_logged` → `confirmed` → `on_fab_list` → `engraved` → `cl
 
 ### 3.3 Freeze
 
-- Hard freeze aligned with task `payload-engraving-freeze` (2027-Q3 target)  
+- Hard freeze aligned with task `payload-engraving-freeze` (2030-Q3 target)  
 - After freeze: no new paid Tier 1 without explicit exception  
 - Export final list to fabricator under NDA; do not put emails on fab export if avoidable (id + display_name only)
 

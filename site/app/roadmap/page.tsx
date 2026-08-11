@@ -39,7 +39,7 @@ const areaOrder = [
 ];
 
 function quarterSortKey(q: string): string {
-  // 2026-Q3, 2027-Q4, 2028-H1, 2028-Q2
+  // 2026-Q3, 2029-Q4, 2030-H1, 2028-Q2
   return q;
 }
 

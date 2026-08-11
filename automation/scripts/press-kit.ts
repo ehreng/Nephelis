@@ -88,7 +88,7 @@ ${timeline.map((t) => `- **${t.year}** (${t.status}): ${t.event}`).join('\n')}
 
 ## Suggested headlines (for partners / media)
 
-1. Private Venus cloud probe aims for 2027 — crowd-funding the float
+1. Private Venus cloud probe aims for the 2030s — open collaboration on the float
 2. Why the clouds of Venus may beat Mars for long-term human physiology
 3. Open-source mission ops: humans + AI agents building in public
 

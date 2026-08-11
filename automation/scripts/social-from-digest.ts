@@ -53,7 +53,7 @@ const xPost = [
 const linkedIn = [
   `Mission pulse from Nephelis Industries (Project AETHER).`,
   ``,
-  `We're building a lean aerostat probe for Venus's habitable cloud layer — launch window 2027.`,
+  `We're building a lean aerostat probe for Venus's habitable cloud layer — launch window in the 2030s.`,
   ``,
   `This week's focus:`,
   ...bulletP0.map((b) => `• ${b}`),

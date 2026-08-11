@@ -1,8 +1,14 @@
 {
   "probe": {
     "type": "Super-pressure balloon",
-    "target_altitude_km": [50, 60],
-    "temperature_range_c": [0, 60],
+    "target_altitude_km": [
+      50,
+      60
+    ],
+    "temperature_range_c": [
+      0,
+      60
+    ],
     "pressure_atm": 1,
     "expected_duration_days": 30,
     "instruments": [
@@ -13,8 +19,11 @@
     ]
   },
   "launch": {
-    "target_year": 2027,
-    "vehicle_options": ["Rideshare", "Dedicated small launcher"],
+    "target_year": 2032,
+    "vehicle_options": [
+      "Rideshare",
+      "Dedicated small launcher"
+    ],
     "transfer": "Direct to Venus"
   },
   "science_goals": [

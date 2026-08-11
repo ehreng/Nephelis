@@ -4,7 +4,7 @@ Instructions for AI agents (Grok, CI bots, volunteers using agent loops) working
 
 ## Mission
 
-Build and operate **Project AETHER** (Cloudseeker): a lean, private Venus cloud-layer aerostat probe targeting ~55 km, launch window **Q4 2027**, with public crowdfunding and open collaboration.
+Build and operate **Project AETHER** (Cloudseeker): a lean, private Venus cloud-layer aerostat probe targeting ~55 km, launch window **2030s**, with public crowdfunding and open collaboration.
 
 **Operating system:** **AETHER OS** — see [`docs/AETHER_OS_Architecture_v1.md`](./docs/AETHER_OS_Architecture_v1.md).
 

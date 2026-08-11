@@ -25,7 +25,7 @@
   },
   {
     "id": "research-loop",
-    "title": "Weekly research Action → draft PR",
+    "title": "Weekly research Action \u2192 draft PR",
     "status": "done",
     "priority": "P1",
     "area": "content",
@@ -145,13 +145,12 @@
   },
   {
     "id": "aether-os-meta-review",
-    "title": "Meta-loop first review (day 7–14 of Daily Mission operation)",
+    "title": "Meta-loop first review (day 7\u201314 of Daily Mission operation)",
     "status": "planned",
     "priority": "P1",
     "area": "ops",
     "quarter": "2026-Q3"
   },
-
   {
     "id": "digest-email",
     "title": "Optional weekly digest email to TEAM_EMAIL",
@@ -192,7 +191,6 @@
     "area": "site",
     "quarter": "2026-Q3"
   },
-
   {
     "id": "war-board-30d",
     "title": "Execute 30-day war board (docs/30-day-war-board.md)",
@@ -227,7 +225,7 @@
   },
   {
     "id": "advisor-board-soft",
-    "title": "Confirm 2–3 technical advisors (structures, entry, Venus science) with written scope",
+    "title": "Confirm 2\u20133 technical advisors (structures, entry, Venus science) with written scope",
     "status": "planned",
     "priority": "P1",
     "area": "partners",
@@ -235,7 +233,7 @@
   },
   {
     "id": "conops-v1",
-    "title": "CONOPS v1: launch → cruise → entry → inflate → float → end-of-life (v0.9 drafted in docs/)",
+    "title": "CONOPS v1: launch \u2192 cruise \u2192 entry \u2192 inflate \u2192 float \u2192 end-of-life (v0.9 drafted in docs/)",
     "status": "in_progress",
     "priority": "P0",
     "area": "mission",
@@ -259,7 +257,7 @@
   },
   {
     "id": "traj-delta-v-refine",
-    "title": "Refine transfer Δv / TOF with published ephemeris (not only Hohmann demo)",
+    "title": "Refine transfer \u0394v / TOF with published ephemeris (not only Hohmann demo)",
     "status": "planned",
     "priority": "P1",
     "area": "mission",
@@ -275,7 +273,7 @@
   },
   {
     "id": "science-traceability",
-    "title": "Science traceability matrix: goals → instruments → data products",
+    "title": "Science traceability matrix: goals \u2192 instruments \u2192 data products",
     "status": "planned",
     "priority": "P1",
     "area": "science",
@@ -313,7 +311,6 @@
     "area": "program",
     "quarter": "2026-Q3"
   },
-
   {
     "id": "pdr-lite",
     "title": "Preliminary design review (lite): freeze interfaces, mass/power books",
@@ -458,14 +455,13 @@
     "area": "growth",
     "quarter": "2026-Q4"
   },
-
   {
     "id": "cdr-lite",
     "title": "Critical design review (lite): drawings, BOMs, test plans signed",
     "status": "planned",
     "priority": "P0",
     "area": "mission",
-    "quarter": "2027-Q1"
+    "quarter": "2029-Q1"
   },
   {
     "id": "balloon-flight-unit-fab",
@@ -473,7 +469,7 @@
     "status": "planned",
     "priority": "P0",
     "area": "hardware",
-    "quarter": "2027-Q1"
+    "quarter": "2029-Q1"
   },
   {
     "id": "gondola-structure-fab",
@@ -481,7 +477,7 @@
     "status": "planned",
     "priority": "P0",
     "area": "hardware",
-    "quarter": "2027-Q1"
+    "quarter": "2029-Q1"
   },
   {
     "id": "heatshield-fab",
@@ -489,7 +485,7 @@
     "status": "planned",
     "priority": "P0",
     "area": "hardware",
-    "quarter": "2027-Q1"
+    "quarter": "2029-Q1"
   },
   {
     "id": "payload-integration",
@@ -497,7 +493,7 @@
     "status": "planned",
     "priority": "P0",
     "area": "hardware",
-    "quarter": "2027-Q1"
+    "quarter": "2029-Q1"
   },
   {
     "id": "avionics-board-bringup",
@@ -505,7 +501,7 @@
     "status": "planned",
     "priority": "P0",
     "area": "avionics",
-    "quarter": "2027-Q1"
+    "quarter": "2029-Q1"
   },
   {
     "id": "solar-power-demo",
@@ -513,7 +509,7 @@
     "status": "planned",
     "priority": "P1",
     "area": "avionics",
-    "quarter": "2027-Q1"
+    "quarter": "2029-Q1"
   },
   {
     "id": "comms-breadboard",
@@ -521,7 +517,7 @@
     "status": "planned",
     "priority": "P0",
     "area": "comms",
-    "quarter": "2027-Q1"
+    "quarter": "2029-Q1"
   },
   {
     "id": "cubesat-relay-baseline",
@@ -529,15 +525,15 @@
     "status": "planned",
     "priority": "P0",
     "area": "comms",
-    "quarter": "2027-Q1"
+    "quarter": "2029-Q1"
   },
   {
     "id": "kick-stage-trade",
-    "title": "Kick/transfer stage: make vs buy vs rideshare-provided Δv",
+    "title": "Kick/transfer stage: make vs buy vs rideshare-provided \u0394v",
     "status": "planned",
     "priority": "P0",
     "area": "mission",
-    "quarter": "2027-Q1"
+    "quarter": "2029-Q1"
   },
   {
     "id": "funding-50pct",
@@ -545,7 +541,7 @@
     "status": "planned",
     "priority": "P0",
     "area": "growth",
-    "quarter": "2027-Q1"
+    "quarter": "2029-Q1"
   },
   {
     "id": "sponsor-corp-tier",
@@ -553,7 +549,7 @@
     "status": "planned",
     "priority": "P1",
     "area": "partners",
-    "quarter": "2027-Q1"
+    "quarter": "2029-Q1"
   },
   {
     "id": "science-cal-plan",
@@ -561,7 +557,7 @@
     "status": "planned",
     "priority": "P1",
     "area": "science",
-    "quarter": "2027-Q1"
+    "quarter": "2029-Q1"
   },
   {
     "id": "data-rights-policy",
@@ -569,16 +565,15 @@
     "status": "planned",
     "priority": "P2",
     "area": "science",
-    "quarter": "2027-Q1"
+    "quarter": "2029-Q1"
   },
-
   {
     "id": "env-qual-plan",
     "title": "Environmental qualification plan signed (TVAC, vibe, shock, thermal)",
     "status": "planned",
     "priority": "P0",
     "area": "hardware",
-    "quarter": "2027-Q2"
+    "quarter": "2029-Q2"
   },
   {
     "id": "vibe-test",
@@ -586,7 +581,7 @@
     "status": "planned",
     "priority": "P0",
     "area": "hardware",
-    "quarter": "2027-Q2"
+    "quarter": "2029-Q2"
   },
   {
     "id": "tvac-test",
@@ -594,7 +589,7 @@
     "status": "planned",
     "priority": "P0",
     "area": "hardware",
-    "quarter": "2027-Q2"
+    "quarter": "2029-Q2"
   },
   {
     "id": "balloon-cold-test",
@@ -602,15 +597,15 @@
     "status": "planned",
     "priority": "P1",
     "area": "hardware",
-    "quarter": "2027-Q2"
+    "quarter": "2029-Q2"
   },
   {
     "id": "system-integration-test",
-    "title": "End-to-end system integration test: power → sensors → store → radio",
+    "title": "End-to-end system integration test: power \u2192 sensors \u2192 store \u2192 radio",
     "status": "planned",
     "priority": "P0",
     "area": "hardware",
-    "quarter": "2027-Q2"
+    "quarter": "2029-Q2"
   },
   {
     "id": "inflation-sequence-test",
@@ -618,7 +613,7 @@
     "status": "planned",
     "priority": "P0",
     "area": "hardware",
-    "quarter": "2027-Q2"
+    "quarter": "2029-Q2"
   },
   {
     "id": "fs-fault-protection",
@@ -626,15 +621,15 @@
     "status": "planned",
     "priority": "P0",
     "area": "software",
-    "quarter": "2027-Q2"
+    "quarter": "2029-Q2"
   },
   {
     "id": "launch-vehicle-loi",
-    "title": "Launch path LOI / rideshare reservation for 2027 Venus window class",
+    "title": "Launch path LOI / rideshare reservation for 2030s Venus window class",
     "status": "planned",
     "priority": "P0",
     "area": "mission",
-    "quarter": "2027-Q2"
+    "quarter": "2029-Q2"
   },
   {
     "id": "launch-broker-partner",
@@ -642,7 +637,7 @@
     "status": "planned",
     "priority": "P0",
     "area": "partners",
-    "quarter": "2027-Q2"
+    "quarter": "2029-Q2"
   },
   {
     "id": "range-safety-docs",
@@ -650,7 +645,7 @@
     "status": "planned",
     "priority": "P1",
     "area": "mission",
-    "quarter": "2027-Q2"
+    "quarter": "2029-Q2"
   },
   {
     "id": "funding-75pct",
@@ -658,7 +653,7 @@
     "status": "planned",
     "priority": "P0",
     "area": "growth",
-    "quarter": "2027-Q2"
+    "quarter": "2029-Q2"
   },
   {
     "id": "ground-station-plan",
@@ -666,16 +661,15 @@
     "status": "planned",
     "priority": "P1",
     "area": "comms",
-    "quarter": "2027-Q2"
+    "quarter": "2029-Q2"
   },
-
   {
     "id": "flight-software-freeze",
     "title": "Flight software freeze + config management for flight load",
     "status": "planned",
     "priority": "P0",
     "area": "software",
-    "quarter": "2027-Q3"
+    "quarter": "2030-Q3"
   },
   {
     "id": "ops-playbook-v1",
@@ -683,7 +677,7 @@
     "status": "planned",
     "priority": "P0",
     "area": "mission",
-    "quarter": "2027-Q3"
+    "quarter": "2030-Q3"
   },
   {
     "id": "mission-rehearsal",
@@ -691,7 +685,7 @@
     "status": "planned",
     "priority": "P0",
     "area": "mission",
-    "quarter": "2027-Q3"
+    "quarter": "2030-Q3"
   },
   {
     "id": "ship-prep",
@@ -699,7 +693,7 @@
     "status": "planned",
     "priority": "P0",
     "area": "program",
-    "quarter": "2027-Q3"
+    "quarter": "2030-Q3"
   },
   {
     "id": "payload-engraving-freeze",
@@ -707,7 +701,7 @@
     "status": "planned",
     "priority": "P1",
     "area": "growth",
-    "quarter": "2027-Q3"
+    "quarter": "2030-Q3"
   },
   {
     "id": "press-kit-launch",
@@ -715,7 +709,7 @@
     "status": "planned",
     "priority": "P1",
     "area": "growth",
-    "quarter": "2027-Q3"
+    "quarter": "2030-Q3"
   },
   {
     "id": "funding-100pct",
@@ -723,7 +717,7 @@
     "status": "planned",
     "priority": "P0",
     "area": "growth",
-    "quarter": "2027-Q3"
+    "quarter": "2030-Q3"
   },
   {
     "id": "final-acceptance-test",
@@ -731,7 +725,7 @@
     "status": "planned",
     "priority": "P0",
     "area": "hardware",
-    "quarter": "2027-Q3"
+    "quarter": "2030-Q3"
   },
   {
     "id": "red-team-risk-review",
@@ -739,24 +733,23 @@
     "status": "planned",
     "priority": "P1",
     "area": "mission",
-    "quarter": "2027-Q3"
+    "quarter": "2030-Q3"
   },
-
   {
     "id": "launch-campaign",
     "title": "Launch campaign: integration with vehicle, checkouts, go/no-go",
     "status": "planned",
     "priority": "P0",
     "area": "mission",
-    "quarter": "2027-Q4"
+    "quarter": "2030-Q4"
   },
   {
-    "id": "launch-window-2027",
-    "title": "Launch in Q4 2027 Venus transfer window (target 2027-12-15)",
+    "id": "launch-window-2030s",
+    "title": "Launch in 2030s Venus transfer window class",
     "status": "planned",
     "priority": "P0",
     "area": "mission",
-    "quarter": "2027-Q4"
+    "quarter": "2030-Q4"
   },
   {
     "id": "cruise-ops",
@@ -764,32 +757,31 @@
     "status": "planned",
     "priority": "P0",
     "area": "mission",
-    "quarter": "2027-Q4"
+    "quarter": "2030-Q4"
   },
   {
     "id": "public-telemetry-stream",
-    "title": "Public mission status stream on site (cruise → approach)",
+    "title": "Public mission status stream on site (cruise \u2192 approach)",
     "status": "planned",
     "priority": "P2",
     "area": "site",
-    "quarter": "2027-Q4"
+    "quarter": "2030-Q4"
   },
-
   {
     "id": "venus-entry-ops",
     "title": "Venus approach & entry ops: real-time decision tree execution",
     "status": "planned",
     "priority": "P0",
     "area": "mission",
-    "quarter": "2028-Q1"
+    "quarter": "2031-Q1"
   },
   {
     "id": "float-ops-30d",
-    "title": "Float operations day 1–30: science collection + daily downlink",
+    "title": "Float operations day 1\u201330: science collection + daily downlink",
     "status": "planned",
     "priority": "P0",
     "area": "mission",
-    "quarter": "2028-Q1"
+    "quarter": "2031-Q1"
   },
   {
     "id": "extended-float",
@@ -797,7 +789,7 @@
     "status": "planned",
     "priority": "P1",
     "area": "mission",
-    "quarter": "2028-Q2"
+    "quarter": "2031-Q2"
   },
   {
     "id": "data-release-1",
@@ -805,14 +797,14 @@
     "status": "planned",
     "priority": "P0",
     "area": "science",
-    "quarter": "2028-Q2"
+    "quarter": "2031-Q2"
   },
   {
     "id": "phase2-lessons",
-    "title": "Lessons learned → Phase II larger aerostat / habitat tech roadmap",
+    "title": "Lessons learned \u2192 Phase II larger aerostat / habitat tech roadmap",
     "status": "planned",
     "priority": "P1",
     "area": "program",
-    "quarter": "2028-Q2"
+    "quarter": "2031-Q2"
   }
 ]

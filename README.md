@@ -1,6 +1,6 @@
 # Nephelis Industries
 
-**Project AETHER**: A super-pressure balloon probe targeting Venus's habitable cloud layer. Launch window **Q4 2027**.
+**Project AETHER**: A super-pressure balloon probe targeting Venus's habitable cloud layer. Launch window **2030s**.
 
 This repository is the **public site + mission ops toolchain** for Nephelis Industries — built so humans and AI agents can advance the mission through structured data, automation loops, and reviewable PRs.
 

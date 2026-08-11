@@ -21,7 +21,7 @@ Join the crew: https://www.nephelisindustries.com/#funding
 
 ```
 Mission pulse from Nephelis Industries (Project AETHER).
-We're building a lean aerostat probe for Venus's habitable cloud layer — launch window 2027.
+We're building a lean aerostat probe for Venus's habitable cloud layer — launch window in the 2030s.
 This week's focus:
 • stripe-live — Flip Stripe from test mode to live keys + live webhook _(growth)_
 • materials-coupon-campaign — Start fluoropolymer acid coupon test campaign _(hardware)_

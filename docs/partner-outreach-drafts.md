@@ -11,14 +11,14 @@ Boilerplate facts: `decks/press-kit.md` · site: https://www.nephelisindustries.
 
 **Goal:** find 2–3 groups; get a call; path to mass-spec / nephelometer / met package in-kind or joint proposal.
 
-**Subject:** Collaboration inquiry — Venus cloud-layer probe (2027), instrument partnership
+**Subject:** Collaboration inquiry — Venus cloud-layer probe (2030s), instrument partnership
 
 ```
 Hi [Name],
 
 I'm Ehren Goossens, co-founder of Nephelis Industries. We're building Project AETHER
 (Cloudseeker): a lean super-pressure balloon probe aimed at Venus's ~55 km cloud layer,
-with a target launch window in late 2027.
+with a target launch window in the 2030s.
 
 We're looking for a science/instrument partner—ideally mass spectrometry, nephelometry,
 or compact meteorology—who might contribute a sensor path, student involvement, or a
@@ -56,7 +56,7 @@ https://x.com/NephelisCo
 Hi [Name / Sales engineering],
 
 Nephelis Industries is developing a super-pressure balloon envelope for a Venus
-cloud-layer probe (Project AETHER; target launch 2027). We need small-batch film
+cloud-layer probe (Project AETHER; target launch in the 2030s). We need small-batch film
 samples for sulfuric acid exposure and seam trials—not a production order yet.
 
 Please quote or advise on availability of:
@@ -94,7 +94,7 @@ Hi [Name],
 
 I'm reaching out from Nephelis Industries about a sponsorship opportunity on
 Project AETHER—a crowd-supported probe to Venus's habitable cloud layer (launch
-target late 2027).
+target in the 2030s).
 
 We're offering mission-visible participation (including payload-adjacent branding
 tiers beyond individual name engraving) for partners who want to back a concrete
@@ -114,7 +114,7 @@ https://www.nephelisindustries.com
 
 ## 4. CubeSat / comms (P1) — `p-comms-cubesat`
 
-**Subject:** 3U relay / radio partnership for Venus aerostat mission (2027)
+**Subject:** 3U relay / radio partnership for Venus aerostat mission (2030s)
 
 ```
 Hi [Name],
@@ -136,16 +136,16 @@ ehren@nephelisindustries.com
 
 ## 5. Launch / rideshare broker (P1) — `p-launch`
 
-**Subject:** Secondary payload inquiry — ~400 kg class, Venus transfer window 2027
+**Subject:** Secondary payload inquiry — ~400 kg class, Venus transfer window 2030s
 
 ```
 Hi [Name],
 
 We're Nephelis Industries (Project AETHER): ~400 kg wet-class secondary payload targeting
-a late-2027 Venus transfer opportunity (rideshare or dedicated small vehicle). Seeking
+a 2030s Venus transfer opportunity (rideshare or dedicated small vehicle). Seeking
 rough ROM pricing, mass/volume constraints, and window feasibility—not a firm book yet.
 
-Can you point us to the right intake for a 2027 Venus-compatible secondary?
+Can you point us to the right intake for a 2030s Venus-compatible secondary?
 
 Ehren Goossens
 ehren@nephelisindustries.com
@@ -162,7 +162,7 @@ https://www.nephelisindustries.com
 Hi [Name],
 
 I'm building a lean private Venus cloud-layer balloon probe (Project AETHER) with a
-2027 launch target. I'd value informal advice from someone with [structures / entry /
+2030s launch window. I'd value informal advice from someone with [structures / entry /
 planetary science] experience—on the order of a few hours per quarter, not a board seat.
 
 Would you be open to a 30-minute call? No pressure if timing is bad.

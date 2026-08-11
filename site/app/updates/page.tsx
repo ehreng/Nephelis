@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import Update202608Honesty from '../../content/updates/2026-08-honesty-reset.mdx';
+import Update202608Status from '../../content/updates/2026-08-status.mdx';
 import Update202608 from '../../content/updates/2026-08-aether-os.mdx';
 import Update202607 from '../../content/updates/2026-07-competitor-missions.mdx';
 import Update202606 from '../../content/updates/2026-06-mission-update.mdx';
@@ -10,8 +10,8 @@ import Update202606 from '../../content/updates/2026-06-mission-update.mdx';
 const UPDATES = [
   {
     date: '2026-08-11',
-    title: 'Honesty reset — August 2026',
-    Component: Update202608Honesty,
+    title: 'Program status — August 2026',
+    Component: Update202608Status,
   },
   {
     date: '2026-08-11',

@@ -61,7 +61,7 @@ export default function NephelisHome() {
 
             <div className="mt-10 flex flex-wrap gap-4">
               <a href="/status" className="px-8 py-4 bg-white text-black font-bold font-mono uppercase tracking-wider hover:bg-gray-200 transition-colors">
-                Honest Status
+                Status
               </a>
               <a href="#mission" className="px-8 py-4 border border-white/20 text-white font-bold font-mono uppercase tracking-wider hover:border-venus hover:text-venus transition-all">
                 Mission Brief
@@ -119,10 +119,9 @@ export default function NephelisHome() {
                 engineering step. We keep the inspiration; we do not sell it as current maturity.
               </p>
               <p>
-                <strong className="text-white">Budget honesty:</strong> a ~$500k crowdfund target is
-                framed as a <em>ground demonstrator / early R&amp;D</em> campaign. A full Venus flight
-                system will cost far more. Rideshare “$80/kg” figures on this site are{' '}
-                <em>illustrative optimistic architecture math</em>, not booked launch contracts.
+                A ~$500k crowdfund target supports a <em>ground demonstrator / early R&amp;D</em>{' '}
+                campaign. A full Venus flight system will cost far more. Rideshare “$80/kg” figures
+                on this site are illustrative architecture math, not booked launch contracts.
               </p>
               <p>
                 Contributors welcome (L1–L3) via{' '}
@@ -134,8 +133,7 @@ export default function NephelisHome() {
                 >
                   GitHub
                 </a>{' '}
-                and the volunteer form. No empty “backed by SpaceX/JPL veterans” claims — only named
-                people with permission, or silence.
+                and the volunteer form.
               </p>
 
               <div className="grid grid-cols-2 gap-4 mt-8">
@@ -254,17 +252,16 @@ export default function NephelisHome() {
               <p className="mt-3 text-xs text-gray-500 font-mono">Power/Comms/Thermal: Solar on balloon top + efficient systems. Radiation-hardened avionics. Site comms/day estimator and atmosphere model apply directly.</p>
             </div>
 
-            {/* Cost honesty */}
-            <div className="glass-panel p-6 border-l-2 border-l-amber-500/60 mb-4">
-              <div className="font-mono text-xs uppercase tracking-widest text-amber-400/90 mb-2">
-                Cost honesty
+            <div className="glass-panel p-6 border-l-2 border-l-white/20 mb-4">
+              <div className="font-mono text-xs uppercase tracking-widest text-venus mb-2">
+                Cost sketch
               </div>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Optimistic rideshare math (e.g. <span className="font-mono text-venus">$80/kg × 400 kg ≈ $32k</span>) is a{' '}
-                <strong className="text-white">whiteboard scenario</strong>, not a quote. Entry systems,
-                materials, test campaigns, and avionics dominate real budgets. Our public ~$500k target
-                is for <strong className="text-white">ground demonstrators and early R&amp;D</strong>, not
-                an end-to-end Venus flight.
+                Optimistic rideshare math (e.g.{' '}
+                <span className="font-mono text-venus">$80/kg × 400 kg ≈ $32k</span>) is a study
+                figure, not a quote. Entry systems, materials, test campaigns, and avionics dominate
+                real budgets. The public ~$500k target is for ground demonstrators and early
+                R&amp;D, not an end-to-end Venus flight.
               </p>
             </div>
 
@@ -274,20 +271,20 @@ export default function NephelisHome() {
               </div>
               <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 text-sm text-gray-400">
                 <div>
-                  <span className="text-white font-medium block">Ground truth</span>
-                  Materials coupons, float demos, and logged test results before flight rhetoric.
+                  <span className="text-white font-medium block">Ground work</span>
+                  Materials coupons, float demos, and logged test results.
                 </div>
                 <div>
                   <span className="text-white font-medium block">Open engineering</span>
-                  Public GitHub, claimable tasks, contribution record — not empty authority name-drops.
+                  Public GitHub, claimable tasks, contribution record.
                 </div>
                 <div>
                   <span className="text-white font-medium block">Mass discipline</span>
-                  Concept ~400 kg wet stack keeps rideshare-class options open if we ever earn a flight gate.
+                  Concept ~400 kg wet stack keeps rideshare-class options open if we earn a flight gate.
                 </div>
                 <div>
                   <span className="text-white font-medium block">Vision vs execution</span>
-                  Cloud cities stay long-term vision. Near-term is prove float + acid resistance on Earth.
+                  Cloud cities stay long-term vision. Near-term: prove float + acid resistance on Earth.
                 </div>
               </div>
             </div>
@@ -620,9 +617,8 @@ export default function NephelisHome() {
           <div className="text-center mb-10">
             <h2 className="text-5xl font-black tracking-[-1px] text-white mb-4 uppercase">Support the work</h2>
             <p className="max-w-xl mx-auto text-xl text-gray-400">
-              Early crowdfund tiers are aimed at ground demonstrators and R&amp;D — not a sold-out
-              flight ticket. DNA / sample concepts require legal clearance before any sale. Prefer
-              open engineering? Contribute on GitHub first.
+              Early crowdfund tiers support ground demonstrators and R&amp;D. DNA / sample concepts
+              need legal clearance before any sale. Prefer to build? Contribute on GitHub.
             </p>
           </div>
 

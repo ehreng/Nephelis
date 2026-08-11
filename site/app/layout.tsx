@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s | Nephelis Industries",
   },
   description:
-    "Project AETHER: early-stage Venus cloud-layer aerostat program. Pre-hardware. Open engineering on GitHub. Ground demonstrators first — no empty authority claims, no fake 2027 flight commitment.",
+    "Project AETHER: early-stage Venus cloud-layer aerostat program. Pre-hardware. Open engineering on GitHub. Ground demonstrators first.",
   keywords: [
     "Venus",
     "aerostat",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "Nephelis Industries",
     title: "Nephelis Industries | Project AETHER",
     description:
-      "Venus cloud aerostat concept + open engineering. Honest status: pre-hardware, contributors welcome.",
+      "Venus cloud aerostat concept + open engineering. Pre-hardware; contributors welcome.",
     images: [
       {
         url: "/assets/visuals/Venus Visions.png",

@@ -12,26 +12,13 @@ Append-only mission progress. Newest first.
 - Social draft: `automation/social-drafts/mission-2026-08-11.md`
 - Status: **executed** (verify checklist still open for humans)
 
-## 2026-08-11 — Honesty reset + AETHER OS
+## 2026-08-11 — AETHER OS + program posture
 
-- **Removed** empty “veterans from SpaceX/JPL/…” authority claims
-- **Withdrew** Q4 2027 as launch commitment; flight class ~2030–2031+ aspirational only
-- Telemetry → PRE-HARDWARE (not SYSTEMS NOMINAL)
-- Public `/status` + `docs/STATUS.md` + `progress.json`
-- Regulatory draft notes: `docs/regulatory-path.md`
-- $500k framed as ground/R&D campaign only
-- AETHER OS v1.0 architecture + daily loop + L1–L3 issues
+- Architecture: `docs/AETHER_OS_Architecture_v1.md`
+- Runtime: `aether-os/` (briefs, loops, contributions)
+- Daily Mission Loop + L1–L3 issue templates
+- Public `/status` + `progress.json`
+- Pre-hardware posture; ground milestones first; no committed launch date
+- Founder: Founder Emeritus / Strategic Oversight (Ehren Goossens)
 
 **Next engineering milestone:** materials coupons + small He ground float + telemetry
-
-## 2026-08-11 — AETHER OS v1.0 bootstrap
-
-- Architecture published: `docs/AETHER_OS_Architecture_v1.md`
-- Runtime tree: `aether-os/`
-- Daily Mission Loop script: `automation/scripts/daily-mission.ts`
-- Contribution tiers + GitHub issue templates
-- Verification log: `aether-os/CONTRIBUTIONS.md`
-- Loop registry initialized
-- Founder role: Founder Emeritus / Strategic Oversight (Ehren Goossens)
-
-**Status:** Transfer-ready. Honesty pass applied same day.

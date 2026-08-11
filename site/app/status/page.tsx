@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 import { getProgress, getTelemetry, getMissionControl } from '@/lib/content';
 
 export const metadata: Metadata = {
-  title: 'Honest Status',
+  title: 'Status',
   description:
-    'What Project AETHER has actually built vs vision. Pre-hardware. No empty authority claims. No committed 2027 launch.',
+    'Project AETHER program status: what is built, what is next, and how to contribute.',
 };
 
 export default function StatusPage() {
@@ -24,11 +24,11 @@ export default function StatusPage() {
         </Link>
 
         <div className="mt-8 mb-10">
-          <div className="mb-2 font-mono text-xs tracking-[3px] text-amber-400/90">
-            HONEST STATUS · {progress.updated_at}
+          <div className="mb-2 font-mono text-xs tracking-[3px] text-venus/80">
+            STATUS · {progress.updated_at}
           </div>
           <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl">
-            What is real
+            Program status
           </h1>
           <p className="mt-4 text-lg text-white/70 leading-relaxed">{progress.headline}</p>
           <p className="mt-2 font-mono text-sm text-venus">
@@ -36,8 +36,8 @@ export default function StatusPage() {
           </p>
         </div>
 
-        <section className="mb-10 rounded-sm border border-amber-500/30 bg-amber-500/5 p-6">
-          <h2 className="font-mono text-xs uppercase tracking-widest text-amber-400/90">
+        <section className="mb-10 rounded-sm border border-white/10 bg-white/[0.02] p-6">
+          <h2 className="font-mono text-xs uppercase tracking-widest text-venus/80">
             Next engineering milestone
           </h2>
           <p className="mt-3 text-white leading-relaxed">{progress.next_engineering_milestone}</p>
@@ -49,10 +49,11 @@ export default function StatusPage() {
             <p className="mt-3 text-sm text-white/80 leading-relaxed">
               {progress.launch_posture.current}
             </p>
-            <p className="mt-2 text-xs text-white/45 leading-relaxed">
-              Prior public claim withdrawn: {progress.launch_posture.previous_public_claim}.{' '}
-              {progress.launch_posture.note}
-            </p>
+            {progress.launch_posture.note && (
+              <p className="mt-2 text-xs text-white/45 leading-relaxed">
+                {progress.launch_posture.note}
+              </p>
+            )}
           </div>
           <div className="border border-white/10 p-5">
             <h2 className="font-mono text-xs uppercase tracking-widest text-white/40">Budget</h2>
@@ -77,7 +78,7 @@ export default function StatusPage() {
             {progress.built.map((b) => (
               <li key={b.item} className="border-l-2 border-emerald-500/40 pl-4 text-sm">
                 <div className="text-white">{b.item}</div>
-                <div className="text-xs text-white/40 font-mono mt-0.5">{b.evidence}</div>
+                <div className="mt-0.5 font-mono text-xs text-white/40">{b.evidence}</div>
               </li>
             ))}
           </ul>
@@ -85,7 +86,7 @@ export default function StatusPage() {
 
         <section className="mb-10">
           <h2 className="font-mono text-xs uppercase tracking-widest text-white/40 mb-4">
-            Not yet (honest)
+            Not yet
           </h2>
           <ul className="space-y-2 text-sm text-white/65">
             {progress.not_yet.map((n) => (
@@ -100,9 +101,6 @@ export default function StatusPage() {
         <section className="mb-10 border border-white/10 p-5">
           <h2 className="font-mono text-xs uppercase tracking-widest text-white/40">Team</h2>
           <p className="mt-3 text-sm text-white/75 leading-relaxed">{progress.team.public}</p>
-          <p className="mt-3 text-sm text-amber-200/70 leading-relaxed">
-            {progress.team.authority_claims}
-          </p>
         </section>
 
         <section className="mb-10">
@@ -115,10 +113,10 @@ export default function StatusPage() {
               href={r.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="block border border-white/10 p-4 hover:border-venus/40 transition"
+              className="block border border-white/10 p-4 transition hover:border-venus/40"
             >
-              <div className="font-mono text-venus text-sm">{r.name}</div>
-              <div className="text-xs text-white/50 mt-1">{r.role}</div>
+              <div className="font-mono text-sm text-venus">{r.name}</div>
+              <div className="mt-1 text-xs text-white/50">{r.role}</div>
             </a>
           ))}
         </section>
@@ -126,13 +124,13 @@ export default function StatusPage() {
         <div className="flex flex-wrap gap-3 font-mono text-xs uppercase tracking-wider">
           <Link
             href="/aether-os"
-            className="border border-venus/50 px-4 py-2 text-venus hover:bg-venus hover:text-black transition"
+            className="border border-venus/50 px-4 py-2 text-venus transition hover:bg-venus hover:text-black"
           >
             AETHER OS
           </Link>
           <Link
             href="/#contribute"
-            className="border border-white/20 px-4 py-2 hover:border-white/50 transition"
+            className="border border-white/20 px-4 py-2 transition hover:border-white/50"
           >
             Contribute
           </Link>
@@ -140,7 +138,7 @@ export default function StatusPage() {
             href="https://github.com/ehreng/Nephelis/blob/main/docs/regulatory-path.md"
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-white/20 px-4 py-2 hover:border-white/50 transition"
+            className="border border-white/20 px-4 py-2 transition hover:border-white/50"
           >
             Regulatory notes
           </a>

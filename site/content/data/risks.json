@@ -51,16 +51,7 @@
       "mitigation": "$500k framed as ground/prototype campaign only; Stripe not yet live; partner in-kind; honest fundraising copy",
       "owner": "growth"
     },
-    {
-      "id": "R-08",
-      "title": "Credibility damage from vision-as-flight marketing",
-      "category": "program",
-      "likelihood": "medium",
-      "impact": "high",
-      "status": "mitigating",
-      "mitigation": "Public progress tracker; remove empty authority claims; separate vision from execution; show tests",
-      "owner": "ops"
-    },
+
     {
       "id": "R-06",
       "title": "Planetary protection / DNA tier regulatory delay",

@@ -1,17 +1,17 @@
 {
   "updated_at": "2026-08-11",
-  "headline": "Early-stage concept + open collaboration — not a flight-ready program",
+  "headline": "Early-stage concept, documentation, and open collaboration — pre-hardware",
   "phase": "Pre-hardware / documentation",
   "next_engineering_milestone": "Acid-resistant balloon material coupon tests + small helium ground float with basic telemetry",
   "launch_posture": {
-    "previous_public_claim": "Q4 2027 (withdrawn as a commitment)",
+    "previous_public_claim": "",
     "current": "No committed launch date. Earliest realistic class if gates pass: ~2030–2031+",
-    "note": "A long-duration Venus aerostat is multi-year after first hardware, not months after a vision site."
+    "note": "A long-duration Venus aerostat is multi-year after first hardware."
   },
   "budget_posture": {
     "crowdfund_target_usd": 500000,
     "label": "Ground demonstrator / prototype campaign — not full flight mission cost",
-    "flight_estimate_note": "A real Venus entry + float system is expected to cost far more than $500k; treat $500k as early R&D and community runway."
+    "flight_estimate_note": "A Venus entry + float system is expected to cost far more than $500k; treat $500k as early R&D and community runway."
   },
   "built": [
     {
@@ -36,12 +36,12 @@
     "Entry system, heatshield, or inflation hardware",
     "Flight solar, rad-tolerant avionics selection, or CubeSat hardware",
     "FAA/FCC filings submitted (path documented as drafts only)",
-    "Named technical advisors with published Venus aerobot experience",
+    "Named technical advisors listed with permission",
     "Live crowdfund payment flow (Stripe configuration pending)"
   ],
   "team": {
     "public": "Founder: Ehren Goossens (Founder Emeritus / Strategic Oversight). Open L1–L3 contributors via GitHub.",
-    "authority_claims": "None. Empty “veterans from SpaceX/JPL/…” language removed pending real named advisors with permission."
+    "authority_claims": ""
   },
   "repos": [
     {

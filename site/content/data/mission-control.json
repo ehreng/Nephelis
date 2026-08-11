@@ -7,15 +7,15 @@
   "funding_goal_label": "Ground demonstrator / early R&D campaign (not full flight cost)",
   "checklist": [
     {
-      "id": "mc-honesty-reset",
-      "item": "Public honesty reset: remove empty authority claims; publish progress tracker",
+      "id": "mc-github-ssot",
+      "item": "GitHub ehreng/Nephelis as single source of truth with open L1–L3 issues",
       "phase": "PROGRAM",
       "status": "in_progress",
       "due": "2026-Q3"
     },
     {
-      "id": "mc-github-ssot",
-      "item": "GitHub ehreng/Nephelis as single source of truth with open L1–L3 issues",
+      "id": "mc-status-page",
+      "item": "Keep /status and progress.json current with built vs not-yet",
       "phase": "PROGRAM",
       "status": "in_progress",
       "due": "2026-Q3"

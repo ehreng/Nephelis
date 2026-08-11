@@ -115,16 +115,14 @@ export default function FundingTiers() {
 
   return (
     <>
-      <div className="mb-6 border border-amber-500/30 bg-amber-500/5 px-4 py-3 text-center text-sm text-gray-300">
-        <span className="font-mono text-xs text-amber-400/90 uppercase tracking-wider">
-          Campaign honesty
-        </span>
-        <p className="mt-1 text-sm text-gray-400 leading-relaxed">
-          Tiers fund <strong className="text-white">early ground / R&amp;D work</strong>, not a full
-          Venus flight budget. Checkout may be offline until Stripe is configured
-          {stripeReady ? ' (rails live).' : ' (currently incomplete).'} See{' '}
+      <div className="mb-6 border border-white/10 bg-white/[0.02] px-4 py-3 text-center text-sm text-gray-400">
+        <p className="leading-relaxed">
+          Tiers support <strong className="text-white">early ground / R&amp;D work</strong>, not a
+          full Venus flight budget.
+          {!stripeReady && ' Checkout opens when payment rails are configured.'}
+          {stripeReady && ' Payment rails are live.'}{' '}
           <a href="/status" className="text-venus hover:underline">
-            honest status
+            Program status
           </a>
           .
         </p>
@@ -201,12 +199,8 @@ export default function FundingTiers() {
       </div>
 
       <div className="border-t border-white/10 pt-8 text-center">
-        <p className="text-gray-500 font-mono text-xs tracking-[1px] mb-3">
-          OPEN ENGINEERING — NO EMPTY AUTHORITY CLAIMS
-        </p>
         <p className="mx-auto max-w-xl text-sm text-gray-400">
-          Named advisors will be listed only with permission and real roles. Until then: contribute
-          via{' '}
+          Contribute via{' '}
           <a
             href="https://github.com/ehreng/Nephelis"
             target="_blank"
@@ -215,9 +209,9 @@ export default function FundingTiers() {
           >
             GitHub
           </a>{' '}
-          (L1–L3) or the form above. See{' '}
+          (L1–L3) or the form above. Program status:{' '}
           <a href="/status" className="text-venus hover:underline">
-            honest status
+            /status
           </a>
           .
         </p>

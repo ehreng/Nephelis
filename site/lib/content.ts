@@ -154,11 +154,11 @@ export function getUpdates() {
   // Newest first
   return [
     {
-      slug: '2026-08-honesty-reset',
-      title: 'Honesty reset — August 2026',
+      slug: '2026-08-status',
+      title: 'Program status — August 2026',
       date: '2026-08-11',
       excerpt:
-        'No empty authority claims. No fake 2027 flight commitment. Pre-hardware status and open GitHub work.',
+        'Pre-hardware program status, ground milestones, open contribution via GitHub.',
     },
     {
       slug: '2026-08-aether-os',

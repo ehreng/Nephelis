@@ -1,6 +1,6 @@
 # Nephelis Industries — Metrics One-Pager
 
-_Auto-generated from `site/content/data/*` · 2026-08-11T18:20:51.155Z_  
+_Auto-generated from `site/content/data/*` · 2026-08-24T15:31:30.875Z_  
 **Do not hand-edit** — run `npx tsx automation/scripts/sync-metrics.ts` after data changes.
 
 ## Mission snapshot
@@ -17,7 +17,7 @@ _Auto-generated from `site/content/data/*` · 2026-08-11T18:20:51.155Z_
 | Vehicles | Rideshare, Dedicated small launcher |
 | Transfer | Direct to Venus |
 | Funding goal | $500,000 |
-| Systems status | PRE-HARDWARE (EARLY — CONCEPT + DOCS) |
+| Systems status | SYSTEMS NOMINAL (PRE-HARDWARE) |
 | Open risks | 7 (see risks.json) |
 
 ## Science goals

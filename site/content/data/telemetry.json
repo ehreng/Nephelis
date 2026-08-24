@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-11T12:00:00.000Z",
-  "mission_phase": "EARLY — CONCEPT + DOCS",
-  "overall_status": "PRE-HARDWARE",
+  "updated_at": "2026-08-24T15:31:28.938Z",
+  "mission_phase": "PRE-HARDWARE",
+  "overall_status": "SYSTEMS NOMINAL",
   "systems": [
     {
       "id": "power",
@@ -14,21 +14,21 @@
       "id": "comms",
       "label": "COMMS",
       "status": "dev",
-      "value": "TBD",
+      "value": "SPEC",
       "detail": "CubeSat relay is a concept architecture, not selected hardware"
     },
     {
       "id": "balloon",
       "label": "AEROSTAT",
       "status": "dev",
-      "value": "TRADE",
+      "value": "PLANNED",
       "detail": "Fluoropolymer envelope trade — no acid chamber coupons yet"
     },
     {
       "id": "avionics",
       "label": "AVIONICS",
       "status": "dev",
-      "value": "TBD",
+      "value": "SPEC",
       "detail": "Rad-tolerant stack not selected; no flight board yet"
     },
     {
@@ -41,8 +41,8 @@
     {
       "id": "funding",
       "label": "FUNDING",
-      "status": "attention",
-      "value": "SETUP",
+      "status": "dev",
+      "value": "PLANNED",
       "detail": "Crowdfund rails incomplete; $500k is ground-test campaign target"
     }
   ]

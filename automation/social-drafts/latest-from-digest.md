@@ -1,15 +1,15 @@
 # Social drafts (from mission digest)
 
-Generated: 2026-07-09T01:23:36.333Z  
+Generated: 2026-10-12T22:20:18.858Z  
 Source: `research/notes/LATEST-DIGEST.md`
 
 ## X / Twitter
 
 ```
-Project AETHER mission pulse — phase DESIGN.
+Project AETHER mission pulse — phase PRE-HARDWARE.
 
-• stripe-live — Flip Stripe from test mode to live keys + live webhook _(growth)_
-• materials-coupon-campaign — Start fluoropolymer acid coupon test campaign _(hardware)_
+• war-board-30d — Execute 30-day war board (docs/30-day-war-board.md) _(program)_
+• stripe-live — Flip Stripe to live keys + live webhook; real $100 smoke test _(growth)_
 
 Roadmap: https://www.nephelisindustries.com/roadmap
 Join the crew: https://www.nephelisindustries.com/#funding
@@ -23,9 +23,9 @@ Join the crew: https://www.nephelisindustries.com/#funding
 Mission pulse from Nephelis Industries (Project AETHER).
 We're building a lean aerostat probe for Venus's habitable cloud layer — launch window in the 2030s.
 This week's focus:
-• stripe-live — Flip Stripe from test mode to live keys + live webhook _(growth)_
-• materials-coupon-campaign — Start fluoropolymer acid coupon test campaign _(hardware)_
-• Risk watch: R-01 [high/medium] Acid degradation of balloon envelope — _open_
+• war-board-30d — Execute 30-day war board (docs/30-day-war-board.md) _(program)_
+• stripe-live — Flip Stripe to live keys + live webhook; real $100 smoke test _(growth)_
+• Risk watch: R-01 [high/medium] Acid degradation of balloon envelope — _mitigating_
 Public roadmap: https://www.nephelisindustries.com/roadmap
 Sponsor or volunteer: https://www.nephelisindustries.com
 ```

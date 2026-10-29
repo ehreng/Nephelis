@@ -135,12 +135,12 @@ export function reserveInterestAutoReply(name: string, tierLabel: string) {
       <p>What happens next:</p>
       <ol>
         <li>Complete payment (if you haven't) to lock your slot.</li>
-        <li>We'll email integration kit details for your tier.</li>
+        <li>Kit details follow when training allows.</li>
         <li>Your allocation is counted against mission capacity.</li>
       </ol>
-      <p>Questions? Reply to this email or write ehren@nephelisindustries.com.</p>
+      <p>Questions? Reply to this email or write ehren@nephelisindustries.com. Replies are batched during U.S. Army training.</p>
     `,
-    text: `Transmission received, ${name}.\n\nInterest: ${tierLabel}.\nNext: complete payment to lock your slot, then we'll send kit details.\n\nQuestions: ehren@nephelisindustries.com\n`,
+    text: `Transmission received, ${name}.\n\nInterest: ${tierLabel}.\nNext: complete payment to lock your slot. Kit details follow when training allows.\n\nQuestions: ehren@nephelisindustries.com\n`,
   };
 }
 
@@ -167,7 +167,7 @@ export function volunteerAutoReply(name: string) {
     subject: 'Nephelis: volunteer signal received',
     html: `
       <h2>Thanks for volunteering, ${name}</h2>
-      <p>We review every crew application. If there's a fit, we'll reach out with next steps and open tasks.</p>
+      <p>Start from the GitHub repo and contributing guide. Review is batched during U.S. Army training.</p>
       <p>Meanwhile:</p>
       <ul>
         <li><a href="https://github.com/ehreng/Nephelis">GitHub repo</a></li>
@@ -175,6 +175,6 @@ export function volunteerAutoReply(name: string) {
         <li><a href="https://nephelisindustries.com/roadmap">Public roadmap</a></li>
       </ul>
     `,
-    text: `Thanks for volunteering, ${name}.\nWe'll review and follow up if there's a fit.\nRepo: https://github.com/ehreng/Nephelis\n`,
+    text: `Thanks for volunteering, ${name}.\nStart from the repo. Review is batched during U.S. Army training.\nRepo: https://github.com/ehreng/Nephelis\n`,
   };
 }

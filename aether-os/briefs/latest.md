@@ -2,7 +2,7 @@
 
 > **AETHER OS** · Daily Mission Loop  
 > Generated: `2026-08-11T18:21:07.699Z` · Agent: Grok Build / `daily-mission.ts`  
-> Founder oversight: Ehren Goossens (Founder Emeritus) — override any loop if required.
+> Founder oversight: Ehren Goossens (Founder Emeritus) — in U.S. Army training; review is asynchronous. Override any loop if required.
 
 ---
 
@@ -130,7 +130,7 @@ Priority: **safety/regulatory → hardware → public progress → nice-to-have*
 - [ ] Brief reviewed (no invented partners, contracts, or science)
 - [ ] At least one public-facing update (site PR, X draft, or research note)
 - [ ] Claimed tasks logged when completed → `aether-os/CONTRIBUTIONS.md`
-- [ ] Blockers escalated to Founder Emeritus if P0 stuck >48h
+- [ ] P0 blockers queued for Founder Emeritus. Do not block the loop on a same-week answer.
 
 ---
 

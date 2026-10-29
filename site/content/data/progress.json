@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11",
+  "updated_at": "2026-10-29",
   "headline": "Early-stage concept, documentation, and open collaboration — pre-hardware",
   "phase": "Pre-hardware / documentation",
   "next_engineering_milestone": "Acid-resistant balloon material coupon tests + small helium ground float with basic telemetry",
@@ -40,7 +40,7 @@
     "Live crowdfund payment flow (Stripe configuration pending)"
   ],
   "team": {
-    "public": "Founder: Ehren Goossens (Founder Emeritus / Strategic Oversight). Open L1–L3 contributors via GitHub.",
+    "public": "Founder: Ehren Goossens (Founder Emeritus / Strategic Oversight), in U.S. Army training. Review is asynchronous. Open L1–L3 contribution via GitHub; keep working without waiting on a founder reply.",
     "authority_claims": ""
   },
   "repos": [

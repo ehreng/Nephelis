@@ -118,7 +118,7 @@ export default function VolunteerForm() {
       </button>
       {status === 'success' && (
         <p className="mt-3 text-xs text-venus text-center">
-          Signal received. Check your email — we review every application.
+          Signal received. Start from the GitHub repo. Review is batched during U.S. Army training.
         </p>
       )}
       {status === 'error' && (

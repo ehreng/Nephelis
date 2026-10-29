@@ -17,7 +17,7 @@ AI-coordinated mission operating system: **DETECT → PLAN → EXECUTE → VERIF
 | Runtime state | [`aether-os/`](./aether-os/) |
 | Daily loop | `npx tsx automation/scripts/evolve.ts daily` |
 
-Founder: **Ehren Goossens** — Founder Emeritus / Strategic Oversight.
+Founder: **Ehren Goossens** — Founder Emeritus / Strategic Oversight. Currently in U.S. Army training; review is asynchronous.
 
 ## Structure
 

@@ -295,7 +295,7 @@ export default function FundingTiers() {
               </form>
             ) : (
               <div className="py-6 text-center text-sm text-venus">
-                Interest received! We&apos;ll contact you shortly at {form.email}.
+                Interest received. Queued for {form.email}. A reply waits on training.
               </div>
             )}
           </div>

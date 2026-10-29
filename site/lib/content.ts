@@ -154,6 +154,13 @@ export function getUpdates() {
   // Newest first
   return [
     {
+      slug: '2026-10-founder-training',
+      title: 'Founder in Army training — October 2026',
+      date: '2026-10-29',
+      excerpt:
+        'Founder Emeritus is in U.S. Army training. Program stays pre-hardware. Contribution continues on GitHub.',
+    },
+    {
       slug: '2026-08-status',
       title: 'Program status — August 2026',
       date: '2026-08-11',

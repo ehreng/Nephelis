@@ -1,6 +1,6 @@
 # Program status — Project AETHER
 
-**Updated:** 2026-08-11
+**Updated:** 2026-10-29
 
 ## One-line status
 
@@ -12,7 +12,7 @@
 - Draft CONOPS, requirements, materials test protocol, risk list
 - Structured mission data in git (`site/content/data/`)
 - AETHER OS: daily briefs, L1–L3 contribution model, GitHub as SSOT
-- Founder: Ehren Goossens (Founder Emeritus / Strategic Oversight)
+- Founder: Ehren Goossens (Founder Emeritus / Strategic Oversight), in U.S. Army training. Basic Combat Training is complete. Advanced Individual Training is in progress. Review is asynchronous.
 
 ## What is not yet
 

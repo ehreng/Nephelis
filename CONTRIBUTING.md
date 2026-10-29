@@ -46,7 +46,7 @@ Site form: [nephelisindustries.com/#contribute](https://www.nephelisindustries.c
 - Improve prompts; fill research PRs from CI
 
 ### 5. Hardware / regulatory (L3)
-- Only after acknowledgment from Founder Emeritus or designated reviewer
+- Only after acknowledgment from Founder Emeritus or a designated reviewer. Acknowledgment is asynchronous during U.S. Army training. L1–L2 work should proceed without waiting on it.
 - Log safety/export concerns in the issue
 
 ## Development setup

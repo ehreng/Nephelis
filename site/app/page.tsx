@@ -124,7 +124,8 @@ export default function NephelisHome() {
                 >
                   GitHub
                 </a>{' '}
-                and the volunteer form.
+                and the volunteer form. Founder review is asynchronous during U.S. Army training.
+                Open an issue or use the form and keep working.
               </p>
 
               <div className="grid grid-cols-2 gap-4 mt-8">
@@ -624,7 +625,7 @@ export default function NephelisHome() {
           </div>
 
           <div className="text-center mt-8 text-xs text-foreground/50 font-mono">
-            Or email <a href="mailto:ehren@nephelisindustries.com" className="text-venus hover:underline">ehren@nephelisindustries.com</a> directly for partnership.
+            Or email <a href="mailto:ehren@nephelisindustries.com" className="text-venus hover:underline">ehren@nephelisindustries.com</a> for partnership. Mail is read when training allows.
           </div>
         </div>
       </section>

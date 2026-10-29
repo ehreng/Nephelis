@@ -4,6 +4,12 @@ Append-only mission progress. Newest first.
 
 ---
 
+## 2026-10-29 — Founder in Army training
+
+- Public status: Founder Emeritus remains Ehren Goossens. Basic Combat Training complete. Advanced Individual Training in progress.
+- Operating change: founder review is asynchronous. Loops do not wait on a same-week answer.
+- Program posture unchanged: pre-hardware, ground milestones first, no committed launch date.
+
 ## 2026-08-11 — Daily Mission Loop
 
 - Brief: `aether-os/briefs/2026-08-11.md`

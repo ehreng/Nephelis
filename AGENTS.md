@@ -29,7 +29,7 @@ Build and operate **Project AETHER** (Cloudseeker): a lean, private Venus cloud-
 4. **Validate** after data edits: `cd site && pnpm validate:content`.
 5. **Prefer PRs** for research; site deploys from `main` via Vercel.
 6. **AETHER OS loops** follow DETECT → PLAN → EXECUTE → VERIFY; log verified work in `aether-os/CONTRIBUTIONS.md`.
-7. **Founder Emeritus** (Ehren) can pause/override any loop; escalate P0 blockers.
+7. **Founder Emeritus** (Ehren) can pause/override any loop. Queue P0 blockers. He is in U.S. Army training; do not block the loop on a same-week answer.
 
 ## AETHER OS — start of session
 

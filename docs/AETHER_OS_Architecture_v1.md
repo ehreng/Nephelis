@@ -146,6 +146,7 @@ Funding push · Partnership outreach · Technical simulation · Crisis / pivot r
 - Reviews major decisions and high-impact contributions
 - Can override or pause any loop
 - Daily management offloaded to Agent + system
+- Through Army training, review is asynchronous. Do not block a loop on a same-week answer.
 
 Designed to minimize conflict-of-interest issues with military service while preserving founder status.
 

@@ -45,7 +45,8 @@ export default function AetherOsPage() {
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/70">
             An AI-coordinated, adaptive, recursive operating system for Cloudseeker — detect needs,
             plan work, execute or assign, verify outcomes, and improve itself. Built for distributed
-            humans + agents. Founder Emeritus oversight on high-stakes decisions.
+            humans + agents. Founder Emeritus oversight on high-stakes decisions. Review is
+            asynchronous during U.S. Army training.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 font-mono text-xs uppercase tracking-wider">
             <a
@@ -151,8 +152,9 @@ export default function AetherOsPage() {
 
       <section className="border-t border-white/10 py-12">
         <div className="mx-auto max-w-4xl px-4 font-mono text-xs text-white/40 sm:px-6 lg:px-8">
-          Founder Emeritus / Strategic Oversight: Ehren Goossens · Daily management offloaded to the
-          Agent + system · Not for consumption. For continuation.
+          Founder Emeritus / Strategic Oversight: Ehren Goossens · In U.S. Army training; review is
+          asynchronous · Daily management offloaded to the Agent + system · Not for consumption. For
+          continuation.
         </div>
       </section>
     </div>

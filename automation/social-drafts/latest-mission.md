@@ -1,8 +1,8 @@
-# Social draft — Mission Brief 2026-08-11
+# Social draft — Mission Brief 2026-10-31
 
 ## X (short)
 
-Project AETHER · Daily Mission Brief 2026-08-11
+Project AETHER · Daily Mission Brief 2026-10-31
 
 Phase: PRE-HARDWARE · Systems: PRE-HARDWARE
 Today's focus: Mitigate or document risk: Acid degradation of balloon envelope
@@ -14,7 +14,7 @@ Join the flight crew: nephelisindustries.com
 
 ## X (thread seed)
 
-1/ AETHER OS daily brief is up for 2026-08-11.
+1/ AETHER OS daily brief is up for 2026-10-31.
 2/ Open P0 work: 50. High/critical risks: 5.
 3/ Want to contribute? Tiers L1 (anyone) → L3 (trusted). See CONTRIBUTING.md
 4/ Architecture: docs/AETHER_OS_Architecture_v1.md in the repo.

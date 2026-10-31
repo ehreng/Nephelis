@@ -4,6 +4,14 @@ Append-only mission progress. Newest first.
 
 ---
 
+## 2026-10-31 — Daily Mission Loop
+
+- Brief: `aether-os/briefs/2026-10-31.md`
+- Planned tasks: 7 (P0 sources: 50, critical risks: 5)
+- Top priority: Mitigate or document risk: Acid degradation of balloon envelope
+- Social draft: `automation/social-drafts/mission-2026-10-31.md`
+- Status: **executed** (verify checklist still open for humans)
+
 ## 2026-10-29 — Founder in Army training
 
 - Public status: Founder Emeritus remains Ehren Goossens. Basic Combat Training complete. Advanced Individual Training in progress.

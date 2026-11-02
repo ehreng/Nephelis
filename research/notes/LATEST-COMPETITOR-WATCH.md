@@ -1,4 +1,4 @@
-# Competitor / topic watch — 2026-07-09
+# Competitor / topic watch — 2026-11-02
 
 > Auto-generated from `competitors-watch.json`. Run web_search / X search per keyword, then update notes paths.
 

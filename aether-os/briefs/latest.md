@@ -74,7 +74,7 @@ Priority: **safety/regulatory → hardware → public progress → nice-to-have*
 - [x] AETHER OS + GitHub resource index refreshed
 - [x] Sensor-suite baseline v0 + power v1 + CubeSat relay (`/#relay`)
 - [x] Gate 3 mock telemetry `/api/telemetry/mock`
-- [ ] Human / agent: open claimable issues for Gate 0 RFQ, He-float BOM, baseline review
+- [x] Human / agent: open claimable issues for Gate 0 RFQ, He-float BOM, baseline review (#45 #46 #47)
 - [ ] Coupons still not started in hardware
 
 ---

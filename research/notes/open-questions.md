@@ -8,11 +8,11 @@ Tracked also in `docs/conops-v0.9.md` §8 and `docs/requirements-baseline-v0.9.m
 
 - [ ] Final heatshield mass and geometry trade
 - [ ] Inflation gas budget vs. acid-protection mass
-- [ ] CubeSat relay vs. carrier-provided comms vs DTE descope
-- [ ] Power budget at float (solar vs duty cycle) with numbers in mass-budget or new power.json
+- [x] CubeSat relay vs. carrier-provided comms vs DTE descope — **baseline: 3U store-and-forward** (`docs/comms-link-v0.md`). Carrier/DTE remains a descope, not closed.
+- [x] Power budget at float (solar vs duty cycle) with numbers in mass-budget or new power.json — **v1:** ~8 W day / 3.6 W night, 28 W peak patch, 400 Wh battery. Thin dayside margin.
 - [ ] Parachute vs aero-only decelerator architecture
 - [ ] Entry sequence timing table from thermal/trajectory analysis
-- [ ] Daily science downlink volume (Mb/day) after link study
+- [x] Daily science downlink volume (Mb/day) after link study — **v0 estimate:** ~0.3 / 1.8 / 9.6 MB/day far/typical/close (`comms-link.json`). Not a closed budget.
 
 ## Program
 

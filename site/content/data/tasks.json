@@ -362,7 +362,7 @@
   {
     "id": "sensor-suite-baseline",
     "title": "Baseline sensor suite with mass/power/data rates (imagery, MS, met, bio)",
-    "status": "planned",
+    "status": "done",
     "priority": "P0",
     "area": "science",
     "quarter": "2026-Q4"
@@ -394,7 +394,7 @@
   {
     "id": "power-budget-v1",
     "title": "Power budget v1: solar at float, battery, duty cycles (v0 data: power-budget.json)",
-    "status": "in_progress",
+    "status": "done",
     "priority": "P0",
     "area": "avionics",
     "quarter": "2026-Q4"
@@ -402,7 +402,7 @@
   {
     "id": "comms-arch-review",
     "title": "Comms architecture review: direct-to-Earth vs 3U relay vs hybrid",
-    "status": "planned",
+    "status": "in_progress",
     "priority": "P0",
     "area": "comms",
     "quarter": "2026-Q4"
@@ -418,7 +418,7 @@
   {
     "id": "fs-software-skeleton",
     "title": "Flight software skeleton: modes, fault protection, telemetry schema",
-    "status": "planned",
+    "status": "in_progress",
     "priority": "P1",
     "area": "software",
     "quarter": "2026-Q4"
@@ -522,7 +522,7 @@
   {
     "id": "cubesat-relay-baseline",
     "title": "Baseline CubeSat relay (buy vs partner vs descoped direct link)",
-    "status": "planned",
+    "status": "in_progress",
     "priority": "P0",
     "area": "comms",
     "quarter": "2029-Q1"

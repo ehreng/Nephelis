@@ -1,0 +1,108 @@
+{
+  "updated_at": "2026-11-16T00:00:00.000Z",
+  "version": "0.1",
+  "status": "architecture estimate — not a closed link budget",
+  "notes": "Store-and-forward. Probe never talks DTE as baseline. 3U CubeSat is a separate Venus orbiter (never on the sphere). Rates are MarCO/Iris-class order-of-magnitude, scaled by Venus–Earth range. Not NASA affiliation. Conjunction blackout still applies.",
+  "architecture": {
+    "baseline": "UHF proximity (probe → 3U) then X-band DTE (3U → Earth)",
+    "descope": "Carrier-provided relay or hybrid DTE if a partner flies a larger radio",
+    "cubesat": {
+      "form": "3U",
+      "mass_kg_min": 4,
+      "mass_kg_max": 6,
+      "radio_class": "Iris / MarCO X-band (~4 W RF) + UHF proximity",
+      "orbit": "Venus orbiter, store-and-forward",
+      "on_sphere": false
+    }
+  },
+  "probe_to_relay": {
+    "band": "UHF",
+    "rate_kbps_typ": 8,
+    "rate_kbps_range": [4, 16],
+    "contacts_per_day_typ": 3,
+    "contact_min_typ": 8,
+    "heritage": "VEGA balloon-to-orbiter UHF; modern packet radio. Atmosphere at 55 km is radio-transparent at UHF."
+  },
+  "relay_to_earth": {
+    "band": "X-band",
+    "heritage": "MarCO Iris to DSN: ~1 kbps cruise typical, 8 kbps at Mars to a 70 m, 16 kbps when geometry allowed (DESCANSO 18).",
+    "ground": "34 m class (DSN or commercial equivalent). Pass time is a scheduling estimate, not a reservation.",
+    "rate_kbps_far": 2,
+    "rate_kbps_typical": 8,
+    "rate_kbps_close": 32,
+    "pass_min_far": 20,
+    "pass_min_typical": 30,
+    "pass_min_close": 40,
+    "range_au": {
+      "close": 0.3,
+      "typical": 1.0,
+      "far": 1.7
+    },
+    "conjunction_note": "Superior conjunction: days to weeks of little or no X-band. Probe stores; CubeSat stores."
+  },
+  "daily_return_mb": {
+    "far": 0.3,
+    "typical": 1.8,
+    "close": 9.6,
+    "notes": "MB/day ≈ rate_kbps × pass_min × 60 / 8 / 1000. Earth downlink is the bottleneck, not UHF to the orbiter."
+  },
+  "queue": [
+    "health / C&DH",
+    "met T/P/wind",
+    "AFN + TLS + MS science",
+    "1080p stills",
+    "4K stills",
+    "short video clips"
+  ],
+  "products": [
+    {
+      "id": "health",
+      "name": "Health + C&DH (day)",
+      "size_mb": 0.05,
+      "priority": 0,
+      "notes": "Always first."
+    },
+    {
+      "id": "met_day",
+      "name": "Met time-series (day)",
+      "size_mb": 0.15,
+      "priority": 1,
+      "notes": "Fits in minutes even far from Earth."
+    },
+    {
+      "id": "chem_day",
+      "name": "AFN + TLS + MS science (day)",
+      "size_mb": 1.2,
+      "priority": 2,
+      "notes": "Typical day of event-driven chemistry. Same-day at typical range."
+    },
+    {
+      "id": "still_1080",
+      "name": "One 1080p still (JPEG)",
+      "size_mb": 0.8,
+      "priority": 3,
+      "notes": "Sponsor / envelope / deck. Default public image product."
+    },
+    {
+      "id": "still_4k",
+      "name": "One 4K still (JPEG)",
+      "size_mb": 4.0,
+      "priority": 4,
+      "notes": "Hours of DTE at far range. Queue behind science."
+    },
+    {
+      "id": "clip_1080_10s",
+      "name": "10 s 1080p clip (HEVC)",
+      "size_mb": 10.0,
+      "priority": 5,
+      "notes": "Rare. Typical range: hours of DTE."
+    },
+    {
+      "id": "clip_4k_10s",
+      "name": "10 s 4K clip (HEVC)",
+      "size_mb": 25.0,
+      "priority": 6,
+      "notes": "Closest-approach weeks only, or not at all."
+    }
+  ]
+}

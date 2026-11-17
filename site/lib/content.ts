@@ -9,6 +9,9 @@ import risks from '../content/data/risks.json';
 import partners from '../content/data/partners.json';
 import missionControl from '../content/data/mission-control.json';
 import progress from '../content/data/progress.json';
+import sensorSuite from '../content/data/sensor-suite.json';
+import commsLink from '../content/data/comms-link.json';
+import powerBudget from '../content/data/power-budget.json';
 
 export type TimelineItem = {
   year: string;
@@ -148,6 +151,18 @@ export function getProgress() {
     team: { public: string; authority_claims: string };
     repos: { name: string; url: string; role: string }[];
   };
+}
+
+export function getSensorSuite() {
+  return sensorSuite;
+}
+
+export function getCommsLink() {
+  return commsLink;
+}
+
+export function getPowerBudget() {
+  return powerBudget;
 }
 
 export function getUpdates() {

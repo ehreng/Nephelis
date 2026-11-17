@@ -1,0 +1,108 @@
+{
+  "updated_at": "2026-11-16T00:00:00.000Z",
+  "version": "0.1",
+  "status": "baseline-v0 — architecture estimates, not selected flight hardware",
+  "notes": "Closes task sensor-suite-baseline at v0. Mass/power/data are class estimates from published VLF / DAVINCI / VEGA / compact-MS literature, derated for a ~50 kg flush bay. Not a vendor selection. Gondola structure, thermal, UHF, and harness sit on top of science mass.",
+  "gondola": {
+    "science_sum_kg": 7.6,
+    "structure_thermal_comms_kg_min": 24,
+    "structure_thermal_comms_kg_max": 32,
+    "contingency_kg_min": 8.4,
+    "contingency_kg_max": 15.4,
+    "total_kg_min": 40,
+    "total_kg_max": 55,
+    "notes": "Matches mass-budget.json gondola line. Science ~8 kg inside a ~50 kg bay — not a 1 kg pod."
+  },
+  "instruments": [
+    {
+      "id": "afn",
+      "name": "AFN-class autofluorescence nephelometer",
+      "class": "aerosol / organics",
+      "mass_g": 1800,
+      "power_w": 4.0,
+      "duty_float_day": 0.25,
+      "duty_float_night": 0.05,
+      "data_kb_day_est": 400,
+      "trl_guess": 6,
+      "heritage": "VLF / MIT AFN class (440 nm laser, scatter + fluorescence)",
+      "role": "Time-series particle size, shape, and organics at 50–55 km. Event flag for MS.",
+      "estimate": true
+    },
+    {
+      "id": "tls",
+      "name": "Compact TLS / MEMS gas",
+      "class": "gas composition",
+      "mass_g": 1200,
+      "power_w": 3.5,
+      "duty_float_day": 0.2,
+      "duty_float_night": 0,
+      "data_kb_day_est": 800,
+      "trl_guess": 5,
+      "heritage": "DAVINCI VTLS class; compact TDLAS / MEMS IR. Targets NH3, H2O, SO2; PH3/O2 as mass allows.",
+      "role": "Same cloud slab through day, night, and events — not a one-hour vertical profile.",
+      "estimate": true
+    },
+    {
+      "id": "ms",
+      "name": "Aerosol / organics MS (LDMS-class)",
+      "class": "mass spectrometry",
+      "mass_g": 3500,
+      "power_w": 8.0,
+      "duty_float_day": 0.08,
+      "duty_float_night": 0,
+      "data_kb_day_est": 600,
+      "trl_guess": 4,
+      "heritage": "Morning Star ORIGIN / VLF balloon follow-on class. Laser desorption of droplet residue.",
+      "role": "Event-triggered when AFN flags fluorescence. Repeated sampling, not one plunge.",
+      "estimate": true
+    },
+    {
+      "id": "met",
+      "name": "Meteorology T / P / wind",
+      "class": "met",
+      "mass_g": 400,
+      "power_w": 0.8,
+      "duty_float_day": 0.5,
+      "duty_float_night": 0.3,
+      "data_kb_day_est": 150,
+      "trl_guess": 7,
+      "heritage": "VEGA gondola; DAVINCI VASI class.",
+      "role": "Continuous environment. Highest-priority downlink after health.",
+      "estimate": true
+    },
+    {
+      "id": "cam_env",
+      "name": "Envelope 4K camera (upward)",
+      "class": "imagery",
+      "mass_g": 350,
+      "power_w": 2.5,
+      "duty_float_day": 0.04,
+      "duty_float_night": 0,
+      "data_kb_day_est": 8000,
+      "trl_guess": 6,
+      "heritage": "COTS CMOS + sapphire or protected fluoropolymer window. Two-camera visual lock.",
+      "role": "Fixed bay camera looking up the film (sponsor + gore). Stills first; clips are a luxury.",
+      "estimate": true
+    },
+    {
+      "id": "cam_deck",
+      "name": "Deck 4K camera (outward)",
+      "class": "imagery",
+      "mass_g": 350,
+      "power_w": 2.5,
+      "duty_float_day": 0.04,
+      "duty_float_night": 0,
+      "data_kb_day_est": 8000,
+      "trl_guess": 6,
+      "heritage": "Same class as cam_env. Not VenDI — we do not image the surface.",
+      "role": "Cloud-deck stills. Video only in closest-approach weeks if the link allows.",
+      "estimate": true
+    }
+  ],
+  "derived": {
+    "science_mass_g": 7600,
+    "science_avg_w_float_day": 3.04,
+    "science_data_kb_day_no_images": 1950,
+    "notes": "science_avg_w = sum(power_w * duty_float_day). Image data is duty-cycled and queued behind science; see comms-link.json."
+  }
+}

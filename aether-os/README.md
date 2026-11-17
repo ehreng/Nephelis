@@ -36,8 +36,13 @@ Produces:
 | Resource | Path |
 |----------|------|
 | Live probe / bay | https://www.nephelisindustries.com/#bay |
+| CubeSat relay | https://www.nephelisindustries.com/#relay |
 | Status | https://www.nephelisindustries.com/status |
 | Visuals | https://www.nephelisindustries.com/visuals |
+| Sensor suite | [`docs/sensor-suite-baseline.md`](../docs/sensor-suite-baseline.md) |
+| Power v1 | [`docs/power-budget-v1.md`](../docs/power-budget-v1.md) |
+| Comms / CubeSat | [`docs/comms-link-v0.md`](../docs/comms-link-v0.md) |
+| Gate 3 packets | [`docs/gate3-telemetry-schema.md`](../docs/gate3-telemetry-schema.md) |
 | Practical brief | [`docs/practical-requirements-brief.md`](../docs/practical-requirements-brief.md) |
 | Visual bible | [`docs/visual-bible-cloudseeker.md`](../docs/visual-bible-cloudseeker.md) |
 | Ground tests | [`docs/ground-test-sequence.md`](../docs/ground-test-sequence.md) |

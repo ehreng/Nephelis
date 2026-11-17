@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { getProgress, getTelemetry, getMissionControl } from '@/lib/content';
+import MockTelemetry from '@/components/MockTelemetry';
 
 export const metadata: Metadata = {
   title: 'Status',
@@ -41,6 +42,24 @@ export default function StatusPage() {
             Next engineering milestone
           </h2>
           <p className="mt-3 text-white leading-relaxed">{progress.next_engineering_milestone}</p>
+          <p className="mt-3 text-xs text-white/45">
+            Live numbers:{' '}
+            <Link href="/#bay" className="text-venus hover:underline">
+              /#bay
+            </Link>{' '}
+            ·{' '}
+            <Link href="/#relay" className="text-venus hover:underline">
+              /#relay
+            </Link>{' '}
+            (CubeSat path, MB/day, download times).
+          </p>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="font-mono text-xs uppercase tracking-widest text-tech mb-4">
+            Gate 3 mock telemetry
+          </h2>
+          <MockTelemetry />
         </section>
 
         <section className="mb-10 grid gap-6 md:grid-cols-2">

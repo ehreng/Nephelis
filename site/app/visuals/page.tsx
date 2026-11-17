@@ -11,6 +11,7 @@ const visuals = [
   "n4-cool-portrait.jpg",
   "n4-cool-bay.jpg",
   "n4-cool-bay-ports.jpg",
+  "cubesat-relay.jpg",
   "venus-orb.jpg",
   "venus-planet.jpg",
   "vision-meadow.jpg",

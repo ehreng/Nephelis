@@ -61,7 +61,7 @@ Sponsor logos remain on the translucent upper envelope in light gray/white techn
 | Entry | Blunt heatshield + decelerator for ~10.7 km/s | Concept only. Task `heatshield-trade`. |
 | Inflation & float | Reliable sequence + super-pressure control | Not detailed. Task `inflation-system-concept`. |
 | Power | Positive energy balance including night-side | Solar architecture TBD. `docs/power-budget-v0.md`. |
-| Communications | Link budget closes via CubeSat relay | Architecture sketched. Relay is a **separate orbiter**, never on the sphere. |
+| Communications | Link budget closes via CubeSat relay | v0 estimate in `docs/comms-link-v0.md`. Typical ~1.8 MB/day. Relay is a **separate orbiter**, never on the sphere. |
 | Mass | Full budget with ≥30% margins early | High-level only. `site/content/data/mass-budget.json`. |
 | Reliability | FMEA for envelope, inflation, sensors, power | Not public. |
 | Testing | Acid chamber → subscale inflation → sensor demo | Sequence: `docs/ground-test-sequence.md`. Not started in hardware. |

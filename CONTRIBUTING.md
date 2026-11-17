@@ -34,7 +34,7 @@ Site form: [nephelisindustries.com/#contribute](https://www.nephelisindustries.c
 ### 2. Visuals & design (L1–L2)
 - Prompt source of truth: [`docs/visual-bible-cloudseeker.md`](./docs/visual-bible-cloudseeker.md)
 - Practical floor: [`docs/practical-requirements-brief.md`](./docs/practical-requirements-brief.md)
-- Public assets: `site/public/assets/visuals/` (live gallery `/visuals`, probe section `/#bay`)
+- Public assets: `site/public/assets/visuals/` (live gallery `/visuals`, probe `/#bay`, relay `/#relay`)
 - Internal review lab `/preview/visuals` is noindex — do not link it from the public nav
 - Identity lock: one sphere, flush black bay, cyan ring `#00F0FF`, two cameras. No hanging gondola. No selfie stick. CubeSat is a separate orbiter.
 

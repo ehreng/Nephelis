@@ -137,11 +137,41 @@ export default function MissionPage() {
           <li>
             <a
               className="text-venus hover:underline"
-              href="https://github.com/ehreng/Nephelis/blob/main/docs/power-budget-v0.md"
+              href="https://github.com/ehreng/Nephelis/blob/main/docs/power-budget-v1.md"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Power budget v0
+              Power budget v1
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-venus hover:underline"
+              href="https://github.com/ehreng/Nephelis/blob/main/docs/sensor-suite-baseline.md"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Sensor suite baseline v0
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-venus hover:underline"
+              href="https://github.com/ehreng/Nephelis/blob/main/docs/comms-link-v0.md"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Comms / CubeSat relay v0
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-venus hover:underline"
+              href="https://github.com/ehreng/Nephelis/blob/main/docs/gate3-telemetry-schema.md"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Gate 3 telemetry schema
             </a>
           </li>
           <li>

@@ -44,11 +44,11 @@ Priority: **safety/regulatory → hardware → public progress → nice-to-have*
 - **Acceptance:** film RFQ or lab path named; risks.json note if status changes
 - **Claim:** `claiming` on a matching issue
 
-### 2. [L2][P0] Sensor-suite baseline
+### 2. [L2][P0] Sensor-suite baseline — **closed v0**
 
-- **Source:** public bay suite is conceptual (AFN-class, TLS, aerosol MS, met). Close mass/power/data rates.
+- **Source:** `site/content/data/sensor-suite.json` · `docs/sensor-suite-baseline.md`
 - **Acceptance:** table in docs or `site/content/data/` — instrument, grams, watts, rate, TRL guess
-- **Claim:** `claiming`
+- **Claim:** done this loop. Independent review is a claimable issue.
 
 ### 3. [L2][P1] Helium ground-float path (Gate 2)
 
@@ -72,7 +72,9 @@ Priority: **safety/regulatory → hardware → public progress → nice-to-have*
 - [x] Public `/#bay` campaign + bay suite + other-missions table
 - [x] n4-cool-portrait on the live mission column
 - [x] AETHER OS + GitHub resource index refreshed
-- [ ] Human / agent: open or label claimable issues for 1–3 above
+- [x] Sensor-suite baseline v0 + power v1 + CubeSat relay (`/#relay`)
+- [x] Gate 3 mock telemetry `/api/telemetry/mock`
+- [ ] Human / agent: open claimable issues for Gate 0 RFQ, He-float BOM, baseline review
 - [ ] Coupons still not started in hardware
 
 ---

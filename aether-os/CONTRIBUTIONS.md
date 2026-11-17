@@ -5,6 +5,7 @@ Evidence = PR, commit SHA, URL, or file path. Optional content hash for long-ter
 
 | Date (UTC) | Contributor | Level | Task / Issue | Evidence | Verified by | Notes |
 |------------|-------------|-------|--------------|----------|-------------|-------|
+| 2026-11-16 | @ehreng / Grok Build | L2 | Sensor baseline v0, power v1, CubeSat relay, Gate 3 mock | `sensor-suite.json`, `comms-link.json`, `/#relay`, `/api/telemetry/mock` | agent | Estimates; CubeSat never on sphere |
 | 2026-11-16 | @ehreng / Grok Build | L2 | Live probe identity + AETHER OS / GitHub resource index | `site/components/BayCarries.tsx`, `/aether-os`, `docs/practical-requirements-brief.md` | agent | Pre-hardware; no NASA claim |
 | 2026-08-11 | @ehreng / Grok Build | L2 | AETHER OS v1.0 bootstrap | commit (this PR) | agent | Architecture + loops + templates |
 

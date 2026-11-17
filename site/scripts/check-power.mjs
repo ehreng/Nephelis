@@ -41,11 +41,26 @@ for (const mode of budget.modes || []) {
   }
 }
 
+const major = String(budget.version || '0').split('.')[0];
 if (budget.generation?.float_solar_w_peak_est == null) {
-  console.log('\n  generation.float_solar_w_peak_est: null (TBD — expected for v0)');
+  if (Number(major) >= 1) {
+    console.error('\nFAIL generation.float_solar_w_peak_est is null (required for v1+)');
+    failed += 1;
+  } else {
+    console.log('\n  generation.float_solar_w_peak_est: null (TBD — expected for v0)');
+  }
+} else {
+  console.log(`\n  generation.float_solar_w_peak_est: ${budget.generation.float_solar_w_peak_est} W`);
 }
 if (budget.storage?.battery_wh_est == null) {
-  console.log('  storage.battery_wh_est: null (TBD — expected for v0)');
+  if (Number(major) >= 1) {
+    console.error('FAIL storage.battery_wh_est is null (required for v1+)');
+    failed += 1;
+  } else {
+    console.log('  storage.battery_wh_est: null (TBD — expected for v0)');
+  }
+} else {
+  console.log(`  storage.battery_wh_est: ${budget.storage.battery_wh_est} Wh`);
 }
 
 if (failed > 0) {

@@ -66,10 +66,10 @@ export default function AetherOsPage() {
               Latest Mission Brief
             </a>
             <Link
-              href="/#bay"
+              href="/#relay"
               className="border border-white/20 px-4 py-2 text-white transition hover:border-white/50"
             >
-              Probe / bay
+              Probe / relay
             </Link>
             <Link
               href="/#contribute"
@@ -147,9 +147,9 @@ export default function AetherOsPage() {
             {[
               {
                 k: 'Live site',
-                t: 'Probe, bay suite, campaign stills',
-                d: 'Cloudseeker identity, payload vs VEGA / VLF / DAVINCI, long-horizon vision labeled as such.',
-                href: '/#bay',
+                t: 'Probe, bay suite, CubeSat relay',
+                d: 'Identity, payload vs VEGA / VLF / DAVINCI, 3U path, MB/day and download times.',
+                href: '/#relay',
                 ext: false,
               },
               {
@@ -176,7 +176,7 @@ export default function AetherOsPage() {
               {
                 k: 'Engineering',
                 t: 'CONOPS + practical brief',
-                d: 'Mass budget, visual bible, ground-test sequence (coupons → He float → telemetry).',
+                d: 'Sensor baseline, power v1, CubeSat link, visual bible, ground-test sequence.',
                 href: 'https://github.com/ehreng/Nephelis/blob/main/docs/practical-requirements-brief.md',
                 ext: true,
               },

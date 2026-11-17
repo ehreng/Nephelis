@@ -37,6 +37,14 @@
     {
       "item": "Practical brief, visual bible, ground-test sequence",
       "evidence": "docs/practical-requirements-brief.md, docs/visual-bible-cloudseeker.md, docs/ground-test-sequence.md"
+    },
+    {
+      "item": "Sensor suite baseline v0 + power v1 + CubeSat relay estimate",
+      "evidence": "site/content/data/sensor-suite.json, power-budget.json, comms-link.json · /#relay"
+    },
+    {
+      "item": "Gate 3 mock telemetry stream",
+      "evidence": "/api/telemetry/mock · docs/gate3-telemetry-schema.md"
     }
   ],
   "not_yet": [

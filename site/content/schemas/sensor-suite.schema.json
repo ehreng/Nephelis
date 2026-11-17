@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SensorSuite",
+  "type": "object",
+  "required": ["updated_at", "version", "status", "gondola", "instruments"],
+  "properties": {
+    "updated_at": { "type": "string" },
+    "version": { "type": "string" },
+    "status": { "type": "string" },
+    "notes": { "type": "string" },
+    "gondola": {
+      "type": "object",
+      "required": ["science_sum_kg", "total_kg_min", "total_kg_max"],
+      "properties": {
+        "science_sum_kg": { "type": "number" },
+        "structure_thermal_comms_kg_min": { "type": "number" },
+        "structure_thermal_comms_kg_max": { "type": "number" },
+        "contingency_kg_min": { "type": "number" },
+        "contingency_kg_max": { "type": "number" },
+        "total_kg_min": { "type": "number" },
+        "total_kg_max": { "type": "number" },
+        "notes": { "type": "string" }
+      }
+    },
+    "instruments": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "mass_g",
+          "power_w",
+          "duty_float_day",
+          "data_kb_day_est",
+          "trl_guess"
+        ],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "class": { "type": "string" },
+          "mass_g": { "type": "number", "minimum": 0 },
+          "power_w": { "type": "number", "minimum": 0 },
+          "duty_float_day": { "type": "number", "minimum": 0, "maximum": 1 },
+          "duty_float_night": { "type": "number", "minimum": 0, "maximum": 1 },
+          "data_kb_day_est": { "type": "number", "minimum": 0 },
+          "trl_guess": { "type": "integer", "minimum": 1, "maximum": 9 },
+          "heritage": { "type": "string" },
+          "role": { "type": "string" },
+          "estimate": { "type": "boolean" }
+        }
+      }
+    },
+    "derived": { "type": "object" }
+  }
+}

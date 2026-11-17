@@ -7,6 +7,7 @@ import SystemsStatus from "@/components/SystemsStatus";
 import VolunteerForm from "@/components/VolunteerForm";
 import { getTimeline, getHeritage } from "@/lib/content";
 import BayCarries from "@/components/BayCarries";
+import RelayComms from "@/components/RelayComms";
 
 export default function NephelisHome() {
   const timeline = getTimeline();
@@ -167,6 +168,8 @@ export default function NephelisHome() {
 
       <BayCarries />
 
+      <RelayComms />
+
       {/* 02 // MISSION CONTROL - full interactive with new React component */}
       <section id="trajectory" className="py-24 bg-void border-b border-white/10 relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
@@ -252,7 +255,7 @@ export default function NephelisHome() {
                 </div>
                 <div className="glass-panel p-5">
                   <div className="text-white font-medium mb-1">Entry &amp; Deployment</div>
-                  <div className="text-gray-400">Direct entry at ~10.7 km/s. Flat base + parachute decelerates to balloon deployment at ~55 km. 3U CubeSat relay (or Starship-provided comms) for high-bandwidth data. AI-optimized autonomous navigation handles entry, inflation, and float.</div>
+                  <div className="text-gray-400">Direct entry at ~10.7 km/s. Flat base + parachute decelerates to balloon deployment at ~55 km. 3U CubeSat store-and-forward (typical ~2 MB/day to Earth) or carrier-provided comms as a descope. AI-optimized autonomous navigation is a study item, not flight software.</div>
                 </div>
               </div>
               <p className="mt-3 text-xs text-gray-500 font-mono">Power/Comms/Thermal: Solar on balloon top + efficient systems. Radiation-hardened avionics. Site comms/day estimator and atmosphere model apply directly.</p>
@@ -467,11 +470,11 @@ export default function NephelisHome() {
             </div>
             <div className="glass-panel p-6 border-l-2 border-l-venus">
               <h4 className="font-mono text-venus mb-2">Integrated Sensor Suite</h4>
-              <p className="text-gray-400">Compact 1kg pod with 4K imagery, mass spectrometer, nephelometer, and bio-sensors (targeting ammonia/phosphine) to detect resources and potential life signs.</p>
+              <p className="text-gray-400">~8 kg science in a ~50 kg flush bay: AFN-class nephelometer, compact TLS, aerosol MS, met, two 4K cameras. Baseline v0 in git — not a 1 kg pod, not selected hardware.</p>
             </div>
             <div className="glass-panel p-6 border-l-2 border-l-venus">
               <h4 className="font-mono text-venus mb-2">3U CubeSat Relay</h4>
-              <p className="text-gray-400">Venus orbit relay for high-bandwidth data transmission—critical for future colony communications.</p>
+              <p className="text-gray-400">Separate 3U Venus orbiter (never on the sphere). UHF up, X-band to Earth. Typical ~2 MB/day — time-series first, 4K stills queued, video rare. See /#relay.</p>
             </div>
             <div className="glass-panel p-6 border-l-2 border-l-venus">
               <h4 className="font-mono text-venus mb-2">AI-Optimized Navigation</h4>

@@ -4,7 +4,7 @@
 
 This repository is the **public site + mission ops toolchain** for Nephelis Industries — built so humans and AI agents can advance the mission through structured data, automation loops, and reviewable PRs.
 
-**Live:** [www.nephelisindustries.com](https://www.nephelisindustries.com) · **Probe / bay:** [/\#bay](https://www.nephelisindustries.com/#bay) · **AETHER OS:** [/aether-os](https://www.nephelisindustries.com/aether-os) · **Status:** [/status](https://www.nephelisindustries.com/status)
+**Live:** [www.nephelisindustries.com](https://www.nephelisindustries.com) · **Probe / bay:** [/\#bay](https://www.nephelisindustries.com/#bay) · **Relay:** [/\#relay](https://www.nephelisindustries.com/#relay) · **AETHER OS:** [/aether-os](https://www.nephelisindustries.com/aether-os) · **Status:** [/status](https://www.nephelisindustries.com/status)
 
 ## AETHER OS
 
@@ -77,6 +77,9 @@ Public numbers live in `site/content/data/`:
 | File | Powers |
 |------|--------|
 | `specs.json` | Probe concept |
+| `sensor-suite.json` | Instrument mass / power / data / TRL |
+| `comms-link.json` | CubeSat relay + download times |
+| `power-budget.json` | v1 loads, solar, battery |
 | `mass-budget.json` | 400 kg-class stack |
 | `timeline.json` / `tasks.json` | `/roadmap` |
 | `risks.json` | Risk register |
@@ -94,6 +97,7 @@ Knowledge base: [`research/`](./research/) (see `research/INDEX.md` after `evolv
 |------|------|
 | `/` | Mission narrative + probe/bay + funding |
 | `/#bay` | Cloudseeker identity, science suite, payload vs other missions |
+| `/#relay` | 3U CubeSat path, MB/day, time-to-download |
 | `/visuals` | Concept art gallery |
 | `/aether-os` | OS loops, contribution tiers, resource index |
 | `/status` | Built vs not yet |
@@ -107,6 +111,8 @@ Knowledge base: [`research/`](./research/) (see `research/INDEX.md` after `evolv
 - [x] Next.js site on Vercel + custom domain  
 - [x] Cloudseeker visual lock on the live homepage (flyingprobe sphere, cool deck, bay suite)  
 - [x] Public payload comparison vs VEGA / VLF / DAVINCI  
+- [x] Sensor suite baseline v0 + power v1 + CubeSat relay estimate (`/#relay`)  
+- [x] Gate 3 mock telemetry (`/api/telemetry/mock`)  
 - [x] Stripe test checkout + allocation (live mode **off**)  
 - [x] Resend leads / auto-reply / volunteer form  
 - [x] CI + content schemas  

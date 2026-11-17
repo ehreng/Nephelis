@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-09T18:00:00.000Z",
-  "version": "0.0",
-  "notes": "Order-of-magnitude estimates only — NOT flight. Load watts are placeholders for architecture trades. Generation and storage left null until solar/battery sizing.",
+  "updated_at": "2026-11-16T00:00:00.000Z",
+  "version": "1.0",
+  "notes": "v1 from sensor-suite-baseline. Estimates, not flight. Night at 55 km is ~50–60 h (superrotation), not 12 h — that sizes the battery. Polar patch must close ~12 W average dayside after cloud derate. Generation and storage are now filled; they remain architecture numbers.",
   "modes": [
     {
       "id": "cruise",
@@ -43,7 +43,7 @@
       "id": "float_day",
       "name": "Float — science day",
       "duration_days_nom": 30,
-      "notes": "Primary mission mode; solar available",
+      "notes": "Primary mission mode; solar available. Loads aligned to sensor-suite.json.",
       "loads": [
         {
           "id": "avionics_active",
@@ -53,44 +53,65 @@
           "estimate": true
         },
         {
-          "id": "camera",
-          "name": "Imagery (burst)",
+          "id": "afn",
+          "name": "AFN-class nephelometer",
           "power_w": 4.0,
-          "duty": 0.1,
+          "duty": 0.25,
           "estimate": true
         },
         {
-          "id": "met_suite",
-          "name": "Meteorology suite",
-          "power_w": 1.0,
-          "duty": 0.5,
-          "estimate": true
-        },
-        {
-          "id": "mass_spec_or_chem",
-          "name": "Mass-spec / chem channel",
-          "power_w": 8.0,
-          "duty": 0.15,
-          "estimate": true
-        },
-        {
-          "id": "nephelometer",
-          "name": "Nephelometer / aerosol",
-          "power_w": 1.5,
+          "id": "tls",
+          "name": "Compact TLS / MEMS gas",
+          "power_w": 3.5,
           "duty": 0.2,
           "estimate": true
         },
         {
-          "id": "comms_relay",
-          "name": "Uplink to relay / DTE",
-          "power_w": 10.0,
+          "id": "ms",
+          "name": "Aerosol / organics MS",
+          "power_w": 8.0,
           "duty": 0.08,
+          "estimate": true
+        },
+        {
+          "id": "met",
+          "name": "Meteorology T / P / wind",
+          "power_w": 0.8,
+          "duty": 0.5,
+          "estimate": true
+        },
+        {
+          "id": "cam_env",
+          "name": "Envelope 4K camera",
+          "power_w": 2.5,
+          "duty": 0.04,
+          "estimate": true
+        },
+        {
+          "id": "cam_deck",
+          "name": "Deck 4K camera",
+          "power_w": 2.5,
+          "duty": 0.04,
+          "estimate": true
+        },
+        {
+          "id": "uhf_relay",
+          "name": "UHF to CubeSat (contact windows)",
+          "power_w": 8.0,
+          "duty": 0.1,
+          "estimate": true
+        },
+        {
+          "id": "thermal_day",
+          "name": "Thermal / radiator fans",
+          "power_w": 2.0,
+          "duty": 0.15,
           "estimate": true
         },
         {
           "id": "margin_day",
           "name": "Unallocated margin",
-          "power_w": 2.0,
+          "power_w": 1.5,
           "duty": 1.0,
           "estimate": true
         }
@@ -100,7 +121,7 @@
       "id": "float_night",
       "name": "Float — night / low sun",
       "duration_days_nom": 30,
-      "notes": "Science shed; survival + met low-rate",
+      "notes": "Science shed; ~50–60 h dark per circumnavigation. Survival + low-rate met.",
       "loads": [
         {
           "id": "avionics_idle_night",
@@ -112,14 +133,21 @@
         {
           "id": "met_low",
           "name": "Met low-rate",
-          "power_w": 0.5,
+          "power_w": 0.8,
           "duty": 0.3,
           "estimate": true
         },
         {
-          "id": "comms_rare",
-          "name": "Rare comms",
-          "power_w": 10.0,
+          "id": "afn_keep",
+          "name": "AFN keep-alive",
+          "power_w": 4.0,
+          "duty": 0.05,
+          "estimate": true
+        },
+        {
+          "id": "uhf_rare",
+          "name": "Rare UHF if orbiter in view",
+          "power_w": 8.0,
           "duty": 0.02,
           "estimate": true
         },
@@ -127,7 +155,14 @@
           "id": "heater_night",
           "name": "Thermal if needed",
           "power_w": 4.0,
-          "duty": 0.2,
+          "duty": 0.25,
+          "estimate": true
+        },
+        {
+          "id": "margin_night",
+          "name": "Unallocated margin",
+          "power_w": 0.5,
+          "duty": 1.0,
           "estimate": true
         }
       ]
@@ -163,20 +198,20 @@
     }
   ],
   "generation": {
-    "float_solar_w_peak_est": null,
-    "cruise_solar_w_peak_est": null,
-    "notes": "TBD: array area, cell efficiency, Venus solar geometry at float altitude, dust/acid obscuration factor"
+    "float_solar_w_peak_est": 28,
+    "cruise_solar_w_peak_est": 12,
+    "notes": "Float: ~0.25 m² polar patch, IMM-class cells, cloud-deck derate to ~200 W/m² electrical (JPL 51.5 km IMM test reported 34 mW/cm² as an upper literature point; we do not use that as the design value). Dayside cosine ~0.5 → ~14 W average vs ~12 W needed (8 W load + night recharge). Thin margin. Cruise: body-mounted on the entry stack."
   },
   "storage": {
-    "battery_wh_est": null,
-    "dod_fraction_est": 0.3,
-    "notes": "TBD: size from night energy + entry peak; chemistry COTS Li-ion vs mission environment"
+    "battery_wh_est": 400,
+    "dod_fraction_est": 0.5,
+    "notes": "Night ~55 h × 3.6 W ≈ 198 Wh usable. 400 Wh nameplate at 50% DoD with fade/temp margin. Li-ion ~2–3 kg. Chemistry still COTS vs environment trade."
   },
   "derived_avg_w": {
     "notes": "avg_w = sum(power_w * duty) per mode — keep in sync via pnpm check:power",
     "cruise": 2.51,
-    "float_day": 7.7,
-    "float_night": 2.65,
+    "float_day": 8.04,
+    "float_night": 3.6,
     "entry_sequence": 10.5
   }
 }

@@ -171,8 +171,8 @@ export default function BayCarries() {
               </div>
               <p className="mt-3 text-sm leading-relaxed text-white/55">
                 Same flyingprobe face: two cameras, cyan ring. Ports track what other cloud-layer
-                probes fly. Suite is conceptual until the sensor baseline is closed. Not flight
-                hardware.
+                probes fly. Sensor baseline v0 is in git (grams, watts, rates, TRL guess). Not
+                flight hardware.
               </p>
               <ol className="mt-5 space-y-3">
                 {science.map((s) => (

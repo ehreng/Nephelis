@@ -99,6 +99,7 @@ export default function RootLayout({
                 <div className="ml-10 flex items-baseline space-x-8 font-mono text-xs uppercase tracking-widest">
                   <a href="/#mission" className="hover:text-venus transition-colors">Mission</a>
                   <a href="/#bay" className="hover:text-venus transition-colors">Probe</a>
+                  <a href="/#relay" className="hover:text-venus transition-colors">Relay</a>
                   <a href="/#trajectory" className="hover:text-venus transition-colors">Trajectory</a>
                   <a href="/#thesis" className="hover:text-venus transition-colors">Thesis</a>
                   <a href="/#heritage" className="hover:text-venus transition-colors">History</a>

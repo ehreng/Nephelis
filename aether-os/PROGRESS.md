@@ -4,6 +4,14 @@ Append-only mission progress. Newest first.
 
 ---
 
+## 2026-11-16 — Sensor baseline, power v1, CubeSat relay
+
+- Sensor suite v0: `site/content/data/sensor-suite.json` (~8 kg science in a 40–55 kg bay).
+- Power v1: ~8 W day / 3.6 W night, 28 W peak polar patch, 400 Wh battery. Night is ~50–60 h.
+- CubeSat relay on `/#relay`: UHF → 3U → X-band. Typical ~1.8 MB/day. Download times for stills/video.
+- Gate 3 mock: `GET /api/telemetry/mock` (AETHER-G3/1). Simulated.
+- Still pre-hardware. Coupons not started. Stripe live remains off.
+
 ## 2026-11-16 — Public probe identity + resource index
 
 - Live homepage `#bay`: n4 cool campaign, portrait, bay suite, payload vs VEGA / VLF / DAVINCI.

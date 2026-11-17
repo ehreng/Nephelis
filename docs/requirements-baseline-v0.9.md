@@ -165,7 +165,7 @@ Source: `site/content/data/mass-budget.json`.
 | SCI-6 | Resource | Fit within gondola mass/power (MASS-5, PWR) | REQ |
 | SCI-7 | Calibration | Ground cal plan before flight | REQ |
 
-Instrument list in `specs.json` is conceptual until `sensor-suite-baseline` completes.
+Instrument list in `specs.json` matches `sensor-suite.json` baseline v0 (2026-11-16). Numbers are class estimates, not selected hardware.
 
 ---
 

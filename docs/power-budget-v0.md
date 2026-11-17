@@ -1,9 +1,11 @@
 # Power budget v0 (order-of-magnitude)
 
+**Superseded by:** [`docs/power-budget-v1.md`](./power-budget-v1.md) (2026-11-16). Kept as the v0 sketch.
+
 **Status:** Architecture estimates — **not flight**  
 **Date:** 2026-07-09  
-**Source of truth:** `site/content/data/power-budget.json`  
-**Task:** `power-budget-v1`  
+**Source of truth (current):** `site/content/data/power-budget.json` (now v1)  
+**Task:** `power-budget-v1` — closed at v1  
 **Requirements:** PWR-* in `docs/requirements-baseline-v0.9.md`
 
 ---

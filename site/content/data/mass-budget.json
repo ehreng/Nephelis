@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-09T00:00:00.000Z",
+  "updated_at": "2026-11-16T00:00:00.000Z",
   "wet_mass_kg": 400,
   "target_float_altitude_km": 55,
   "balloon_volume_m3": 150,
@@ -40,15 +40,22 @@
       "name": "Gondola + sensor suite",
       "mass_kg_min": 40,
       "mass_kg_max": 55,
-      "notes": "Imagery, mass spec, nephelometer, bio-sensors"
+      "notes": "Flush black bay. Science ~8 kg (sensor-suite.json); structure/thermal/UHF/harness fill the rest."
     },
     {
       "id": "avionics",
       "name": "Avionics, power, structure, comms",
       "mass_kg_min": 25,
       "mass_kg_max": 35,
-      "notes": "Includes CubeSat relay interface margin"
+      "notes": "C&DH, PDU, 400 Wh-class battery, polar-patch electronics. UHF on the bay."
+    },
+    {
+      "id": "cubesat_relay",
+      "name": "3U CubeSat relay (separate orbiter)",
+      "mass_kg_min": 4,
+      "mass_kg_max": 6,
+      "notes": "Not on the sphere. Not in the entry detailed sum. Separate rideshare/secondary. comms-link.json."
     }
   ],
-  "contingency": "Positive headroom vs 400 kg wet — acid protection, helium, redundancy"
+  "contingency": "Positive headroom vs 400 kg wet — acid protection, helium, redundancy. CubeSat is a second vehicle."
 }

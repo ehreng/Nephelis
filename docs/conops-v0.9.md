@@ -103,7 +103,7 @@ Numbers are design targets in `mass-budget.json` / `specs.json` — refine at PD
 | **Objective** | ≥30 days science + engineering telemetry |
 | **Orbit/motion** | Ride super-rotating winds; circumnavigation timescale ~**days** order (Venus zonal flow) |
 | **Science** | Imagery, met, aerosol/chem proxies, life-detection-class channels as equipped |
-| **Comms** | Store onboard → relay via CubeSat/carrier windows; daily target downlink volume **TBD** |
+| **Comms** | Store onboard → UHF to 3U CubeSat → X-band Earth. Typical **~1.8 MB/day** (`docs/comms-link-v0.md`). Conjunction stores. |
 | **Power** | Solar-primary; duty-cycle instruments to energy budget |
 | **Health** | Monitor pressure delta, leak rate, thermal, battery SOC |
 | **Contingencies** | Low power → science shed; leak → altitude/pressure management if any; comms loss → store until link |

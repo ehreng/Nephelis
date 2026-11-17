@@ -10,6 +10,8 @@
 
 - Public site and interactive trajectory planner (illustrative)
 - Cloudseeker visual lock on the homepage (`/#bay`): cool-deck stills, campaign plate, bay science suite, payload vs VEGA / VLF / DAVINCI
+- Sensor suite baseline v0, power budget v1, CubeSat relay path (`/#relay`) with MB/day and download-time estimates
+- Gate 3 mock telemetry (`/api/telemetry/mock`)
 - Draft CONOPS, requirements, practical brief, visual bible, ground-test sequence, materials protocol, risk list
 - Structured mission data in git (`site/content/data/`)
 - AETHER OS: briefs, L1–L3 contribution model, GitHub as SSOT, public resource index at `/aether-os`
@@ -19,7 +21,7 @@
 
 - Flight hardware, acid-chamber results, or envelope prototypes
 - Entry system / heatshield / inflation hardware
-- Selected flight solar, rad-hard avionics, or CubeSat
+- Selected flight solar, rad-hard avionics, or CubeSat hardware (relay architecture is estimated)
 - Submitted FAA/FCC applications
 - Named advisors listed with permission
 - Live crowdfund checkout (pending configuration)

@@ -34,10 +34,10 @@ export const metadata: Metadata = {
       "Venus cloud aerostat concept + open engineering. Pre-hardware; contributors welcome.",
     images: [
       {
-        url: "/assets/visuals/Venus Visions.png",
+        url: "/assets/visuals/cloudseeker-hero.jpg",
         width: 1200,
-        height: 630,
-        alt: "Project AETHER — Venus cloud visions",
+        height: 675,
+        alt: "Cloudseeker aerostat in the Venus cloud deck",
       },
     ],
   },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     site: "@NephelisCo",
     title: "Nephelis Industries | Project AETHER",
     description: "Venus cloud aerostat concept. Pre-hardware. Open GitHub collaboration.",
-    images: ["/assets/visuals/Venus Visions.png"],
+    images: ["/assets/visuals/cloudseeker-hero.jpg"],
   },
   icons: {
     icon: "/favicon.ico",
@@ -98,6 +98,7 @@ export default function RootLayout({
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-8 font-mono text-xs uppercase tracking-widest">
                   <a href="/#mission" className="hover:text-venus transition-colors">Mission</a>
+                  <a href="/#bay" className="hover:text-venus transition-colors">Probe</a>
                   <a href="/#trajectory" className="hover:text-venus transition-colors">Trajectory</a>
                   <a href="/#thesis" className="hover:text-venus transition-colors">Thesis</a>
                   <a href="/#heritage" className="hover:text-venus transition-colors">History</a>

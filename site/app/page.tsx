@@ -6,6 +6,7 @@ import SignupForm from "@/components/SignupForm";
 import SystemsStatus from "@/components/SystemsStatus";
 import VolunteerForm from "@/components/VolunteerForm";
 import { getTimeline, getHeritage } from "@/lib/content";
+import BayCarries from "@/components/BayCarries";
 
 export default function NephelisHome() {
   const timeline = getTimeline();
@@ -17,7 +18,7 @@ export default function NephelisHome() {
       <section className="relative min-h-screen flex items-center justify-center border-b border-white/10 overflow-hidden">
         <div className="absolute inset-0 z-0 overflow-hidden">
           <div className="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] md:w-[50vw] md:h-[50vw] opacity-60 mix-blend-screen pointer-events-none">
-            <img src="/assets/visuals/Venus Visions.png" alt="Venus" className="w-full h-full object-cover rounded-full shadow-[0_0_100px_rgba(255,69,0,0.3)]" />
+            <img src="/assets/visuals/venus-orb.jpg" alt="Venus cloud globe" className="w-full h-full object-cover rounded-full shadow-[0_0_100px_rgba(255,69,0,0.3)]" />
           </div>
           <div className="absolute top-[20%] right-[-10%] md:right-[5%] w-[60vw] md:w-[35vw] opacity-90 animate-float pointer-events-none z-10">
             <video 
@@ -146,12 +147,14 @@ export default function NephelisHome() {
               <span className="text-xs font-mono text-venus">Concept art — not flight hardware</span>
             </div>
             <div className="relative flex items-center justify-center bg-black/80 rounded overflow-hidden" style={{minHeight: '520px'}}>
-              <img src="/assets/visuals/NephelisIndustries.jpg" alt="Nephelis Industries" className="max-h-[520px] w-auto object-contain" />
+              <img src="/assets/visuals/cloudseeker-probe.jpg" alt="Cloudseeker aerostat at 55 km — concept art" className="max-h-[520px] w-auto object-contain" />
               <div className="absolute bottom-2 left-2 text-xs font-mono text-tech bg-black/50 px-2">PROBE @ 55km</div>
             </div>
           </div>
         </div>
       </section>
+
+      <BayCarries />
 
       {/* 02 // MISSION CONTROL - full interactive with new React component */}
       <section id="trajectory" className="py-24 bg-void border-b border-white/10 relative overflow-hidden">
@@ -549,17 +552,65 @@ export default function NephelisHome() {
           </div>
         </div>
 
-        {/* Separate box below for visions.png */}
         <div className="max-w-7xl mx-auto px-4 mt-6">
-          <div className="glass-panel border border-white/10 overflow-hidden">
+          <div className="glass-panel border border-white/10 overflow-hidden mb-6">
             <img
-              src="/assets/visuals/visions.png"
-              alt="Visions of future missions and life on Venus"
-              className="w-full h-auto object-contain bg-black"
+              src="/assets/visuals/cloudseeker-hero.jpg"
+              alt="Cloudseeker in the Venus cloud deck — concept art"
+              className="w-full h-auto object-cover bg-black"
             />
-            <div className="p-4 border-t border-white/10 bg-black/60">
+            <div className="p-4 border-t border-white/10 bg-black/60 flex items-center justify-between">
+              <div>
+                <div className="font-mono text-sm text-white">Cloudseeker on station</div>
+                <div className="text-xs text-gray-500">Flyingprobe identity · 50–55 km · concept art, not flight hardware</div>
+              </div>
+              <div className="text-xs font-mono text-tech">PROBE @ 55 km</div>
+            </div>
+          </div>
+
+          <div className="mb-3 flex items-end justify-between gap-4">
+            <div>
+              <div className="font-mono text-xs uppercase tracking-widest text-venus">Long-horizon vision</div>
               <div className="font-mono text-sm text-white">Future missions and life on Venus</div>
             </div>
+            <div className="text-xs font-mono text-gray-500">Not current hardware · not a 2027 claim</div>
+          </div>
+
+          <div className="glass-panel border border-white/10 overflow-hidden mb-4">
+            <img
+              src="/assets/visuals/vision-meadow.jpg"
+              alt="Inside a Venus cloud-park dome: cattle, a path, another city through the glass"
+              className="w-full aspect-[16/8] object-cover bg-black"
+            />
+            <div className="p-4 border-t border-white/10 bg-black/60">
+              <div className="font-mono text-sm text-white">In the park</div>
+              <div className="text-xs text-gray-500 mt-1">
+                Ground level under the dome. Cattle, a path, another city through the glass.
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-4">
+            {[
+              ['vision-bridge.jpg', 'Between cities', 'A glass walkway through the sulfuric ocean. One person, two habitats.', 'Glass pedestrian bridge connecting two Venus cloud habitats'],
+              ['vision-lookout.jpg', 'Looking at the tower', 'From a terrace, the stacked garden pods fill the sky.', 'Two people on a terrace looking at a Venus garden tower'],
+              ['vision-crops.jpg', 'Agriculture', 'A botanist in a glass farm. The window is the deck.', 'Botanist tending crops in a Venus cloud greenhouse'],
+              ['vision-works.jpg', 'The floor', 'ISRU in the weather. A technician and the cloud.', 'Technician at an ISRU plant floating in Venus clouds'],
+              ['vision-ops.jpg', 'On station', 'Same crew, inside. Clouds in the window. Long-horizon, not Cloudseeker.', 'Two crew in an aerostat ops cabin looking at Venus clouds'],
+              ['vision-under.jpg', 'From below', 'The belly of a park-island. Warm lights, sulfuric sea underneath.', 'Underside of a floating Venus park-island habitat'],
+            ].map(([file, title, note, alt]) => (
+              <div key={file} className="glass-panel border border-white/10 overflow-hidden">
+                <img
+                  src={`/assets/visuals/${file}`}
+                  alt={alt}
+                  className="w-full aspect-video object-cover bg-black"
+                />
+                <div className="p-3 border-t border-white/10 bg-black/60">
+                  <div className="font-mono text-sm text-white">{title}</div>
+                  <div className="text-xs text-gray-500 mt-1">{note}</div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

@@ -25,6 +25,7 @@ export default function MobileMenu() {
         <div className="md:hidden fixed top-16 left-0 right-0 z-50 bg-black/95 border-b border-white/10 backdrop-blur">
           <div className="px-4 py-4 space-y-1 font-mono text-sm uppercase">
             <a href="/#mission" onClick={close} className="block px-3 py-2 text-gray-300 hover:text-venus">Mission</a>
+            <a href="/#bay" onClick={close} className="block px-3 py-2 text-gray-300 hover:text-venus">Probe</a>
             <a href="/#trajectory" onClick={close} className="block px-3 py-2 text-gray-300 hover:text-venus">Trajectory</a>
             <a href="/#thesis" onClick={close} className="block px-3 py-2 text-gray-300 hover:text-venus">Thesis</a>
             <a href="/#heritage" onClick={close} className="block px-3 py-2 text-gray-300 hover:text-venus">History</a>

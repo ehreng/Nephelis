@@ -15,6 +15,9 @@ aether-os/
 └── newsletter/            # Monthly draft stubs
 ```
 
+**Public:** [nephelisindustries.com/aether-os](https://www.nephelisindustries.com/aether-os)  
+**Latest brief:** [`briefs/latest.md`](./briefs/latest.md) (2026-11-16)
+
 ## Daily operator (agent)
 
 ```bash
@@ -27,6 +30,18 @@ Produces:
 2. `aether-os/briefs/latest.md` — symlink-style copy of latest  
 3. Append to `aether-os/PROGRESS.md`  
 4. Optional social draft under `automation/social-drafts/`  
+
+## Public resources
+
+| Resource | Path |
+|----------|------|
+| Live probe / bay | https://www.nephelisindustries.com/#bay |
+| Status | https://www.nephelisindustries.com/status |
+| Visuals | https://www.nephelisindustries.com/visuals |
+| Practical brief | [`docs/practical-requirements-brief.md`](../docs/practical-requirements-brief.md) |
+| Visual bible | [`docs/visual-bible-cloudseeker.md`](../docs/visual-bible-cloudseeker.md) |
+| Ground tests | [`docs/ground-test-sequence.md`](../docs/ground-test-sequence.md) |
+| Competitors | [`research/competitors/`](../research/competitors/) |
 
 ## Contribution log format
 

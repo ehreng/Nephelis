@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29",
+  "updated_at": "2026-11-16",
   "headline": "Early-stage concept, documentation, and open collaboration — pre-hardware",
   "phase": "Pre-hardware / documentation",
   "next_engineering_milestone": "Acid-resistant balloon material coupon tests + small helium ground float with basic telemetry",
@@ -28,7 +28,15 @@
     },
     {
       "item": "AETHER OS contribution framework + daily mission loop",
-      "evidence": "docs/AETHER_OS_Architecture_v1.md, aether-os/"
+      "evidence": "docs/AETHER_OS_Architecture_v1.md, aether-os/, /aether-os"
+    },
+    {
+      "item": "Cloudseeker visual lock + bay payload comparison on the live site",
+      "evidence": "www.nephelisindustries.com/#bay"
+    },
+    {
+      "item": "Practical brief, visual bible, ground-test sequence",
+      "evidence": "docs/practical-requirements-brief.md, docs/visual-bible-cloudseeker.md, docs/ground-test-sequence.md"
     }
   ],
   "not_yet": [

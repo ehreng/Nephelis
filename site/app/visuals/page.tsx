@@ -8,6 +8,7 @@ const visuals = [
   "cloudseeker-probe.jpg",
   "cloudseeker-hero.jpg",
   "n4-cool-twilight.jpg",
+  "n4-cool-portrait.jpg",
   "n4-cool-bay.jpg",
   "n4-cool-bay-ports.jpg",
   "venus-orb.jpg",

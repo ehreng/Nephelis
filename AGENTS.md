@@ -15,7 +15,7 @@ Build and operate **Project AETHER** (Cloudseeker): a lean, private Venus cloud-
 | `site/` | Next.js site (Vercel root directory) |
 | `site/content/data/` | **Source of truth** for public mission numbers |
 | `aether-os/` | OS runtime: briefs, loops, contributions, progress |
-| `docs/` | Architecture, CONOPS, requirements, SOPs |
+| `docs/` | Architecture, CONOPS, practical brief, visual bible, ground tests |
 | `site/content/updates/` | MDX mission logs |
 | `research/` | Living knowledge base |
 | `automation/` | Loop scripts, prompts, social drafts |
@@ -86,6 +86,9 @@ cd site && pnpm validate:content && pnpm check:mass
 - `automation/prompts/mission-ops.md`
 - `automation/prompts/risk-review.md`
 - `automation/prompts/partner-outreach.md`
+- `docs/visual-bible-cloudseeker.md` (probe identity; do not mix hanging-gondola CONOPS into art)
+- `docs/practical-requirements-brief.md`
+- `docs/ground-test-sequence.md`
 - `automation/prompts/visual-brief.md`
 
 ## Secrets

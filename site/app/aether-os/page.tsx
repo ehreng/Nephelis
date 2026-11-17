@@ -66,6 +66,12 @@ export default function AetherOsPage() {
               Latest Mission Brief
             </a>
             <Link
+              href="/#bay"
+              className="border border-white/20 px-4 py-2 text-white transition hover:border-white/50"
+            >
+              Probe / bay
+            </Link>
+            <Link
               href="/#contribute"
               className="border border-white/20 px-4 py-2 text-white transition hover:border-white/50"
             >
@@ -125,6 +131,91 @@ export default function AetherOsPage() {
             <li>High-visibility public progress</li>
             <li>Nice-to-have content</li>
           </ol>
+        </div>
+      </section>
+
+      <section className="border-b border-white/10 py-14">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-mono text-xs uppercase tracking-[0.2em] text-tech">
+            Available now
+          </h2>
+          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/55">
+            Pre-hardware. Public numbers live in git. Founder review is asynchronous during U.S.
+            Army training — keep working.
+          </p>
+          <div className="mt-8 grid gap-3 sm:grid-cols-2">
+            {[
+              {
+                k: 'Live site',
+                t: 'Probe, bay suite, campaign stills',
+                d: 'Cloudseeker identity, payload vs VEGA / VLF / DAVINCI, long-horizon vision labeled as such.',
+                href: '/#bay',
+                ext: false,
+              },
+              {
+                k: 'Status',
+                t: 'What is built vs not yet',
+                d: 'Program phase, budget posture, next ground milestone.',
+                href: '/status',
+                ext: false,
+              },
+              {
+                k: 'Visuals',
+                t: 'Concept art gallery',
+                d: 'Flyingprobe stills, n4 cool deck, future-city set. Not flight hardware.',
+                href: '/visuals',
+                ext: false,
+              },
+              {
+                k: 'GitHub',
+                t: 'Single source of truth',
+                d: 'Site, docs, AETHER OS, research. Claim L1–L3 issues.',
+                href: 'https://github.com/ehreng/Nephelis',
+                ext: true,
+              },
+              {
+                k: 'Engineering',
+                t: 'CONOPS + practical brief',
+                d: 'Mass budget, visual bible, ground-test sequence (coupons → He float → telemetry).',
+                href: 'https://github.com/ehreng/Nephelis/blob/main/docs/practical-requirements-brief.md',
+                ext: true,
+              },
+              {
+                k: 'Research',
+                t: 'Competitors + science notes',
+                d: 'VLF, DAVINCI, JPL aerobot study, VEGA heritage. Dated; no invented schedules.',
+                href: 'https://github.com/ehreng/Nephelis/tree/main/research/competitors',
+                ext: true,
+              },
+            ].map((r) => {
+              const className =
+                'block border border-white/10 p-4 transition hover:border-tech/40';
+              const body = (
+                <>
+                  <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-tech">
+                    {r.k}
+                  </div>
+                  <div className="mt-2 text-sm font-medium text-white">{r.t}</div>
+                  <p className="mt-1 text-xs leading-relaxed text-white/45">{r.d}</p>
+                </>
+              );
+              return r.ext ? (
+                <a
+                  key={r.k}
+                  href={r.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={className}
+                >
+                  {body}
+                </a>
+              ) : (
+                <Link key={r.k} href={r.href} className={className}>
+                  {body}
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </section>
 

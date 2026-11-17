@@ -142,13 +142,24 @@ export default function NephelisHome() {
             </div>
           </div>
 
-          <div className="glass-panel p-6 rounded-sm hud-border relative">
-            <div className="mb-3 flex justify-end">
-              <span className="text-xs font-mono text-venus">Concept art — not flight hardware</span>
-            </div>
-            <div className="relative flex items-center justify-center bg-black/80 rounded overflow-hidden" style={{minHeight: '520px'}}>
-              <img src="/assets/visuals/cloudseeker-probe.jpg" alt="Cloudseeker aerostat at 55 km — concept art" className="max-h-[520px] w-auto object-contain" />
-              <div className="absolute bottom-2 left-2 text-xs font-mono text-tech bg-black/50 px-2">PROBE @ 55km</div>
+          <div className="glass-panel p-0 rounded-sm hud-border relative overflow-hidden">
+            <div className="relative aspect-[2/3] bg-black">
+              <img
+                src="/assets/visuals/n4-cool-portrait.jpg"
+                alt="Cloudseeker aerostat in the 50–55 km cloud deck — concept art"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+              <div className="absolute left-3 top-3 font-mono text-[10px] uppercase tracking-[0.25em] text-tech">
+                Probe @ 55 km
+              </div>
+              <div className="absolute bottom-3 left-3 right-3 flex items-end justify-between gap-2">
+                <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/70">
+                  Concept art — not flight hardware
+                </span>
+                <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-white/35">
+                  n4-cool-portrait
+                </span>
+              </div>
             </div>
           </div>
         </div>

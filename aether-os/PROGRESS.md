@@ -4,6 +4,14 @@ Append-only mission progress. Newest first.
 
 ---
 
+## 2026-11-16 — Public probe identity + resource index
+
+- Live homepage `#bay`: n4 cool campaign, portrait, bay suite, payload vs VEGA / VLF / DAVINCI.
+- Docs published in git: practical requirements brief, visual bible (rev 3), ground-test sequence.
+- AETHER OS `/aether-os` now lists live, status, visuals, GitHub, engineering, research.
+- Brief: `aether-os/briefs/2026-11-16.md`
+- Still pre-hardware. Next gates: acid coupons → He float → sensor telemetry. Stripe live remains off.
+
 ## 2026-10-29 — Founder in Army training
 
 - Public status: Founder Emeritus remains Ehren Goossens. Basic Combat Training complete. Advanced Individual Training in progress.

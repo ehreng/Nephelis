@@ -1,6 +1,6 @@
 # Program status — Project AETHER
 
-**Updated:** 2026-10-29
+**Updated:** 2026-11-16
 
 ## One-line status
 
@@ -9,9 +9,10 @@
 ## What is real
 
 - Public site and interactive trajectory planner (illustrative)
-- Draft CONOPS, requirements, materials test protocol, risk list
+- Cloudseeker visual lock on the homepage (`/#bay`): cool-deck stills, campaign plate, bay science suite, payload vs VEGA / VLF / DAVINCI
+- Draft CONOPS, requirements, practical brief, visual bible, ground-test sequence, materials protocol, risk list
 - Structured mission data in git (`site/content/data/`)
-- AETHER OS: daily briefs, L1–L3 contribution model, GitHub as SSOT
+- AETHER OS: briefs, L1–L3 contribution model, GitHub as SSOT, public resource index at `/aether-os`
 - Founder: Ehren Goossens (Founder Emeritus / Strategic Oversight), in U.S. Army training. Basic Combat Training is complete. Advanced Individual Training is in progress. Review is asynchronous.
 
 ## What is not yet

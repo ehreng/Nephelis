@@ -4,7 +4,7 @@
 
 This repository is the **public site + mission ops toolchain** for Nephelis Industries — built so humans and AI agents can advance the mission through structured data, automation loops, and reviewable PRs.
 
-**Live:** [www.nephelisindustries.com](https://www.nephelisindustries.com) · **AETHER OS:** [/aether-os](https://www.nephelisindustries.com/aether-os)
+**Live:** [www.nephelisindustries.com](https://www.nephelisindustries.com) · **Probe / bay:** [/\#bay](https://www.nephelisindustries.com/#bay) · **AETHER OS:** [/aether-os](https://www.nephelisindustries.com/aether-os) · **Status:** [/status](https://www.nephelisindustries.com/status)
 
 ## AETHER OS
 
@@ -92,28 +92,39 @@ Knowledge base: [`research/`](./research/) (see `research/INDEX.md` after `evolv
 
 | Path | Role |
 |------|------|
-| `/` | Mission narrative + funding + volunteer |
+| `/` | Mission narrative + probe/bay + funding |
+| `/#bay` | Cloudseeker identity, science suite, payload vs other missions |
+| `/visuals` | Concept art gallery |
+| `/aether-os` | OS loops, contribution tiers, resource index |
+| `/status` | Built vs not yet |
 | `/mission` | Specs, mass budget, checklist, risks |
 | `/roadmap` | Milestones + tasks + risks |
 | `/updates` | MDX logs |
 | `/ops` | Private ops (token) |
 
-## Status (July 2026)
+## Status (November 2026)
 
 - [x] Next.js site on Vercel + custom domain  
-- [x] Stripe test checkout + live allocation  
+- [x] Cloudseeker visual lock on the live homepage (flyingprobe sphere, cool deck, bay suite)  
+- [x] Public payload comparison vs VEGA / VLF / DAVINCI  
+- [x] Stripe test checkout + allocation (live mode **off**)  
 - [x] Resend leads / auto-reply / volunteer form  
 - [x] CI + content schemas  
 - [x] Research / digest / social / metrics automation  
-- [x] Health + link checks  
 - [x] Mass budget, risks, partners, mission-control data  
-- [ ] Stripe **live** mode  
-- [ ] Deeper hardware test data + visuals  
+- [x] Practical requirements brief, visual bible, ground-test sequence  
+- [ ] Acid coupons / helium ground float (next engineering)  
+- [ ] Stripe **live** mode (do not reopen until asked)  
+
+**Program:** pre-hardware. $500k = ground/community scale, not a Venus flight. No committed launch date (~2030–2031+ class if gates pass).
 
 Roadmap: [site `/roadmap`](https://www.nephelisindustries.com/roadmap) · go-live: [`docs/go-live.md`](./docs/go-live.md)  
 **30-day war board:** [`docs/30-day-war-board.md`](./docs/30-day-war-board.md) · partner drafts: [`docs/partner-outreach-drafts.md`](./docs/partner-outreach-drafts.md)  
-**Design package:** [`docs/conops-v0.9.md`](./docs/conops-v0.9.md) · [`docs/requirements-baseline-v0.9.md`](./docs/requirements-baseline-v0.9.md) · [`docs/system-icd-skeleton.md`](./docs/system-icd-skeleton.md) · [`docs/power-budget-v0.md`](./docs/power-budget-v0.md)  
-**Ops:** [`docs/funding-fulfillment-sop.md`](./docs/funding-fulfillment-sop.md) · [`docs/materials-coupon-test-protocol.md`](./docs/materials-coupon-test-protocol.md)
+**Design package:** [`docs/conops-v0.9.md`](./docs/conops-v0.9.md) · [`docs/requirements-baseline-v0.9.md`](./docs/requirements-baseline-v0.9.md) · [`docs/system-icd-skeleton.md`](./docs/system-icd-skeleton.md) · [`docs/power-budget-v0.md`](./docs/power-budget-v0.md) · [`docs/practical-requirements-brief.md`](./docs/practical-requirements-brief.md) · [`docs/visual-bible-cloudseeker.md`](./docs/visual-bible-cloudseeker.md)  
+**Ground tests:** [`docs/ground-test-sequence.md`](./docs/ground-test-sequence.md) · coupons: [`docs/materials-coupon-test-protocol.md`](./docs/materials-coupon-test-protocol.md)  
+**Research:** [`research/competitors/`](./research/competitors/) (VLF, government aerobots; last reviewed 2026-11-14)
+
+Latest brief: [`aether-os/briefs/latest.md`](./aether-os/briefs/latest.md)
 
 ## Contributing
 

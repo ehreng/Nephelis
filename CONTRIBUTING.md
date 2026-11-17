@@ -32,8 +32,11 @@ Site form: [nephelisindustries.com/#contribute](https://www.nephelisindustries.c
 - Agents: follow root `AGENTS.md`
 
 ### 2. Visuals & design (L1–L2)
-- Prompts: `automation/prompts/visual-brief.md`
-- Assets: `assets/visuals/` → sync to `site/public/assets/visuals/`
+- Prompt source of truth: [`docs/visual-bible-cloudseeker.md`](./docs/visual-bible-cloudseeker.md)
+- Practical floor: [`docs/practical-requirements-brief.md`](./docs/practical-requirements-brief.md)
+- Public assets: `site/public/assets/visuals/` (live gallery `/visuals`, probe section `/#bay`)
+- Internal review lab `/preview/visuals` is noindex — do not link it from the public nav
+- Identity lock: one sphere, flush black bay, cyan ring `#00F0FF`, two cameras. No hanging gondola. No selfie stick. CubeSat is a separate orbiter.
 
 ### 3. Code & features (L2)
 - Next.js 15 + TypeScript + Tailwind under `site/`
@@ -47,6 +50,7 @@ Site form: [nephelisindustries.com/#contribute](https://www.nephelisindustries.c
 
 ### 5. Hardware / regulatory (L3)
 - Only after acknowledgment from Founder Emeritus or a designated reviewer. Acknowledgment is asynchronous during U.S. Army training. L1–L2 work should proceed without waiting on it.
+- Ground sequence: [`docs/ground-test-sequence.md`](./docs/ground-test-sequence.md) (coupons → helium float → sensor telemetry).
 - Log safety/export concerns in the issue
 
 ## Development setup

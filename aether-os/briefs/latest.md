@@ -1,8 +1,8 @@
-# Daily Mission Brief — 2026-11-16
+# Daily Mission Brief — 2026-11-20
 
-> **AETHER OS** · Mission Loop  
-> Generated: `2026-11-16` · Agent: Grok Build  
-> Founder oversight: Ehren Goossens (Founder Emeritus) — Basic Combat Training complete; Advanced Individual Training in progress. Review is asynchronous. Do not block the loop on a same-week answer.
+> **AETHER OS** · Daily Mission Loop  
+> Generated: `2026-11-20T21:44:46.001Z` · Agent: Grok Build / `daily-mission.ts`  
+> Founder oversight: Ehren Goossens (Founder Emeritus) — in U.S. Army training; review is asynchronous. Override any loop if required.
 
 ---
 
@@ -11,26 +11,36 @@
 | Field | Value |
 |-------|-------|
 | Callsign | NEPHELIS.MCC |
-| Phase | **PRE-HARDWARE** / early — concept + docs + public visuals |
-| Wet mass / float | ~400 kg study · ~55 km · Ø ~6.6 m / ~150 m³ design point |
-| Funding goal | $500,000 (ground / community — not a flight budget) |
-| Launch | No committed date. Earliest class if gates pass: ~2030–2031+ |
-| Visual lock | Flyingprobe sphere: flush black bay, cyan ring, two cameras |
+| Phase | **PRE-HARDWARE** / telemetry **EARLY — CONCEPT + DOCS** |
+| Systems | PRE-HARDWARE |
+| Wet mass / float | 400 kg · ~55 km |
+| Funding goal | $500,000 |
+| Open tasks | 76 (P0: 48, P1: 23) |
+| Open risks | 7 (high/critical: 5) |
+| Active partners | 5 |
+| MCC open checks | 10 |
+| Active OS loops | daily-mission, mission-digest, research, social, health |
 
-### What moved since the last brief (2026-08-11)
+### Systems
 
-- Live site: Cloudseeker cool-deck stills, campaign 16:9, bay science suite, payload vs VEGA / VLF / DAVINCI.
-- Docs: practical requirements brief, visual bible (rev 3), ground-test sequence.
-- Competitor notes reviewed 2026-11-14. VLF launch TBC; DAVINCI early-2030s descent.
-- Stripe live checkout remains **off**. Do not reopen.
+- **POWER**: dev
+- **COMMS**: dev
+- **AEROSTAT**: dev
+- **AVIONICS**: dev
+- **NAV/AI**: dev
+- **FUNDING**: attention
 
-### Critical / high risks (unchanged class)
+### Critical / high risks
 
-- **R-01** — Acid degradation of balloon envelope
-- **R-02** — Entry / inflation sequence failure
-- **R-03** — Comms blackout / insufficient downlink
-- **R-04** — No committed launch path
-- **R-05** — Capital shortfall vs flight-class cost
+- **R-01** — Acid degradation of balloon envelope _(medium/high)_
+- **R-02** — Entry / inflation sequence failure _(medium/critical)_
+- **R-03** — Comms blackout / insufficient downlink _(medium/high)_
+- **R-04** — No committed launch path; schedule risk is structural _(high/high)_
+- **R-05** — Capital shortfall vs flight-class cost _(high/high)_
+
+### Upcoming timeline
+
+_See timeline.json_
 
 ---
 
@@ -38,52 +48,99 @@
 
 Priority: **safety/regulatory → hardware → public progress → nice-to-have**.
 
-### 1. [L2][P0] Acid-coupon campaign (R-01)
+### 1. [L2][P0] Mitigate or document risk: Acid degradation of balloon envelope
 
-- **Source:** `docs/materials-coupon-test-protocol.md` · Gate 1 in `docs/ground-test-sequence.md`
-- **Acceptance:** film RFQ or lab path named; risks.json note if status changes
-- **Claim:** `claiming` on a matching issue
+- **Level:** L2 · **Priority:** P0 · **Source:** `R-01`
+- **Acceptance:**
+  - [ ] Risk entry updated in site/content/data/risks.json with status and mitigation notes
+  - [ ] Short note in research/notes or PR description
+- **Evidence:** PR touching risks.json + comment on issue
+- **Claim:** Comment `claiming` on a matching GitHub issue, or open one from [`docs/TASK_TEMPLATE.md`](../../docs/TASK_TEMPLATE.md)
 
-### 2. [L2][P0] Sensor-suite baseline — **closed v0**
+### 2. [L2][P0] Execute 30-day war board (docs/30-day-war-board.md)
 
-- **Source:** `site/content/data/sensor-suite.json` · `docs/sensor-suite-baseline.md`
-- **Acceptance:** table in docs or `site/content/data/` — instrument, grams, watts, rate, TRL guess
-- **Claim:** done this loop. Independent review is a claimable issue.
+- **Level:** L2 · **Priority:** P0 · **Source:** `war-board-30d`
+- **Acceptance:**
+  - [ ] Task `war-board-30d` status advanced or evidence attached
+  - [ ] Linked PR or artifact path
+- **Evidence:** PR or evidence link on GitHub issue
+- **Claim:** Comment `claiming` on a matching GitHub issue, or open one from [`docs/TASK_TEMPLATE.md`](../../docs/TASK_TEMPLATE.md)
 
-### 3. [L2][P1] Helium ground-float path (Gate 2)
+### 3. [L2][P0] Flip Stripe to live keys + live webhook; real $100 smoke test
 
-- **Source:** `docs/ground-test-sequence.md`
-- **Acceptance:** subscale envelope + telemetry demo scoped (not built yet)
-- **Claim:** `claiming`
+- **Level:** L2 · **Priority:** P0 · **Source:** `stripe-live`
+- **Acceptance:**
+  - [ ] Task `stripe-live` status advanced or evidence attached
+  - [ ] Linked PR or artifact path
+- **Evidence:** PR or evidence link on GitHub issue
+- **Claim:** Comment `claiming` on a matching GitHub issue, or open one from [`docs/TASK_TEMPLATE.md`](../../docs/TASK_TEMPLATE.md)
 
-### 4. [L1][P1] Content / research
+### 4. [L1][P1] Amplify today’s Mission Brief on X (or draft if posting gated)
 
-- Update `research/` with dated sources only. No invented VLF launch dates.
-- Optional: MDX update under `site/content/updates/` if a fact on the live site changes.
+- **Level:** L1 · **Priority:** P1
+- **Acceptance:**
+  - [ ] Post or ready-to-post draft in automation/social-drafts/
+  - [ ] Link back to nephelisindustries.com and/or this brief
+- **Evidence:** URL or draft file path
+- **Claim:** Comment `claiming` on a matching GitHub issue, or open one from [`docs/TASK_TEMPLATE.md`](../../docs/TASK_TEMPLATE.md)
 
-### 5. [L1][P1] Amplify
+### 5. [L1][P1] Claim one open L1 contribution issue (or file a content fix PR)
 
-- Draft social from the live `/#bay` payload comparison. Pre-hardware. No 2027 launch claim.
+- **Level:** L1 · **Priority:** P1
+- **Acceptance:**
+  - [ ] Issue claimed with `claiming` comment
+  - [ ] PR or evidence within 72h
+- **Evidence:** Issue comment + PR
+- **Claim:** Comment `claiming` on a matching GitHub issue, or open one from [`docs/TASK_TEMPLATE.md`](../../docs/TASK_TEMPLATE.md)
+
+### 6. [L2][P1] Meta-loop first review (day 7–14 of Daily Mission operation)
+
+- **Level:** L2 · **Priority:** P1 · **Source:** `aether-os-meta-review`
+- **Acceptance:**
+  - [ ] Progress on `aether-os-meta-review` with clear next step
+  - [ ] Evidence in PR or note
+- **Evidence:** PR / note
+- **Claim:** Comment `claiming` on a matching GitHub issue, or open one from [`docs/TASK_TEMPLATE.md`](../../docs/TASK_TEMPLATE.md)
+
+### 7. [L2][P1] Confirm 2–3 technical advisors (structures, entry, Venus science) with written scope
+
+- **Level:** L2 · **Priority:** P1 · **Source:** `advisor-board-soft`
+- **Acceptance:**
+  - [ ] Progress on `advisor-board-soft` with clear next step
+  - [ ] Evidence in PR or note
+- **Evidence:** PR / note
+- **Claim:** Comment `claiming` on a matching GitHub issue, or open one from [`docs/TASK_TEMPLATE.md`](../../docs/TASK_TEMPLATE.md)
+
 
 ---
 
-## 3. EXECUTE (this run)
+## 3. EXECUTE (agent actions this run)
 
-- [x] Public `/#bay` campaign + bay suite + other-missions table
-- [x] n4-cool-portrait on the live mission column
-- [x] AETHER OS + GitHub resource index refreshed
-- [x] Sensor-suite baseline v0 + power v1 + CubeSat relay (`/#relay`)
-- [x] Gate 3 mock telemetry `/api/telemetry/mock`
-- [x] Human / agent: open claimable issues for Gate 0 RFQ, He-float BOM, baseline review (#45 #46 #47)
-- [ ] Coupons still not started in hardware
+- [x] Wrote this brief to `aether-os/briefs/2026-11-20.md`
+- [x] Updated `aether-os/briefs/latest.md`
+- [x] Appended progress line to `aether-os/PROGRESS.md`
+- [x] Drafted social post seed (see social drafts)
+- [ ] **Human / agent follow-up:** Open or label GitHub issues for claimable tasks above
+- [ ] **Optional:** Post Mission Brief excerpt to X with link to site
 
 ---
 
-## 4. VERIFY
+## 4. VERIFY (end-of-day checklist)
 
-- [ ] No invented partners, contracts, or NASA affiliation
-- [ ] $500k labeled ground-scale
-- [ ] P0 blockers queued — do not wait on a founder reply this week
+- [ ] Brief reviewed (no invented partners, contracts, or science)
+- [ ] At least one public-facing update (site PR, X draft, or research note)
+- [ ] Claimed tasks logged when completed → `aether-os/CONTRIBUTIONS.md`
+- [ ] P0 blockers queued for Founder Emeritus. Do not block the loop on a same-week answer.
+
+---
+
+## Contribution tiers (quick)
+
+| Level | Work |
+|-------|------|
+| L1 | Content, social, ideas, simple graphics |
+| L2 | Code, simulations, technical writing, design |
+| L3 | Hardware, regulatory, deep engineering (gated) |
 
 Architecture: [`docs/AETHER_OS_Architecture_v1.md`](../../docs/AETHER_OS_Architecture_v1.md)  
 Contributing: [`CONTRIBUTING.md`](../../CONTRIBUTING.md)

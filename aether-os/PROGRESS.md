@@ -4,6 +4,14 @@ Append-only mission progress. Newest first.
 
 ---
 
+## 2026-11-20 — Daily Mission Loop
+
+- Brief: `aether-os/briefs/2026-11-20.md`
+- Planned tasks: 7 (P0 sources: 48, critical risks: 5)
+- Top priority: Mitigate or document risk: Acid degradation of balloon envelope
+- Social draft: `automation/social-drafts/mission-2026-11-20.md`
+- Status: **executed** (verify checklist still open for humans)
+
 ## 2026-11-16 — Sensor baseline, power v1, CubeSat relay
 
 - Sensor suite v0: `site/content/data/sensor-suite.json` (~8 kg science in a 40–55 kg bay).

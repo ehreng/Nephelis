@@ -592,7 +592,7 @@ export default function NephelisHome() {
 
           <div className="glass-panel border border-white/10 overflow-hidden mb-4">
             <img
-              src="/assets/visuals/vision-meadow.jpg"
+              src="/assets/visuals/n5-cool-meadow.jpg"
               alt="Inside a Venus cloud-park dome: cattle, a path, another city through the glass"
               className="w-full aspect-[16/8] object-cover bg-black"
             />
@@ -606,12 +606,12 @@ export default function NephelisHome() {
 
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              ['vision-bridge.jpg', 'Between cities', 'A glass walkway through the sulfuric ocean. One person, two habitats.', 'Glass pedestrian bridge connecting two Venus cloud habitats'],
-              ['vision-lookout.jpg', 'Looking at the tower', 'From a terrace, the stacked garden pods fill the sky.', 'Two people on a terrace looking at a Venus garden tower'],
-              ['vision-crops.jpg', 'Agriculture', 'A botanist in a glass farm. The window is the deck.', 'Botanist tending crops in a Venus cloud greenhouse'],
-              ['vision-works.jpg', 'The floor', 'ISRU in the weather. A technician and the cloud.', 'Technician at an ISRU plant floating in Venus clouds'],
-              ['vision-ops.jpg', 'On station', 'Same crew, inside. Clouds in the window. Long-horizon, not Cloudseeker.', 'Two crew in an aerostat ops cabin looking at Venus clouds'],
-              ['vision-under.jpg', 'From below', 'The belly of a park-island. Warm lights, sulfuric sea underneath.', 'Underside of a floating Venus park-island habitat'],
+              ['n5-cool-bridge.jpg', 'Between cities', 'A glass walkway through the sulfuric ocean. One person, two habitats.', 'Glass pedestrian bridge connecting two Venus cloud habitats'],
+              ['n5-cool-lookout.jpg', 'Looking at the tower', 'From a terrace, the stacked garden pods fill the sky.', 'Two people on a terrace looking at a Venus garden tower'],
+              ['n5-cool-crops.jpg', 'Agriculture', 'A botanist in a glass farm. The window is the deck.', 'Botanist tending crops in a Venus cloud greenhouse'],
+              ['n5-cool-works.jpg', 'The floor', 'ISRU in the weather. A technician and the cloud.', 'Technician at an ISRU plant floating in Venus clouds'],
+              ['n5-cool-ops.jpg', 'On station', 'Same crew, inside. Clouds in the window. Long-horizon, not Cloudseeker.', 'Two crew in an aerostat ops cabin looking at Venus clouds'],
+              ['n5-cool-under.jpg', 'From below', 'The belly of a park-island. Hull lights, silver-blue sea underneath.', 'Underside of a floating Venus park-island habitat'],
             ].map(([file, title, note, alt]) => (
               <div key={file} className="glass-panel border border-white/10 overflow-hidden">
                 <img

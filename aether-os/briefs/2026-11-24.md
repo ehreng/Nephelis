@@ -38,7 +38,7 @@
 
 Priority: **safety/regulatory → hardware → public progress → nice-to-have**.
 
-### 1. [L2][P0] Ground operator + ship-to (blocks Gate 0)
+### 1. [L2][P0] Ground operator + ship-to (blocks Gate 0) — #50
 
 - **Source:** `docs/gate0-film-rfq.md`
 - **Acceptance:** a US address that can receive industrial film; named operator who is not on a same-week founder cadence
@@ -49,7 +49,7 @@ Priority: **safety/regulatory → hardware → public progress → nice-to-have*
 - **Source:** `docs/gate0-film-rfq.md` · CS Hyde + American Durafilm
 - **Acceptance:** two RFQs sent; `partners.json` last_touched on send. Do not claim samples received until they exist.
 
-### 3. [L2][P0] Lab quotes
+### 3. [L2][P0] Lab quotes — #51
 
 - **Source:** Gate 0 lab shortlist (Sterling / APM / Infinita / Intertek class)
 - **Acceptance:** one written quote for ASTM D543 Practice A + H₂SO₄

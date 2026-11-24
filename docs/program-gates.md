@@ -49,7 +49,7 @@ CubeSat hardware is a later comms gate. Gate 3 is a black-bay mockup that emits 
 ### Gate 0 — Film RFQ + lab
 
 **Package:** `docs/gate0-film-rfq.md` · protocol: `docs/materials-coupon-test-protocol.md`  
-**Issues:** #45 (RFQ), ground-operator / ship-to (blocks send)
+**Issues:** [#45](https://github.com/ehreng/Nephelis/issues/45) RFQ · [#50](https://github.com/ehreng/Nephelis/issues/50) ship-to · [#51](https://github.com/ehreng/Nephelis/issues/51) lab quotes
 
 1. Freeze ship-to (lab or trusted operator).
 2. Send RFQ for PTFE / FEP / PFA / multilayer sheets + seam guidance.

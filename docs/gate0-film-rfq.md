@@ -4,7 +4,7 @@
 **Date:** 2026-11-24  
 **Gate:** 0 in `docs/program-gates.md` and `docs/ground-test-sequence.md`  
 **Protocol:** `docs/materials-coupon-test-protocol.md`  
-**Issue:** [#45](https://github.com/ehreng/Nephelis/issues/45)  
+**Issues:** [#45](https://github.com/ehreng/Nephelis/issues/45) RFQ · [#50](https://github.com/ehreng/Nephelis/issues/50) ship-to · [#51](https://github.com/ehreng/Nephelis/issues/51) lab quotes  
 **Safety:** Concentrated H₂SO₄ is a lab job. This file is paperwork. Do not run acid outside a qualified lab.
 
 Vendors and labs below are a **research shortlist**. None have been contacted. None are partners.

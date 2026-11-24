@@ -78,10 +78,12 @@ Ehren
 
 **RFQ checklist before send:**
 
-- [ ] Coupon size & count  
-- [ ] Thickness range  
-- [ ] Ship-to address  
-- [ ] Budget ceiling for samples  
+- [x] Coupon size & count — 25×50 mm, n=3, C0–C4, ~18/film, 4 films (`docs/gate0-film-rfq.md`)
+- [x] Thickness range — 12.5–50 µm (0.5–2 mil)
+- [ ] Ship-to address — **blocked**
+- [x] Budget ceiling for samples — USD 1,500
+
+Filled RFQ body, vendor shortlist (CS Hyde, American Durafilm), and lab shortlist: `docs/gate0-film-rfq.md`. Do not send until ship-to is filled.  
 
 ---
 

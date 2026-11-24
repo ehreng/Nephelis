@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T00:00:00.000Z",
+  "updated_at": "2026-11-24T00:00:00.000Z",
   "mission_phase": "EARLY — CONCEPT + DOCS",
   "overall_status": "PRE-HARDWARE",
   "systems": [
@@ -22,7 +22,7 @@
       "label": "AEROSTAT",
       "status": "dev",
       "value": "TRADE",
-      "detail": "Fluoropolymer envelope trade — no acid chamber coupons yet"
+      "detail": "Gate 0 RFQ package written; ship-to blocked; no acid coupons yet"
     },
     {
       "id": "avionics",

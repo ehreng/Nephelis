@@ -181,6 +181,13 @@ export default function AetherOsPage() {
                 ext: true,
               },
               {
+                k: 'Gates',
+                t: 'Program gates 0–8',
+                d: 'KPIs, spend, make-vs-buy. Gate 0 film RFQ. Gate 2 Ø 1.2 m He-float BOM. Ship-to still open.',
+                href: 'https://github.com/ehreng/Nephelis/blob/main/docs/program-gates.md',
+                ext: true,
+              },
+              {
                 k: 'Research',
                 t: 'Competitors + science notes',
                 d: 'VLF, DAVINCI, JPL aerobot study, VEGA heritage. Dated; no invented schedules.',

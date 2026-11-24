@@ -64,7 +64,7 @@ Sponsor logos remain on the translucent upper envelope in light gray/white techn
 | Communications | Link budget closes via CubeSat relay | v0 estimate in `docs/comms-link-v0.md`. Typical ~1.8 MB/day. Relay is a **separate orbiter**, never on the sphere. |
 | Mass | Full budget with ≥30% margins early | High-level only. `site/content/data/mass-budget.json`. |
 | Reliability | FMEA for envelope, inflation, sensors, power | Not public. |
-| Testing | Acid chamber → subscale inflation → sensor demo | Sequence: `docs/ground-test-sequence.md`. Not started in hardware. |
+| Testing | Acid chamber → subscale inflation → sensor demo | Sequence: `docs/ground-test-sequence.md`. Spend/KPIs: `docs/program-gates.md`. Not started in hardware. |
 
 ---
 
@@ -98,6 +98,6 @@ Prompt source of truth: `docs/visual-bible-cloudseeker.md`.
 1. Baseline fixed upward-looking cameras as the primary sponsor-imaging approach. **Done in visual lock (rev 3).**
 2. Update all concept art and renders to include functional elements listed in Section 2. **In progress in `/preview/visuals`. Homepage still uses the older flyingprobe collage.**
 3. Publish a one-page “minimum viable functional elements” diagram. **HTML/SVG on `/preview/visuals` (`FunctionalElements.tsx`).**
-4. Define and schedule the ground test sequence (acid coupons → helium float prototype → sensor telemetry demo). **`docs/ground-test-sequence.md`.**
+4. Define and schedule the ground test sequence (acid coupons → helium float prototype → sensor telemetry demo). **`docs/ground-test-sequence.md`.** Program gates 0–8 with spend and KPIs: **`docs/program-gates.md`.** Gate 0 RFQ is written; send is blocked on a ship-to.
 
 Do not promote preview stills to the homepage or public `/visuals` until the founder says so.

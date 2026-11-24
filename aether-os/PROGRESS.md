@@ -4,6 +4,13 @@ Append-only mission progress. Newest first.
 
 ---
 
+## 2026-11-24 — Program gates + Gate 0/2 paper
+
+- `docs/program-gates.md`: gates 0–8, KPIs, spend, make-vs-buy. $500k → Gates 0–5; flight $5–15M+.
+- Gate 0 RFQ package: coupon matrix frozen; CS Hyde + American Durafilm; ASTM D543 lab shortlist. Ship-to blocked.
+- Gate 2 BOM: Ø 1.2 m Earth He float, leak stub. Do not sew until Gate 1.
+- Partners/tasks/timeline/progress updated. Still pre-hardware. Stripe live remains off.
+
 ## 2026-11-16 — Sensor baseline, power v1, CubeSat relay
 
 - Sensor suite v0: `site/content/data/sensor-suite.json` (~8 kg science in a 40–55 kg bay).

@@ -119,7 +119,8 @@ Knowledge base: [`research/`](./research/) (see `research/INDEX.md` after `evolv
 - [x] Research / digest / social / metrics automation  
 - [x] Mass budget, risks, partners, mission-control data  
 - [x] Practical requirements brief, visual bible, ground-test sequence  
-- [ ] Acid coupons / helium ground float (next engineering)  
+- [x] Program gates 0–8 + Gate 0 RFQ package + Gate 2 He-float BOM (paper)  
+- [ ] Acid coupons / helium ground float (next engineering; blocked on ship-to)  
 - [ ] Stripe **live** mode (do not reopen until asked)  
 
 **Program:** pre-hardware. $500k = ground/community scale, not a Venus flight. No committed launch date (~2030–2031+ class if gates pass).
@@ -127,7 +128,8 @@ Knowledge base: [`research/`](./research/) (see `research/INDEX.md` after `evolv
 Roadmap: [site `/roadmap`](https://www.nephelisindustries.com/roadmap) · go-live: [`docs/go-live.md`](./docs/go-live.md)  
 **30-day war board:** [`docs/30-day-war-board.md`](./docs/30-day-war-board.md) · partner drafts: [`docs/partner-outreach-drafts.md`](./docs/partner-outreach-drafts.md)  
 **Design package:** [`docs/conops-v0.9.md`](./docs/conops-v0.9.md) · [`docs/requirements-baseline-v0.9.md`](./docs/requirements-baseline-v0.9.md) · [`docs/system-icd-skeleton.md`](./docs/system-icd-skeleton.md) · [`docs/power-budget-v0.md`](./docs/power-budget-v0.md) · [`docs/practical-requirements-brief.md`](./docs/practical-requirements-brief.md) · [`docs/visual-bible-cloudseeker.md`](./docs/visual-bible-cloudseeker.md)  
-**Ground tests:** [`docs/ground-test-sequence.md`](./docs/ground-test-sequence.md) · coupons: [`docs/materials-coupon-test-protocol.md`](./docs/materials-coupon-test-protocol.md)  
+**Program gates:** [`docs/program-gates.md`](./docs/program-gates.md) (KPIs, spend, make-vs-buy)  
+**Ground tests:** [`docs/ground-test-sequence.md`](./docs/ground-test-sequence.md) · Gate 0 RFQ: [`docs/gate0-film-rfq.md`](./docs/gate0-film-rfq.md) · Gate 2 BOM: [`docs/gate2-he-float-bom.md`](./docs/gate2-he-float-bom.md) · coupons: [`docs/materials-coupon-test-protocol.md`](./docs/materials-coupon-test-protocol.md)  
 **Research:** [`research/competitors/`](./research/competitors/) (VLF, government aerobots; last reviewed 2026-11-14)
 
 Latest brief: [`aether-os/briefs/latest.md`](./aether-os/briefs/latest.md)

@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-16",
+  "updated_at": "2026-11-24",
   "headline": "Early-stage concept, documentation, and open collaboration — pre-hardware",
   "phase": "Pre-hardware / documentation",
-  "next_engineering_milestone": "Acid-resistant balloon material coupon tests + small helium ground float with basic telemetry",
+  "next_engineering_milestone": "Gate 0: name a ship-to and send the film RFQ; then acid coupons + Ø 1.2 m helium ground float with basic telemetry",
   "launch_posture": {
     "previous_public_claim": "",
     "current": "No committed launch date. Earliest realistic class if gates pass: ~2030–2031+",
@@ -45,6 +45,10 @@
     {
       "item": "Gate 3 mock telemetry stream",
       "evidence": "/api/telemetry/mock · docs/gate3-telemetry-schema.md"
+    },
+    {
+      "item": "Program gates 0–8 with KPIs, spend, make-vs-buy; Gate 0 RFQ + Gate 2 BOM",
+      "evidence": "docs/program-gates.md, docs/gate0-film-rfq.md, docs/gate2-he-float-bom.md"
     }
   ],
   "not_yet": [

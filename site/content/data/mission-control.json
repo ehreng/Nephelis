@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11T12:00:00.000Z",
+  "updated_at": "2026-11-24T00:00:00.000Z",
   "callsign": "NEPHELIS.MCC",
   "phase": "PRE-HARDWARE",
   "launch_target": "uncommitted — earliest class ~2030–2031+ if gates pass",
@@ -33,6 +33,20 @@
       "phase": "DESIGN",
       "status": "planned",
       "due": "2026-Q4"
+    },
+    {
+      "id": "mc-program-gates",
+      "item": "Program gates 0–8 with KPIs and spend (docs/program-gates.md)",
+      "phase": "PROGRAM",
+      "status": "done",
+      "due": "2026-Q4"
+    },
+    {
+      "id": "mc-gate0-ship-to",
+      "item": "Ground operator + US ship-to for film samples (blocks Gate 0 send)",
+      "phase": "GROUND",
+      "status": "blocked",
+      "due": "2027-Q1"
     },
     {
       "id": "mc-materials-test",

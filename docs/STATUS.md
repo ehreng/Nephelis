@@ -1,6 +1,6 @@
 # Program status — Project AETHER
 
-**Updated:** 2026-11-16
+**Updated:** 2026-11-24
 
 ## One-line status
 
@@ -12,6 +12,9 @@
 - Cloudseeker visual lock on the homepage (`/#bay`): cool-deck stills, campaign plate, bay science suite, payload vs VEGA / VLF / DAVINCI
 - Sensor suite baseline v0, power budget v1, CubeSat relay path (`/#relay`) with MB/day and download-time estimates
 - Gate 3 mock telemetry (`/api/telemetry/mock`)
+- Program gates 0–8 with KPIs, spend ranges, and make-vs-buy (`docs/program-gates.md`)
+- Gate 0 film RFQ package (vendors + labs named; ship-to still blocked)
+- Gate 2 subscale He-float BOM (paper; Ø 1.2 m; do not build until Gate 1)
 - Draft CONOPS, requirements, practical brief, visual bible, ground-test sequence, materials protocol, risk list
 - Structured mission data in git (`site/content/data/`)
 - AETHER OS: briefs, L1–L3 contribution model, GitHub as SSOT, public resource index at `/aether-os`
@@ -30,7 +33,7 @@
 
 | Item | Posture |
 |------|---------|
-| Next milestone | Ground: materials coupons + small He float + telemetry |
+| Next milestone | Gate 0: ship-to + send film RFQ + lab quote. Then coupons → He float → telemetry |
 | Flight window | Aspirational **~2030–2031+** only if ground gates and capital exist |
 
 ## Budget posture

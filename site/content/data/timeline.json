@@ -11,17 +11,17 @@
   },
   {
     "year": "2026-H2",
-    "event": "Public GitHub as SSOT, open issues, materials coupon plan, regulatory notes",
+    "event": "Public GitHub as SSOT, program gates 0–8 with KPIs/spend, Gate 0 film RFQ written (ship-to still open)",
     "status": "current"
   },
   {
     "year": "2027",
-    "event": "Ground program: acid-resistant material coupons, small He prototype float, basic telemetry demo",
+    "event": "Gates 0–3 ground: film RFQ + acid coupons, Ø 1.2 m He float, bay telemetry mock",
     "status": "target"
   },
   {
     "year": "2028",
-    "event": "Iterate prototypes: inflation sequence, link budget tests, partner LOIs (if funded)",
+    "event": "PDR-lite + avionics/UHF breadboard if funded; partner LOIs",
     "status": "target"
   },
   {

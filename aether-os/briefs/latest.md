@@ -1,7 +1,7 @@
-# Daily Mission Brief — 2026-11-16
+# Daily Mission Brief — 2026-11-24
 
 > **AETHER OS** · Mission Loop  
-> Generated: `2026-11-16` · Agent: Grok Build  
+> Generated: `2026-11-24` · Agent: Grok Build  
 > Founder oversight: Ehren Goossens (Founder Emeritus) — Basic Combat Training complete; Advanced Individual Training in progress. Review is asynchronous. Do not block the loop on a same-week answer.
 
 ---
@@ -17,12 +17,12 @@
 | Launch | No committed date. Earliest class if gates pass: ~2030–2031+ |
 | Visual lock | Flyingprobe sphere: flush black bay, cyan ring, two cameras |
 
-### What moved since the last brief (2026-08-11)
+### What moved since the last brief (2026-11-16)
 
-- Live site: Cloudseeker cool-deck stills, campaign 16:9, bay science suite, payload vs VEGA / VLF / DAVINCI.
-- Docs: practical requirements brief, visual bible (rev 3), ground-test sequence.
-- Competitor notes reviewed 2026-11-14. VLF launch TBC; DAVINCI early-2030s descent.
-- Stripe live checkout remains **off**. Do not reopen.
+- Program gates 0–8 written: KPIs, spend ranges, make-vs-buy (`docs/program-gates.md`).
+- Gate 0 RFQ package: coupon matrix frozen, CS Hyde + American Durafilm named, ASTM D543 lab shortlist. **Ship-to still blocked.**
+- Gate 2 BOM scoped: Ø 1.2 m Earth He float. Do not build until Gate 1.
+- Live site: n5/n6 cool-blue future-city stills (`8566af2`). Stripe live remains **off**.
 
 ### Critical / high risks (unchanged class)
 
@@ -38,50 +38,46 @@
 
 Priority: **safety/regulatory → hardware → public progress → nice-to-have**.
 
-### 1. [L2][P0] Acid-coupon campaign (R-01)
+### 1. [L2][P0] Ground operator + ship-to (blocks Gate 0)
 
-- **Source:** `docs/materials-coupon-test-protocol.md` · Gate 1 in `docs/ground-test-sequence.md`
-- **Acceptance:** film RFQ or lab path named; risks.json note if status changes
-- **Claim:** `claiming` on a matching issue
-
-### 2. [L2][P0] Sensor-suite baseline — **closed v0**
-
-- **Source:** `site/content/data/sensor-suite.json` · `docs/sensor-suite-baseline.md`
-- **Acceptance:** table in docs or `site/content/data/` — instrument, grams, watts, rate, TRL guess
-- **Claim:** done this loop. Independent review is a claimable issue.
-
-### 3. [L2][P1] Helium ground-float path (Gate 2)
-
-- **Source:** `docs/ground-test-sequence.md`
-- **Acceptance:** subscale envelope + telemetry demo scoped (not built yet)
+- **Source:** `docs/gate0-film-rfq.md`
+- **Acceptance:** a US address that can receive industrial film; named operator who is not on a same-week founder cadence
 - **Claim:** `claiming`
 
-### 4. [L1][P1] Content / research
+### 2. [L2][P0] Send film RFQ (#45 remainder)
 
-- Update `research/` with dated sources only. No invented VLF launch dates.
-- Optional: MDX update under `site/content/updates/` if a fact on the live site changes.
+- **Source:** `docs/gate0-film-rfq.md` · CS Hyde + American Durafilm
+- **Acceptance:** two RFQs sent; `partners.json` last_touched on send. Do not claim samples received until they exist.
 
-### 5. [L1][P1] Amplify
+### 3. [L2][P0] Lab quotes
 
-- Draft social from the live `/#bay` payload comparison. Pre-hardware. No 2027 launch claim.
+- **Source:** Gate 0 lab shortlist (Sterling / APM / Infinita / Intertek class)
+- **Acceptance:** one written quote for ASTM D543 Practice A + H₂SO₄
+
+### 4. [L2][P1] Sensor-suite review (#47)
+
+- Independent review of grams / watts / TRL guesses. Still open.
+
+### 5. [L1][P1] Content / research
+
+- Dated sources only. No invented VLF launch dates. No 2027 launch claim.
 
 ---
 
 ## 3. EXECUTE (this run)
 
-- [x] Public `/#bay` campaign + bay suite + other-missions table
-- [x] n4-cool-portrait on the live mission column
-- [x] AETHER OS + GitHub resource index refreshed
-- [x] Sensor-suite baseline v0 + power v1 + CubeSat relay (`/#relay`)
-- [x] Gate 3 mock telemetry `/api/telemetry/mock`
-- [x] Human / agent: open claimable issues for Gate 0 RFQ, He-float BOM, baseline review (#45 #46 #47)
+- [x] `docs/program-gates.md` (KPIs, spend, make-vs-buy)
+- [x] `docs/gate0-film-rfq.md` (vendors, labs, filled RFQ blanks except ship-to)
+- [x] `docs/gate2-he-float-bom.md` (Ø 1.2 m, leak stub, ROM costs)
+- [x] timeline / tasks / partners / progress / STATUS / AETHER OS index
 - [ ] Coupons still not started in hardware
+- [ ] RFQ not sent (ship-to blocked)
 
 ---
 
 ## 4. VERIFY
 
-- [ ] No invented partners, contracts, or NASA affiliation
+- [ ] No invented partners, contracts, or NASA affiliation (shortlist = research, not contacted)
 - [ ] $500k labeled ground-scale
 - [ ] P0 blockers queued — do not wait on a founder reply this week
 

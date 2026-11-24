@@ -1,7 +1,8 @@
 # Ground test sequence — Cloudseeker / Project AETHER
 
 **Status:** Schedule draft — no hardware has run  
-**Date:** 2026-11-12  
+**Date:** 2026-11-24  
+**Program plan (KPIs, spend, make-vs-buy):** `docs/program-gates.md`  
 **Brief:** `docs/practical-requirements-brief.md` §6.4  
 **Visual lab:** `/preview/visuals`
 
@@ -11,14 +12,20 @@ Founder review is asynchronous during U.S. Army training. Dates below are progra
 
 ## Sequence (do in order)
 
-Each gate is go / no-go / conditional. Do not skip ahead to a prettier demo.
+Each gate is go / no-go / conditional. Do not skip ahead to a prettier demo. Spend and 12-month KPIs live in `docs/program-gates.md`.
 
-| Gate | Name | Existing task | Target | Status |
-|------|------|---------------|--------|--------|
-| 0 | Film RFQ + lab | `partner-materials-samples` | 2026-Q4 | Planned (protocol written) |
-| 1 | Acid coupons | `materials-coupon-campaign` | 2027-H1 first coupons | Protocol `in_progress`; no coupons yet |
-| 2 | Helium float prototype | `balloon-prototype-1` + `ground-test-leak` | 2027 | Planned |
-| 3 | Sensor telemetry demo | `sensor-suite-baseline` then bay mockup uplink | 2027–2028 | Planned |
+| Gate | Name | Package | Target | Status |
+|------|------|---------|--------|--------|
+| 0 | Film RFQ + lab | `docs/gate0-film-rfq.md` | 2027-Q1 | RFQ written; **ship-to blocked** |
+| 1 | Acid coupons | `docs/materials-coupon-test-protocol.md` | 2027-H1 first coupons | Protocol written; no coupons yet |
+| 2 | Helium float prototype | `docs/gate2-he-float-bom.md` | 2027 | BOM scoped; do not build until Gate 1 |
+| 3 | Sensor telemetry demo | `docs/gate3-telemetry-schema.md` | 2027–2028 | Mock API live; hardware mock not built |
+
+---
+
+## Gate 0 — Film RFQ + lab
+
+**Package:** `docs/gate0-film-rfq.md`. Thickness, coupon count, vendor shortlist, and lab shortlist are filled. **Ship-to is blocked** until a ground operator names a US address. Do not send the RFQ blank.
 
 ---
 
@@ -38,6 +45,8 @@ Each gate is go / no-go / conditional. Do not skip ahead to a prettier demo.
 ---
 
 ## Gate 2 — Helium float prototype
+
+**BOM (paper):** `docs/gate2-he-float-bom.md` — Ø **1.2 m**, ~0.90 m³. Do not sew until Gate 1.
 
 Subscale super-pressure sphere at Earth ambient. Not Venus. Not 5 m unless a partner pays for it.
 
@@ -78,4 +87,4 @@ Optional: mass-spec inlet dummy, nephelometer optical path dummy, UHF stub.
 - Not a CubeSat relay demo (that is a later comms gate).
 - Not funded by the public $500k claim as a full flight stack.
 
-After Gate 3, the next honest public milestone is a written PDR-lite (`pdr-lite`) with mass/power books that include imaging cadence and night-side energy.
+After Gate 3, the next honest public milestone is a written PDR-lite (`pdr-lite`) with mass/power books that include imaging cadence and night-side energy. Gates 4–8 (PDR-lite through flight stack) are in `docs/program-gates.md`.

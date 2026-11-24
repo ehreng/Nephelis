@@ -317,7 +317,31 @@
     "status": "planned",
     "priority": "P0",
     "area": "mission",
+    "quarter": "2028-H1"
+  },
+  {
+    "id": "program-gates-v1",
+    "title": "Write program gates 0–8 with KPIs, spend, make-vs-buy (docs/program-gates.md)",
+    "status": "done",
+    "priority": "P0",
+    "area": "mission",
     "quarter": "2026-Q4"
+  },
+  {
+    "id": "gate0-ship-to",
+    "title": "Name ground operator and US ship-to for film samples and lab",
+    "status": "blocked",
+    "priority": "P0",
+    "area": "ops",
+    "quarter": "2027-Q1"
+  },
+  {
+    "id": "gate0-lab-quotes",
+    "title": "Request ASTM D543 / H2SO4 coupon quotes from Gate 0 lab shortlist",
+    "status": "planned",
+    "priority": "P0",
+    "area": "hardware",
+    "quarter": "2027-Q1"
   },
   {
     "id": "materials-coupon-campaign",
@@ -325,23 +349,23 @@
     "status": "in_progress",
     "priority": "P0",
     "area": "hardware",
-    "quarter": "2026-Q4"
+    "quarter": "2027-H1"
   },
   {
     "id": "balloon-prototype-1",
-    "title": "Build subscale super-pressure balloon prototype #1 (Earth ambient)",
+    "title": "Build subscale super-pressure balloon prototype #1 (Earth ambient, Ø 1.2 m)",
     "status": "planned",
     "priority": "P0",
     "area": "hardware",
-    "quarter": "2026-Q4"
+    "quarter": "2027-H2"
   },
   {
     "id": "ground-test-leak",
     "title": "Envelope leak / pressure-hold ground test protocol + first run",
-    "status": "planned",
+    "status": "in_progress",
     "priority": "P0",
     "area": "hardware",
-    "quarter": "2026-Q4"
+    "quarter": "2027-H2"
   },
   {
     "id": "heatshield-trade",
@@ -381,7 +405,7 @@
     "status": "planned",
     "priority": "P0",
     "area": "partners",
-    "quarter": "2026-Q4"
+    "quarter": "2027-Q1"
   },
   {
     "id": "avionics-stack-select",
@@ -389,7 +413,7 @@
     "status": "planned",
     "priority": "P1",
     "area": "avionics",
-    "quarter": "2026-Q4"
+    "quarter": "2028-H1"
   },
   {
     "id": "power-budget-v1",
@@ -434,10 +458,10 @@
   {
     "id": "facility-access",
     "title": "Secure lab/fab access (clean workbench, pressure test, electronics)",
-    "status": "planned",
-    "priority": "P1",
+    "status": "blocked",
+    "priority": "P0",
     "area": "program",
-    "quarter": "2026-Q4"
+    "quarter": "2027-Q1"
   },
   {
     "id": "insurance-export-screen",

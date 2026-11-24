@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { getProgress, getTelemetry, getMissionControl } from '@/lib/content';
 import MockTelemetry from '@/components/MockTelemetry';
+import GroundGates from '@/components/GroundGates';
 
 export const metadata: Metadata = {
   title: 'Status',
@@ -53,6 +54,10 @@ export default function StatusPage() {
             </Link>{' '}
             (CubeSat path, MB/day, download times).
           </p>
+        </section>
+
+        <section className="mb-10">
+          <GroundGates />
         </section>
 
         <section className="mb-10">

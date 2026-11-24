@@ -1,6 +1,6 @@
 # Nephelis Industries — Metrics One-Pager
 
-_Auto-generated from `site/content/data/*` · 2026-08-11T18:20:51.155Z_  
+_Auto-generated from `site/content/data/*` · 2026-11-24T23:56:46.864Z_  
 **Do not hand-edit** — run `npx tsx automation/scripts/sync-metrics.ts` after data changes.
 
 ## Mission snapshot
@@ -10,10 +10,10 @@ _Auto-generated from `site/content/data/*` · 2026-08-11T18:20:51.155Z_
 | Program | Project AETHER / Cloudseeker |
 | MCC phase | PRE-HARDWARE · target uncommitted — earliest class ~2030–2031+ if gates pass |
 | Probe | Super-pressure balloon |
-| Target altitude | 50–60 km (float ~55 km) |
+| Target altitude | 50–55 km (float ~55 km) |
 | Wet mass | ~400 kg · balloon ~6.6 m |
 | Float duration (baseline) | 30+ days (ops goal 30–90) |
-| Launch target | 2032 |
+| Launch target | uncommitted — earliest class ~2030–2031+ if gates pass |
 | Vehicles | Rideshare, Dedicated small launcher |
 | Transfer | Direct to Venus |
 | Funding goal | $500,000 |
@@ -29,10 +29,11 @@ _Auto-generated from `site/content/data/*` · 2026-08-11T18:20:51.155Z_
 
 ## Instruments (concept)
 
-- Atmospheric spectrometers
-- High-res cameras
-- Meteorological suite
-- Life detection experiments
+- AFN-class autofluorescence nephelometer
+- Compact TLS / MEMS gas
+- Aerosol / organics MS (LDMS-class)
+- Meteorology T / P / wind
+- 4K envelope + deck cameras
 
 ## Funding tiers (site)
 
@@ -47,9 +48,9 @@ _Paid counts come from Stripe at runtime; baseline is static marketing/pre-sales
 
 - **2025** (complete): Concept, brand, public site, early research notes for Project AETHER
 - **2026-H1** (complete): Vision site, CONOPS/requirements drafts, AETHER OS contribution framework
-- **2026-H2** (current): Public GitHub as SSOT, open issues, materials coupon plan, regulatory notes
-- **2027** (target): Ground program: acid-resistant material coupons, small He prototype float, basic telemetry demo
-- **2028** (target): Iterate prototypes: inflation sequence, link budget tests, partner LOIs (if funded)
+- **2026-H2** (current): Public GitHub as SSOT, program gates 0–8 with KPIs/spend, Gate 0 film RFQ written (ship-to still open)
+- **2027** (target): Gates 0–3 ground: film RFQ + acid coupons, Ø 1.2 m He float, bay telemetry mock
+- **2028** (target): PDR-lite + avionics/UHF breadboard if funded; partner LOIs
 - **2029–2030** (aspirational): Only if prior gates pass: env qual path, flight-ish stack design freeze, rideshare exploration
 - **2030–2031+** (aspirational): Earliest plausible Venus transfer window class — not a commitment; depends on hardware + capital
 - **Long-term vision** (vision): Cloud-layer science → habitation tech path (labeled vision, not near-term engineering)
@@ -71,21 +72,21 @@ _Paid counts come from Stripe at runtime; baseline is static marketing/pre-sales
 - [P1] Planetary protection / DNA-tier legal-regulatory screening memo — _planned_ (2026-Q3)
 - [P1] Fill first research brief with cited Venus aerobot / materials sources — _planned_ (2026-Q3)
 - [P1] Recruit core volunteer leads: structures, avionics, software, science — _planned_ (2026-Q3)
-- [P0] Preliminary design review (lite): freeze interfaces, mass/power books — _planned_ (2026-Q4)
-- [P0] Fluoropolymer acid coupon campaign (protocol: docs/materials-coupon-test-protocol.md) — _in_progress_ (2026-Q4)
-- [P0] Build subscale super-pressure balloon prototype #1 (Earth ambient) — _planned_ (2026-Q4)
-- [P0] Envelope leak / pressure-hold ground test protocol + first run — _planned_ (2026-Q4)
+- [P0] Preliminary design review (lite): freeze interfaces, mass/power books — _planned_ (2028-H1)
+- [P0] Name ground operator and US ship-to for film samples and lab — _blocked_ (2027-Q1)
+- [P0] Request ASTM D543 / H2SO4 coupon quotes from Gate 0 lab shortlist — _planned_ (2027-Q1)
+- [P0] Fluoropolymer acid coupon campaign (protocol: docs/materials-coupon-test-protocol.md) — _in_progress_ (2027-H1)
+- [P0] Build subscale super-pressure balloon prototype #1 (Earth ambient, Ø 1.2 m) — _planned_ (2027-H2)
+- [P0] Envelope leak / pressure-hold ground test protocol + first run — _in_progress_ (2027-H2)
 - [P0] Heatshield geometry/material trade (blunt body mass vs peak load) — _planned_ (2026-Q4)
 - [P0] Balloon inflation system concept (gas budget, valves, sequence) — _planned_ (2026-Q4)
-- [P0] Baseline sensor suite with mass/power/data rates (imagery, MS, met, bio) — _planned_ (2026-Q4)
 - [P0] MOU or in-kind LOI with at least one sensor / lab partner — _planned_ (2026-Q4)
-- [P0] Receive materials samples + vendor datasheets for envelope film — _planned_ (2026-Q4)
-- [P1] Select flight computer / rad-tolerant strategy (COTS + shielding trade) — _planned_ (2026-Q4)
-- [P0] Power budget v1: solar at float, battery, duty cycles (v0 data: power-budget.json) — _in_progress_ (2026-Q4)
-- [P0] Comms architecture review: direct-to-Earth vs 3U relay vs hybrid — _planned_ (2026-Q4)
+- [P0] Receive materials samples + vendor datasheets for envelope film — _planned_ (2027-Q1)
+- [P1] Select flight computer / rad-tolerant strategy (COTS + shielding trade) — _planned_ (2028-H1)
+- [P0] Comms architecture review: direct-to-Earth vs 3U relay vs hybrid — _in_progress_ (2026-Q4)
 - [P1] CubeSat bus/radio partner shortlist (flight heritage preferred) — _planned_ (2026-Q4)
-- [P1] Flight software skeleton: modes, fault protection, telemetry schema — _planned_ (2026-Q4)
-- [P1] Secure lab/fab access (clean workbench, pressure test, electronics) — _planned_ (2026-Q4)
+- [P1] Flight software skeleton: modes, fault protection, telemetry schema — _in_progress_ (2026-Q4)
+- [P0] Secure lab/fab access (clean workbench, pressure test, electronics) — _blocked_ (2027-Q1)
 - [P1] Export control / ITAR-EAR self-screen for parts & partners — _planned_ (2026-Q4)
 - [P0] Hit 25% of $500k funding goal (cash + committed in-kind valued) — _planned_ (2026-Q4)
 - [P0] Critical design review (lite): drawings, BOMs, test plans signed — _planned_ (2029-Q1)
@@ -96,7 +97,7 @@ _Paid counts come from Stripe at runtime; baseline is static marketing/pre-sales
 - [P0] Flight avionics board bring-up + sensor drivers — _planned_ (2029-Q1)
 - [P1] Solar + battery power demo at expected float illumination — _planned_ (2029-Q1)
 - [P0] Comms breadboard: packet radio / store-and-forward demo — _planned_ (2029-Q1)
-- [P0] Baseline CubeSat relay (buy vs partner vs descoped direct link) — _planned_ (2029-Q1)
+- [P0] Baseline CubeSat relay (buy vs partner vs descoped direct link) — _in_progress_ (2029-Q1)
 - [P0] Kick/transfer stage: make vs buy vs rideshare-provided Δv — _planned_ (2029-Q1)
 - [P0] Hit 50% of $500k goal (cash + binding in-kind) — _planned_ (2029-Q1)
 - [P1] Close first corporate / logo sponsorship above individual tiers — _planned_ (2029-Q1)

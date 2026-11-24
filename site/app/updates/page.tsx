@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Update202611Gates from '../../content/updates/2026-11-24-program-gates.mdx';
 import Update202610Training from '../../content/updates/2026-10-founder-training.mdx';
 import Update202608Status from '../../content/updates/2026-08-status.mdx';
 import Update202608 from '../../content/updates/2026-08-aether-os.mdx';
@@ -9,6 +10,11 @@ import Update202606 from '../../content/updates/2026-06-mission-update.mdx';
 
 /** Newest first — keep in sync with getUpdates() in lib/content.ts */
 const UPDATES = [
+  {
+    date: '2026-11-24',
+    title: 'Program gates 0–8 — November 2026',
+    Component: Update202611Gates,
+  },
   {
     date: '2026-10-29',
     title: 'Founder in Army training — October 2026',

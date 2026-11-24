@@ -11,8 +11,42 @@
   "budget_posture": {
     "crowdfund_target_usd": 500000,
     "label": "Ground demonstrator / prototype campaign — not full flight mission cost",
-    "flight_estimate_note": "A Venus entry + float system is expected to cost far more than $500k; treat $500k as early R&D and community runway."
+    "flight_estimate_note": "Public $500k maps to Gates 0–5 (comfortably 0–4). A Venus entry + float system is $5–15M+ or a strong partnership."
   },
+  "ground_gates": [
+    {
+      "id": "0",
+      "name": "Film RFQ + lab",
+      "window": "now → 2027-Q1",
+      "kpi": "≥2 vendors quoted; qualified lab named; ship-to exists",
+      "spend": "$2–8k",
+      "status": "blocked"
+    },
+    {
+      "id": "1",
+      "name": "Acid coupons",
+      "window": "2027-H1",
+      "kpi": "≥1 film Pass or Conditional on C1–C3",
+      "spend": "$5–25k",
+      "status": "planned"
+    },
+    {
+      "id": "2",
+      "name": "He float Ø 1.2 m",
+      "window": "2027",
+      "kpi": "Pressure hold, leak rate, telemetry packet",
+      "spend": "$15–60k",
+      "status": "planned"
+    },
+    {
+      "id": "3",
+      "name": "Bay mock + packet",
+      "window": "2027–28",
+      "kpi": "Plottable AETHER-G3/1 from a real camera + T/P + ring",
+      "spend": "$8–30k",
+      "status": "planned"
+    }
+  ],
   "built": [
     {
       "item": "Public website + interactive trajectory planner",

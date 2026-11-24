@@ -282,7 +282,7 @@ export default function MissionPlanner() {
         </div>
         <div>
           <span className="text-white font-medium block mb-1">Mission Progress (LEO 8% → Venus Capture)</span>
-          Drags the cyan probe along the computed transfer path. At the same time, both planets continue rotating around the Sun to their positions at the corresponding mission elapsed time (~140 days total). LEO 8% marks early departure / Earth escape.
+          Drags the cyan probe along the computed transfer path. At the same time, both planets continue rotating around the Sun to their positions at the corresponding mission elapsed time (~146 days total). LEO 8% marks early departure / Earth escape.
         </div>
         <div>
           <span className="text-white font-medium block mb-1">Wet Mass (fixed at 400 kg)</span>

@@ -23,35 +23,43 @@ export default function MissionPage() {
 
       <h1 className="text-6xl font-semibold tracking-tighter mt-8 mb-3">Project AETHER</h1>
       <p className="text-xl text-foreground/90 max-w-prose">
-        A super-pressure balloon probe to the habitable cloud layer of Venus.
+        A super-pressure balloon probe concept for the 50–55 km cloud layer of Venus. Pre-hardware.
       </p>
       <p className="mt-2 font-mono text-xs text-venus/80">
-        {mc.callsign} · PHASE {mc.phase} · LAUNCH TARGET {mc.launch_target}
+        {mc.callsign} · PHASE {mc.phase} · {mc.launch_target}
       </p>
 
       <div className="prose prose-invert mt-10 text-[15px] leading-relaxed max-w-none">
         <h2>Why the Cloud Layer?</h2>
         <p>
-          Between 50 and 60 kilometers above the surface of Venus lies a region with Earth-like temperatures
-          (0–60°C) and pressure (~1 atm). This is the only place in the inner solar system, besides Earth
-          itself, where humans could potentially live without extreme life support.
+          Between 50 and 60 km above the surface of Venus lies a region with Earth-like temperatures
+          (0–60°C) and pressure (~1 atm). Cloudseeker targets the 50–55 km float band. The unique
+          engineering gap is time in that slab — 30–90 days versus VLF ~5 min, DAVINCI ~1 h, VEGA
+          ~46 h. Long-horizon habitation ideas stay labeled vision.
         </p>
 
         <h2>Mission Concept</h2>
         <p>
-          AETHER will deploy a long-duration super-pressure balloon carrying a suite of instruments for
-          atmospheric sampling, imaging, and in-situ analysis. The probe will float for weeks or months,
-          providing unprecedented data on this unique environment.
+          AETHER is a concept for a long-duration super-pressure balloon with a flush sensor bay
+          (imaging, meteorology, in-situ chemistry) and a separate 3U CubeSat relay. The program is
+          pre-hardware: documentation, mass/power/comms books, and ground gates. Target float is
+          ≥{specs.probe.expected_duration_days} days (goal{' '}
+          {specs.probe.duration_goal_days ?? 90} days) at 50–55 km. Flight architecture waits until
+          those gates pass.
         </p>
 
         <h3>Probe specs</h3>
         <ul>
           <li>Type: {specs.probe.type}</li>
           <li>
-            Altitude: {specs.probe.target_altitude_km[0]}–{specs.probe.target_altitude_km[1]} km
+            Target altitude: {specs.probe.target_altitude_km[0]}–{specs.probe.target_altitude_km[1]} km
           </li>
           <li>
             Temperature: {specs.probe.temperature_range_c[0]}–{specs.probe.temperature_range_c[1]} °C
+          </li>
+          <li>
+            Float: ≥{specs.probe.expected_duration_days} d requirement ·{' '}
+            {specs.probe.duration_goal_days ?? 90} d goal
           </li>
           <li>Instruments: {specs.probe.instruments.join(', ')}</li>
           <li>Wet mass class: ~{mass.wet_mass_kg} kg · balloon ~{mass.balloon_diameter_m} m</li>
@@ -114,6 +122,16 @@ export default function MissionPage() {
       <div className="mt-10 text-sm border border-white/10 p-4 bg-white/[0.02]">
         <div className="font-mono text-[10px] tracking-widest text-venus/80 mb-2">DESIGN PACKAGE (REPO)</div>
         <ul className="text-gray-400 text-xs space-y-1 font-mono">
+          <li>
+            <a
+              className="text-venus hover:underline"
+              href="https://github.com/ehreng/Nephelis/blob/main/docs/program-gates.md"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Program gates 0–8
+            </a>
+          </li>
           <li>
             <a
               className="text-venus hover:underline"

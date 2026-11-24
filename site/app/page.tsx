@@ -5,13 +5,27 @@ import FundingTiers from "@/components/FundingTiers";
 import SignupForm from "@/components/SignupForm";
 import SystemsStatus from "@/components/SystemsStatus";
 import VolunteerForm from "@/components/VolunteerForm";
-import { getTimeline, getHeritage } from "@/lib/content";
+import { getTimeline, getHeritage, getMassBudget } from "@/lib/content";
 import BayCarries from "@/components/BayCarries";
 import RelayComms from "@/components/RelayComms";
 
 export default function NephelisHome() {
   const timeline = getTimeline();
   const heritage = getHeritage();
+  const mass = getMassBudget();
+  const byId = Object.fromEntries(mass.elements.map((e) => [e.id, e]));
+  const kg = (id: string) => {
+    const el = byId[id];
+    return el ? `${el.mass_kg_min}–${el.mass_kg_max} kg` : '—';
+  };
+  const floatingMin =
+    (byId.balloon?.mass_kg_min ?? 0) +
+    (byId.gondola?.mass_kg_min ?? 0) +
+    (byId.avionics?.mass_kg_min ?? 0);
+  const floatingMax =
+    (byId.balloon?.mass_kg_max ?? 0) +
+    (byId.gondola?.mass_kg_max ?? 0) +
+    (byId.avionics?.mass_kg_max ?? 0);
 
   return (
     <div className="min-h-screen bg-void text-foreground">
@@ -100,10 +114,14 @@ export default function NephelisHome() {
                 risk models, and AETHER OS for open contribution — not a flight-ready stack.
               </p>
               <p>
-                <strong className="text-white">Near-term execution (real work):</strong> acid-resistant
-                material coupons, a small helium ground float with basic sensors/telemetry, and
-                transparent logs of failures and tests. Flight architecture (entry system, inflation,
-                rad-tolerant avionics, relay) remains trade/TBD until ground gates pass.
+                <strong className="text-white">Near-term execution (Gates 0–3):</strong> film RFQ +
+                acid coupons, a Ø 1.2 m helium ground float, then a COTS bay mock that emits a
+                telemetry packet. Gate 0 send is blocked on a US ship-to. Flight architecture
+                (entry, inflation, rad-tolerant avionics, 3U relay) waits until those gates pass.{' '}
+                <a href="/roadmap" className="text-venus hover:underline">
+                  Sequence on /roadmap
+                </a>
+                .
               </p>
               <p>
                 <strong className="text-white">Vision (clearly labeled):</strong> long-term interest in
@@ -112,9 +130,9 @@ export default function NephelisHome() {
                 engineering step. We keep the inspiration; we do not sell it as current maturity.
               </p>
               <p>
-                A ~$500k crowdfund target supports a <em>ground demonstrator / early R&amp;D</em>{' '}
-                campaign. A full Venus flight system will cost far more. Rideshare “$80/kg” figures
-                on this site are illustrative architecture math, not booked launch contracts.
+                A ~$500k crowdfund target maps to Gates 0–5 (comfortably 0–4). A full Venus flight
+                system is $5–15M+ or a strong partnership. Rideshare “$80/kg” figures on this site
+                are illustrative architecture math, not booked launch contracts.
               </p>
               <p>
                 Contributors welcome (L1–L3) via{' '}
@@ -210,7 +228,7 @@ export default function NephelisHome() {
                 <div>
                   <div className="flex justify-between py-1 border-b border-white/10">
                     <span className="text-gray-400">Kick / Transfer Stage (wet)</span>
-                    <span className="font-mono text-white">330–380 kg</span>
+                    <span className="font-mono text-white">{kg('kick_stage')}</span>
                   </div>
                   <div className="pl-3 text-xs text-gray-500">Dry ~80–100 kg + propellant ~250–280 kg (Isp ~290 s storable hypergolic). Mass ratio ~2.4 for 2.5 km/s Δv.</div>
                 </div>
@@ -218,15 +236,16 @@ export default function NephelisHome() {
                 <div>
                   <div className="flex justify-between py-1 border-b border-white/10">
                     <span className="text-gray-400">Entry Probe + Stowed Balloon + Gondola/Sensors (dry)</span>
-                    <span className="font-mono text-white">120–150 kg</span>
+                    <span className="font-mono text-white">{kg('entry_probe')}</span>
                   </div>
                 </div>
 
                 <div className="text-xs text-gray-500 pl-1 md:col-span-2 -mt-1 mb-2">
-                  • Heatshield / flat dinner-plate base (ablative, blunt body): ~60 kg<br />
-                  • Stowed fluoropolymer super-pressure balloon + inflation system: ~40 kg<br />
-                  • Gondola + integrated sensor suite (imagery, mass spec, nephelometer, bio-sensors): ~50 kg<br />
-                  • Avionics, power, structure, comms: ~30 kg
+                  • Heatshield / flat dinner-plate base (ablative, blunt body): {kg('heatshield')}<br />
+                  • Stowed fluoropolymer super-pressure balloon + inflation: {kg('balloon')}<br />
+                  • Gondola + sensor suite (flush bay; science ~8 kg): {kg('gondola')}<br />
+                  • Avionics, power, structure, comms: {kg('avionics')}<br />
+                  • 3U CubeSat relay (separate orbiter, not in the entry sum): {kg('cubesat_relay')}
                 </div>
 
                 <div className="flex justify-between py-1 border-b border-white/10">
@@ -241,7 +260,7 @@ export default function NephelisHome() {
             <div className="mb-8">
               <div className="font-mono text-xs uppercase tracking-widest text-venus mb-2">Balloon Sizing (Lighter Payload Advantage)</div>
               <p className="text-sm text-gray-400">
-                For ~120 kg floating mass at 55 km (ρ_net lift ≈ 0.8 kg/m³), only <span className="text-white font-medium">~150 m³</span> volume is required → spherical diameter ~<span className="font-mono">6.6 m</span>. Extremely stowable, lower material mass, faster inflation, and easier packaging. Still delivers the full 30–90 day float with excellent margin.
+                Floating mass (balloon + bay + avionics, heatshield jettisoned) is ~{floatingMin}–{floatingMax} kg. At 55 km (ρ_net lift ≈ 0.8 kg/m³), ~<span className="text-white font-medium">{mass.balloon_volume_m3} m³</span> → spherical diameter ~<span className="font-mono">{mass.balloon_diameter_m} m</span>. Design point from mass-budget.json. Envelope life is the Gate 0–1 go/no-go.
               </p>
             </div>
 
@@ -269,8 +288,8 @@ export default function NephelisHome() {
                 Optimistic rideshare math (e.g.{' '}
                 <span className="font-mono text-venus">$80/kg × 400 kg ≈ $32k</span>) is a study
                 figure, not a quote. Entry systems, materials, test campaigns, and avionics dominate
-                real budgets. The public ~$500k target is for ground demonstrators and early
-                R&amp;D, not an end-to-end Venus flight.
+                real budgets. The public ~$500k target maps to Gates 0–5, not an end-to-end Venus
+                flight.
               </p>
             </div>
 
@@ -281,7 +300,7 @@ export default function NephelisHome() {
               <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 text-sm text-gray-400">
                 <div>
                   <span className="text-white font-medium block">Ground work</span>
-                  Materials coupons, float demos, and logged test results.
+                  Gates 0–3: coupons, Ø 1.2 m He float, COTS bay packet.
                 </div>
                 <div>
                   <span className="text-white font-medium block">Open engineering</span>
@@ -352,7 +371,7 @@ export default function NephelisHome() {
                 </div>
                 <div className="glass-panel p-5 text-center border-t-2 border-venus">
                   <div className="stat-label mb-1">Travel Time</div>
-                  <div className="text-3xl font-bold text-white">140 <span className="text-sm text-gray-600">days</span></div>
+                  <div className="text-3xl font-bold text-white">146 <span className="text-sm text-gray-600">days</span></div>
                   <div className="text-xs text-venus mt-1">vs 210+ for Mars</div>
                 </div>
               </div>
@@ -364,7 +383,7 @@ export default function NephelisHome() {
                 <thead>
                   <tr className="bg-white/5 text-gray-400 font-mono text-xs uppercase tracking-wider">
                     <th className="p-4 border-b border-white/10">Metric</th>
-                    <th className="p-4 border-b border-white/10 text-venus bg-venus/5">Venus (55km)</th>
+                    <th className="p-4 border-b border-white/10 text-venus bg-venus/5">Venus 55 km</th>
                     <th className="p-4 border-b border-white/10">Mars (Surface)</th>
                     <th className="p-4 border-b border-white/10">Earth (Surface)</th>
                   </tr>
@@ -384,7 +403,10 @@ export default function NephelisHome() {
                   </tr>
                   <tr>
                     <td className="p-4 font-bold text-white">Solar Flux</td>
-                    <td className="p-4 text-venus bg-venus/5 font-bold">2600 W/m²</td>
+                    <td className="p-4 text-venus bg-venus/5 font-bold">
+                      ~2600 W/m² TOA
+                      <div className="text-[10px] font-normal text-venus/70 mt-1">~200 W/m² elec. at 55 km</div>
+                    </td>
                     <td className="p-4">590 W/m²</td>
                     <td className="p-4">1360 W/m²</td>
                   </tr>
@@ -396,32 +418,38 @@ export default function NephelisHome() {
                   </tr>
                 </tbody>
               </table>
+              <p className="px-4 py-2 text-[10px] font-mono text-gray-500 border-t border-white/10">
+                Solar: 2600 W/m² is top-of-atmosphere. Electrical insolation at 55 km is ~200 W/m² after cloud derate (power v1).
+              </p>
             </div>
           </div>
 
-          {/* Strategic Pillars I / II / III - exact copy from live */}
+          {/* Strategic Pillars I / II / III */}
           <div>
             <div className="uppercase tracking-widest text-xs text-foreground/60 mb-4">PILLARS</div>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="p-6 border border-white/10 bg-black/40 hover:border-venus/50 transition-colors">
                 <div className="h-9 w-9 bg-venus/10 text-venus flex items-center justify-center rounded-sm mb-4 font-bold">I</div>
                 <h4 className="text-white font-bold text-lg mb-2">Habitation</h4>
+                <p className="font-mono text-[10px] uppercase tracking-wider text-venus/70 mb-2">Long-horizon vision</p>
                 <p className="text-sm text-gray-400 leading-relaxed">
-                  At 50km, humans can live in breathable air habitats (21% O2, 79% N2) which act as lifting gas in the dense CO2 atmosphere. No pressurized suits required inside the habitat.
+                  At 50 km, breathable-air habitats (21% O2, 79% N2) would act as lifting gas in dense CO2. No pressurized suits inside. Not current program scope.
                 </p>
               </div>
               <div className="p-6 border border-white/10 bg-black/40 hover:border-venus/50 transition-colors">
                 <div className="h-9 w-9 bg-venus/10 text-venus flex items-center justify-center rounded-sm mb-4 font-bold">II</div>
                 <h4 className="text-white font-bold text-lg mb-2">Resources (ISRU)</h4>
+                <p className="font-mono text-[10px] uppercase tracking-wider text-venus/70 mb-2">Long-horizon vision</p>
                 <p className="text-sm text-gray-400 leading-relaxed">
-                  The atmosphere is a chemical factory. We can extract Oxygen and Carbon from CO2, Sulfuric Acid for industrial processes, and Nitrogen for agriculture.
+                  The atmosphere is a chemical factory: oxygen and carbon from CO2, sulfuric acid for industry, nitrogen for agriculture. Downstream of a working float.
                 </p>
               </div>
               <div className="p-6 border border-white/10 bg-black/40 hover:border-venus/50 transition-colors">
                 <div className="h-9 w-9 bg-venus/10 text-venus flex items-center justify-center rounded-sm mb-4 font-bold">III</div>
                 <h4 className="text-white font-bold text-lg mb-2">Astrobiology</h4>
+                <p className="font-mono text-[10px] uppercase tracking-wider text-venus/70 mb-2">Near-term science goal</p>
                 <p className="text-sm text-gray-400 leading-relaxed">
-                  The cloud layer may host microbial life. Phosphine detection remains controversial but compelling. Cloudseeker carries sensors tuned to detect biological precursors.
+                  The cloud layer may host microbial life. Phosphine detection remains controversial. Baseline suite includes AFN / TLS / MS channels for precursors — not selected hardware.
                 </p>
               </div>
             </div>
@@ -437,18 +465,18 @@ export default function NephelisHome() {
               <div>
                 <div className="font-mono text-xs text-venus mb-1">KEY ADVANTAGES</div>
                 <ul className="list-disc pl-5 space-y-1 text-gray-400">
-                  <li>Faster travel (future 30-45 days)</li>
+                  <li>Hohmann-class travel ~146 days vs 210+ for Mars</li>
                   <li>Abundant atmospheric resources</li>
-                  <li>Better solar energy potential despite clouds</li>
+                  <li>TOA solar 1.91× Earth; ~200 W/m² electrical at 55 km</li>
                 </ul>
               </div>
               <div>
                 <div className="font-mono text-xs text-venus mb-1">ATMOSPHERE &amp; RESOURCES</div>
-                <p className="text-gray-400">96.5% CO₂ (fuel/plastics), 3.5% N₂ (air), SO₂ &amp; H₂SO₄ (chemical feedstocks). Solar: 1.91× Earth’s at top of atmosphere — massive potential for floating solar arrays and AI data centers. Chemical Feedstocks enable in-situ manufacturing far easier than Mars thin atmosphere.</p>
+                <p className="text-gray-400">96.5% CO₂ (fuel/plastics), 3.5% N₂ (air), SO₂ &amp; H₂SO₄ (chemical feedstocks). Solar at top of atmosphere is 1.91× Earth; electrical at 55 km is ~200 W/m² after cloud derate. Chemical feedstocks are a long-horizon ISRU path, not Cloudseeker scope.</p>
               </div>
             </div>
             <p className="text-sm text-gray-400">
-              Challenges (acid mitigation via altitude/materials) are solvable. Venus floating cities + Mars surface ops = true multi-planetary redundancy.
+              Acid resistance is the Gate 0–1 go/no-go. Floating cities remain long-horizon vision. Near-term: prove a 30–90 day float at 50–55 km.
             </p>
           </div>
         </div>
@@ -460,13 +488,13 @@ export default function NephelisHome() {
           <div className="uppercase tracking-[3px] text-xs text-venus/70 mb-2">TECHNOLOGY</div>
           <h3 className="text-3xl font-bold text-white mb-6">Cloudseeker Technology</h3>
           <p className="text-gray-400 mb-8 max-w-prose">
-            Cloudseeker uses miniaturized, robust tech built for Venus extremes—paving the way for future life-sustaining outposts.
+            Architecture baselines in git — not selected flight hardware. The envelope is the mission-killing risk. Habitats stay vision.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 text-sm">
             <div className="glass-panel p-6 border-l-2 border-l-venus">
               <h4 className="font-mono text-venus mb-2">Acid-Resistant Aerostat</h4>
-              <p className="text-gray-400">Multi-layered fluoropolymer balloon resists sulfuric acid; maintains stable float in the habitable zone—foundation for human/AI habitats.</p>
+              <p className="text-gray-400">Target: multilayer fluoropolymer super-pressure envelope. Acid resistance is Gate 0–1 — coupons not yet run. Not qualified hardware.</p>
             </div>
             <div className="glass-panel p-6 border-l-2 border-l-venus">
               <h4 className="font-mono text-venus mb-2">Integrated Sensor Suite</h4>
@@ -478,7 +506,7 @@ export default function NephelisHome() {
             </div>
             <div className="glass-panel p-6 border-l-2 border-l-venus">
               <h4 className="font-mono text-venus mb-2">AI-Optimized Navigation</h4>
-              <p className="text-gray-400">xAI models enable autonomous operations in Venus’s dynamic atmosphere—key for human-AI symbiosis off-Earth.</p>
+              <p className="text-gray-400">Autonomous navigation is a study item, not flight software. Gate 3 is a COTS packet from a bay mock. AETHER OS coordinates Earth-side work.</p>
             </div>
           </div>
 
@@ -495,7 +523,7 @@ export default function NephelisHome() {
             <div>
               <h2 className="text-venus font-mono text-sm uppercase tracking-widest mb-2">05 // Mission Archive</h2>
               <h3 className="text-4xl font-bold text-white">Standing on the Shoulders of Giants</h3>
-              <p className="mt-2 text-gray-400">While government and private efforts advance Venus science, Project AETHER fills the unique niche of low-cost habitation validation. Comprehensive log of humanity's attempts to reach Venus.</p>
+              <p className="mt-2 text-gray-400">Government and private missions map and descend Venus. The unique gap is time at 50–55 km — 30–90 days vs VLF ~5 min, DAVINCI ~1 h, VEGA ~46 h. Heritage log of attempts to reach Venus.</p>
             </div>
           </div>
 

@@ -4,7 +4,7 @@ _Auto-generated 2026-08-11T18:20:50.679Z from mission data. Re-run: `npx tsx aut
 
 ## Boilerplate (short)
 
-**Nephelis Industries** is building **Project AETHER** (Cloudseeker): a low-cost, crowd-supported super-pressure balloon probe targeting the ~55 km habitable cloud layer of Venus. Launch window **2032**.
+**Nephelis Industries** is building **Project AETHER** (Cloudseeker): a low-cost, crowd-supported super-pressure balloon probe targeting the ~55 km habitable cloud layer of Venus. No committed launch date. Earliest class if gates pass: ~2030–2031+.
 
 ## Boilerplate (medium)
 
@@ -16,7 +16,7 @@ While Mars dominates popular attention, Venus’s cloud deck offers near-Earth t
 |--|--|
 | Organization | Nephelis Industries |
 | Mission | Project AETHER / Cloudseeker |
-| Target | Venus cloud layer ~50–60 km |
+| Target | Venus cloud layer ~50–55 km |
 | Platform | Super-pressure balloon |
 | Wet mass | ~400 kg class |
 | Balloon | ~6.6 m class super-pressure |

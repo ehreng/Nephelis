@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import GroundGates from '@/components/GroundGates';
 import { getMissionControl, getRisks, getTasks, getTimeline } from '@/lib/content';
 
 export const metadata: Metadata = {
@@ -49,7 +50,9 @@ export default function RoadmapPage() {
   const mc = getMissionControl();
   const risks = getRisks().filter((r) => r.status === 'open' || r.status === 'mitigating');
 
-  const openTasks = tasks.filter((t) => t.status === 'planned' || t.status === 'in_progress');
+  const openTasks = tasks.filter(
+    (t) => t.status === 'planned' || t.status === 'in_progress' || t.status === 'blocked'
+  );
   const doneCount = tasks.filter((t) => t.status === 'done').length;
 
   const byQuarter = openTasks.reduce<Record<string, typeof tasks>>((acc, t) => {
@@ -81,9 +84,9 @@ export default function RoadmapPage() {
           <div className="font-mono text-xs tracking-[3px] text-venus/80 mb-2">PUBLIC ROADMAP</div>
           <h1 className="text-5xl md:text-6xl font-semibold tracking-tight">Mission Path</h1>
           <p className="mt-3 max-w-2xl text-lg text-foreground/70">
-            Accelerated private probe timeline: design → prototype → build → qualify → launch →
-            float. Compressed relative to flagship missions, but still follows the same logical gates
-            (requirements, PDR/CDR-lite, I&T, launch ops).
+            Ground first. Coupons, a subscale helium float, and a COTS bay packet before avionics,
+            a 3U partner, or any flight stack. Unique gap is time at 50–55 km (30–90 days). No
+            committed launch date.
           </p>
           <p className="mt-2 font-mono text-[10px] text-gray-500">
             {mc.callsign} · {mc.phase} · target {mc.launch_target} · goal $
@@ -104,6 +107,10 @@ export default function RoadmapPage() {
               <div className="text-2xl font-mono text-venus mt-1">{s.value}</div>
             </div>
           ))}
+        </section>
+
+        <section className="mb-14">
+          <GroundGates />
         </section>
 
         <section className="mb-14">
@@ -200,8 +207,8 @@ export default function RoadmapPage() {
             Detailed workstreams
           </h2>
           <p className="text-xs text-gray-600 mb-8 max-w-xl">
-            Open and in-progress only. Completed site/automation work is tracked in data but hidden
-            here for clarity. Source: <code className="text-venus">tasks.json</code>.
+            Open, in-progress, and blocked. Completed site/automation work is tracked in data but
+            hidden here for clarity. Source: <code className="text-venus">tasks.json</code>.
           </p>
 
           <div className="space-y-12">

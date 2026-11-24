@@ -3,7 +3,7 @@
     "type": "Super-pressure balloon",
     "target_altitude_km": [
       50,
-      60
+      55
     ],
     "temperature_range_c": [
       0,
@@ -11,6 +11,7 @@
     ],
     "pressure_atm": 1,
     "expected_duration_days": 30,
+    "duration_goal_days": 90,
     "instruments": [
       "AFN-class autofluorescence nephelometer",
       "Compact TLS / MEMS gas",
@@ -20,7 +21,8 @@
     ]
   },
   "launch": {
-    "target_year": 2032,
+    "target_year": 2031,
+    "target_year_note": "Earliest class if gates pass; not a committed date",
     "vehicle_options": [
       "Rideshare",
       "Dedicated small launcher"

@@ -42,7 +42,7 @@ _Auto-generated ${generated} from mission data. Re-run: \`npx tsx automation/scr
 
 ## Boilerplate (short)
 
-**Nephelis Industries** is building **Project AETHER** (Cloudseeker): a low-cost, crowd-supported super-pressure balloon probe targeting the ~${mass.target_float_altitude_km} km habitable cloud layer of Venus. Launch window **${specs.launch.target_year}**.
+**Nephelis Industries** is building **Project AETHER** (Cloudseeker): a low-cost, crowd-supported super-pressure balloon probe targeting the ~${mass.target_float_altitude_km} km habitable cloud layer of Venus. ${mc.launch_target}.
 
 ## Boilerplate (medium)
 

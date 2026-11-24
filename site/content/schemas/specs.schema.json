@@ -21,6 +21,7 @@
         },
         "pressure_atm": { "type": "number" },
         "expected_duration_days": { "type": "number" },
+        "duration_goal_days": { "type": "number" },
         "instruments": {
           "type": "array",
           "items": { "type": "string" }
@@ -32,6 +33,7 @@
       "required": ["target_year"],
       "properties": {
         "target_year": { "type": "number" },
+        "target_year_note": { "type": "string" },
         "vehicle_options": {
           "type": "array",
           "items": { "type": "string" }

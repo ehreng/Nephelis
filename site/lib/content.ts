@@ -146,6 +146,14 @@ export function getProgress() {
       label: string;
       flight_estimate_note: string;
     };
+    ground_gates: {
+      id: string;
+      name: string;
+      window: string;
+      kpi: string;
+      spend: string;
+      status: string;
+    }[];
     built: { item: string; evidence: string }[];
     not_yet: string[];
     team: { public: string; authority_claims: string };
@@ -168,6 +176,13 @@ export function getPowerBudget() {
 export function getUpdates() {
   // Newest first
   return [
+    {
+      slug: '2026-11-24-program-gates',
+      title: 'Program gates 0–8 — November 2026',
+      date: '2026-11-24',
+      excerpt:
+        'Ground-first sequence with KPIs and spend. Unique gap is time at 50–55 km. $500k maps to Gates 0–5.',
+    },
     {
       slug: '2026-10-founder-training',
       title: 'Founder in Army training — October 2026',

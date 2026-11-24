@@ -68,7 +68,7 @@ _Auto-generated from \`site/content/data/*\` · ${generated}_
 | Target altitude | ${specs.probe.target_altitude_km[0]}–${specs.probe.target_altitude_km[1]} km (float ~${mass.target_float_altitude_km} km) |
 | Wet mass | ~${mass.wet_mass_kg} kg · balloon ~${mass.balloon_diameter_m} m |
 | Float duration (baseline) | ${specs.probe.expected_duration_days}+ days (ops goal 30–90) |
-| Launch target | ${specs.launch.target_year} |
+| Launch target | ${mc.launch_target} |
 | Vehicles | ${specs.launch.vehicle_options.join(', ')} |
 | Transfer | ${specs.launch.transfer} |
 | Funding goal | $${mc.funding_goal_usd.toLocaleString()} |

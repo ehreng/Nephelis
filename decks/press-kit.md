@@ -1,6 +1,6 @@
 # Nephelis Industries — Press & Partner Kit
 
-_Auto-generated 2026-08-11T18:20:50.679Z from mission data. Re-run: `npx tsx automation/scripts/press-kit.ts`_
+_Auto-generated 2026-11-24T01:57:55.813Z from mission data. Re-run: `npx tsx automation/scripts/press-kit.ts`_
 
 ## Boilerplate (short)
 
@@ -37,10 +37,11 @@ While Mars dominates popular attention, Venus’s cloud deck offers near-Earth t
 
 ## Instruments (concept)
 
-- Atmospheric spectrometers
-- High-res cameras
-- Meteorological suite
-- Life detection experiments
+- AFN-class autofluorescence nephelometer
+- Compact TLS / MEMS gas
+- Aerosol / organics MS (LDMS-class)
+- Meteorology T / P / wind
+- 4K envelope + deck cameras
 
 ## Public participation
 

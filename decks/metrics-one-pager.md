@@ -1,6 +1,6 @@
 # Nephelis Industries — Metrics One-Pager
 
-_Auto-generated from `site/content/data/*` · 2026-11-25T00:15:38.556Z_  
+_Auto-generated from `site/content/data/*` · 2026-11-25T00:25:40.923Z_  
 **Do not hand-edit** — run `npx tsx automation/scripts/sync-metrics.ts` after data changes.
 
 ## Mission snapshot
@@ -49,7 +49,7 @@ _Paid counts come from Stripe at runtime; baseline is static marketing/pre-sales
 - **2025** (complete): Concept, brand, public site, early research notes for Project AETHER
 - **2026-H1** (complete): Vision site, CONOPS/requirements drafts, AETHER OS contribution framework
 - **2026-H2** (current): Public GitHub as SSOT, program gates 0–8 with KPIs/spend, Gate 0 film RFQ written (ship-to still open)
-- **2027** (target): Gates 0–3 ground: film RFQ + acid coupons, Ø 1.2 m He float, bay telemetry mock
+- **2027** (target): Gates 0–3: balloon film + acid tests, 1.2 m helium balloon, sensor-bay data packet
 - **2028** (target): Avionics + UHF, 3U path, entry/inflate freeze — flight stack in build
 - **2029** (target): Ambitious Venus transfer window class — rideshare-class 400 kg stack
 - **2030–31** (aspirational): Backup transfer window
@@ -74,8 +74,8 @@ _Paid counts come from Stripe at runtime; baseline is static marketing/pre-sales
 - [P1] Recruit core volunteer leads: structures, avionics, software, science — _planned_ (2026-Q3)
 - [P0] Preliminary design review (lite): freeze interfaces, mass/power books — _planned_ (2028-H1)
 - [P0] Name ground operator and US ship-to for film samples and lab — _blocked_ (2027-Q1)
-- [P0] Request ASTM D543 / H2SO4 coupon quotes from Gate 0 lab shortlist — _planned_ (2027-Q1)
-- [P0] Fluoropolymer acid coupon campaign (protocol: docs/materials-coupon-test-protocol.md) — _in_progress_ (2027-H1)
+- [P0] Request lab quotes for sulfuric-acid tests on balloon film — _planned_ (2027-Q1)
+- [P0] Run acid tests on balloon film — _in_progress_ (2027-H1)
 - [P0] Build subscale super-pressure balloon prototype #1 (Earth ambient, Ø 1.2 m) — _planned_ (2027-H2)
 - [P0] Envelope leak / pressure-hold ground test protocol + first run — _in_progress_ (2027-H2)
 - [P0] Heatshield geometry/material trade (blunt body mass vs peak load) — _planned_ (2026-Q4)

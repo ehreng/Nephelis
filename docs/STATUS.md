@@ -33,7 +33,7 @@
 
 | Item | Posture |
 |------|---------|
-| Next milestone | Gate 0: ship-to + send film RFQ + lab quote. Then coupons → He float → telemetry |
+| Next milestone | Gate 0: US delivery address + send film order + lab quote. Then film acid tests → helium balloon → telemetry |
 | Flight window | Ambitious **2029** transfer window class (not locked). Backup 2030–31. |
 
 ## Budget posture

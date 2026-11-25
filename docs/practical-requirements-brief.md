@@ -57,7 +57,7 @@ Sponsor logos remain on the translucent upper envelope in light gray/white techn
 
 | Domain | Requirement | Notes / current gap |
 |--------|-------------|---------------------|
-| Materials | Acid-resistant envelope lifetime at 50–55 km | Coupon testing required. Protocol: `docs/materials-coupon-test-protocol.md`. Task `materials-coupon-campaign`. |
+| Materials | Acid-resistant envelope lifetime at 50–55 km | Acid tests on film samples required. Protocol: `docs/materials-coupon-test-protocol.md`. Task `materials-coupon-campaign`. |
 | Entry | Blunt heatshield + decelerator for ~10.7 km/s | Concept only. Task `heatshield-trade`. |
 | Inflation & float | Reliable sequence + super-pressure control | Not detailed. Task `inflation-system-concept`. |
 | Power | Positive energy balance including night-side | Solar architecture TBD. `docs/power-budget-v0.md`. |
@@ -98,6 +98,6 @@ Prompt source of truth: `docs/visual-bible-cloudseeker.md`.
 1. Baseline fixed upward-looking cameras as the primary sponsor-imaging approach. **Done in visual lock (rev 3).**
 2. Update all concept art and renders to include functional elements listed in Section 2. **In progress in `/preview/visuals`. Homepage still uses the older flyingprobe collage.**
 3. Publish a one-page “minimum viable functional elements” diagram. **HTML/SVG on `/preview/visuals` (`FunctionalElements.tsx`).**
-4. Define and schedule the ground test sequence (acid coupons → helium float prototype → sensor telemetry demo). **`docs/ground-test-sequence.md`.** Program gates 0–8 with spend and KPIs: **`docs/program-gates.md`.** Gate 0 RFQ is written; send is blocked on a ship-to.
+4. Define and schedule the ground test sequence (film acid tests → helium balloon prototype → sensor telemetry demo). **`docs/ground-test-sequence.md`.** Program gates 0–8 with spend and KPIs: **`docs/program-gates.md`.** Gate 0 film order is written; send is blocked on a ship-to.
 
 Do not promote preview stills to the homepage or public `/visuals` until the founder says so.

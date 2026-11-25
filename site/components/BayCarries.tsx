@@ -252,7 +252,7 @@ export default function BayCarries() {
               Nephelis<span className="text-venus">.</span>
             </div>
             <p className="mt-3 max-w-md text-sm leading-relaxed text-white/65">
-              Join the open mission. Acid coupons, a helium ground float, and public logs. Founder
+              Join the open mission. Acid tests on balloon film, a helium ground balloon, and public logs. Founder
               review is asynchronous during U.S. Army training.
             </p>
             <div className="mt-4 font-mono text-[10px] uppercase tracking-[0.25em] text-tech">

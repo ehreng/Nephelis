@@ -337,7 +337,7 @@
   },
   {
     "id": "gate0-lab-quotes",
-    "title": "Request ASTM D543 / H2SO4 coupon quotes from Gate 0 lab shortlist",
+    "title": "Request lab quotes for sulfuric-acid tests on balloon film",
     "status": "planned",
     "priority": "P0",
     "area": "hardware",
@@ -345,7 +345,7 @@
   },
   {
     "id": "materials-coupon-campaign",
-    "title": "Fluoropolymer acid coupon campaign (protocol: docs/materials-coupon-test-protocol.md)",
+    "title": "Run acid tests on balloon film",
     "status": "in_progress",
     "priority": "P0",
     "area": "hardware",

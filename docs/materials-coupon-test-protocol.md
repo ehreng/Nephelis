@@ -1,10 +1,12 @@
-# Materials coupon test protocol — Venus aerostat film
+# Balloon film acid-test protocol — Venus aerostat
 
 **Status:** Test plan draft — not a certified lab SOP  
 **Date:** 2026-07-09  
 **Risk link:** R-01 acid degradation (`risks.json`)  
 **Tasks:** `materials-coupon-campaign`, `partner-materials-samples`, `balloon-prototype-1`  
 **Science note:** `research/science/materials-acid-resistance.md`
+
+**Language:** “Coupon” in the tables below is the lab word for a small cut of balloon film (ASTM D543 specimen). Public copy says **film sample** / **acid test**.
 
 > **Safety:** Concentrated sulfuric acid is hazardous. This document does **not** replace institutional lab SOPs, training, PPE, fume hood, or waste disposal rules. If you lack proper facilities, **outsource** to a qualified lab and use this only as a requirements brief.
 

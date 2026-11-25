@@ -2,7 +2,7 @@
   "updated_at": "2026-11-24",
   "headline": "Early-stage concept, documentation, and open collaboration — pre-hardware",
   "phase": "Pre-hardware / documentation",
-  "next_engineering_milestone": "Gate 0: name a ship-to and send the film RFQ; then acid coupons + Ø 1.2 m helium ground float with basic telemetry",
+  "next_engineering_milestone": "Gate 0: name a US delivery address and send the film order; then acid tests on balloon film + a 1.2 m helium ground balloon with basic telemetry",
   "launch_posture": {
     "previous_public_claim": "",
     "current": "Ambitious target: 2029 Venus transfer window class. Not locked.",
@@ -16,7 +16,7 @@
   "ground_gates": [
     {
       "id": "0",
-      "name": "Film RFQ + lab",
+      "name": "Balloon film + test lab",
       "window": "now → 2027-Q1",
       "kpi": "≥2 vendors quoted; qualified lab named; ship-to exists",
       "spend": "$2–8k",
@@ -24,17 +24,17 @@
     },
     {
       "id": "1",
-      "name": "Acid coupons",
+      "name": "Film acid tests",
       "window": "2027-H1",
-      "kpi": "≥1 film Pass or Conditional on C1–C3",
+      "kpi": "At least one film passes the acid soak, or a written multilayer path",
       "spend": "$5–25k",
       "status": "planned"
     },
     {
       "id": "2",
-      "name": "He float Ø 1.2 m",
+      "name": "1.2 m helium balloon",
       "window": "2027",
-      "kpi": "Pressure hold, leak rate, telemetry packet",
+      "kpi": "Holds pressure, leak rate recorded, telemetry packet received",
       "spend": "$15–60k",
       "status": "planned"
     },
@@ -86,7 +86,7 @@
     }
   ],
   "not_yet": [
-    "Balloon envelope hardware or acid-chamber coupon results",
+    "Balloon envelope hardware or acid-test results on film samples",
     "Entry system, heatshield, or inflation hardware",
     "Flight solar, rad-tolerant avionics selection, or CubeSat hardware",
     "FAA/FCC filings submitted (path documented as drafts only)",

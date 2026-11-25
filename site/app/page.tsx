@@ -114,8 +114,9 @@ export default function NephelisHome() {
                 risk models, and AETHER OS for open contribution — not a flight-ready stack.
               </p>
               <p>
-                <strong className="text-white">Near-term (Gates 0–3):</strong> film RFQ + acid
-                coupons, a Ø 1.2 m helium float, then a COTS bay mock that emits a telemetry packet.
+                <strong className="text-white">Near-term (Gates 0–3):</strong> order balloon film,
+                run acid tests on it, fly a 1.2 m helium balloon, then a sensor bay that sends a
+                data packet.
                 That is the first hardware of a $500k flight stack — then avionics, a 3U relay,
                 entry, rideshare.{' '}
                 <a href="/roadmap" className="text-venus hover:underline">
@@ -129,7 +130,7 @@ export default function NephelisHome() {
                 later. Cloudseeker is how we get there.
               </p>
               <p>
-                <strong className="text-white">$500k all-in.</strong> Coupons through a
+                <strong className="text-white">$500k all-in.</strong> From first film tests through a
                 rideshare-class Venus float. Flagships cost hundreds of millions. Launch prices are
                 collapsing; we design a 400 kg COTS-heavy stack to fit inside half a million.
                 Rideshare “$80/kg” is the launch term of that bet, not a booked contract.
@@ -300,7 +301,7 @@ export default function NephelisHome() {
               <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 text-sm text-gray-400">
                 <div>
                   <span className="text-white font-medium block">Ground work</span>
-                  Gates 0–3: coupons, Ø 1.2 m He float, COTS bay packet.
+                  Gates 0–3: film acid tests, 1.2 m helium balloon, sensor-bay packet.
                 </div>
                 <div>
                   <span className="text-white font-medium block">Open engineering</span>
@@ -702,8 +703,9 @@ export default function NephelisHome() {
           <div className="text-center mb-10">
             <h2 className="text-5xl font-black tracking-[-1px] text-white mb-4 uppercase">Support the work</h2>
             <p className="max-w-xl mx-auto text-xl text-gray-400">
-              Crowdfund tiers fund the $500k all-in stack — coupons through a rideshare-class Venus
-              float. DNA / sample concepts need legal clearance before any sale. Prefer to build?
+              Crowdfund tiers fund the $500k all-in stack — from first film tests through a
+              rideshare-class Venus float. DNA / sample concepts need legal clearance before any
+              sale. Prefer to build?
               Contribute on GitHub.
             </p>
           </div>

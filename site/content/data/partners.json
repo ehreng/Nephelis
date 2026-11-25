@@ -26,7 +26,7 @@
       "name": "CS Hyde Company (FEP/PFA film, Lake Villa IL)",
       "type": "hardware",
       "status": "research",
-      "ask": "Small-batch FEP/PFA sheet 0.5–2 mil for coupons",
+      "ask": "Small-batch FEP/PFA sheet 0.5–2 mil for film samples",
       "next_step": "Send RFQ in docs/gate0-film-rfq.md — not contacted",
       "priority": "P0",
       "last_touched": "2026-11-24"
@@ -36,7 +36,7 @@
       "name": "American Durafilm (Chemours/Norgard + heat-seal, Holliston MA)",
       "type": "hardware",
       "status": "research",
-      "ask": "Film samples + seam coupons; later Gate 2 sphere seaming",
+      "ask": "Film samples + seam samples; later Gate 2 sphere seaming",
       "next_step": "Send RFQ in docs/gate0-film-rfq.md — not contacted",
       "priority": "P0",
       "last_touched": "2026-11-24"
@@ -46,7 +46,7 @@
       "name": "ASTM D543 acid-immersion lab (Sterling / APM / Infinita / Intertek class)",
       "type": "hardware",
       "status": "research",
-      "ask": "Quote for H2SO4 immersion 24 h + 7 d on fluoropolymer coupons",
+      "ask": "Quote for sulfuric-acid soak 24 h + 7 d on balloon film samples",
       "next_step": "Request quotes from Gate 0 lab shortlist — not contacted",
       "priority": "P0",
       "last_touched": "2026-11-24"

@@ -16,8 +16,8 @@ Each gate is go / no-go / conditional. Do not skip ahead to a prettier demo. Spe
 
 | Gate | Name | Package | Target | Status |
 |------|------|---------|--------|--------|
-| 0 | Film RFQ + lab | `docs/gate0-film-rfq.md` | 2027-Q1 | RFQ written; **ship-to blocked** |
-| 1 | Acid coupons | `docs/materials-coupon-test-protocol.md` | 2027-H1 first coupons | Protocol written; no coupons yet |
+| 0 | Balloon film + lab | `docs/gate0-film-rfq.md` | 2027-Q1 | Order written; **ship-to blocked** |
+| 1 | Film acid tests | `docs/materials-coupon-test-protocol.md` | 2027-H1 first samples | Protocol written; no tests yet |
 | 2 | Helium float prototype | `docs/gate2-he-float-bom.md` | 2027 | BOM scoped; do not build until Gate 1 |
 | 3 | Sensor telemetry demo | `docs/gate3-telemetry-schema.md` | 2027–2028 | Mock API live; hardware mock not built |
 
@@ -25,11 +25,11 @@ Each gate is go / no-go / conditional. Do not skip ahead to a prettier demo. Spe
 
 ## Gate 0 — Film RFQ + lab
 
-**Package:** `docs/gate0-film-rfq.md`. Thickness, coupon count, vendor shortlist, and lab shortlist are filled. **Ship-to is blocked** until a ground operator names a US address. Do not send the RFQ blank.
+**Package:** `docs/gate0-film-rfq.md`. Thickness, sample count, vendor shortlist, and lab shortlist are filled. **Ship-to is blocked** until a ground operator names a US address. Do not send the RFQ blank.
 
 ---
 
-## Gate 1 — Acid coupons
+## Gate 1 — Film acid tests
 
 **Protocol:** `docs/materials-coupon-test-protocol.md`  
 **Science note:** `research/science/materials-acid-resistance.md`  

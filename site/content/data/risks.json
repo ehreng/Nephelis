@@ -8,7 +8,7 @@
       "likelihood": "medium",
       "impact": "high",
       "status": "mitigating",
-      "mitigation": "Multi-layer fluoropolymer; altitude selection; coupon protocol in docs/materials-coupon-test-protocol.md",
+      "mitigation": "Multi-layer fluoropolymer; altitude selection; film acid-test protocol in git",
       "owner": "structures"
     },
     {

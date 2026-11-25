@@ -198,7 +198,7 @@ export default function MissionPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Materials coupon protocol
+              Balloon film acid-test protocol
             </a>
           </li>
           <li>

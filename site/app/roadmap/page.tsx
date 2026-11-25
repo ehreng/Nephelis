@@ -84,7 +84,7 @@ export default function RoadmapPage() {
           <div className="font-mono text-xs tracking-[3px] text-venus/80 mb-2">PUBLIC ROADMAP</div>
           <h1 className="text-5xl md:text-6xl font-semibold tracking-tight">Mission Path</h1>
           <p className="mt-3 max-w-2xl text-lg text-foreground/70">
-            A $500k private path to a 30–90 day Venus float. Coupons and a helium sphere this
+            A $500k private path to a 30–90 day Venus float. Film tests and a helium balloon this
             year-class; avionics and a 3U next; ambitious transfer window 2029. Unique gap is time
             at 50–55 km.
           </p>

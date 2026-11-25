@@ -51,7 +51,7 @@ Site form: [nephelisindustries.com/#contribute](https://www.nephelisindustries.c
 ### 5. Hardware / regulatory (L3)
 - Only after acknowledgment from Founder Emeritus or a designated reviewer. Acknowledgment is asynchronous during U.S. Army training. L1–L2 work should proceed without waiting on it.
 - Program gates: [`docs/program-gates.md`](./docs/program-gates.md) (KPIs, spend, make-vs-buy).
-- Ground sequence: [`docs/ground-test-sequence.md`](./docs/ground-test-sequence.md) (coupons → helium float → sensor telemetry). Gate 0 RFQ: [`docs/gate0-film-rfq.md`](./docs/gate0-film-rfq.md). Gate 2 BOM: [`docs/gate2-he-float-bom.md`](./docs/gate2-he-float-bom.md).
+- Ground sequence: [`docs/ground-test-sequence.md`](./docs/ground-test-sequence.md) (film acid tests → helium balloon → sensor telemetry). Gate 0 RFQ: [`docs/gate0-film-rfq.md`](./docs/gate0-film-rfq.md). Gate 2 BOM: [`docs/gate2-he-float-bom.md`](./docs/gate2-he-float-bom.md).
 - Log safety/export concerns in the issue
 
 ## Development setup

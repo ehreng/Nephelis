@@ -20,7 +20,7 @@
 ### What moved since the last brief (2026-11-16)
 
 - Program gates 0–8 written: KPIs, spend ranges, make-vs-buy (`docs/program-gates.md`).
-- Gate 0 RFQ package: coupon matrix frozen, CS Hyde + American Durafilm named, ASTM D543 lab shortlist. **Ship-to still blocked.**
+- Gate 0 film-order package: sample matrix frozen, CS Hyde + American Durafilm named, ASTM D543 lab shortlist. **Ship-to still blocked.**
 - Gate 2 BOM scoped: Ø 1.2 m Earth He float. Do not build until Gate 1.
 - Live site: n5/n6 cool-blue future-city stills (`8566af2`). Stripe live remains **off**.
 
@@ -70,7 +70,7 @@ Priority: **safety/regulatory → hardware → public progress → nice-to-have*
 - [x] `docs/gate0-film-rfq.md` (vendors, labs, filled RFQ blanks except ship-to)
 - [x] `docs/gate2-he-float-bom.md` (Ø 1.2 m, leak stub, ROM costs)
 - [x] timeline / tasks / partners / progress / STATUS / AETHER OS index
-- [ ] Coupons still not started in hardware
+- [ ] Film acid tests still not started in hardware
 - [ ] RFQ not sent (ship-to blocked)
 
 ---

@@ -8,7 +8,7 @@
 
 Unique value is **time at 50–55 km** (30–90 days vs VLF ~5 min / DAVINCI ~1 h / VEGA ~46 h). That lives or dies on the envelope. Site, visual lock, sensor table, power book, and relay sketch are ahead of hardware.
 
-Public **$500k** is the all-in target: coupons through a rideshare-class Venus flight stack. Flagship Venus missions cost hundreds of millions. Launch and smallsat prices are collapsing; the bet is a 400 kg COTS-heavy aerostat can fly inside half a million. Novel cost is the envelope and inflation sequence, not a prime contractor. If a line blows, descope (carrier comms, partner 3U, in-kind) — do not raise the public target. Ambitious transfer window: **2029 class**. Backup 2030–31. No 2027 claim.
+Public **$500k** is the all-in target: from first film tests through a rideshare-class Venus flight stack. Flagship Venus missions cost hundreds of millions. Launch and smallsat prices are collapsing; the bet is a 400 kg COTS-heavy aerostat can fly inside half a million. Novel cost is the envelope and inflation sequence, not a prime contractor. If a line blows, descope (carrier comms, partner 3U, in-kind) — do not raise the public target. Ambitious transfer window: **2029 class**. Backup 2030–31. No 2027 claim.
 
 ---
 
@@ -16,7 +16,7 @@ Public **$500k** is the all-in target: coupons through a rideshare-class Venus f
 
 | When | What | Why this order |
 |------|------|----------------|
-| Now | Envelope coupons (Gates 0–1) | R-01 is the mission-killing materials risk. |
+| Now | Envelope film samples (Gates 0–1) | R-01 is the mission-killing materials risk. |
 | After a Pass / Conditional film | Subscale He sphere (Gate 2) | Proves seams, valve, leak rate, float. |
 | In parallel, cheap | Bay mock + packet (Gate 3) | Confirms the data contract on COTS. |
 | After Gate 3 | Avionics breadboard + UHF (Gate 5) | First real electronics stack. |
@@ -32,8 +32,8 @@ CubeSat hardware is a later comms gate. Gate 3 is a black-bay mockup that emits 
 
 | Gate | Window | Exit KPI | Spend | $500k burn (cum.) |
 |------|--------|----------|------:|------------------:|
-| **0 Film RFQ + lab** | now → 2027-Q1 | ≥2 vendors quoted; qualified lab named; ship-to exists; coupon matrix frozen | $2–8k | ~$8k |
-| **1 Acid coupons** | 2027-H1 | ≥1 film **Pass** on C1–C3, or a written **Conditional** multilayer path. Mass-change table + photos in git. | $5–25k | ~$30k |
+| **0 Balloon film + lab** | now → 2027-Q1 | ≥2 vendors quoted; qualified lab named; ship-to exists; sample matrix frozen | $2–8k | ~$8k |
+| **1 Film acid tests** | 2027-H1 | ≥1 film **Pass** on C1–C3, or a written **Conditional** multilayer path. Mass-change table + photos in git. | $5–25k | ~$30k |
 | **2 He float (subscale)** | 2027 | ~1.2 m sphere holds pressure for the agreed window; leak rate recorded; telemetry packet received; seams inspected. | $15–60k | ~$80k |
 | **3 Bay mock + packet** | 2027–28 | Stored packet `{v, ts, src, seq, sensors[]}` from a real camera + T/P + ring; external engineer can plot it. | $8–30k | ~$110k |
 | **4 PDR-lite** | 2028 | Mass/power/comms books with night = 50–60 h; inflation concept; FMEA on envelope / inflate / power; 10-minute walkthrough from repo docs only. | $20–80k | ~$180k |
@@ -46,7 +46,7 @@ CubeSat hardware is a later comms gate. Gate 3 is a black-bay mockup that emits 
 
 ## Gate packages
 
-### Gate 0 — Film RFQ + lab
+### Gate 0 — Balloon film + lab
 
 **Package:** `docs/gate0-film-rfq.md` · protocol: `docs/materials-coupon-test-protocol.md`  
 **Issues:** [#45](https://github.com/ehreng/Nephelis/issues/45) RFQ · [#50](https://github.com/ehreng/Nephelis/issues/50) ship-to · [#51](https://github.com/ehreng/Nephelis/issues/51) lab quotes
@@ -58,7 +58,7 @@ CubeSat hardware is a later comms gate. Gate 3 is a black-bay mockup that emits 
 
 **Blocked on:** a human who can receive a package and a lab PO. Ehren in AIT cannot be that person on a same-week cadence.
 
-### Gate 1 — Acid coupons
+### Gate 1 — Film acid tests
 
 **Protocol:** `docs/materials-coupon-test-protocol.md`  
 **Risk:** R-01
@@ -89,7 +89,7 @@ Paper (4) then breadboard (5) then partner 3U (6) then entry/inflate (7) then fl
 
 | Work | AI / software | Buy / open / COTS | Partner / lab | Novel, keep in-house |
 |------|----------------|-------------------|---------------|----------------------|
-| Coupon protocol, RFQ, data logs | Most of the paper | Film from distributors | Acid lab + EHS | The **30–90 d acid + crease + seam dataset** and the go/no-go |
+| Film-test protocol, RFQ, data logs | Most of the paper | Film from distributors | Acid lab + EHS | The **30–90 d acid + crease + seam dataset** and the go/no-go |
 | Subscale sphere | CAD, BOM, seaming procedure | He, valves, COTS logger | Balloon / film converter | Sphere **seams and leak rate** on the chosen film |
 | Gate 3 bay | Firmware, dashboard, packet schema (done) | Pi / STM32, camera, met, LEDs | — | Visual / mechanical fit of the flush bay |
 | Power | Night-duration model (v1 exists) | Cells, 400 Wh pack, MPPT | Solar vendor later | Polar-patch **acid + packing + 50–60 h night** |
@@ -110,7 +110,7 @@ Paper (4) then breadboard (5) then partner 3U (6) then entry/inflate (7) then fl
 |-----|--------|------|
 | Film RFQ sent | 2 vendors | 0 |
 | Lab under contract | 1 | 0 |
-| Coupons completed | C0–C4, n=3, ≥2 films | 1 |
+| Film samples tested | C0–C4, n=3, ≥2 films | 1 |
 | Pass or Conditional film | 1 named material | 1 |
 | Subscale envelope built | 1 | 2 |
 | Pressure-hold hours | agreed window, logged | 2 |
@@ -126,7 +126,7 @@ Minimum 2027 ground team: one operator (part-time), one materials lab (paid), op
 
 AI can draft RFQs, BOMs, and analysis. It cannot sign a lab PO or handle acid.
 
-Hold Stripe live, advisor names on the site, and a 2027 launch claim. Hold more homepage art. The next photograph that matters is a coupon on a scale bar.
+Hold Stripe live, advisor names on the site, and a 2027 launch claim. Hold more homepage art. The next photograph that matters is a film sample on a scale bar.
 
 ---
 

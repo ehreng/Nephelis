@@ -176,7 +176,7 @@ Instrument list in `specs.json` matches `sensor-suite.json` baseline v0 (2026-11
 | ENV-1 | Qual plan | Written before I&T (task `env-qual-plan`) | REQ |
 | ENV-2 | Vibration/shock | Launch environments per LV ICD | REQ |
 | ENV-3 | TVAC | Avionics/gondola as accessible | REQ |
-| ENV-4 | Acid exposure | Coupon + ideally seam tests | REQ |
+| ENV-4 | Acid exposure | Film samples + ideally seam tests | REQ |
 | ENV-5 | Inflation test | Full sequence dry run on Earth | REQ |
 | ENV-6 | EMI/EMC | As needed for radios | TBR |
 

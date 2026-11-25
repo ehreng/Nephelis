@@ -22,7 +22,7 @@
       "label": "AEROSTAT",
       "status": "dev",
       "value": "TRADE",
-      "detail": "Gate 0 RFQ package written; ship-to blocked; no acid coupons yet"
+      "detail": "Gate 0 film order written; US delivery address still open; no acid tests on film yet"
     },
     {
       "id": "avionics",

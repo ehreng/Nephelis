@@ -53,8 +53,8 @@ Crew signal list and volunteer intake: https://www.nephelisindustries.com/#contr
 
 - **2025** (complete): Concept, brand, public site, early research notes for Project AETHER
 - **2026-H1** (complete): Vision site, CONOPS/requirements drafts, AETHER OS contribution framework
-- **2026-H2** (current): Public GitHub as SSOT, open issues, materials coupon plan, regulatory notes
-- **2027** (target): Ground program: acid-resistant material coupons, small He prototype float, basic telemetry demo
+- **2026-H2** (current): Public GitHub as SSOT, open issues, balloon film acid-test plan, regulatory notes
+- **2027** (target): Ground program: acid tests on balloon film, small helium prototype balloon, basic telemetry demo
 - **2028** (target): Iterate prototypes: inflation sequence, link budget tests, partner LOIs (if funded)
 - **2029–2030** (aspirational): Only if prior gates pass: env qual path, flight-ish stack design freeze, rideshare exploration
 - **2030–2031+** (aspirational): Earliest plausible Venus transfer window class — not a commitment; depends on hardware + capital

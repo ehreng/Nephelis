@@ -14,7 +14,7 @@
 | Phase | **PRE-HARDWARE** / early — concept + docs + public visuals |
 | Wet mass / float | ~400 kg study · ~55 km · Ø ~6.6 m / ~150 m³ design point |
 | Funding goal | $500,000 all-in (ground through rideshare-class flight stack) |
-| Launch | Ambitious 2029 window class — not locked. Backup 2030–31. |
+| Launch | Ambitious 2029 window class. Backup 2030–31. |
 | Visual lock | Flyingprobe sphere: flush black bay, cyan ring, two cameras |
 
 ### What moved since the last brief (2026-11-16)
@@ -29,7 +29,7 @@
 - **R-01** — Acid degradation of balloon envelope
 - **R-02** — Entry / inflation sequence failure
 - **R-03** — Comms blackout / insufficient downlink
-- **R-04** — No committed launch path
+- **R-04** — Launch path still open
 - **R-05** — Capital shortfall vs flight-class cost
 
 ---

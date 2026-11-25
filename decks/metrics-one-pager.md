@@ -1,6 +1,6 @@
 # Nephelis Industries — Metrics One-Pager
 
-_Auto-generated from `site/content/data/*` · 2026-11-25T00:25:40.923Z_  
+_Auto-generated from `site/content/data/*` · 2026-11-25T00:48:43.166Z_  
 **Do not hand-edit** — run `npx tsx automation/scripts/sync-metrics.ts` after data changes.
 
 ## Mission snapshot
@@ -8,12 +8,12 @@ _Auto-generated from `site/content/data/*` · 2026-11-25T00:25:40.923Z_
 | Metric | Value |
 |--------|-------|
 | Program | Project AETHER / Cloudseeker |
-| MCC phase | PRE-HARDWARE · target ambitious 2029 window class — not locked |
+| MCC phase | PRE-HARDWARE · target ambitious 2029 window class |
 | Probe | Super-pressure balloon |
 | Target altitude | 50–55 km (float ~55 km) |
 | Wet mass | ~400 kg · balloon ~6.6 m |
 | Float duration (baseline) | 30+ days (ops goal 30–90) |
-| Launch target | ambitious 2029 window class — not locked |
+| Launch target | ambitious 2029 window class |
 | Vehicles | Rideshare, Dedicated small launcher |
 | Transfer | Direct to Venus |
 | Funding goal | $500,000 |
@@ -53,7 +53,7 @@ _Paid counts come from Stripe at runtime; baseline is static marketing/pre-sales
 - **2028** (target): Avionics + UHF, 3U path, entry/inflate freeze — flight stack in build
 - **2029** (target): Ambitious Venus transfer window class — rideshare-class 400 kg stack
 - **2030–31** (aspirational): Backup transfer window
-- **Long-term vision** (vision): Cloud-layer science → habitation tech path (labeled vision, not near-term engineering)
+- **Long-term vision** (vision): Cloud-layer science → habitation tech path (long-horizon vision)
 - **1985 / 2022+** (background): Heritage: VEGA balloons; NASA/ESA aerobot studies (context only)
 
 ## Open tasks (P0/P1)
@@ -66,7 +66,7 @@ _Paid counts come from Stripe at runtime; baseline is static marketing/pre-sales
 - [P0] CONOPS v1: launch → cruise → entry → inflate → float → end-of-life (v0.9 drafted in docs/) — _in_progress_ (2026-Q3)
 - [P0] System architecture + ICD draft (skeleton in docs/system-icd-skeleton.md) — _in_progress_ (2026-Q3)
 - [P0] Mission requirements baseline (v0.9 drafted in docs/requirements-baseline-v0.9.md) — _in_progress_ (2026-Q3)
-- [P1] Refine transfer Δv / TOF with published ephemeris (not only Hohmann demo) — _planned_ (2026-Q3)
+- [P1] Refine transfer Δv / TOF with published ephemeris (beyond Hohmann demo) — _planned_ (2026-Q3)
 - [P0] Entry corridor & peak heat-rate study for ~10.7 km/s Venus entry class — _planned_ (2026-Q3)
 - [P1] Science traceability matrix: goals → instruments → data products — _planned_ (2026-Q3)
 - [P1] Planetary protection / DNA-tier legal-regulatory screening memo — _planned_ (2026-Q3)
@@ -137,7 +137,7 @@ _Paid counts come from Stripe at runtime; baseline is static marketing/pre-sales
 - **R-01** (high): Acid degradation of balloon envelope
 - **R-02** (critical): Entry / inflation sequence failure
 - **R-03** (high): Comms blackout / insufficient downlink
-- **R-04** (high): No committed launch path; schedule risk is structural
+- **R-04** (high): Launch path still open; schedule risk is structural
 - **R-05** (high): Cost blowout vs $500k all-in target
 
 ## Pitch talking points

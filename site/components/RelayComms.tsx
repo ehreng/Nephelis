@@ -55,7 +55,7 @@ export default function RelayComms() {
   return (
     <section id="relay" className="border-b border-white/10 bg-void">
       <div className="border-b border-amber-700/40 bg-amber-950/40 px-4 py-2 text-center font-mono text-[10px] uppercase tracking-[0.25em] text-amber-400/90">
-        CubeSat relay · architecture estimate · not selected hardware
+        CubeSat relay · architecture estimate
       </div>
 
       <div className="mx-auto max-w-7xl px-4 py-16 md:py-24">
@@ -66,8 +66,8 @@ export default function RelayComms() {
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-gray-400">
           The 3U is a Venus orbiter, never on the sphere. Cloudseeker talks UHF when the orbiter is
           overhead. The CubeSat stores, then X-band to a 34 m-class dish. Typical return is about two
-          megabytes a day — enough for the time-series, tight for 4K video. MarCO/Iris numbers are
-          heritage class, not a NASA claim.
+          megabytes a day — enough for the time-series, tight for 4K video. MarCO/Iris-class
+          heritage rates.
         </p>
 
         <div className="mt-10 grid gap-2 md:grid-cols-[1fr_auto_1fr_auto_1fr] md:items-stretch">
@@ -106,7 +106,7 @@ export default function RelayComms() {
                 3U · Venus orbit
               </div>
               <div className="absolute bottom-3 left-3 font-mono text-[10px] uppercase tracking-[0.2em] text-white/70">
-                Concept art — not flight hardware
+                Concept art
               </div>
             </div>
             <div className="border-t border-white/10 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.2em] text-white/35">
@@ -210,7 +210,7 @@ export default function RelayComms() {
           <h3 className="mt-2 text-lg font-semibold text-white">Sensor suite baseline v0</h3>
           <p className="mt-2 max-w-3xl text-sm leading-relaxed text-white/50">
             Science is ~{suite.gondola.science_sum_kg} kg inside a {suite.gondola.total_kg_min}–
-            {suite.gondola.total_kg_max} kg flush bay. Class estimates. Not a vendor list.
+            {suite.gondola.total_kg_max} kg flush bay. Class estimates. Heritage names for scale.
           </p>
           <div className="mt-4 overflow-x-auto">
             <table className="w-full min-w-[44rem] text-left text-sm">

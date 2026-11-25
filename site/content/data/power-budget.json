@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-11-16T00:00:00.000Z",
   "version": "1.0",
-  "notes": "v1 from sensor-suite-baseline. Estimates, not flight. Night at 55 km is ~50–60 h (superrotation), not 12 h — that sizes the battery. Polar patch must close ~12 W average dayside after cloud derate. Generation and storage are now filled; they remain architecture numbers.",
+  "notes": "v1 from sensor-suite-baseline. Architecture estimates. Night at 55 km is ~50–60 h (superrotation) — that sizes the battery. Polar patch must close ~12 W average dayside after cloud derate. Generation and storage are filled architecture numbers.",
   "modes": [
     {
       "id": "cruise",
@@ -200,7 +200,7 @@
   "generation": {
     "float_solar_w_peak_est": 28,
     "cruise_solar_w_peak_est": 12,
-    "notes": "Float: ~0.25 m² polar patch, IMM-class cells, cloud-deck derate to ~200 W/m² electrical (JPL 51.5 km IMM test reported 34 mW/cm² as an upper literature point; we do not use that as the design value). Dayside cosine ~0.5 → ~14 W average vs ~12 W needed (8 W load + night recharge). Thin margin. Cruise: body-mounted on the entry stack."
+    "notes": "Float: ~0.25 m² polar patch, IMM-class cells, cloud-deck derate to ~200 W/m² electrical (JPL 51.5 km IMM test reported 34 mW/cm² as an upper literature point; design value stays the derated ~200 W/m²). Dayside cosine ~0.5 → ~14 W average vs ~12 W needed (8 W load + night recharge). Thin margin. Cruise: body-mounted on the entry stack."
   },
   "storage": {
     "battery_wh_est": 400,

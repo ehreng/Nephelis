@@ -154,7 +154,7 @@ export default function AetherOsPage() {
               },
               {
                 k: 'Status',
-                t: 'What is built vs not yet',
+                t: 'What is built and what is next',
                 d: 'Program phase, budget posture, next ground milestone.',
                 href: '/status',
                 ext: false,
@@ -162,7 +162,7 @@ export default function AetherOsPage() {
               {
                 k: 'Visuals',
                 t: 'Concept art gallery',
-                d: 'Flyingprobe stills, n4 cool deck, future-city set. Not flight hardware.',
+                d: 'Flyingprobe stills, n4 cool deck, future-city set.',
                 href: '/visuals',
                 ext: false,
               },
@@ -251,8 +251,7 @@ export default function AetherOsPage() {
       <section className="border-t border-white/10 py-12">
         <div className="mx-auto max-w-4xl px-4 font-mono text-xs text-white/40 sm:px-6 lg:px-8">
           Founder Emeritus / Strategic Oversight: Ehren Goossens · In U.S. Army training; review is
-          asynchronous · Daily management offloaded to the Agent + system · Not for consumption. For
-          continuation.
+          asynchronous · Daily management offloaded to the Agent + system · For continuation.
         </div>
       </section>
     </div>

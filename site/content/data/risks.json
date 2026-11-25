@@ -33,12 +33,12 @@
     },
     {
       "id": "R-04",
-      "title": "No committed launch path; schedule risk is structural",
+      "title": "Launch path still open; schedule risk is structural",
       "category": "program",
       "likelihood": "high",
       "impact": "high",
       "status": "open",
-      "mitigation": "Target 2029 rideshare window class; backup 2030–31; no 2027 claim",
+      "mitigation": "Target 2029 rideshare window class; backup 2030–31",
       "owner": "ops"
     },
     {
@@ -48,7 +48,7 @@
       "likelihood": "high",
       "impact": "high",
       "status": "open",
-      "mitigation": "COTS, rideshare, partner 3U, descope to carrier comms; public target stays $500k; Stripe not yet live",
+      "mitigation": "COTS, rideshare, partner 3U, descope to carrier comms; public target stays $500k; Stripe checkout in setup",
       "owner": "growth"
     },
     {

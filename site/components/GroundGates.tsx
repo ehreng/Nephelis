@@ -18,7 +18,7 @@ export default function GroundGates() {
         First hardware — gates 0–3
       </h2>
       <p className="text-xs text-white/45 leading-relaxed mb-4 max-w-2xl">
-        Spend is order-of-magnitude, not quotes. {progress.budget_posture.flight_estimate_note} Next
+        Spend is order-of-magnitude. {progress.budget_posture.flight_estimate_note} Next
         human step: a US ship-to / ground operator so Gate 0 can send.
       </p>
       <div className="overflow-x-auto border border-white/10">

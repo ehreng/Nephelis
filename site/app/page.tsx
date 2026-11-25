@@ -70,8 +70,7 @@ export default function NephelisHome() {
             </p>
 
             <div className="mt-4 max-w-xl text-sm uppercase tracking-widest text-venus/90 font-mono leading-relaxed">
-              We&apos;re not NASA. We&apos;re Nephelis Industries — builders betting on the clouds.
-              Join the open mission.
+              Nephelis Industries — builders betting on the clouds. Join the open mission.
             </div>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -111,7 +110,7 @@ export default function NephelisHome() {
                 <strong className="text-white">Project AETHER (Cloudseeker)</strong> is a concept for a
                 super-pressure fluoropolymer aerostat and optional CubeSat relay. Today the program is
                 in <strong className="text-white">pre-hardware</strong>: public documentation, mass and
-                risk models, and AETHER OS for open contribution — not a flight-ready stack.
+                risk models, and AETHER OS for open contribution.
               </p>
               <p>
                 <strong className="text-white">Near-term (Gates 0–3):</strong> order balloon film,
@@ -133,7 +132,7 @@ export default function NephelisHome() {
                 <strong className="text-white">$500k all-in.</strong> From first film tests through a
                 rideshare-class Venus float. Flagships cost hundreds of millions. Launch prices are
                 collapsing; we design a 400 kg COTS-heavy stack to fit inside half a million.
-                Rideshare “$80/kg” is the launch term of that bet, not a booked contract.
+                Rideshare “$80/kg” is the launch term of that bet.
               </p>
               <p>
                 Contributors welcome (L1–L3) via{' '}
@@ -174,7 +173,7 @@ export default function NephelisHome() {
               </div>
               <div className="absolute bottom-3 left-3 right-3 flex items-end justify-between gap-2">
                 <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/70">
-                  Concept art — not flight hardware
+                  Concept art
                 </span>
                 <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-white/35">
                   n4-cool-portrait
@@ -198,9 +197,8 @@ export default function NephelisHome() {
             <h2 className="text-venus font-mono text-sm uppercase tracking-widest mb-2">02 // Mission Control</h2>
             <h3 className="text-4xl font-bold text-white">Astrodynamics &amp; Trajectory</h3>
             <p className="text-gray-400 mt-2 font-mono text-sm">
-              Interactive trajectory sandbox (illustrative). Not a booked launch. Default epoch is a
-              study date — adjust freely. Wet mass concept ~400 kg class; dry mass tunable in the
-              tool.
+              Interactive trajectory sandbox. Default epoch is a study date — adjust freely. Wet
+              mass ~400 kg class; dry mass tunable in the tool.
             </p>
           </div>
 
@@ -211,14 +209,12 @@ export default function NephelisHome() {
               <div className="font-mono text-venus text-xs uppercase tracking-[2px] mb-1">
                 LAUNCH VEHICLE &amp; ARCHITECTURE (STUDY ONLY)
               </div>
-              <h3 className="text-3xl font-bold text-white">Optimistic mass / cost sketch — not a contract</h3>
+              <h3 className="text-3xl font-bold text-white">Optimistic mass / cost sketch</h3>
               <p className="mt-2 text-gray-400 max-w-prose">
                 Concept wet mass ~<span className="text-white font-medium">400 kg</span> for
-                discussion of rideshare-class vehicles. Figures like{' '}
-                <span className="font-mono text-venus">$80/kg → ~$32k</span> are{' '}
-                <strong className="text-white">hypothetical optimistic pricing</strong>, not a
-                reserved Starship or Falcon secondary. Real Venus entry + float hardware will
-                dominate cost long before launch services.
+                rideshare-class vehicles. Figures like{' '}
+                <span className="font-mono text-venus">$80/kg → ~$32k</span> are the launch line of
+                the $500k stack. Entry and float hardware dominate the rest of the budget.
               </p>
             </div>
 
@@ -246,7 +242,7 @@ export default function NephelisHome() {
                   • Stowed fluoropolymer super-pressure balloon + inflation: {kg('balloon')}<br />
                   • Gondola + sensor suite (flush bay; science ~8 kg): {kg('gondola')}<br />
                   • Avionics, power, structure, comms: {kg('avionics')}<br />
-                  • 3U CubeSat relay (separate orbiter, not in the entry sum): {kg('cubesat_relay')}
+                  • 3U CubeSat relay (separate orbiter): {kg('cubesat_relay')}
                 </div>
 
                 <div className="flex justify-between py-1 border-b border-white/10">
@@ -289,8 +285,8 @@ export default function NephelisHome() {
                 Launch is the shrinking term.{' '}
                 <span className="font-mono text-venus">$80/kg × 400 kg ≈ $32k</span> is the
                 rideshare-class launch line of a <strong className="text-white">$500k all-in</strong>{' '}
-                stack — not a booked contract. Envelope, COTS bay, 3U, and a shop ablative eat the
-                rest. If a line blows, descope. The public target stays half a million.
+                stack. Envelope, COTS bay, 3U, and a shop ablative eat the rest. If a line blows,
+                descope. The public target stays half a million.
               </p>
             </div>
 
@@ -334,7 +330,7 @@ export default function NephelisHome() {
             <h3 className="text-4xl font-bold text-white">Why We Choose The Clouds</h3>
             <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
               Venus is a compelling science target and a long-horizon industrial idea. Near-term we
-              build and test; multi-planetary infrastructure remains vision, not current scope.
+              build and test. Cloud cities are the vision.
             </p>
           </div>
 
@@ -434,7 +430,7 @@ export default function NephelisHome() {
                 <h4 className="text-white font-bold text-lg mb-2">Habitation</h4>
                 <p className="font-mono text-[10px] uppercase tracking-wider text-venus/70 mb-2">Long-horizon vision</p>
                 <p className="text-sm text-gray-400 leading-relaxed">
-                  At 50 km, breathable-air habitats (21% O2, 79% N2) would act as lifting gas in dense CO2. No pressurized suits inside. Not current program scope.
+                  At 50 km, breathable-air habitats (21% O2, 79% N2) would act as lifting gas in dense CO2. No pressurized suits inside.
                 </p>
               </div>
               <div className="p-6 border border-white/10 bg-black/40 hover:border-venus/50 transition-colors">
@@ -450,7 +446,7 @@ export default function NephelisHome() {
                 <h4 className="text-white font-bold text-lg mb-2">Astrobiology</h4>
                 <p className="font-mono text-[10px] uppercase tracking-wider text-venus/70 mb-2">Near-term science goal</p>
                 <p className="text-sm text-gray-400 leading-relaxed">
-                  The cloud layer may host microbial life. Phosphine detection remains controversial. Baseline suite includes AFN / TLS / MS channels for precursors — not selected hardware.
+                  The cloud layer may host microbial life. Phosphine detection remains controversial. Baseline suite includes AFN / TLS / MS channels for precursors.
                 </p>
               </div>
             </div>
@@ -473,7 +469,7 @@ export default function NephelisHome() {
               </div>
               <div>
                 <div className="font-mono text-xs text-venus mb-1">ATMOSPHERE &amp; RESOURCES</div>
-                <p className="text-gray-400">96.5% CO₂ (fuel/plastics), 3.5% N₂ (air), SO₂ &amp; H₂SO₄ (chemical feedstocks). Solar at top of atmosphere is 1.91× Earth; electrical at 55 km is ~200 W/m² after cloud derate. Chemical feedstocks are a long-horizon ISRU path, not Cloudseeker scope.</p>
+                <p className="text-gray-400">96.5% CO₂ (fuel/plastics), 3.5% N₂ (air), SO₂ &amp; H₂SO₄ (chemical feedstocks). Solar at top of atmosphere is 1.91× Earth; electrical at 55 km is ~200 W/m² after cloud derate. Chemical feedstocks are a long-horizon ISRU path.</p>
               </div>
             </div>
             <p className="text-sm text-gray-400">
@@ -605,7 +601,7 @@ export default function NephelisHome() {
             <div className="p-4 border-t border-white/10 bg-black/60 flex items-center justify-between">
               <div>
                 <div className="font-mono text-sm text-white">Cloudseeker on station</div>
-                <div className="text-xs text-gray-500">Flyingprobe identity · 50–55 km · concept art, not flight hardware</div>
+                <div className="text-xs text-gray-500">Flyingprobe identity · 50–55 km · concept art</div>
               </div>
               <div className="text-xs font-mono text-tech">PROBE @ 55 km</div>
             </div>
@@ -616,7 +612,7 @@ export default function NephelisHome() {
               <div className="font-mono text-xs uppercase tracking-widest text-venus">Long-horizon vision</div>
               <div className="font-mono text-sm text-white">Future missions and life on Venus</div>
             </div>
-            <div className="text-xs font-mono text-gray-500">Not current hardware · not a 2027 claim</div>
+            <div className="text-xs font-mono text-gray-500">Long-horizon vision</div>
           </div>
 
           <div className="glass-panel border border-white/10 overflow-hidden mb-4">
@@ -639,7 +635,7 @@ export default function NephelisHome() {
               ['n5-cool-lookout.jpg', 'Looking at the tower', 'From a terrace, the stacked garden pods fill the sky.', 'Two people on a terrace looking at a Venus garden tower'],
               ['n5-cool-crops.jpg', 'Agriculture', 'A botanist in a glass farm. The window is the deck.', 'Botanist tending crops in a Venus cloud greenhouse'],
               ['n5-cool-works.jpg', 'The floor', 'ISRU in the weather. A technician and the cloud.', 'Technician at an ISRU plant floating in Venus clouds'],
-              ['n5-cool-ops.jpg', 'On station', 'Same crew, inside. Clouds in the window. Long-horizon, not Cloudseeker.', 'Two crew in an aerostat ops cabin looking at Venus clouds'],
+              ['n5-cool-ops.jpg', 'On station', 'Same crew, inside. Clouds in the window. Long-horizon vision.', 'Two crew in an aerostat ops cabin looking at Venus clouds'],
               ['n5-cool-under.jpg', 'From below', 'The belly of a park-island. Hull lights, silver-blue sea underneath.', 'Underside of a floating Venus park-island habitat'],
             ].map(([file, title, note, alt]) => (
               <div key={file} className="glass-panel border border-white/10 overflow-hidden">

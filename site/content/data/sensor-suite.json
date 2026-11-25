@@ -1,8 +1,8 @@
 {
   "updated_at": "2026-11-16T00:00:00.000Z",
   "version": "0.1",
-  "status": "baseline-v0 — architecture estimates, not selected flight hardware",
-  "notes": "Closes task sensor-suite-baseline at v0. Mass/power/data are class estimates from published VLF / DAVINCI / VEGA / compact-MS literature, derated for a ~50 kg flush bay. Not a vendor selection. Gondola structure, thermal, UHF, and harness sit on top of science mass.",
+  "status": "baseline-v0 — architecture estimates",
+  "notes": "Closes task sensor-suite-baseline at v0. Mass/power/data are class estimates from published VLF / DAVINCI / VEGA / compact-MS literature, derated for a ~50 kg flush bay. Gondola structure, thermal, UHF, and harness sit on top of science mass.",
   "gondola": {
     "science_sum_kg": 7.6,
     "structure_thermal_comms_kg_min": 24,
@@ -11,7 +11,7 @@
     "contingency_kg_max": 15.4,
     "total_kg_min": 40,
     "total_kg_max": 55,
-    "notes": "Matches mass-budget.json gondola line. Science ~8 kg inside a ~50 kg bay — not a 1 kg pod."
+    "notes": "Matches mass-budget.json gondola line. Science ~8 kg inside a ~50 kg bay."
   },
   "instruments": [
     {
@@ -39,7 +39,7 @@
       "data_kb_day_est": 800,
       "trl_guess": 5,
       "heritage": "DAVINCI VTLS class; compact TDLAS / MEMS IR. Targets NH3, H2O, SO2; PH3/O2 as mass allows.",
-      "role": "Same cloud slab through day, night, and events — not a one-hour vertical profile.",
+      "role": "Same cloud slab through day, night, and events.",
       "estimate": true
     },
     {
@@ -53,7 +53,7 @@
       "data_kb_day_est": 600,
       "trl_guess": 4,
       "heritage": "Morning Star ORIGIN / VLF balloon follow-on class. Laser desorption of droplet residue.",
-      "role": "Event-triggered when AFN flags fluorescence. Repeated sampling, not one plunge.",
+      "role": "Event-triggered when AFN flags fluorescence. Repeated sampling across the dwell.",
       "estimate": true
     },
     {
@@ -94,7 +94,7 @@
       "duty_float_night": 0,
       "data_kb_day_est": 8000,
       "trl_guess": 6,
-      "heritage": "Same class as cam_env. Not VenDI — we do not image the surface.",
+      "heritage": "Same class as cam_env. Cloud-layer imaging.",
       "role": "Cloud-deck stills. Video only in closest-approach weeks if the link allows.",
       "estimate": true
     }

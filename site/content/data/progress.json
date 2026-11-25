@@ -5,8 +5,8 @@
   "next_engineering_milestone": "Gate 0: name a US delivery address and send the film order; then acid tests on balloon film + a 1.2 m helium ground balloon with basic telemetry",
   "launch_posture": {
     "previous_public_claim": "",
-    "current": "Ambitious target: 2029 Venus transfer window class. Not locked.",
-    "note": "First window we can earn after hardware gates. Backup 2030–31. No 2027 claim."
+    "current": "Ambitious target: 2029 Venus transfer window class.",
+    "note": "First window after hardware gates. Backup 2030–31."
   },
   "budget_posture": {
     "crowdfund_target_usd": 500000,
@@ -86,12 +86,12 @@
     }
   ],
   "not_yet": [
-    "Balloon envelope hardware or acid-test results on film samples",
-    "Entry system, heatshield, or inflation hardware",
-    "Flight solar, rad-tolerant avionics selection, or CubeSat hardware",
-    "FAA/FCC filings submitted (path documented as drafts only)",
-    "Named technical advisors listed with permission",
-    "Live crowdfund payment flow (Stripe configuration pending)"
+    "Balloon film acid tests and envelope hardware",
+    "Entry system, heatshield, inflation sequence",
+    "Flight solar, avionics, CubeSat bus",
+    "FAA/FCC filings",
+    "Named technical advisors",
+    "Crowdfund checkout"
   ],
   "team": {
     "public": "Founder: Ehren Goossens (Founder Emeritus / Strategic Oversight), in U.S. Army training. Review is asynchronous. Open L1–L3 contribution via GitHub; keep working without waiting on a founder reply.",

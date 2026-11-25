@@ -54,7 +54,7 @@
       "name": "3U CubeSat relay (separate orbiter)",
       "mass_kg_min": 4,
       "mass_kg_max": 6,
-      "notes": "Not on the sphere. Not in the entry detailed sum. Separate rideshare/secondary. comms-link.json."
+      "notes": "Separate rideshare/secondary. comms-link.json."
     }
   ],
   "contingency": "Positive headroom vs 400 kg wet — acid protection, helium, redundancy. CubeSat is a second vehicle."

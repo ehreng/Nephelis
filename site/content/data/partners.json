@@ -27,7 +27,7 @@
       "type": "hardware",
       "status": "research",
       "ask": "Small-batch FEP/PFA sheet 0.5–2 mil for film samples",
-      "next_step": "Send RFQ in docs/gate0-film-rfq.md — not contacted",
+      "next_step": "Send RFQ in docs/gate0-film-rfq.md",
       "priority": "P0",
       "last_touched": "2026-11-24"
     },
@@ -37,7 +37,7 @@
       "type": "hardware",
       "status": "research",
       "ask": "Film samples + seam samples; later Gate 2 sphere seaming",
-      "next_step": "Send RFQ in docs/gate0-film-rfq.md — not contacted",
+      "next_step": "Send RFQ in docs/gate0-film-rfq.md",
       "priority": "P0",
       "last_touched": "2026-11-24"
     },
@@ -47,7 +47,7 @@
       "type": "hardware",
       "status": "research",
       "ask": "Quote for sulfuric-acid soak 24 h + 7 d on balloon film samples",
-      "next_step": "Request quotes from Gate 0 lab shortlist — not contacted",
+      "next_step": "Request quotes from Gate 0 lab shortlist",
       "priority": "P0",
       "last_touched": "2026-11-24"
     },

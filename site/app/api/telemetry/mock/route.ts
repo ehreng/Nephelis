@@ -9,7 +9,7 @@ export function GET(req: NextRequest) {
   return NextResponse.json(
     {
       schema: 'AETHER-G3/1',
-      note: 'Simulated Gate 3 packets. Not spacecraft telemetry.',
+      note: 'Simulated Gate 3 packets.',
       src: 'sim',
       count: packets.length,
       packets,

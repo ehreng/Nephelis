@@ -22,7 +22,7 @@
   },
   "launch": {
     "target_year": 2029,
-    "target_year_note": "Ambitious first window class; not a locked date",
+    "target_year_note": "Ambitious first window class",
     "vehicle_options": [
       "Rideshare",
       "Dedicated small launcher"

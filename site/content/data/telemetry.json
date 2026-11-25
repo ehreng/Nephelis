@@ -15,28 +15,28 @@
       "label": "COMMS",
       "status": "dev",
       "value": "3U RELAY",
-      "detail": "UHF → 3U CubeSat → X-band Earth. Typical ~2 MB/day. Architecture estimate, not selected hardware."
+      "detail": "UHF → 3U CubeSat → X-band Earth. Typical ~2 MB/day. Architecture estimate."
     },
     {
       "id": "balloon",
       "label": "AEROSTAT",
       "status": "dev",
       "value": "TRADE",
-      "detail": "Gate 0 film order written; US delivery address still open; no acid tests on film yet"
+      "detail": "Gate 0 film order written; US delivery address still open; acid tests next"
     },
     {
       "id": "avionics",
       "label": "AVIONICS",
       "status": "dev",
       "value": "TBD",
-      "detail": "Rad-tolerant stack not selected; no flight board yet"
+      "detail": "Rad-tolerant stack in trade; flight board ahead"
     },
     {
       "id": "nav",
       "label": "NAV/AI",
       "status": "dev",
       "value": "SIM",
-      "detail": "Algorithms discussed in sim notes only — not flight software"
+      "detail": "Algorithms in sim notes; AETHER OS on Earth"
     },
     {
       "id": "funding",

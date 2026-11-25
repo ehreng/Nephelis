@@ -257,7 +257,7 @@
   },
   {
     "id": "traj-delta-v-refine",
-    "title": "Refine transfer \u0394v / TOF with published ephemeris (not only Hohmann demo)",
+    "title": "Refine transfer \u0394v / TOF with published ephemeris (beyond Hohmann demo)",
     "status": "planned",
     "priority": "P1",
     "area": "mission",

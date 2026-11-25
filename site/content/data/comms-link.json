@@ -1,8 +1,8 @@
 {
   "updated_at": "2026-11-16T00:00:00.000Z",
   "version": "0.1",
-  "status": "architecture estimate — not a closed link budget",
-  "notes": "Store-and-forward. Probe never talks DTE as baseline. 3U CubeSat is a separate Venus orbiter (never on the sphere). Rates are MarCO/Iris-class order-of-magnitude, scaled by Venus–Earth range. Not NASA affiliation. Conjunction blackout still applies.",
+  "status": "architecture estimate",
+  "notes": "Store-and-forward. Probe talks UHF to the 3U as baseline. 3U CubeSat is a separate Venus orbiter (never on the sphere). Rates are MarCO/Iris-class order-of-magnitude, scaled by Venus–Earth range. Conjunction blackout still applies.",
   "architecture": {
     "baseline": "UHF proximity (probe → 3U) then X-band DTE (3U → Earth)",
     "descope": "Carrier-provided relay or hybrid DTE if a partner flies a larger radio",
@@ -26,7 +26,7 @@
   "relay_to_earth": {
     "band": "X-band",
     "heritage": "MarCO Iris to DSN: ~1 kbps cruise typical, 8 kbps at Mars to a 70 m, 16 kbps when geometry allowed (DESCANSO 18).",
-    "ground": "34 m class (DSN or commercial equivalent). Pass time is a scheduling estimate, not a reservation.",
+    "ground": "34 m class (DSN or commercial equivalent). Pass time is a scheduling estimate.",
     "rate_kbps_far": 2,
     "rate_kbps_typical": 8,
     "rate_kbps_close": 32,
@@ -44,7 +44,7 @@
     "far": 0.3,
     "typical": 1.8,
     "close": 9.6,
-    "notes": "MB/day ≈ rate_kbps × pass_min × 60 / 8 / 1000. Earth downlink is the bottleneck, not UHF to the orbiter."
+    "notes": "MB/day ≈ rate_kbps × pass_min × 60 / 8 / 1000. Earth downlink is the bottleneck."
   },
   "queue": [
     "health / C&DH",
@@ -102,7 +102,7 @@
       "name": "10 s 4K clip (HEVC)",
       "size_mb": 25.0,
       "priority": 6,
-      "notes": "Closest-approach weeks only, or not at all."
+      "notes": "Closest-approach weeks only."
     }
   ]
 }

@@ -17,7 +17,7 @@ const science = [
     n: '07c',
     t: 'Aerosol / organics MS (LDMS-class)',
     track: 'Morning Star ORIGIN / VLF balloon follow-on. Laser desorption of droplet residue.',
-    unique: 'Event-triggered when AFN flags fluorescence. Repeated sampling, not one plunge.',
+    unique: 'Event-triggered when AFN flags fluorescence. Repeated sampling across the dwell.',
   },
   {
     n: '07d',
@@ -66,11 +66,11 @@ const missions = [
   },
   {
     name: 'JPL Venus aerobot',
-    who: 'JPL / Aerostar study · not a committed mission',
+    who: 'JPL / Aerostar study',
     platform: 'Variable-altitude balloon-in-balloon, ~12 m for ~100 kg',
     time: '30–100 d concept, 52–62 km yo-yo',
     payload:
-      'Aerosols, met, infrasound. Earth 6.4 m prototype flown 2024–25. Complementary altitude profiling, not our band lock.',
+      'Aerosols, met, infrasound. Earth 6.4 m prototype flown 2024–25. Complementary altitude profiling, 52–62 km.',
   },
   {
     name: 'Cloudseeker / AETHER',
@@ -131,7 +131,7 @@ export default function BayCarries() {
             <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-tech">Orbiters</div>
             <div className="mt-2 text-sm text-white">VERITAS · EnVision</div>
             <p className="mt-1 text-xs leading-relaxed text-white/45">
-              Radar and IR from orbit. They map. They do not float.
+              Radar and IR from orbit. They map. Cloudseeker floats.
             </p>
           </div>
           <div className="border border-white/10 p-4">
@@ -171,8 +171,7 @@ export default function BayCarries() {
               </div>
               <p className="mt-3 text-sm leading-relaxed text-white/55">
                 Same flyingprobe face: two cameras, cyan ring. Ports track what other cloud-layer
-                probes fly. Sensor baseline v0 is in git (grams, watts, rates, TRL guess). Not
-                flight hardware.
+                probes fly. Sensor baseline v0 is in git (grams, watts, rates, TRL guess).
               </p>
               <ol className="mt-5 space-y-3">
                 {science.map((s) => (
@@ -194,8 +193,8 @@ export default function BayCarries() {
               </ol>
             </div>
             <p className="mt-6 font-mono text-[10px] leading-relaxed text-white/35">
-              We do not copy VenDI (surface imaging) or orbiter radar. We do not claim NASA
-              instruments. Class names only.
+              Class names for heritage. Nephelis bay. Surface imaging and orbiter radar stay with
+              the flagships.
             </p>
           </div>
         </div>

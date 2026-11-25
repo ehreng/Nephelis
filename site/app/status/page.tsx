@@ -110,7 +110,7 @@ export default function StatusPage() {
 
         <section className="mb-10">
           <h2 className="font-mono text-xs uppercase tracking-widest text-white/40 mb-4">
-            Not yet
+            On deck
           </h2>
           <ul className="space-y-2 text-sm text-white/65">
             {progress.not_yet.map((n) => (

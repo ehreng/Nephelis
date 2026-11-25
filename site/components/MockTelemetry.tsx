@@ -76,7 +76,7 @@ export default function MockTelemetry() {
           Gate 3 mock stream · AETHER-G3/1
         </div>
         <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-amber-400/80">
-          Simulated — not spacecraft
+          Simulated stream
         </div>
       </div>
       {err && <p className="mt-3 text-xs text-red-400">{err}</p>}

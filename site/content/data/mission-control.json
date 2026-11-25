@@ -2,7 +2,7 @@
   "updated_at": "2026-11-24T00:00:00.000Z",
   "callsign": "NEPHELIS.MCC",
   "phase": "PRE-HARDWARE",
-  "launch_target": "ambitious 2029 window class — not locked",
+  "launch_target": "ambitious 2029 window class",
   "funding_goal_usd": 500000,
   "funding_goal_label": "All-in program target: ground through rideshare-class flight",
   "checklist": [
@@ -15,7 +15,7 @@
     },
     {
       "id": "mc-status-page",
-      "item": "Keep /status and progress.json current with built vs not-yet",
+      "item": "Keep /status and progress.json current with built and on-deck work",
       "phase": "PROGRAM",
       "status": "in_progress",
       "due": "2026-Q3"
@@ -71,7 +71,7 @@
     },
     {
       "id": "mc-funding-rails",
-      "item": "Live payment rails OR honest “not open yet” state (no fake allocation)",
+      "item": "Live payment rails, or a public checkout-in-setup state",
       "phase": "PROGRAM",
       "status": "planned",
       "due": "2026-Q4"

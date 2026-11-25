@@ -117,8 +117,8 @@ export default function FundingTiers() {
     <>
       <div className="mb-6 border border-white/10 bg-white/[0.02] px-4 py-3 text-center text-sm text-gray-400">
         <p className="leading-relaxed">
-          Tiers support <strong className="text-white">early ground / R&amp;D work</strong>, not a
-          full Venus flight budget.
+          Tiers support the <strong className="text-white">$500k all-in flight stack</strong> —
+          coupons through a rideshare-class Venus float.
           {!stripeReady && ' Checkout opens when payment rails are configured.'}
           {stripeReady && ' Payment rails are live.'}{' '}
           <a href="/status" className="text-venus hover:underline">

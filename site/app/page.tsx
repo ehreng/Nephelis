@@ -114,25 +114,25 @@ export default function NephelisHome() {
                 risk models, and AETHER OS for open contribution — not a flight-ready stack.
               </p>
               <p>
-                <strong className="text-white">Near-term execution (Gates 0–3):</strong> film RFQ +
-                acid coupons, a Ø 1.2 m helium ground float, then a COTS bay mock that emits a
-                telemetry packet. Gate 0 send is blocked on a US ship-to. Flight architecture
-                (entry, inflation, rad-tolerant avionics, 3U relay) waits until those gates pass.{' '}
+                <strong className="text-white">Near-term (Gates 0–3):</strong> film RFQ + acid
+                coupons, a Ø 1.2 m helium float, then a COTS bay mock that emits a telemetry packet.
+                That is the first hardware of a $500k flight stack — then avionics, a 3U relay,
+                entry, rideshare.{' '}
                 <a href="/roadmap" className="text-venus hover:underline">
                   Sequence on /roadmap
                 </a>
                 .
               </p>
               <p>
-                <strong className="text-white">Vision (clearly labeled):</strong> long-term interest in
-                cloud-layer science and habitation technology. A 30–90 day robotic probe is not
-                “humanity’s backup plan” or a cloud city — it is, at most, an early science and
-                engineering step. We keep the inspiration; we do not sell it as current maturity.
+                <strong className="text-white">Vision:</strong> a 30–90 day probe is the first private
+                station in the only Earth-like band in the inner solar system. Cloud cities come
+                later. Cloudseeker is how we get there.
               </p>
               <p>
-                A ~$500k crowdfund target maps to Gates 0–5 (comfortably 0–4). A full Venus flight
-                system is $5–15M+ or a strong partnership. Rideshare “$80/kg” figures on this site
-                are illustrative architecture math, not booked launch contracts.
+                <strong className="text-white">$500k all-in.</strong> Coupons through a
+                rideshare-class Venus float. Flagships cost hundreds of millions. Launch prices are
+                collapsing; we design a 400 kg COTS-heavy stack to fit inside half a million.
+                Rideshare “$80/kg” is the launch term of that bet, not a booked contract.
               </p>
               <p>
                 Contributors welcome (L1–L3) via{' '}
@@ -274,7 +274,7 @@ export default function NephelisHome() {
                 </div>
                 <div className="glass-panel p-5">
                   <div className="text-white font-medium mb-1">Entry &amp; Deployment</div>
-                  <div className="text-gray-400">Direct entry at ~10.7 km/s. Flat base + parachute decelerates to balloon deployment at ~55 km. 3U CubeSat store-and-forward (typical ~2 MB/day to Earth) or carrier-provided comms as a descope. AI-optimized autonomous navigation is a study item, not flight software.</div>
+                  <div className="text-gray-400">Direct entry at ~10.7 km/s. Flat base + parachute decelerates to balloon deployment at ~55 km. 3U CubeSat store-and-forward (typical ~2 MB/day to Earth) or carrier-provided comms as a descope. Autonomous float ops plus AETHER OS on Earth.</div>
                 </div>
               </div>
               <p className="mt-3 text-xs text-gray-500 font-mono">Power/Comms/Thermal: Solar on balloon top + efficient systems. Radiation-hardened avionics. Site comms/day estimator and atmosphere model apply directly.</p>
@@ -285,11 +285,11 @@ export default function NephelisHome() {
                 Cost sketch
               </div>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Optimistic rideshare math (e.g.{' '}
-                <span className="font-mono text-venus">$80/kg × 400 kg ≈ $32k</span>) is a study
-                figure, not a quote. Entry systems, materials, test campaigns, and avionics dominate
-                real budgets. The public ~$500k target maps to Gates 0–5, not an end-to-end Venus
-                flight.
+                Launch is the shrinking term.{' '}
+                <span className="font-mono text-venus">$80/kg × 400 kg ≈ $32k</span> is the
+                rideshare-class launch line of a <strong className="text-white">$500k all-in</strong>{' '}
+                stack — not a booked contract. Envelope, COTS bay, 3U, and a shop ablative eat the
+                rest. If a line blows, descope. The public target stays half a million.
               </p>
             </div>
 
@@ -308,18 +308,18 @@ export default function NephelisHome() {
                 </div>
                 <div>
                   <span className="text-white font-medium block">Mass discipline</span>
-                  Concept ~400 kg wet stack keeps rideshare-class options open if we earn a flight gate.
+                  ~400 kg wet is a rideshare-class stack. That is how $500k reaches Venus.
                 </div>
                 <div>
                   <span className="text-white font-medium block">Vision vs execution</span>
-                  Cloud cities stay long-term vision. Near-term: prove float + acid resistance on Earth.
+                  Cloud cities later. Cloudseeker first: 30–90 days at 50–55 km, 2029 window class.
                 </div>
               </div>
             </div>
 
             <div className="text-xs text-gray-500 font-mono">
-              Study CONOPS sketch only: rideshare-class LEO → transfer → entry → inflate ~50–55 km →
-              multi-week float. None of these phases is currently hardware-qualified.
+              CONOPS: rideshare-class LEO → transfer → entry → inflate ~50–55 km → 30–90 day float.
+              Hardware starts at Gates 0–3.
             </div>
           </div>
         </div>
@@ -488,17 +488,17 @@ export default function NephelisHome() {
           <div className="uppercase tracking-[3px] text-xs text-venus/70 mb-2">TECHNOLOGY</div>
           <h3 className="text-3xl font-bold text-white mb-6">Cloudseeker Technology</h3>
           <p className="text-gray-400 mb-8 max-w-prose">
-            Architecture baselines in git — not selected flight hardware. The envelope is the mission-killing risk. Habitats stay vision.
+            A 400 kg-class aerostat and 3U relay built to sit at 50–55 km for 30–90 days — time no descent probe gets. Envelope is the novel piece. Everything else is COTS, open, or a partner bus.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 text-sm">
             <div className="glass-panel p-6 border-l-2 border-l-venus">
               <h4 className="font-mono text-venus mb-2">Acid-Resistant Aerostat</h4>
-              <p className="text-gray-400">Target: multilayer fluoropolymer super-pressure envelope. Acid resistance is Gate 0–1 — coupons not yet run. Not qualified hardware.</p>
+              <p className="text-gray-400">Multilayer fluoropolymer super-pressure balloon for 30–90 days in sulfuric cloud. Gate 0–1 qualifies the film. That dataset is the mission.</p>
             </div>
             <div className="glass-panel p-6 border-l-2 border-l-venus">
               <h4 className="font-mono text-venus mb-2">Integrated Sensor Suite</h4>
-              <p className="text-gray-400">~8 kg science in a ~50 kg flush bay: AFN-class nephelometer, compact TLS, aerosol MS, met, two 4K cameras. Baseline v0 in git — not a 1 kg pod, not selected hardware.</p>
+              <p className="text-gray-400">~8 kg science in a ~50 kg flush bay: AFN-class nephelometer, compact TLS, aerosol MS, met, two 4K cameras. Event-driven sampling over 30–90 days. Baseline v0 in git.</p>
             </div>
             <div className="glass-panel p-6 border-l-2 border-l-venus">
               <h4 className="font-mono text-venus mb-2">3U CubeSat Relay</h4>
@@ -506,7 +506,7 @@ export default function NephelisHome() {
             </div>
             <div className="glass-panel p-6 border-l-2 border-l-venus">
               <h4 className="font-mono text-venus mb-2">AI-Optimized Navigation</h4>
-              <p className="text-gray-400">Autonomous navigation is a study item, not flight software. Gate 3 is a COTS packet from a bay mock. AETHER OS coordinates Earth-side work.</p>
+              <p className="text-gray-400">Autonomous float ops plus AETHER OS on Earth. First data contract is Gate 3: a live bay packet. The atmosphere is the navigation problem; AI is how we sit in it.</p>
             </div>
           </div>
 
@@ -702,8 +702,9 @@ export default function NephelisHome() {
           <div className="text-center mb-10">
             <h2 className="text-5xl font-black tracking-[-1px] text-white mb-4 uppercase">Support the work</h2>
             <p className="max-w-xl mx-auto text-xl text-gray-400">
-              Early crowdfund tiers support ground demonstrators and R&amp;D. DNA / sample concepts
-              need legal clearance before any sale. Prefer to build? Contribute on GitHub.
+              Crowdfund tiers fund the $500k all-in stack — coupons through a rideshare-class Venus
+              float. DNA / sample concepts need legal clearance before any sale. Prefer to build?
+              Contribute on GitHub.
             </p>
           </div>
 

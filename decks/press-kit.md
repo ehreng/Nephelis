@@ -8,7 +8,7 @@ _Auto-generated 2026-08-11T18:20:50.679Z from mission data. Re-run: `npx tsx aut
 
 ## Boilerplate (medium)
 
-While Mars dominates popular attention, Venus’s cloud deck offers near-Earth temperature and pressure, abundant solar energy, and gravity close to Earth’s. Nephelis is a small private team shipping a practical first step: a long-duration aerostat with imaging, atmospheric, and life-detection sensors, relayed via CubeSat-class communications — funded leanly (~$500,000 goal) compared to multi-million-dollar class missions.
+While Mars dominates popular attention, Venus’s cloud deck offers near-Earth temperature and pressure, abundant solar energy, and gravity close to Earth’s. Nephelis is shipping a $500k all-in Venus aerostat: imaging, atmospheric, and life-detection sensors, relayed via CubeSat-class communications, as launch and smallsat costs collapse.
 
 ## Key facts
 

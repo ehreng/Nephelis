@@ -23,7 +23,7 @@ export default function MissionPage() {
 
       <h1 className="text-6xl font-semibold tracking-tighter mt-8 mb-3">Project AETHER</h1>
       <p className="text-xl text-foreground/90 max-w-prose">
-        A super-pressure balloon probe concept for the 50–55 km cloud layer of Venus. Pre-hardware.
+        A $500k super-pressure balloon to the 50–55 km cloud layer of Venus. 30–90 days. 2029 window class.
       </p>
       <p className="mt-2 font-mono text-xs text-venus/80">
         {mc.callsign} · PHASE {mc.phase} · {mc.launch_target}
@@ -40,12 +40,11 @@ export default function MissionPage() {
 
         <h2>Mission Concept</h2>
         <p>
-          AETHER is a concept for a long-duration super-pressure balloon with a flush sensor bay
-          (imaging, meteorology, in-situ chemistry) and a separate 3U CubeSat relay. The program is
-          pre-hardware: documentation, mass/power/comms books, and ground gates. Target float is
-          ≥{specs.probe.expected_duration_days} days (goal{' '}
-          {specs.probe.duration_goal_days ?? 90} days) at 50–55 km. Flight architecture waits until
-          those gates pass.
+          AETHER is a long-duration super-pressure balloon with a flush sensor bay (imaging,
+          meteorology, in-situ chemistry) and a separate 3U CubeSat relay, designed to float{' '}
+          ≥{specs.probe.expected_duration_days} days (goal {specs.probe.duration_goal_days ?? 90}{' '}
+          days) at 50–55 km. $500k all-in. Ambitious 2029 rideshare window. The stack is specified;
+          Gates 0–3 are the first build.
         </p>
 
         <h3>Probe specs</h3>

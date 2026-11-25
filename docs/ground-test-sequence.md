@@ -85,6 +85,6 @@ Optional: mass-spec inlet dummy, nephelometer optical path dummy, UHF stub.
 - Not a Venus flight.
 - Not an entry/heatshield test.
 - Not a CubeSat relay demo (that is a later comms gate).
-- Not funded by the public $500k claim as a full flight stack.
+- These Earth tests are the first spend of the $500k all-in flight stack, not the whole mission.
 
 After Gate 3, the next honest public milestone is a written PDR-lite (`pdr-lite`) with mass/power books that include imaging cadence and night-side energy. Gates 4–8 (PDR-lite through flight stack) are in `docs/program-gates.md`.

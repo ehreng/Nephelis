@@ -181,7 +181,7 @@ export function getUpdates() {
       title: 'Program gates 0–8 — November 2026',
       date: '2026-11-24',
       excerpt:
-        'Ground-first sequence with KPIs and spend. Unique gap is time at 50–55 km. $500k maps to Gates 0–5.',
+        'Ground-first sequence with KPIs and spend. Unique gap is time at 50–55 km. $500k is the all-in flight-stack target.',
     },
     {
       slug: '2026-10-founder-training',

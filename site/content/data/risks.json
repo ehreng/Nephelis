@@ -38,17 +38,17 @@
       "likelihood": "high",
       "impact": "high",
       "status": "open",
-      "mitigation": "Gate flight talk on ground demonstrator success; explore rideshare after hardware gates; plan for 2030s-class transfer windows",
+      "mitigation": "Target 2029 rideshare window class; backup 2030–31; no 2027 claim",
       "owner": "ops"
     },
     {
       "id": "R-05",
-      "title": "Capital shortfall vs flight-class cost",
+      "title": "Cost blowout vs $500k all-in target",
       "category": "growth",
       "likelihood": "high",
       "impact": "high",
       "status": "open",
-      "mitigation": "$500k framed as ground/prototype campaign only; Stripe not yet live; partner in-kind; honest fundraising copy",
+      "mitigation": "COTS, rideshare, partner 3U, descope to carrier comms; public target stays $500k; Stripe not yet live",
       "owner": "growth"
     },
     {

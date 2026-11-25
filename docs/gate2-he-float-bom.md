@@ -106,7 +106,7 @@ Reuse `docs/gate3-telemetry-schema.md` (AETHER-G3/1) with at least `MET.T` and `
 - Not a Venus flight or 50–55 km claim
 - Not an entry / heatshield / inflation-after-hypersonic test
 - Not a CubeSat relay demo
-- Not funded as a full flight stack by the public $500k
+- First hardware spend of the $500k all-in flight stack, not the whole mission
 
 ---
 

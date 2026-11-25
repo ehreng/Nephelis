@@ -5,13 +5,13 @@
   "next_engineering_milestone": "Gate 0: name a ship-to and send the film RFQ; then acid coupons + Ø 1.2 m helium ground float with basic telemetry",
   "launch_posture": {
     "previous_public_claim": "",
-    "current": "No committed launch date. Earliest realistic class if gates pass: ~2030–2031+",
-    "note": "A long-duration Venus aerostat is multi-year after first hardware."
+    "current": "Ambitious target: 2029 Venus transfer window class. Not locked.",
+    "note": "First window we can earn after hardware gates. Backup 2030–31. No 2027 claim."
   },
   "budget_posture": {
     "crowdfund_target_usd": 500000,
-    "label": "Ground demonstrator / prototype campaign — not full flight mission cost",
-    "flight_estimate_note": "Public $500k maps to Gates 0–5 (comfortably 0–4). A Venus entry + float system is $5–15M+ or a strong partnership."
+    "label": "All-in target — ground through a rideshare-class Venus flight stack",
+    "flight_estimate_note": "$500k is the full program bet. Launch and smallsat costs are collapsing; COTS + rideshare + an acid envelope is the stack. Spend ranges are order-of-magnitude."
   },
   "ground_gates": [
     {

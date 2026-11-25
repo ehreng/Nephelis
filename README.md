@@ -123,7 +123,7 @@ Knowledge base: [`research/`](./research/) (see `research/INDEX.md` after `evolv
 - [ ] Acid coupons / helium ground float (next engineering; blocked on ship-to)  
 - [ ] Stripe **live** mode (do not reopen until asked)  
 
-**Program:** pre-hardware. $500k = ground/community scale, not a Venus flight. No committed launch date (~2030–2031+ class if gates pass).
+**Program:** pre-hardware. **$500k all-in** — ground through a rideshare-class Venus flight stack. Ambitious 2029 window class (not locked). No 2027 launch claim.
 
 Roadmap: [site `/roadmap`](https://www.nephelisindustries.com/roadmap) · go-live: [`docs/go-live.md`](./docs/go-live.md)  
 **30-day war board:** [`docs/30-day-war-board.md`](./docs/30-day-war-board.md) · partner drafts: [`docs/partner-outreach-drafts.md`](./docs/partner-outreach-drafts.md)  

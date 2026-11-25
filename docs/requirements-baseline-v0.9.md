@@ -199,7 +199,7 @@ Instrument list in `specs.json` matches `sensor-suite.json` baseline v0 (2026-11
 
 | ID | Requirement | Notes | Status |
 |----|-------------|-------|--------|
-| PROG-1 | Cost posture | Lean; **$500k** crowdfund goal (not hard cap of mission) | GOAL |
+| PROG-1 | Cost posture | Lean; **$500k all-in** (ground through rideshare-class flight stack) | GOAL |
 | PROG-2 | Funding gates | 25% / 50% / 75% task gates | REQ tracking |
 | PROG-3 | Export control | Self-screen parts/partners | REQ |
 | PROG-4 | Planetary protection | Screening memo before DNA flight packing | REQ |

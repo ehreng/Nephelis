@@ -2,9 +2,9 @@
   "updated_at": "2026-11-24T00:00:00.000Z",
   "callsign": "NEPHELIS.MCC",
   "phase": "PRE-HARDWARE",
-  "launch_target": "uncommitted — earliest class ~2030–2031+ if gates pass",
+  "launch_target": "ambitious 2029 window class — not locked",
   "funding_goal_usd": 500000,
-  "funding_goal_label": "Ground demonstrator / early R&D campaign (not full flight cost)",
+  "funding_goal_label": "All-in program target: ground through rideshare-class flight",
   "checklist": [
     {
       "id": "mc-github-ssot",
@@ -78,17 +78,17 @@
     },
     {
       "id": "mc-funding-50",
-      "item": "50% of $500k ground-campaign goal committed (if fundraising opens)",
+      "item": "50% of $500k all-in goal committed (if fundraising opens)",
       "phase": "PROGRAM",
       "status": "planned",
       "due": "2027+"
     },
     {
       "id": "mc-flight-gate",
-      "item": "Flight program gate: only after ground demonstrator success + credible capital plan",
+      "item": "Flight stack on a rideshare path after Gates 0–5, inside the $500k envelope",
       "phase": "FLIGHT-GATE",
       "status": "planned",
-      "due": "2028+"
+      "due": "2029"
     }
   ]
 }

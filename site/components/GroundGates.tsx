@@ -15,7 +15,7 @@ export default function GroundGates() {
   return (
     <section>
       <h2 className="font-mono text-xs uppercase tracking-widest text-gray-500 mb-2">
-        Ground gates 0–3
+        First hardware — gates 0–3
       </h2>
       <p className="text-xs text-white/45 leading-relaxed mb-4 max-w-2xl">
         Spend is order-of-magnitude, not quotes. {progress.budget_posture.flight_estimate_note} Next

@@ -15,7 +15,7 @@ As of August–September 2026, Rocket Lab’s public launch manifest listed VLF 
 | Dimension | Rocket Lab-class | Nephelis AETHER |
 |-----------|------------------|-----------------|
 | Primary thesis | Organics in cloud particles (AFN snapshot) | Time-series chemistry + habitation-path aerostat |
-| Cost posture | Multi-$M / sub-$10M class | ~$500k crowdfund + partners (ground scale) |
+| Cost posture | Multi-$M / sub-$10M class | ~$500k all-in crowdfund + partners (rideshare-class flight stack) |
 | Platform | Ballistic ~5 min descent | Super-pressure balloon float 30–90 d at 50–55 km |
 | Instruments | AFN only | AFN-class + compact TLS + aerosol MS + 4K + met (concept) |
 | Public engagement | Traditional aerospace | Payload crowdfund (name/DNA tiers) |

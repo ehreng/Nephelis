@@ -13,8 +13,8 @@
 | Callsign | NEPHELIS.MCC |
 | Phase | **PRE-HARDWARE** / early — concept + docs + public visuals |
 | Wet mass / float | ~400 kg study · ~55 km · Ø ~6.6 m / ~150 m³ design point |
-| Funding goal | $500,000 (ground / community — not a flight budget) |
-| Launch | No committed date. Earliest class if gates pass: ~2030–2031+ |
+| Funding goal | $500,000 all-in (ground through rideshare-class flight stack) |
+| Launch | Ambitious 2029 window class — not locked. Backup 2030–31. |
 | Visual lock | Flyingprobe sphere: flush black bay, cyan ring, two cameras |
 
 ### What moved since the last brief (2026-11-16)
@@ -78,7 +78,7 @@ Priority: **safety/regulatory → hardware → public progress → nice-to-have*
 ## 4. VERIFY
 
 - [ ] No invented partners, contracts, or NASA affiliation (shortlist = research, not contacted)
-- [ ] $500k labeled ground-scale
+- [ ] $500k labeled all-in flight-stack target
 - [ ] P0 blockers queued — do not wait on a founder reply this week
 
 Architecture: [`docs/AETHER_OS_Architecture_v1.md`](../../docs/AETHER_OS_Architecture_v1.md)  

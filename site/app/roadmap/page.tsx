@@ -6,7 +6,7 @@ import { getMissionControl, getRisks, getTasks, getTimeline } from '@/lib/conten
 export const metadata: Metadata = {
   title: 'Roadmap',
   description:
-    'Project AETHER honest roadmap — ground demonstrators first; flight dates aspirational only.',
+    'Project AETHER roadmap — $500k all-in path to a 30–90 day Venus float. Ambitious 2029 window.',
 };
 
 const statusStyle: Record<string, string> = {
@@ -84,9 +84,9 @@ export default function RoadmapPage() {
           <div className="font-mono text-xs tracking-[3px] text-venus/80 mb-2">PUBLIC ROADMAP</div>
           <h1 className="text-5xl md:text-6xl font-semibold tracking-tight">Mission Path</h1>
           <p className="mt-3 max-w-2xl text-lg text-foreground/70">
-            Ground first. Coupons, a subscale helium float, and a COTS bay packet before avionics,
-            a 3U partner, or any flight stack. Unique gap is time at 50–55 km (30–90 days). No
-            committed launch date.
+            A $500k private path to a 30–90 day Venus float. Coupons and a helium sphere this
+            year-class; avionics and a 3U next; ambitious transfer window 2029. Unique gap is time
+            at 50–55 km.
           </p>
           <p className="mt-2 font-mono text-[10px] text-gray-500">
             {mc.callsign} · {mc.phase} · target {mc.launch_target} · goal $

@@ -8,7 +8,7 @@
 
 Unique value is **time at 50–55 km** (30–90 days vs VLF ~5 min / DAVINCI ~1 h / VEGA ~46 h). That lives or dies on the envelope. Site, visual lock, sensor table, power book, and relay sketch are ahead of hardware.
 
-Public **$500k** funds the ground program through a PDR-lite (Gates 0–5 if spend is tight; comfortably 0–4). Flight-class cost stays **$5–15M+** or a strong partnership. No committed launch date. Earliest class if gates pass: ~2030–2031+.
+Public **$500k** is the all-in target: coupons through a rideshare-class Venus flight stack. Flagship Venus missions cost hundreds of millions. Launch and smallsat prices are collapsing; the bet is a 400 kg COTS-heavy aerostat can fly inside half a million. Novel cost is the envelope and inflation sequence, not a prime contractor. If a line blows, descope (carrier comms, partner 3U, in-kind) — do not raise the public target. Ambitious transfer window: **2029 class**. Backup 2030–31. No 2027 claim.
 
 ---
 
@@ -38,9 +38,9 @@ CubeSat hardware is a later comms gate. Gate 3 is a black-bay mockup that emits 
 | **3 Bay mock + packet** | 2027–28 | Stored packet `{v, ts, src, seq, sensors[]}` from a real camera + T/P + ring; external engineer can plot it. | $8–30k | ~$110k |
 | **4 PDR-lite** | 2028 | Mass/power/comms books with night = 50–60 h; inflation concept; FMEA on envelope / inflate / power; 10-minute walkthrough from repo docs only. | $20–80k | ~$180k |
 | **5 Avionics + UHF breadboard** | 2028 | 50 h “night” on a 400 Wh-class pack at ~3.6 W; UHF proximity over km-class range on Earth; imaging cadence vs ~1.8 MB/day queue demonstrated. | $50–150k | ~$300k |
-| **6 3U partner path** | 2028–29 | Named bus + radio class; Earth-orbit comms demo or in-kind LOI. | $200k–$1.5M (Earth 3U) | partner or later raise |
-| **7 Entry / inflate** | 2029+ | Drop / vac inflation sequence on a packed envelope. | $1–5M+ | flight money |
-| **8 Flight stack** | 2030–31+ class | Wet ~400 kg, gondola 40–55 kg, 3U 4–6 kg, acid-qualified envelope. | **$5–15M+** | outside public campaign |
+| **6 3U partner path** | 2028–29 | Named COTS bus + radio class; Earth-orbit comms demo or in-kind LOI. | $40–150k | ~$400k |
+| **7 Entry / inflate** | 2028–29 | Drop / vac inflation sequence on a packed envelope; shop ablative path. | $40–80k | ~$460k |
+| **8 Flight stack** | **2029 class** | Wet ~400 kg, gondola 40–55 kg, 3U 4–6 kg, acid-qualified envelope, rideshare. | balance of $500k | **$500k** |
 
 ---
 

@@ -34,12 +34,12 @@
 | Item | Posture |
 |------|---------|
 | Next milestone | Gate 0: ship-to + send film RFQ + lab quote. Then coupons → He float → telemetry |
-| Flight window | Aspirational **~2030–2031+** only if ground gates and capital exist |
+| Flight window | Ambitious **2029** transfer window class (not locked). Backup 2030–31. |
 
 ## Budget posture
 
-**$500k** = early ground / prototype / community campaign scale.  
-Not a full end-to-end Venus flight budget.
+**$500k** = all-in target: ground gates through a rideshare-class Venus flight stack.  
+Launch and smallsat costs are collapsing; COTS + rideshare + an acid envelope is the bet.
 
 ## Where to contribute
 
@@ -50,4 +50,4 @@ Not a full end-to-end Venus flight budget.
 
 ## Vision
 
-Long-term interest in Venus cloud-layer science and habitation technology is the inspiration. Near-term program is prove materials and float systems on Earth.
+Long-term interest in Venus cloud-layer science and habitation technology is the inspiration. Near-term: qualify the envelope, then fly a 30–90 day stack inside $500k.

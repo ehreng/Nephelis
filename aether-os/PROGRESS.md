@@ -4,9 +4,15 @@ Append-only mission progress. Newest first.
 
 ---
 
+## 2026-11-24 — $500k all-in thesis
+
+- Public target recast: **$500k all-in** (ground through rideshare-class flight). Launch/smallsat costs collapsing is the bet.
+- Ambitious window: 2029 class (not locked). Backup 2030–31. No 2027 claim.
+- Gates 6–8 spend compressed inside the $500k envelope via COTS / rideshare / partner / descope.
+
 ## 2026-11-24 — Program gates + Gate 0/2 paper
 
-- `docs/program-gates.md`: gates 0–8, KPIs, spend, make-vs-buy. $500k → Gates 0–5; flight $5–15M+.
+- `docs/program-gates.md`: gates 0–8, KPIs, spend, make-vs-buy. $500k all-in through flight stack.
 - Gate 0 RFQ package: coupon matrix frozen; CS Hyde + American Durafilm; ASTM D543 lab shortlist. Ship-to blocked.
 - Gate 2 BOM: Ø 1.2 m Earth He float, leak stub. Do not sew until Gate 1.
 - Partners/tasks/timeline/progress updated. Still pre-hardware. Stripe live remains off.

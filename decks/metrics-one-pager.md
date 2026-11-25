@@ -1,6 +1,6 @@
 # Nephelis Industries — Metrics One-Pager
 
-_Auto-generated from `site/content/data/*` · 2026-11-24T23:56:46.864Z_  
+_Auto-generated from `site/content/data/*` · 2026-11-25T00:15:38.556Z_  
 **Do not hand-edit** — run `npx tsx automation/scripts/sync-metrics.ts` after data changes.
 
 ## Mission snapshot
@@ -8,12 +8,12 @@ _Auto-generated from `site/content/data/*` · 2026-11-24T23:56:46.864Z_
 | Metric | Value |
 |--------|-------|
 | Program | Project AETHER / Cloudseeker |
-| MCC phase | PRE-HARDWARE · target uncommitted — earliest class ~2030–2031+ if gates pass |
+| MCC phase | PRE-HARDWARE · target ambitious 2029 window class — not locked |
 | Probe | Super-pressure balloon |
 | Target altitude | 50–55 km (float ~55 km) |
 | Wet mass | ~400 kg · balloon ~6.6 m |
 | Float duration (baseline) | 30+ days (ops goal 30–90) |
-| Launch target | uncommitted — earliest class ~2030–2031+ if gates pass |
+| Launch target | ambitious 2029 window class — not locked |
 | Vehicles | Rideshare, Dedicated small launcher |
 | Transfer | Direct to Venus |
 | Funding goal | $500,000 |
@@ -50,9 +50,9 @@ _Paid counts come from Stripe at runtime; baseline is static marketing/pre-sales
 - **2026-H1** (complete): Vision site, CONOPS/requirements drafts, AETHER OS contribution framework
 - **2026-H2** (current): Public GitHub as SSOT, program gates 0–8 with KPIs/spend, Gate 0 film RFQ written (ship-to still open)
 - **2027** (target): Gates 0–3 ground: film RFQ + acid coupons, Ø 1.2 m He float, bay telemetry mock
-- **2028** (target): PDR-lite + avionics/UHF breadboard if funded; partner LOIs
-- **2029–2030** (aspirational): Only if prior gates pass: env qual path, flight-ish stack design freeze, rideshare exploration
-- **2030–2031+** (aspirational): Earliest plausible Venus transfer window class — not a commitment; depends on hardware + capital
+- **2028** (target): Avionics + UHF, 3U path, entry/inflate freeze — flight stack in build
+- **2029** (target): Ambitious Venus transfer window class — rideshare-class 400 kg stack
+- **2030–31** (aspirational): Backup transfer window
 - **Long-term vision** (vision): Cloud-layer science → habitation tech path (labeled vision, not near-term engineering)
 - **1985 / 2022+** (background): Heritage: VEGA balloons; NASA/ESA aerobot studies (context only)
 
@@ -138,7 +138,7 @@ _Paid counts come from Stripe at runtime; baseline is static marketing/pre-sales
 - **R-02** (critical): Entry / inflation sequence failure
 - **R-03** (high): Comms blackout / insufficient downlink
 - **R-04** (high): No committed launch path; schedule risk is structural
-- **R-05** (high): Capital shortfall vs flight-class cost
+- **R-05** (high): Cost blowout vs $500k all-in target
 
 ## Pitch talking points
 

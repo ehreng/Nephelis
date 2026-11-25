@@ -21,17 +21,17 @@
   },
   {
     "year": "2028",
-    "event": "PDR-lite + avionics/UHF breadboard if funded; partner LOIs",
+    "event": "Avionics + UHF, 3U path, entry/inflate freeze — flight stack in build",
     "status": "target"
   },
   {
-    "year": "2029–2030",
-    "event": "Only if prior gates pass: env qual path, flight-ish stack design freeze, rideshare exploration",
-    "status": "aspirational"
+    "year": "2029",
+    "event": "Ambitious Venus transfer window class — rideshare-class 400 kg stack",
+    "status": "target"
   },
   {
-    "year": "2030–2031+",
-    "event": "Earliest plausible Venus transfer window class — not a commitment; depends on hardware + capital",
+    "year": "2030–31",
+    "event": "Backup transfer window",
     "status": "aspirational"
   },
   {

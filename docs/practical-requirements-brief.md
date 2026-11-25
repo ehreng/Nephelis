@@ -71,7 +71,7 @@ Sponsor logos remain on the translucent upper envelope in light gray/white techn
 ## 4. Programmatic requirements
 
 - Regulatory path started early (FAA, FCC, ITAR/EAR, planetary protection). Notes: `docs/regulatory-path.md`. No filings submitted.
-- Funding path beyond $500k ground-prototype budget (realistic flight system is $5–15M+ class or strong partnership). Public $500k is ground/community scale only.
+- Funding path: public **$500k all-in** (ground through a rideshare-class flight stack). Close it with COTS, rideshare, partner 3U, and descope — not a prime-contractor budget.
 - At least one named advisor or contributor with entry-system or balloon-flight experience. None listed with permission as of this brief.
 - Public technical baseline (CONOPS, requirements, mass budget, risk register) that an external engineer can review. Drafts exist; visual lock and this brief sit on top.
 

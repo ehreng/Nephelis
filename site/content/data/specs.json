@@ -21,8 +21,8 @@
     ]
   },
   "launch": {
-    "target_year": 2031,
-    "target_year_note": "Earliest class if gates pass; not a committed date",
+    "target_year": 2029,
+    "target_year_note": "Ambitious first window class; not a locked date",
     "vehicle_options": [
       "Rideshare",
       "Dedicated small launcher"

@@ -2,7 +2,7 @@
   "id": "2026-11-26-gemini-collab-flywheel",
   "objective": "Answer Gemini's three collaboration options; ship the stacked model; harden and place the flywheel.",
   "lead": "grok",
-  "status": "open",
+  "status": "closed",
   "slices": [
     {
       "id": "s1",

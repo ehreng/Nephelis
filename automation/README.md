@@ -38,8 +38,9 @@ npx tsx automation/scripts/evolve.ts press
 
 cd site && pnpm validate:content && pnpm ci
 
-# Flywheel guards (no API keys)
-npx tsx automation/scripts/flywheel-sync.ts --self-check
+# Flywheel guards (no API keys; offline-safe)
+pnpm --dir automation self-check
+pnpm --dir automation typecheck
 
 # Ask Grok during a session (needs XAI_API_KEY)
 npx tsx automation/scripts/ask-grok.ts "red-team the Gate 0 RFQ claims"

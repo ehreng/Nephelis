@@ -8,6 +8,10 @@ Gemini offered three exclusive options. Exclusive-pick would have dropped the OS
 
 Wrong workflow path, import-time key throw, `git add -A`, missing preview/archive/user-src bans. Hardened in this run.
 
-## Follow-up (not applied)
+## L-003 tooling (applied)
 
-After secrets exist, run one `workflow_dispatch` with `dry_run=true` on a disposable task before labeling any issue `flywheel:ready`.
+Gemini: `npx tsx` from repo root tries the npm registry; `pnpm --dir automation self-check` uses the local binary and works offline. Document that as the self-check command.
+
+## Follow-up
+
+First live flywheel dispatch is #47 sensor-suite review. Needs `GEMINI_API_KEY` and `XAI_API_KEY` as repo secrets.

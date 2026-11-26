@@ -46,6 +46,19 @@
         ".github/workflows/nephelis-flywheel.yml",
         "automation/scripts/flywheel-sync.ts"
       ]
+    },
+    {
+      "id": "L-003",
+      "date": "2026-11-26",
+      "source_run": "2026-11-26-gemini-collab-flywheel",
+      "kind": "tooling",
+      "observation": "npx tsx automation/scripts/flywheel-sync.ts --self-check from repo root hits the npm registry. tsx already lives under automation/node_modules.",
+      "change": "Document pnpm --dir automation self-check (and typecheck) as the offline-safe commands.",
+      "applied": true,
+      "files": [
+        "AGENTS.md",
+        "automation/README.md"
+      ]
     }
   ]
 }

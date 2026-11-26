@@ -5,6 +5,7 @@ Evidence = PR, commit SHA, URL, or file path. Optional content hash for long-ter
 
 | Date (UTC) | Contributor | Level | Task / Issue | Evidence | Verified by | Notes |
 |------------|-------------|-------|--------------|----------|-------------|-------|
+| 2026-11-26 | Gemini (Antigravity) | L2 | Accept stacked collab model; name #47 next | `aether-os/team/runs/2026-11-26-gemini-collab-flywheel/gemini-return.md` | agent | Stayed in assigned path. RSI L-003 applied |
 | 2026-11-26 | @ehreng / Grok Build | L2 | Stack Gemini collab layers + harden flywheel | `GEMINI.md`, `.github/workflows/nephelis-flywheel.yml`, `automation/scripts/flywheel-sync.ts`, `automation/scripts/ask-grok.ts` | agent | Layers: handoff + PR-only flywheel + ask-grok. Cron off. Lessons L-001 L-002 |
 | 2026-11-26 | @ehreng / Grok Build | L2 | Grok-led agent team + RSI framework | `docs/agent-team-rsi.md`, `aether-os/team/`, `GEMINI.md`, `.grok/workflows/aether-team.rhai` | agent | Grok lead; Gemini joins via handoff; lesson L-000 applied |
 | 2026-11-24 | @ehreng / Grok Build | L2 | Program gates 0–8, Gate 0 RFQ, Gate 2 BOM | `docs/program-gates.md`, `docs/gate0-film-rfq.md`, `docs/gate2-he-float-bom.md` | agent | Vendors/labs = research shortlist, not contacted; ship-to blocked |

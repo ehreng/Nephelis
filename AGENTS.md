@@ -106,7 +106,7 @@ Grok is lead. Gemini and humans are teammates. Recursive self-improvement is a r
 
 One owner per file. Write a lesson to `aether-os/team/lessons.json` before calling the run done.
 
-Collaboration layers (stack, do not exclusive-pick): async handoff, GitHub flywheel (PR-only), `ask-grok.ts` session helper. Flywheel: `npx tsx automation/scripts/flywheel-sync.ts --self-check`. Ask Grok: `npx tsx automation/scripts/ask-grok.ts "question"`.
+Collaboration layers (stack, do not exclusive-pick): async handoff, GitHub flywheel (PR-only), `ask-grok.ts` session helper. Flywheel self-check: `pnpm --dir automation self-check` (offline-safe; uses local tsx). Typecheck: `pnpm --dir automation typecheck`. Ask Grok: `npx tsx automation/scripts/ask-grok.ts "question"`.
 
 ## Secrets
 

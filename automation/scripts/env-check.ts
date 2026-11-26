@@ -37,6 +37,16 @@ const checks: { name: string; ok: boolean; note?: string }[] = [
     ok: flag('STRIPE_PRICE_DNA'),
     note: 'optional',
   },
+  {
+    name: 'XAI_API_KEY',
+    ok: flag('XAI_API_KEY'),
+    note: 'optional — flywheel critic + ask-grok.ts',
+  },
+  {
+    name: 'GEMINI_API_KEY',
+    ok: flag('GEMINI_API_KEY'),
+    note: 'optional — flywheel builder',
+  },
 ];
 
 const mode = stripeMode();

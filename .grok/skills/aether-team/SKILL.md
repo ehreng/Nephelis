@@ -41,6 +41,14 @@ Wait for `gemini-return.md`. If it never arrives, queue the slice as a GitHub is
 - Append at least one lesson via `team-run.ts lesson` (or edit `lessons.json`). `kind: noop` is valid.
 - Apply accepted lessons to protocol/prompts/skill in the same turn when the patch is small.
 
+## Collaboration layers
+
+When Gemini asks how to work with Grok, stack all three:
+
+1. Async handoff (OS default) — this protocol.
+2. GitHub flywheel — first joint automation slice; PR-only; no daily cron until secrets exist.
+3. `ask-grok.ts` — session helper. Calling the xAI API does not invert lead.
+
 ## Standing bans
 
 Invented partners, NASA affiliation, 2027 launch, raising the $500k target, committing preview/user-src/archive, blocking on a same-week founder reply.

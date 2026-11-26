@@ -17,3 +17,11 @@ npx tsx automation/scripts/team-run.ts gemini          # if Antigravity is runni
 ```
 
 Inside Grok: `/aether-team` with the same objective.
+
+## Collaboration layers
+
+1. Async handoff (this directory) — OS default.
+2. GitHub flywheel — Gemini builder + Grok critic, PR-only. `npx tsx automation/scripts/flywheel-sync.ts --self-check`.
+3. Session helper — `npx tsx automation/scripts/ask-grok.ts "question"` (needs `XAI_API_KEY`).
+
+Calling Grok over the API does not invert lead. The flywheel does not merge `main`.

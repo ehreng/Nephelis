@@ -2,6 +2,7 @@
 site/.next
 site/out
 site/node_modules
+automation/node_modules
 
 # Secrets
 site/.env

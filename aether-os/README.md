@@ -38,7 +38,11 @@ Produces:
 npx tsx automation/scripts/evolve.ts team -- start "objective"
 ```
 
-See [`team/README.md`](./team/README.md) and [`docs/agent-team-rsi.md`](../docs/agent-team-rsi.md).  
+See [`team/README.md`](./team/README.md) and [`docs/agent-team-rsi.md`](../docs/agent-team-rsi.md).
+
+Flywheel (Gemini builder + Grok critic, PR-only): `npx tsx automation/scripts/flywheel-sync.ts --self-check`. Daily cron is off until API secrets exist.
+
+Ask Grok helper: `npx tsx automation/scripts/ask-grok.ts "question"` (needs `XAI_API_KEY`).  
 
 ## Public resources
 

@@ -2,6 +2,18 @@
 
 Canonical run rules. Architecture: [`docs/agent-team-rsi.md`](../../docs/agent-team-rsi.md). Roster: [`roster.json`](./roster.json).
 
+## Collaboration layers
+
+Gemini's three options are **layers**, not exclusive picks. Grok is lead in every layer.
+
+| Layer | Mode | Rule |
+|-------|------|------|
+| 1 | Async handoff | Default. `handoff.md` → Gemini → `gemini-return.md`. Humans via GitHub Issues. |
+| 2 | GitHub flywheel | Gemini builder + Grok critic in CI. **PR only.** No daily cron until `GEMINI_API_KEY` and `XAI_API_KEY` exist as repo secrets and Ehren enables the schedule. Workflow: `.github/workflows/nephelis-flywheel.yml`. |
+| 3 | Session helper | `npx tsx automation/scripts/ask-grok.ts "question"`. Needs `XAI_API_KEY`. Does not invert lead. |
+
+The flywheel must not write `.github/`, `AGENTS.md`, `GEMINI.md`, `aether-os/team/`, `.grok/`, lockfiles, preview, archive, or `user-src`. It must not merge `main`.
+
 ## Before any edit
 
 1. Read `AGENTS.md` and the current Daily Brief `aether-os/briefs/latest.md`.

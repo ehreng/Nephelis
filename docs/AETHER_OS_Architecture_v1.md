@@ -176,6 +176,8 @@ Designed to minimize conflict-of-interest issues with military service while pre
 | Contribution log | `aether-os/CONTRIBUTIONS.md` |
 | Loop registry | `aether-os/loops/registry.json` |
 | Agent team + RSI | `docs/agent-team-rsi.md` · `aether-os/team/` · `/aether-team` |
+| Flywheel (Gemini builder + Grok critic) | `automation/scripts/flywheel-sync.ts` · `.github/workflows/nephelis-flywheel.yml` (PR-only) |
+| Ask Grok helper | `automation/scripts/ask-grok.ts` |
 | Mission briefs | `aether-os/briefs/YYYY-MM-DD.md` |
 | Progress log | `aether-os/PROGRESS.md` |
 | Newsletter | Platform TBD (Beehiiv preferred); draft path `aether-os/newsletter/` |
@@ -215,6 +217,8 @@ Grok remains the Persistent Mission Agent. Other runtimes join as teammates. Eve
 - Runtime: `aether-os/team/`
 - Gemini join: repo-root `GEMINI.md` + `handoff.md`
 - Grok entry: `/aether-team` or `npx tsx automation/scripts/evolve.ts team -- start "<objective>"`
+- Flywheel: Gemini builder + Grok critic, PR-only (`.github/workflows/nephelis-flywheel.yml`)
+- Session helper: `npx tsx automation/scripts/ask-grok.ts "question"`
 
 Ehren can still pause or override. Do not block a team run on a same-week founder answer.
 

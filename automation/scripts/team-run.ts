@@ -224,8 +224,9 @@ function gemini(runId?: string) {
     cwd: root,
   });
   if (r.status !== 0) {
-    console.error('agentapi new-conversation failed. Handoff file still stands.');
-    process.exit(r.status || 1);
+    console.log(
+      `agentapi new-conversation failed. Handoff file still stands at aether-os/team/runs/${id}/handoff.md`
+    );
   }
 }
 

@@ -18,6 +18,8 @@ Agents: start at root [`AGENTS.md`](../AGENTS.md). Knowledge map: [`research/IND
 | **Health** | Daily 16:00 UTC / `evolve.ts health` | Prod endpoint probes (fail CI if down) |
 | **Links** | Sun / heritage PR / `evolve.ts links` | Validates `heritage.json` URLs |
 | **CI** | Every PR/push | schemas + typecheck + lint + build |
+| **Flywheel** | Manual / `flywheel:ready` issues | Gemini builder + Grok critic → **PR only** (cron off until secrets) |
+| **Ask Grok** | Local CLI | `ask-grok.ts` queries xAI during a teammate session |
 | **Leads** | Site forms | Resend audience + team email + auto-reply |
 | **Payments** | Stripe Checkout + webhook | Paid tags + live allocation |
 
@@ -35,6 +37,12 @@ npx tsx automation/scripts/evolve.ts kb
 npx tsx automation/scripts/evolve.ts press
 
 cd site && pnpm validate:content && pnpm ci
+
+# Flywheel guards (no API keys)
+npx tsx automation/scripts/flywheel-sync.ts --self-check
+
+# Ask Grok during a session (needs XAI_API_KEY)
+npx tsx automation/scripts/ask-grok.ts "red-team the Gate 0 RFQ claims"
 ```
 
 ## Scripts
@@ -57,6 +65,9 @@ cd site && pnpm validate:content && pnpm ci
 | `kb-index.ts` | `research/INDEX.md` |
 | `health-check.ts` | Production API/page probes |
 | `link-check.ts` | Heritage link reachability |
+| `team-run.ts` | Grok-led team + RSI (`evolve.ts team`) |
+| `flywheel-sync.ts` | Gemini builder + Grok critic. PR-only. `--self-check` needs no keys |
+| `ask-grok.ts` | Query Grok via xAI (`XAI_API_KEY`) |
 
 ## Prompts
 
@@ -95,3 +106,4 @@ Minimum: `RESEND_*`, `STRIPE_*`, `NEXT_PUBLIC_SITE_URL`, `OPS_TOKEN`.
 - Social: **never auto-post**
 - Payments / pricing: **human only**
 - Agents update data + open PRs; founders merge
+- Flywheel: **never auto-merge**; daily cron stays off until secrets exist

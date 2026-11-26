@@ -1,0 +1,30 @@
+{
+  "id": "2026-11-26-gemini-collab-flywheel",
+  "objective": "Answer Gemini's three collaboration options; ship the stacked model; harden and place the flywheel.",
+  "lead": "grok",
+  "status": "open",
+  "slices": [
+    {
+      "id": "s1",
+      "owner": "grok",
+      "paths": [
+        "GEMINI.md",
+        "aether-os/team/protocol.md",
+        "docs/agent-team-rsi.md",
+        ".github/workflows/nephelis-flywheel.yml",
+        "automation/scripts/flywheel-sync.ts",
+        "automation/scripts/ask-grok.ts",
+        "automation/package.json"
+      ],
+      "done_when": "Stacked model encoded. Flywheel at the correct GitHub path. Self-check passes. No daily cron."
+    },
+    {
+      "id": "s2",
+      "owner": "gemini",
+      "paths": [
+        "aether-os/team/runs/2026-11-26-gemini-collab-flywheel/gemini-return.md"
+      ],
+      "done_when": "gemini-return.md acknowledges the three-layer model and lists the next P0/P1 slice Gemini will take after this lands."
+    }
+  ]
+}

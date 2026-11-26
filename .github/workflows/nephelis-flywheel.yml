@@ -1,0 +1,96 @@
+name: Nephelis Gemini + Grok Flywheel
+
+# PR-only. Grok is lead; Gemini is the builder teammate.
+# Daily cron stays off until Ehren sets repo secrets GEMINI_API_KEY and XAI_API_KEY
+# and explicitly re-enables a schedule. This workflow never merges main.
+on:
+  workflow_dispatch:
+    inputs:
+      task_prompt:
+        description: "Optional specific task override (defaults to aether-os/briefs/latest.md)"
+        required: false
+        type: string
+      dry_run:
+        description: "Commit locally on the runner and skip push/PR"
+        required: false
+        type: boolean
+        default: false
+  issues:
+    types: [labeled]
+  # schedule:
+  #   - cron: "0 13 * * *"
+
+concurrency:
+  group: nephelis-flywheel
+  cancel-in-progress: false
+
+jobs:
+  run-flywheel:
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'issues' && github.event.label.name == 'flywheel:ready')
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: read
+
+    steps:
+      - name: Checkout Nephelis Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup pnpm & Node.js
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "pnpm"
+          cache-dependency-path: |
+            site/pnpm-lock.yaml
+            automation/pnpm-lock.yaml
+
+      - name: Install site dependencies (CI gates)
+        run: pnpm --dir site install --frozen-lockfile
+
+      - name: Install automation dependencies
+        run: pnpm --dir automation install --frozen-lockfile
+
+      - name: Typecheck flywheel
+        run: pnpm --dir automation typecheck
+
+      - name: Self-check path guards
+        run: pnpm --dir automation self-check
+
+      - name: Require API secrets
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+        run: |
+          if [ -z "$GEMINI_API_KEY" ] || [ -z "$XAI_API_KEY" ]; then
+            echo "Set repo secrets GEMINI_API_KEY and XAI_API_KEY before running the flywheel."
+            echo "Self-check passed. Live builder/critic loop is armed, not firing."
+            exit 1
+          fi
+
+      - name: Configure Git Bot Identity
+        run: |
+          git config user.name "nephelis-flywheel[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Run Gemini + Grok Orchestrator
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TASK_OVERRIDE: ${{ inputs.task_prompt }}
+          DRY_RUN: ${{ inputs.dry_run == true && 'true' || 'false' }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: pnpm --dir automation flywheel

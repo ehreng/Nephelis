@@ -1,0 +1,23 @@
+{
+  "name": "nephelis-automation",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Flywheel + ask-grok helpers. Other loops run via npx tsx from repo root.",
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "self-check": "npx tsx scripts/flywheel-sync.ts --self-check",
+    "flywheel": "npx tsx scripts/flywheel-sync.ts",
+    "ask-grok": "npx tsx scripts/ask-grok.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^1.30.0",
+    "openai": "^4.104.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

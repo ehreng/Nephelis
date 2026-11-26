@@ -84,6 +84,14 @@
       "name": "Recursive self-improvement",
       "status": "active",
       "notes": "Required last phase of every agent-team run. Lessons in aether-os/team/lessons.json"
+    },
+    {
+      "id": "flywheel",
+      "name": "Gemini builder + Grok critic flywheel",
+      "status": "armed",
+      "script": "automation/scripts/flywheel-sync.ts",
+      "schedule": "manual workflow_dispatch or issues labeled flywheel:ready",
+      "notes": "PR-only. Daily cron off until GEMINI_API_KEY and XAI_API_KEY repo secrets exist. Grok critic must approve. Does not merge main."
     }
   ],
   "priority_order": [

@@ -16,7 +16,12 @@
       "seat": "teammate",
       "join": "GEMINI.md + aether-os/team/runs/<id>/handoff.md",
       "return": "aether-os/team/runs/<id>/gemini-return.md",
-      "spawn": "npx tsx automation/scripts/team-run.ts gemini"
+      "spawn": "npx tsx automation/scripts/team-run.ts gemini",
+      "layers": [
+        "handoff (OS default)",
+        "flywheel builder (PR-only)",
+        "ask-grok.ts session helper"
+      ]
     },
     {
       "id": "human",

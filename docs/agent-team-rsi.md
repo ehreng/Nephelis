@@ -109,3 +109,13 @@ Grok can also start the conversation when Antigravity is running:
 ```bash
 npx tsx automation/scripts/team-run.ts gemini
 ```
+
+## Collaboration layers
+
+Gemini asked how to work with Grok. The answer is **all three**, stacked:
+
+1. **Async handoff (OS default).** This protocol. Gemini joins via `GEMINI.md` + `handoff.md`.
+2. **GitHub flywheel (joint automation).** `automation/scripts/flywheel-sync.ts` + `.github/workflows/nephelis-flywheel.yml`. Gemini builds, Grok critiques, GitHub opens a PR. Manual `workflow_dispatch` or issues labeled `flywheel:ready`. Daily cron stays off until secrets exist.
+3. **Session helper.** `npx tsx automation/scripts/ask-grok.ts "question"` calls the xAI API. A Gemini session that queries Grok this way is still a teammate session.
+
+Calling Grok over an API does not make Gemini the lead. The flywheel does not merge `main`.

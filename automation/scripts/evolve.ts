@@ -78,6 +78,24 @@ const modes: Record<string, () => void> = {
     });
     if (r.status !== 0) process.exit(r.status || 1);
   },
+  /** Gemini builder + Grok critic flywheel (forwards extra args; --self-check needs no keys) */
+  flywheel() {
+    const extra = process.argv.slice(3);
+    const r = spawnSync('npx', ['tsx', join(scripts, 'flywheel-sync.ts'), ...extra], {
+      stdio: 'inherit',
+      cwd: root,
+    });
+    if (r.status !== 0) process.exit(r.status || 1);
+  },
+  /** Query Grok via xAI API (needs XAI_API_KEY) */
+  grok() {
+    const extra = process.argv.slice(3);
+    const r = spawnSync('npx', ['tsx', join(scripts, 'ask-grok.ts'), ...extra], {
+      stdio: 'inherit',
+      cwd: root,
+    });
+    if (r.status !== 0) process.exit(r.status || 1);
+  },
   /** AETHER OS Daily Mission Loop (DETECT→PLAN→EXECUTE→VERIFY) */
   daily() {
     run('daily-mission.ts');
@@ -109,6 +127,8 @@ FULL complete (incl. AETHER OS daily). Optional:
   daily           AETHER OS Daily Mission Loop (brief + tasks)
   mission         Alias for daily
   team            Grok-led agent team + RSI (forwards args to team-run.ts)
+  flywheel        Gemini builder + Grok critic (try: flywheel -- --self-check)
+  grok            Ask Grok via xAI (needs XAI_API_KEY)
   research        Research brief + draft MDX
   visuals         Visual generation steps
   social          Social from latest MDX
@@ -131,6 +151,8 @@ AETHER OS: docs/AETHER_OS_Architecture_v1.md · aether-os/
 Examples:
   npx tsx automation/scripts/evolve.ts daily
   npx tsx automation/scripts/evolve.ts team -- start "objective"
+  npx tsx automation/scripts/evolve.ts flywheel -- --self-check
+  npx tsx automation/scripts/evolve.ts grok -- "question"
   npx tsx automation/scripts/evolve.ts digest
   DRY_RUN=1 npx tsx automation/scripts/evolve.ts digest-email
 `);

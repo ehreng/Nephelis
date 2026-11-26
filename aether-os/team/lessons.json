@@ -16,6 +16,36 @@
         ".grok/skills/aether-team/SKILL.md",
         ".grok/workflows/aether-team.rhai"
       ]
+    },
+    {
+      "id": "L-001",
+      "date": "2026-11-26",
+      "source_run": "2026-11-26-gemini-collab-flywheel",
+      "kind": "coordination",
+      "observation": "Gemini offered three exclusive collaboration options (flywheel, ask-grok API, async handoff). Picking one would have dropped the OS default we just shipped.",
+      "change": "Treat the three options as stacked layers. Encode that in GEMINI.md, protocol.md, and the team skill. Ship the flywheel as the first joint slice, PR-only, cron off until secrets exist.",
+      "applied": true,
+      "files": [
+        "GEMINI.md",
+        "aether-os/team/protocol.md",
+        "docs/agent-team-rsi.md",
+        ".github/workflows/nephelis-flywheel.yml",
+        "automation/scripts/flywheel-sync.ts",
+        "automation/scripts/ask-grok.ts"
+      ]
+    },
+    {
+      "id": "L-002",
+      "date": "2026-11-26",
+      "source_run": "2026-11-26-gemini-collab-flywheel",
+      "kind": "tooling",
+      "observation": "Gemini's flywheel draft lived at github:workflows:nephelis-flywheel.yml (not a GitHub Actions path), threw at import without API keys, used git add -A, and omitted preview/archive/user-src from the write ban.",
+      "change": "Place the workflow at .github/workflows/nephelis-flywheel.yml. Lazy-init clients. --self-check needs no keys. Add only written files. Expand forbidden prefixes. No git clean -fd.",
+      "applied": true,
+      "files": [
+        ".github/workflows/nephelis-flywheel.yml",
+        "automation/scripts/flywheel-sync.ts"
+      ]
     }
   ]
 }

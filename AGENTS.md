@@ -1,6 +1,6 @@
 # AGENTS.md — Nephelis Industries / Project AETHER
 
-Instructions for AI agents (Grok, CI bots, volunteers using agent loops) working in this repository.
+Instructions for AI agents (Grok, Gemini Carbon, CI bots, volunteers using agent loops) working in this repository.
 
 ## Mission
 
@@ -14,7 +14,7 @@ Build and operate **Project AETHER** (Cloudseeker): a lean, private Venus cloud-
 |------|------|
 | `site/` | Next.js site (Vercel root directory) |
 | `site/content/data/` | **Source of truth** for public mission numbers |
-| `aether-os/` | OS runtime: briefs, loops, contributions, progress |
+| `aether-os/` | OS runtime: briefs, loops, contributions, progress, handoff |
 | `docs/` | Architecture, CONOPS, sensor baseline, power v1, comms link, visual bible, program gates, ground tests |
 | `site/content/updates/` | MDX mission logs |
 | `research/` | Living knowledge base |
@@ -31,6 +31,19 @@ Build and operate **Project AETHER** (Cloudseeker): a lean, private Venus cloud-
 6. **AETHER OS loops** follow DETECT → PLAN → EXECUTE → VERIFY; log verified work in `aether-os/CONTRIBUTIONS.md`.
 7. **Founder Emeritus** (Ehren) can pause/override any loop. Queue P0 blockers. He is in U.S. Army training; do not block the loop on a same-week answer.
 
+## Two-Agent Flywheel (Grok + Gemini Carbon)
+
+GitHub is the high-bandwidth sync channel. **Nephelis RSI (Grok)** and **Gemini Carbon** work in parallel on this repository. Ehren remains the merge gate for public claims and any external send.
+
+1. **Namespaces** — branches are `grok/<slug>` or `carbon/<slug>`. Do not push to the other agent's namespace.
+2. **Labels** — apply `agent:grok` or `agent:carbon` to issues and PRs you own or propose.
+3. **Claim** — comment `claiming` on the issue before starting. One owner per issue.
+4. **Handoff board** — keep [`aether-os/HANDOFF.md`](./aether-os/HANDOFF.md) current (active claims, branches, review queue, human blockers). Read it at the start of every session, after the daily brief.
+5. **Cross-review** — review the partner's open PRs in comments. Agents do not merge their own public-facing work.
+6. **Human gate** — Ehren merges high-impact public claims and approves external sends (RFQs, lab quotes, partner mail, Stripe live). Do not invent a ship-to, partners, contracts, or science results. Do not block the loop on a same-week founder answer; queue P0 blockers and keep working on unblocked tracks.
+
+Suggested split: **Grok** runs MCC (Daily Mission Briefs, site/code, issue hygiene, reviewing Carbon). **Carbon** takes research fill-ins, cited engineering review, and unblocked L2 paper (for example Gate 2 BOM). Both may take unblocked L1–L2 work. L3 / hardware execution stays gated.
+
 ## AETHER OS — start of session
 
 ```bash
@@ -41,8 +54,9 @@ Build and operate **Project AETHER** (Cloudseeker): a lean, private Venus cloud-
 # 2. Daily Mission Loop
 npx tsx automation/scripts/evolve.ts daily
 
-# 3. Review brief
+# 3. Review brief + handoff
 #    aether-os/briefs/latest.md
+#    aether-os/HANDOFF.md
 
 # 4. Open claimable issues from the brief (L1–L3 templates)
 # 5. Verify completions → aether-os/CONTRIBUTIONS.md
@@ -67,7 +81,7 @@ cd site && pnpm validate:content && pnpm check:mass
 
 ## When asked to “update the mission”
 
-1. Run `evolve.ts daily` (or read `aether-os/briefs/latest.md`).
+1. Run `evolve.ts daily` (or read `aether-os/briefs/latest.md` and `aether-os/HANDOFF.md`).
 2. Read `tasks.json`, `risks.json`, `partners.json`, `mission-control.json`.
 3. Make the smallest factual edit set.
 4. Run `pnpm validate:content` in `site/`.

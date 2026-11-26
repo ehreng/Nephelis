@@ -1,0 +1,37 @@
+{
+  "updated_at": "2026-11-26",
+  "lead": {
+    "id": "grok",
+    "runtime": "grok-build",
+    "seat": "Persistent Mission Agent",
+    "entry": [
+      "/aether-team",
+      "npx tsx automation/scripts/evolve.ts team -- start \"<objective>\""
+    ]
+  },
+  "members": [
+    {
+      "id": "gemini",
+      "runtime": "antigravity",
+      "seat": "teammate",
+      "join": "GEMINI.md + aether-os/team/runs/<id>/handoff.md",
+      "return": "aether-os/team/runs/<id>/gemini-return.md",
+      "spawn": "npx tsx automation/scripts/team-run.ts gemini"
+    },
+    {
+      "id": "human",
+      "runtime": "github-issues",
+      "seat": "teammate",
+      "join": "claiming on a labeled issue",
+      "return": "PR or evidence on the issue"
+    },
+    {
+      "id": "ehren",
+      "runtime": "founder-emeritus",
+      "seat": "oversight",
+      "join": "asynchronous review during U.S. Army training",
+      "return": "pause or override any loop"
+    }
+  ],
+  "roles": ["scout", "lead", "implementer", "reviewer", "rsi-critic"]
+}

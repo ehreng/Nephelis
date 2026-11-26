@@ -69,6 +69,15 @@ const modes: Record<string, () => void> = {
   telemetry() {
     run('sync-telemetry.ts');
   },
+  /** Grok-led agent team + RSI */
+  team() {
+    const extra = process.argv.slice(3);
+    const r = spawnSync('npx', ['tsx', join(scripts, 'team-run.ts'), ...extra], {
+      stdio: 'inherit',
+      cwd: root,
+    });
+    if (r.status !== 0) process.exit(r.status || 1);
+  },
   /** AETHER OS Daily Mission Loop (DETECT→PLAN→EXECUTE→VERIFY) */
   daily() {
     run('daily-mission.ts');
@@ -99,6 +108,7 @@ FULL complete (incl. AETHER OS daily). Optional:
     console.log(`Modes:
   daily           AETHER OS Daily Mission Loop (brief + tasks)
   mission         Alias for daily
+  team            Grok-led agent team + RSI (forwards args to team-run.ts)
   research        Research brief + draft MDX
   visuals         Visual generation steps
   social          Social from latest MDX
@@ -120,6 +130,7 @@ AETHER OS: docs/AETHER_OS_Architecture_v1.md · aether-os/
 
 Examples:
   npx tsx automation/scripts/evolve.ts daily
+  npx tsx automation/scripts/evolve.ts team -- start "objective"
   npx tsx automation/scripts/evolve.ts digest
   DRY_RUN=1 npx tsx automation/scripts/evolve.ts digest-email
 `);

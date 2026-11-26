@@ -3,7 +3,7 @@
 Thank you for helping humanity's return to the clouds.
 
 This project runs under **AETHER OS** — an AI-coordinated, contribution-first operating system.  
-Architecture: [`docs/AETHER_OS_Architecture_v1.md`](./docs/AETHER_OS_Architecture_v1.md) · Task format: [`docs/TASK_TEMPLATE.md`](./docs/TASK_TEMPLATE.md)
+Architecture: [`docs/AETHER_OS_Architecture_v1.md`](./docs/AETHER_OS_Architecture_v1.md) · Task format: [`docs/TASK_TEMPLATE.md`](./docs/TASK_TEMPLATE.md) · Agent team: [`docs/agent-team-rsi.md`](./docs/agent-team-rsi.md)
 
 ## Contribution tiers
 

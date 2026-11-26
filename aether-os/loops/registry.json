@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-08-11",
+  "updated": "2026-11-26",
   "meta_loop": {
     "id": "meta",
     "status": "armed",
@@ -70,6 +70,20 @@
       "status": "active",
       "script": "automation/scripts/health-check.ts",
       "schedule": "Daily 16:00 UTC"
+    },
+    {
+      "id": "agent-team",
+      "name": "Grok-led agent team",
+      "status": "active",
+      "script": "automation/scripts/team-run.ts",
+      "evolve_mode": "team",
+      "notes": "Grok lead; Gemini/human teammates; see docs/agent-team-rsi.md"
+    },
+    {
+      "id": "rsi",
+      "name": "Recursive self-improvement",
+      "status": "active",
+      "notes": "Required last phase of every agent-team run. Lessons in aether-os/team/lessons.json"
     }
   ],
   "priority_order": [

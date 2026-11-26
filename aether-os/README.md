@@ -11,6 +11,7 @@ aether-os/
 ├── LEGAL_STATUS.md        # Non-binding legal path notes
 ├── loops/
 │   └── registry.json      # Active loops + status
+├── team/                  # Grok-led agent team + RSI
 ├── briefs/                # Daily Mission Briefs (YYYY-MM-DD.md)
 └── newsletter/            # Monthly draft stubs
 ```
@@ -30,6 +31,14 @@ Produces:
 2. `aether-os/briefs/latest.md` — symlink-style copy of latest  
 3. Append to `aether-os/PROGRESS.md`  
 4. Optional social draft under `automation/social-drafts/`  
+
+## Agent team (Grok lead + Gemini + RSI)
+
+```bash
+npx tsx automation/scripts/evolve.ts team -- start "objective"
+```
+
+See [`team/README.md`](./team/README.md) and [`docs/agent-team-rsi.md`](../docs/agent-team-rsi.md).  
 
 ## Public resources
 

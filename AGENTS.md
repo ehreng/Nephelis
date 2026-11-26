@@ -94,6 +94,18 @@ cd site && pnpm validate:content && pnpm check:mass
 - `docs/gate2-he-float-bom.md`
 - `automation/prompts/visual-brief.md`
 
+## Agent team + RSI
+
+Grok is lead. Gemini and humans are teammates. Recursive self-improvement is a required last phase.
+
+- Architecture: [`docs/agent-team-rsi.md`](./docs/agent-team-rsi.md)
+- Protocol: [`aether-os/team/protocol.md`](./aether-os/team/protocol.md)
+- Gemini: [`GEMINI.md`](./GEMINI.md)
+- Start a run: `npx tsx automation/scripts/evolve.ts team -- start "<objective>"`
+- Inside Grok: `/aether-team`
+
+One owner per file. Write a lesson to `aether-os/team/lessons.json` before calling the run done.
+
 ## Secrets
 
 Never commit `.env`. See `site/.env.example` and `docs/go-live.md`.

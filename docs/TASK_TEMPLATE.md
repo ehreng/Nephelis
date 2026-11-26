@@ -10,7 +10,7 @@ Priority order: **safety/regulatory → critical hardware → public progress �
 ```yaml
 level: L1 | L2 | L3
 priority: P0 | P1 | P2 | P3
-loop: daily-mission | website | hardware | regulatory | newsletter | meta | other
+loop: daily-mission | website | hardware | regulatory | newsletter | meta | agent-team | rsi | other
 area: ops | content | growth | hardware | science | legal | design
 ```
 

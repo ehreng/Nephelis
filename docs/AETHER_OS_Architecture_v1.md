@@ -175,6 +175,7 @@ Designed to minimize conflict-of-interest issues with military service while pre
 | Daily Mission Loop | `automation/scripts/daily-mission.ts` · `evolve.ts daily` |
 | Contribution log | `aether-os/CONTRIBUTIONS.md` |
 | Loop registry | `aether-os/loops/registry.json` |
+| Agent team + RSI | `docs/agent-team-rsi.md` · `aether-os/team/` · `/aether-team` |
 | Mission briefs | `aether-os/briefs/YYYY-MM-DD.md` |
 | Progress log | `aether-os/PROGRESS.md` |
 | Newsletter | Platform TBD (Beehiiv preferred); draft path `aether-os/newsletter/` |
@@ -198,11 +199,23 @@ Hand this document + `AGENTS.md` to any future agent session.
 
 ```bash
 # Start of session checklist
-1. Read docs/AETHER_OS_Architecture_v1.md
-2. Read AGENTS.md + aether-os/loops/registry.json
+1. Read docs/AETHER_OS_Architecture_v1.md + docs/agent-team-rsi.md
+2. Read AGENTS.md + aether-os/loops/registry.json + aether-os/team/lessons.json
 3. Run: npx tsx automation/scripts/evolve.ts daily
-4. Open issues from brief if claimable
-5. Log verification in aether-os/CONTRIBUTIONS.md
+4. For multi-agent work: /aether-team or evolve.ts team -- start
+5. Open issues from brief if claimable
+6. Log verification in aether-os/CONTRIBUTIONS.md
 ```
+
+## 10. GROK-LED AGENT TEAM + RSI
+
+Grok remains the Persistent Mission Agent. Other runtimes join as teammates. Every team run ends in an RSI lesson.
+
+- Architecture: [`docs/agent-team-rsi.md`](./agent-team-rsi.md)
+- Runtime: `aether-os/team/`
+- Gemini join: repo-root `GEMINI.md` + `handoff.md`
+- Grok entry: `/aether-team` or `npx tsx automation/scripts/evolve.ts team -- start "<objective>"`
+
+Ehren can still pause or override. Do not block a team run on a same-week founder answer.
 
 **AETHER OS is designed to keep evolving.**

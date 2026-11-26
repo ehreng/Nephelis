@@ -1,0 +1,21 @@
+{
+  "updated_at": "2026-11-26",
+  "lessons": [
+    {
+      "id": "L-000",
+      "date": "2026-11-26",
+      "source_run": "bootstrap",
+      "kind": "process",
+      "observation": "AETHER OS ran as a single Grok session plus human issue claims. Gemini had no join path.",
+      "change": "Add Grok-led team protocol, run directory, GEMINI.md handoff, and a required RSI lesson on every run.",
+      "applied": true,
+      "files": [
+        "docs/agent-team-rsi.md",
+        "aether-os/team/protocol.md",
+        "GEMINI.md",
+        ".grok/skills/aether-team/SKILL.md",
+        ".grok/workflows/aether-team.rhai"
+      ]
+    }
+  ]
+}

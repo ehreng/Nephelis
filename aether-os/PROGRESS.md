@@ -4,6 +4,14 @@ Append-only mission progress. Newest first.
 
 ---
 
+## 2026-11-27 — Daily Mission Loop
+
+- Brief: `aether-os/briefs/2026-11-27.md`
+- Planned tasks: 7 (P0 sources: 49, critical risks: 5)
+- Top priority: Mitigate or document risk: Acid degradation of balloon envelope
+- Social draft: `automation/social-drafts/mission-2026-11-27.md`
+- Status: **executed** (verify checklist still open for humans)
+
 ## 2026-11-24 — $500k all-in thesis
 
 - Public target recast: **$500k all-in** (ground through rideshare-class flight). Launch/smallsat costs collapsing is the bet.
